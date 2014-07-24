@@ -26,6 +26,9 @@ namespace fPlayer_2
         public List<AudioFile> songs;
         public List<string> playlists;
         public List<Control> items;
+        public List<AudioFile> stack=new List<AudioFile>();
+        
+        public int sta_pos=0;
         int count = 0;
 		public Player()
 		{
@@ -597,7 +600,26 @@ namespace fPlayer_2
 
         public void OnPlaySelected(object sender, EventArgs e)
         {
-            Play(((Control)sender).Tag.ToString());
+            SongsListItem sli=(getSongsListItem((Control)sender));
+            if (sli!=null) {
+            Play(sli.Tag.ToString());
+            }
+        }
+
+        public SongsListItem getSongsListItem(Control c)
+        {
+            if (c == null)
+            {
+                return null;
+            }
+            else if (c is SongsListItem)
+            {
+                return (SongsListItem)c;
+            }
+            else
+            {
+                return getSongsListItem(c.Parent);
+            }
         }
 
         public void OnMenuRequest(object sender, EventArgs e)
@@ -632,7 +654,28 @@ namespace fPlayer_2
 
         public void Play(string filename)
         {
+            Stack(filename);
+            sta_pos = stack.Count - 1;
+            playnow();
+        }
 
+        public void Stack(string filename)
+        {
+            stack.Add(new AudioFile(filename));
+        }
+
+        public void playnow()
+        {
+            MediaPlayer mp = MediaPlayer.getInstance(stack[sta_pos]);
+            mp.play();
+            UpdateInfo();
+        }
+
+
+        public void UpdateInfo()
+        {
+            songname.Text = stack[sta_pos].ID3Information.Title;
+            songinfo.Text = stack[sta_pos].ID3Information.Artist + " / " + stack[sta_pos].ID3Information.Album;
         }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
