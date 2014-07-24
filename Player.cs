@@ -22,7 +22,7 @@ namespace fPlayer_2
 	{
         public static string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\fPlayer\\2.1\\";
 		private bool isMaximized=false;
-		private int tabFocused=0;
+		public int tabFocused=0;
         public List<AudioFile> songs;
         public List<string> playlists;
         public List<Control> items;
@@ -39,7 +39,7 @@ namespace fPlayer_2
 
         public void WheelHandler(object sender, MouseEventArgs e)
         {
-            mainPane.AutoScrollPosition = new Point(mainPane.AutoScrollPosition.X, mainPane.AutoScrollPosition.Y + (5 * e.Delta));
+            mainPane.AutoScrollOffset = new Point(mainPane.AutoScrollOffset.X, mainPane.AutoScrollOffset.Y + (5 * e.Delta));
         }
         public void ThreadRoutine()
         {
@@ -249,6 +249,7 @@ namespace fPlayer_2
 			if (searchBox.ForeColor==Color.Gray) {
 				searchBox.ForeColor=Color.Black;
 				searchBox.Font=new Font(searchBox.Font,FontStyle.Regular);
+                searchBox.Tag = searchBox.Text;
 				searchBox.Text="";
 			}
 		}
@@ -298,7 +299,7 @@ namespace fPlayer_2
                     c.BackColor = Color.Teal;
                 }
             }
-            
+            if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused<4) mainPane.Focus();
         }
 
         private bool isHighlighted(Control c)
@@ -372,7 +373,7 @@ namespace fPlayer_2
             aboutLabel_Click(sender, e);
         }
 
-        private void songsLabel_Click(object sender, EventArgs e)
+        public void songsLabel_Click(object sender, EventArgs e)
         {
             contentPaneTitle.Text = songsLabel.Text;
             contentPane.Controls.Clear();
@@ -482,17 +483,21 @@ namespace fPlayer_2
             libraryLabel_Click(sender, e);
         }
 
-
+        bool reversed = false;
         public void loadSongsList()
         {
             contentPane.Controls.Clear();
+            if (!reversed) { items.Reverse(); reversed = true; } // Controls are docked from bottom to top, this will correctly sort them
             contentPane.Controls.AddRange(items.ToArray());
         }
 
         public void loadSongsList(splash s)
         {
             items = new List<Control>();
-            contentPane.Tag = "0";
+            contentPane.Tag = "-1";
+            int i = 0;
+            reversed = false;
+            count = 0;
             foreach (AudioFile f in songs)
             {
                 
@@ -500,17 +505,23 @@ namespace fPlayer_2
                 sli.setData(f.ID3Information.Title, f.ID3Information.Artist + " / " + f.ID3Information.Album, getSongLength(f.FileName));
                 sli.Dock = DockStyle.Top;
                 sli.parentList = contentPane;
+                sli.parent = this;
                 sli.Tag = f.FileName;
                 sli.OnMenuRequest += new EventHandler(OnMenuRequest);
                 sli.OnPlaySelected += new EventHandler(OnPlaySelected);
-                
+                sli.index = i;
+                i++;
                 items.Add(sli);
                 count++;
                 s.curTask.Text = getStr(s.curTask.Tag.ToString(), 1) + " (" + count + ")";
                 s.Update();
             }
         }
-
+        public void reloadAll()
+        {
+            tabFocused = 0;
+            loadSystemData();
+        }
         public void loadSystemData()
         {
             s = new splash();
@@ -518,8 +529,10 @@ namespace fPlayer_2
             s.Update();
             songs = new List<AudioFile>();
             playlists = new List<string>();
+            foreach (string q in Directory.GetFiles(AppFolder, "*.m3u")) { playlists.Add(q); }
             s.curTask.Text = getStr(s.curTask.Tag.ToString(), 0);
             s.Update();
+            count = 0;
             retrieveSongs(s);
             songs.Sort();
             s.curTask.Text = getStr(s.curTask.Tag.ToString(), 1);
@@ -554,6 +567,7 @@ namespace fPlayer_2
                     }
                 }
             }
+            
         }
 
         public void add(string k, splash s, int i)
@@ -583,12 +597,12 @@ namespace fPlayer_2
 
         public void OnPlaySelected(object sender, EventArgs e)
         {
-
+            Play(((Control)sender).Tag.ToString());
         }
 
         public void OnMenuRequest(object sender, EventArgs e)
         {
-
+            songMenu.Show(MousePosition);
         }
 
 
@@ -616,6 +630,20 @@ namespace fPlayer_2
             loadSystemData();
         }
 
+        public void Play(string filename)
+        {
+
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
        
 	}
 }

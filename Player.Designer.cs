@@ -92,6 +92,12 @@ namespace fPlayer_2
             this.contentPaneTitle = new System.Windows.Forms.Label();
             this.focusMisser = new System.Windows.Forms.Button();
             this.focusController = new System.Windows.Forms.Timer(this.components);
+            this.songMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.playToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToPlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newPlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.bottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repeatButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).BeginInit();
@@ -119,6 +125,7 @@ namespace fPlayer_2
             this.songsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.songsIcon)).BeginInit();
             this.mainPane.SuspendLayout();
+            this.songMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // bottomPanel
@@ -507,6 +514,7 @@ namespace fPlayer_2
             this.searchBox.TabStop = false;
             this.searchBox.Tag = "search";
             this.searchBox.Click += new System.EventHandler(this.SearchBoxClick);
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             this.searchBox.Enter += new System.EventHandler(this.SearchBoxEnter);
             this.searchBox.Leave += new System.EventHandler(this.SearchBoxLeave);
             this.searchBox.Validating += new System.ComponentModel.CancelEventHandler(this.SearchBoxValidating);
@@ -541,6 +549,46 @@ namespace fPlayer_2
             this.focusController.Enabled = true;
             this.focusController.Interval = 10;
             this.focusController.Tick += new System.EventHandler(this.focusController_Tick);
+            // 
+            // songMenu
+            // 
+            this.songMenu.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.songMenu, "songMenu");
+            this.songMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playToolStripMenuItem,
+            this.stackToolStripMenuItem,
+            this.addToPlaylistToolStripMenuItem});
+            this.songMenu.Name = "songMenu";
+            this.songMenu.ShowImageMargin = false;
+            // 
+            // playToolStripMenuItem
+            // 
+            resources.ApplyResources(this.playToolStripMenuItem, "playToolStripMenuItem");
+            this.playToolStripMenuItem.Name = "playToolStripMenuItem";
+            this.playToolStripMenuItem.Click += new System.EventHandler(this.playToolStripMenuItem_Click);
+            // 
+            // stackToolStripMenuItem
+            // 
+            this.stackToolStripMenuItem.Name = "stackToolStripMenuItem";
+            resources.ApplyResources(this.stackToolStripMenuItem, "stackToolStripMenuItem");
+            // 
+            // addToPlaylistToolStripMenuItem
+            // 
+            this.addToPlaylistToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newPlaylistToolStripMenuItem,
+            this.toolStripMenuItem2});
+            this.addToPlaylistToolStripMenuItem.Name = "addToPlaylistToolStripMenuItem";
+            resources.ApplyResources(this.addToPlaylistToolStripMenuItem, "addToPlaylistToolStripMenuItem");
+            // 
+            // newPlaylistToolStripMenuItem
+            // 
+            this.newPlaylistToolStripMenuItem.Name = "newPlaylistToolStripMenuItem";
+            resources.ApplyResources(this.newPlaylistToolStripMenuItem, "newPlaylistToolStripMenuItem");
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             // 
             // Player
             // 
@@ -584,6 +632,7 @@ namespace fPlayer_2
             ((System.ComponentModel.ISupportInitialize)(this.songsIcon)).EndInit();
             this.mainPane.ResumeLayout(false);
             this.mainPane.PerformLayout();
+            this.songMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -636,12 +685,18 @@ namespace fPlayer_2
 		private System.Windows.Forms.PictureBox songsIcon;
 		private System.Windows.Forms.Label songsLabel;
 		private System.Windows.Forms.TextBox searchBox;
-		private System.Windows.Forms.Panel titlePanel;
-		private System.Windows.Forms.Panel bottomPanel;
+        private System.Windows.Forms.Panel titlePanel;
 		private System.Windows.Forms.Panel mainSidebar;
 		private System.Windows.Forms.Label appTitle;
 		private System.Windows.Forms.PictureBox appIcon;
         private System.Windows.Forms.Timer focusController;
         private System.Windows.Forms.Panel contentPane;
+        public System.Windows.Forms.Panel bottomPanel;
+        private System.Windows.Forms.ContextMenuStrip songMenu;
+        private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToPlaylistToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newPlaylistToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
 	}
 }

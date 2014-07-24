@@ -30,14 +30,39 @@ namespace fPlayer_2
             folderBox.Items.Remove(folderBox.SelectedItem);
         }
 
+        public Player getParentPlayer(Control c)
+        {
+            if (c==null) {
+                return null;
+            } else if (c is Player) {
+                return (Player)c;
+            }
+            else
+            {
+                return getParentPlayer(c.Parent);
+            }
+        }
+
+        public Player getParentPlayer()
+        {
+            return getParentPlayer(this);
+        }
+
         private void cancelButton_Click(object sender, EventArgs e)
         {
             loadFolders();
+            Player p = getParentPlayer();
+            if (p != null)
+            {
+                p.songsLabel_Click(p, e);
+            }
         }
 
         private void okbutton_Click(object sender, EventArgs e)
         {
             saveFolders();
+            Player p = getParentPlayer();
+            if (p!=null) p.reloadAll();
         }
 
         public string arrayToString(ListBox.ObjectCollection items)

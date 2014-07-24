@@ -111,6 +111,15 @@
     <EmbeddedResource Include="libraryEditor.resx">
       <DependentUpon>libraryEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Player.af.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.ca.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.es.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Player.resx">
       <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>

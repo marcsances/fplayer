@@ -49,6 +49,7 @@
             this.songTitle.TabIndex = 0;
             this.songTitle.Text = "TITLE";
             this.songTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.songTitle.Click += new System.EventHandler(this.songTitle_Click);
             this.songTitle.DoubleClick += new System.EventHandler(this.songTitle_DoubleClick);
             // 
             // songInfo
@@ -63,6 +64,7 @@
             this.songInfo.TabIndex = 1;
             this.songInfo.Text = "INFO";
             this.songInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.songInfo.Click += new System.EventHandler(this.songInfo_Click);
             this.songInfo.DoubleClick += new System.EventHandler(this.songInfo_DoubleClick);
             // 
             // songLength
@@ -76,21 +78,25 @@
             this.songLength.TabIndex = 2;
             this.songLength.Text = "--:--";
             this.songLength.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.songLength.Click += new System.EventHandler(this.songLength_Click);
             this.songLength.DoubleClick += new System.EventHandler(this.songLength_DoubleClick);
             // 
             // menuButton
             // 
             this.menuButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuButton.BackColor = System.Drawing.Color.Transparent;
             this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
             this.menuButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.menuButton.Location = new System.Drawing.Point(449, 0);
+            this.menuButton.Location = new System.Drawing.Point(455, 3);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(48, 48);
+            this.menuButton.Size = new System.Drawing.Size(42, 42);
             this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.menuButton.TabIndex = 10;
             this.menuButton.TabStop = false;
             this.menuButton.Tag = "B";
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            this.menuButton.MouseEnter += new System.EventHandler(this.menuButton_MouseEnter);
+            this.menuButton.MouseLeave += new System.EventHandler(this.menuButton_MouseLeave);
             // 
             // timer
             // 
@@ -124,7 +130,7 @@
         private System.Windows.Forms.Label songTitle;
         private System.Windows.Forms.Label songInfo;
         private System.Windows.Forms.Label songLength;
-        private System.Windows.Forms.PictureBox menuButton;
         private System.Windows.Forms.Timer timer;
+        public System.Windows.Forms.PictureBox menuButton;
     }
 }

@@ -21,6 +21,7 @@ namespace fPlayer_2
          */
         public int index=0;
         public Control parentList;
+        public Player parent;
         public SongsListItem()
         {
             InitializeComponent();
@@ -37,13 +38,18 @@ namespace fPlayer_2
 
         private bool isMouseOver(Control c)
         {
+            return c.ClientRectangle.Contains(c.PointToClient(Cursor.Position)) && !isMouseOver(parent.bottomPanel,true);
+        }
+
+        private bool isMouseOver(Control c, bool overrides)
+        {
             return c.ClientRectangle.Contains(c.PointToClient(Cursor.Position));
         }
 
         private SelectionMode getSelectionMode(Control c)
         {
             if (parentList == null) return SelectionMode.MODE_UNFOCUSED;
-            if (Convert.ToInt32(this.parentList.Tag.ToString().Split(',').Contains(index.ToString()))==this.index)
+            if (this.parentList.Tag.ToString().Split(',').Contains(index.ToString()))
             {
                 return SelectionMode.MODE_SELECTED;
             }
@@ -63,13 +69,25 @@ namespace fPlayer_2
                 return SelectionMode.MODE_UNFOCUSED;
             }
         }
-
-        private void SongsListItem_Click(object sender, EventArgs e)
+        private void toggle()
         {
-            if (this.parentList.Tag.ToString().Split(',').Length <= 1) { this.parentList.Tag = this.index; }
+            if (this.parentList.Tag.ToString().Replace(",,",",").Split(',').Contains(index.ToString()))
+            {
+                this.parentList.Tag = this.parentList.Tag.ToString().Replace(this.index.ToString(), "").Replace(",,",",");
+            }
             else
             {
-                this.parentList.Tag = this.parentList.Tag + "," + this.index;
+                this.parentList.Tag = this.parentList.Tag.ToString() + "," + this.index;
+            }
+            
+        }
+        private void SongsListItem_Click(object sender, EventArgs e)
+        {
+            if (this.parentList.Tag.ToString().Replace(",,",",").Split(',').Length <= 2 && Control.ModifierKeys!=Keys.Control) { this.parentList.Tag = this.index; }
+            else
+            {
+                toggle();
+                
             }
         }
 
@@ -77,7 +95,7 @@ namespace fPlayer_2
         {
             if (Control.MouseButtons == MouseButtons.Left)
             {
-                this.parentList.Tag = this.parentList.Tag + "," + this.index;
+                toggle();
             }
         }
         public event EventHandler OnPlaySelected;
@@ -89,6 +107,7 @@ namespace fPlayer_2
 
         private void menuButton_Click(object sender, EventArgs e)
         {
+            SongsListItem_Click(sender, e);
             this.OnMenuRequest(sender, e);
         }
 
@@ -137,6 +156,31 @@ namespace fPlayer_2
                 lastmode = newmode;
             }
             
+        }
+
+        private void menuButton_MouseEnter(object sender, EventArgs e)
+        {
+            menuButton.BackColor = Color.White;
+        }
+
+        private void menuButton_MouseLeave(object sender, EventArgs e)
+        {
+            menuButton.BackColor = Color.Transparent;
+        }
+
+        private void songTitle_Click(object sender, EventArgs e)
+        {
+            SongsListItem_Click(sender, e);
+        }
+
+        private void songInfo_Click(object sender, EventArgs e)
+        {
+            SongsListItem_Click(sender, e);
+        }
+
+        private void songLength_Click(object sender, EventArgs e)
+        {
+            SongsListItem_Click(sender, e);
         }
 
     }
