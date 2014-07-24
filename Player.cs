@@ -233,7 +233,7 @@ namespace fPlayer_2
 
         private void focusController_Tick(object sender, EventArgs e)
         {
-            Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel,nowplayingPanel, aboutPanel, libraryPanel };
+            Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, aboutPanel, libraryPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
             for (int i = 0; i < focusableControls.Length; i++ )
             {
                 Control c = focusableControls[i];
@@ -241,7 +241,7 @@ namespace fPlayer_2
                 {
                     doFocusHighlight(c,i);
                 }
-                else if (!isMouseOver(c) && isHighlighted(c))
+                else if (!isMouseOver(c) && (c.BackColor!=Color.Teal && c.BackColor!=Color.FromArgb(0,64,64)))
                 {
                     unHighlight(c,i);
                 }
@@ -250,34 +250,60 @@ namespace fPlayer_2
                     doHover(c);
                 }
             }
+            
         }
 
         private bool isHighlighted(Control c)
         {
-            return c.BackColor.Equals(Color.FromArgb(0, 192, 192));
+            if (c.Tag==null || c.Tag.ToString() != "B")
+            {
+                return c.BackColor.Equals(Color.FromArgb(0, 192, 192));
+            }
+            else
+            {
+                return c.BackColor.Equals(Color.Gray);
+            }
         }
         private void doFocusHighlight(Control c,int i)
         {
-            if (i != tabFocused)
+            if (c.Tag == null || c.Tag.ToString() != "B")
             {
-                c.BackColor = Color.FromArgb(0, 192, 192);    
+                if (i != tabFocused)
+                {
+                    c.BackColor = Color.FromArgb(0, 192, 192);
+                }
+                else
+                {
+                    c.BackColor = Color.FromArgb(0, 96, 96);
+                }
             }
-            c.ForeColor = Color.White;
-            
+            else
+            {
+                c.BackColor = Color.Gray;
+            }
         }
 
         private void unHighlight(Control c,int i)
         {
-            if (i!=tabFocused) {
-                c.BackColor = Color.Teal;
-                c.ForeColor = Color.White;
+            if (c.Tag == null || c.Tag.ToString() != "B")
+            {
+                if (i != tabFocused)
+                {
+                    c.BackColor = Color.Teal;
+                }
+                else
+                {
+                    c.BackColor = Color.FromArgb(0, 64, 64);
+                }
             }
+            else c.BackColor = Color.Black;
         }
 
         private void doHover(Control c)
         {
-            c.BackColor = Color.White;
-            c.ForeColor = Color.Black;
+            if (c.Tag == null || c.Tag.ToString() != "B") { c.BackColor = Color.FromArgb(0, 32, 32); } else c.BackColor = Color.LightGray;
         }
+
+       
 	}
 }

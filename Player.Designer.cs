@@ -87,13 +87,9 @@ namespace fPlayer_2
             this.songsIcon = new System.Windows.Forms.PictureBox();
             this.songsLabel = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.listPane = new System.Windows.Forms.Panel();
-            this.listView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listPaneTitle = new System.Windows.Forms.Label();
+            this.mainPane = new System.Windows.Forms.Panel();
+            this.contentPane = new System.Windows.Forms.Panel();
+            this.contentPaneTitle = new System.Windows.Forms.Label();
             this.focusMisser = new System.Windows.Forms.Button();
             this.focusController = new System.Windows.Forms.Timer(this.components);
             this.bottomPanel.SuspendLayout();
@@ -122,7 +118,7 @@ namespace fPlayer_2
             ((System.ComponentModel.ISupportInitialize)(this.artistsIcon)).BeginInit();
             this.songsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.songsIcon)).BeginInit();
-            this.listPane.SuspendLayout();
+            this.mainPane.SuspendLayout();
             this.SuspendLayout();
             // 
             // bottomPanel
@@ -149,36 +145,42 @@ namespace fPlayer_2
             resources.ApplyResources(this.repeatButton, "repeatButton");
             this.repeatButton.Name = "repeatButton";
             this.repeatButton.TabStop = false;
+            this.repeatButton.Tag = "B";
             // 
             // shuffleButton
             // 
             resources.ApplyResources(this.shuffleButton, "shuffleButton");
             this.shuffleButton.Name = "shuffleButton";
             this.shuffleButton.TabStop = false;
+            this.shuffleButton.Tag = "B";
             // 
             // volumeButton
             // 
             resources.ApplyResources(this.volumeButton, "volumeButton");
             this.volumeButton.Name = "volumeButton";
             this.volumeButton.TabStop = false;
+            this.volumeButton.Tag = "B";
             // 
             // nextButton
             // 
             resources.ApplyResources(this.nextButton, "nextButton");
             this.nextButton.Name = "nextButton";
             this.nextButton.TabStop = false;
+            this.nextButton.Tag = "B";
             // 
             // playPauseButton
             // 
             resources.ApplyResources(this.playPauseButton, "playPauseButton");
             this.playPauseButton.Name = "playPauseButton";
             this.playPauseButton.TabStop = false;
+            this.playPauseButton.Tag = "B";
             // 
             // previousButton
             // 
             resources.ApplyResources(this.previousButton, "previousButton");
             this.previousButton.Name = "previousButton";
             this.previousButton.TabStop = false;
+            this.previousButton.Tag = "B";
             // 
             // tracklength
             // 
@@ -194,8 +196,8 @@ namespace fPlayer_2
             // 
             // trackbarProgress
             // 
-            resources.ApplyResources(this.trackbarProgress, "trackbarProgress");
             this.trackbarProgress.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.trackbarProgress, "trackbarProgress");
             this.trackbarProgress.Name = "trackbarProgress";
             // 
             // trackbarBack
@@ -487,50 +489,24 @@ namespace fPlayer_2
             this.searchBox.Leave += new System.EventHandler(this.SearchBoxLeave);
             this.searchBox.Validating += new System.ComponentModel.CancelEventHandler(this.SearchBoxValidating);
             // 
-            // listPane
+            // mainPane
             // 
-            this.listPane.Controls.Add(this.listView);
-            this.listPane.Controls.Add(this.listPaneTitle);
-            resources.ApplyResources(this.listPane, "listPane");
-            this.listPane.Name = "listPane";
+            resources.ApplyResources(this.mainPane, "mainPane");
+            this.mainPane.Controls.Add(this.contentPane);
+            this.mainPane.Controls.Add(this.contentPaneTitle);
+            this.mainPane.Name = "mainPane";
+            this.mainPane.Tag = "0";
             // 
-            // listView
+            // contentPane
             // 
-            resources.ApplyResources(this.listView, "listView");
-            this.listView.BackColor = System.Drawing.Color.White;
-            this.listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView.FullRowSelect = true;
-            this.listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.listView.Name = "listView";
-            this.listView.UseCompatibleStateImageBehavior = false;
-            this.listView.View = System.Windows.Forms.View.Details;
+            resources.ApplyResources(this.contentPane, "contentPane");
+            this.contentPane.Name = "contentPane";
             // 
-            // columnHeader1
+            // contentPaneTitle
             // 
-            resources.ApplyResources(this.columnHeader1, "columnHeader1");
-            // 
-            // columnHeader2
-            // 
-            resources.ApplyResources(this.columnHeader2, "columnHeader2");
-            // 
-            // columnHeader3
-            // 
-            resources.ApplyResources(this.columnHeader3, "columnHeader3");
-            // 
-            // columnHeader4
-            // 
-            resources.ApplyResources(this.columnHeader4, "columnHeader4");
-            // 
-            // listPaneTitle
-            // 
-            resources.ApplyResources(this.listPaneTitle, "listPaneTitle");
-            this.listPaneTitle.ForeColor = System.Drawing.Color.Black;
-            this.listPaneTitle.Name = "listPaneTitle";
+            resources.ApplyResources(this.contentPaneTitle, "contentPaneTitle");
+            this.contentPaneTitle.ForeColor = System.Drawing.Color.Black;
+            this.contentPaneTitle.Name = "contentPaneTitle";
             // 
             // focusMisser
             // 
@@ -550,7 +526,7 @@ namespace fPlayer_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.focusMisser);
-            this.Controls.Add(this.listPane);
+            this.Controls.Add(this.mainPane);
             this.Controls.Add(this.mainSidebar);
             this.Controls.Add(this.titlePanel);
             this.Controls.Add(this.bottomPanel);
@@ -583,7 +559,8 @@ namespace fPlayer_2
             ((System.ComponentModel.ISupportInitialize)(this.artistsIcon)).EndInit();
             this.songsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.songsIcon)).EndInit();
-            this.listPane.ResumeLayout(false);
+            this.mainPane.ResumeLayout(false);
+            this.mainPane.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -597,13 +574,8 @@ namespace fPlayer_2
 		private System.Windows.Forms.Panel libraryPanel;
 		private System.Windows.Forms.PictureBox libraryIcon;
 		private System.Windows.Forms.Label libraryLabel;
-		private System.Windows.Forms.Panel listPane;
-		private System.Windows.Forms.ListView listView;
-		private System.Windows.Forms.ColumnHeader columnHeader1;
-		private System.Windows.Forms.ColumnHeader columnHeader2;
-		private System.Windows.Forms.ColumnHeader columnHeader3;
-		private System.Windows.Forms.ColumnHeader columnHeader4;
-		private System.Windows.Forms.Label listPaneTitle;
+        private System.Windows.Forms.Panel mainPane;
+		private System.Windows.Forms.Label contentPaneTitle;
 		
 		
 		private System.Windows.Forms.Label closeBox;
@@ -647,5 +619,6 @@ namespace fPlayer_2
 		private System.Windows.Forms.Label appTitle;
 		private System.Windows.Forms.PictureBox appIcon;
         private System.Windows.Forms.Timer focusController;
+        private System.Windows.Forms.Panel contentPane;
 	}
 }
