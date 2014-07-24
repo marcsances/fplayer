@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="COPYING" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AboutDialog.ca-ES.resx">
