@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="appLogo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="appLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -177,15 +181,30 @@
         h8PhcDgcDofD4XA4HA6Hw+FQwvP+B0C48aqL3Zk3AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="appName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="appVer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="appVer.Text" xml:space="preserve">
     <value>Versión %v</value>
+  </data>
+  <data name="apiimplver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="apiimplver.Text" xml:space="preserve">
     <value>libAP API %a / Implementación %imp</value>
   </data>
+  <data name="copyInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="copyInfo.Text" xml:space="preserve">
     <value>Copyright © 2014, MSS Software &amp; Services.
 fPlayer está bajo los términos de la GNU General Public License, versión 3.</value>
+  </data>
+  <data name="facebookIcon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="facebookIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -370,6 +389,12 @@ fPlayer está bajo los términos de la GNU General Public License, versión 3.</
         AElFTkSuQmCC
 </value>
   </data>
+  <data name="facebookIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="twitterIcon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="twitterIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGkAAABDCAYAAACftStqAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -520,6 +545,12 @@ fPlayer está bajo los términos de la GNU General Public License, versión 3.</
         uJOGO22ZCjcDWiriPXz8PKAQJNPkEARjDj8o3ri8B/941UMZzmaNJ7Kdn4zjH7niH7viH726DIYflK4h
         1v8DdArs1kbLGAkAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="twitterIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 46</value>
+  </data>
+  <data name="webIcon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="webIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="foldersinlibraryheader.Text" xml:space="preserve">
+    <value>Carpetas en la biblioteca:</value>
+  </data>
+  <data name="okbutton.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="addButton.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="removeButton.Text" xml:space="preserve">
+    <value>Quitar</value>
+  </data>
+  <data name="folderBrowserDialog.Description" xml:space="preserve">
+    <value>Escoger carpeta</value>
+  </data>
 </root>

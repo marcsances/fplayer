@@ -332,6 +332,7 @@ namespace fPlayer_2
             // 
             // mainSidebar
             // 
+            resources.ApplyResources(this.mainSidebar, "mainSidebar");
             this.mainSidebar.BackColor = System.Drawing.Color.Teal;
             this.mainSidebar.Controls.Add(this.libraryPanel);
             this.mainSidebar.Controls.Add(this.aboutPanel);
@@ -341,7 +342,6 @@ namespace fPlayer_2
             this.mainSidebar.Controls.Add(this.artistsPanel);
             this.mainSidebar.Controls.Add(this.songsPanel);
             this.mainSidebar.Controls.Add(this.searchBox);
-            resources.ApplyResources(this.mainSidebar, "mainSidebar");
             this.mainSidebar.Name = "mainSidebar";
             // 
             // libraryPanel
@@ -350,18 +350,21 @@ namespace fPlayer_2
             this.libraryPanel.Controls.Add(this.libraryIcon);
             this.libraryPanel.Controls.Add(this.libraryLabel);
             this.libraryPanel.Name = "libraryPanel";
+            this.libraryPanel.Click += new System.EventHandler(this.libraryPanel_Click);
             // 
             // libraryIcon
             // 
             resources.ApplyResources(this.libraryIcon, "libraryIcon");
             this.libraryIcon.Name = "libraryIcon";
             this.libraryIcon.TabStop = false;
+            this.libraryIcon.Click += new System.EventHandler(this.libraryIcon_Click);
             // 
             // libraryLabel
             // 
             resources.ApplyResources(this.libraryLabel, "libraryLabel");
             this.libraryLabel.ForeColor = System.Drawing.Color.White;
             this.libraryLabel.Name = "libraryLabel";
+            this.libraryLabel.Click += new System.EventHandler(this.libraryLabel_Click);
             // 
             // aboutPanel
             // 
@@ -369,18 +372,21 @@ namespace fPlayer_2
             this.aboutPanel.Controls.Add(this.aboutIcon);
             this.aboutPanel.Controls.Add(this.aboutLabel);
             this.aboutPanel.Name = "aboutPanel";
+            this.aboutPanel.Click += new System.EventHandler(this.aboutPanel_Click);
             // 
             // aboutIcon
             // 
             resources.ApplyResources(this.aboutIcon, "aboutIcon");
             this.aboutIcon.Name = "aboutIcon";
             this.aboutIcon.TabStop = false;
+            this.aboutIcon.Click += new System.EventHandler(this.aboutIcon_Click);
             // 
             // aboutLabel
             // 
             resources.ApplyResources(this.aboutLabel, "aboutLabel");
             this.aboutLabel.ForeColor = System.Drawing.Color.White;
             this.aboutLabel.Name = "aboutLabel";
+            this.aboutLabel.Click += new System.EventHandler(this.aboutLabel_Click);
             // 
             // nowplayingPanel
             // 
@@ -388,18 +394,21 @@ namespace fPlayer_2
             this.nowplayingPanel.Controls.Add(this.nowplayingIcon);
             this.nowplayingPanel.Controls.Add(this.nowplayingLabel);
             this.nowplayingPanel.Name = "nowplayingPanel";
+            this.nowplayingPanel.Click += new System.EventHandler(this.nowplayingPanel_Click);
             // 
             // nowplayingIcon
             // 
             resources.ApplyResources(this.nowplayingIcon, "nowplayingIcon");
             this.nowplayingIcon.Name = "nowplayingIcon";
             this.nowplayingIcon.TabStop = false;
+            this.nowplayingIcon.Click += new System.EventHandler(this.nowplayingIcon_Click);
             // 
             // nowplayingLabel
             // 
             resources.ApplyResources(this.nowplayingLabel, "nowplayingLabel");
             this.nowplayingLabel.ForeColor = System.Drawing.Color.White;
             this.nowplayingLabel.Name = "nowplayingLabel";
+            this.nowplayingLabel.Click += new System.EventHandler(this.nowplayingLabel_Click);
             // 
             // playlistsPanel
             // 
@@ -407,18 +416,21 @@ namespace fPlayer_2
             this.playlistsPanel.Controls.Add(this.playlistsIcon);
             this.playlistsPanel.Controls.Add(this.playlistsLabel);
             this.playlistsPanel.Name = "playlistsPanel";
+            this.playlistsPanel.Click += new System.EventHandler(this.playlistsPanel_Click);
             // 
             // playlistsIcon
             // 
             resources.ApplyResources(this.playlistsIcon, "playlistsIcon");
             this.playlistsIcon.Name = "playlistsIcon";
             this.playlistsIcon.TabStop = false;
+            this.playlistsIcon.Click += new System.EventHandler(this.playlistsIcon_Click);
             // 
             // playlistsLabel
             // 
             resources.ApplyResources(this.playlistsLabel, "playlistsLabel");
             this.playlistsLabel.ForeColor = System.Drawing.Color.White;
             this.playlistsLabel.Name = "playlistsLabel";
+            this.playlistsLabel.Click += new System.EventHandler(this.playlistsLabel_Click);
             // 
             // albumsPanel
             // 
@@ -426,18 +438,21 @@ namespace fPlayer_2
             this.albumsPanel.Controls.Add(this.albumsIcon);
             this.albumsPanel.Controls.Add(this.albumsLabel);
             this.albumsPanel.Name = "albumsPanel";
+            this.albumsPanel.Click += new System.EventHandler(this.albumsPanel_Click);
             // 
             // albumsIcon
             // 
             resources.ApplyResources(this.albumsIcon, "albumsIcon");
             this.albumsIcon.Name = "albumsIcon";
             this.albumsIcon.TabStop = false;
+            this.albumsIcon.Click += new System.EventHandler(this.albumsIcon_Click);
             // 
             // albumsLabel
             // 
             resources.ApplyResources(this.albumsLabel, "albumsLabel");
             this.albumsLabel.ForeColor = System.Drawing.Color.White;
             this.albumsLabel.Name = "albumsLabel";
+            this.albumsLabel.Click += new System.EventHandler(this.albumsLabel_Click);
             // 
             // artistsPanel
             // 
@@ -445,18 +460,21 @@ namespace fPlayer_2
             this.artistsPanel.Controls.Add(this.artistsIcon);
             this.artistsPanel.Controls.Add(this.artistsLabel);
             this.artistsPanel.Name = "artistsPanel";
+            this.artistsPanel.Click += new System.EventHandler(this.artistsPanel_Click);
             // 
             // artistsIcon
             // 
             resources.ApplyResources(this.artistsIcon, "artistsIcon");
             this.artistsIcon.Name = "artistsIcon";
             this.artistsIcon.TabStop = false;
+            this.artistsIcon.Click += new System.EventHandler(this.artistsIcon_Click);
             // 
             // artistsLabel
             // 
             resources.ApplyResources(this.artistsLabel, "artistsLabel");
             this.artistsLabel.ForeColor = System.Drawing.Color.White;
             this.artistsLabel.Name = "artistsLabel";
+            this.artistsLabel.Click += new System.EventHandler(this.artistsLabel_Click);
             // 
             // songsPanel
             // 
@@ -465,18 +483,21 @@ namespace fPlayer_2
             this.songsPanel.Controls.Add(this.songsIcon);
             this.songsPanel.Controls.Add(this.songsLabel);
             this.songsPanel.Name = "songsPanel";
+            this.songsPanel.Click += new System.EventHandler(this.songsPanel_Click);
             // 
             // songsIcon
             // 
             resources.ApplyResources(this.songsIcon, "songsIcon");
             this.songsIcon.Name = "songsIcon";
             this.songsIcon.TabStop = false;
+            this.songsIcon.Click += new System.EventHandler(this.songsIcon_Click);
             // 
             // songsLabel
             // 
             resources.ApplyResources(this.songsLabel, "songsLabel");
             this.songsLabel.ForeColor = System.Drawing.Color.White;
             this.songsLabel.Name = "songsLabel";
+            this.songsLabel.Click += new System.EventHandler(this.songsLabel_Click);
             // 
             // searchBox
             // 
@@ -484,6 +505,7 @@ namespace fPlayer_2
             this.searchBox.ForeColor = System.Drawing.Color.Gray;
             this.searchBox.Name = "searchBox";
             this.searchBox.TabStop = false;
+            this.searchBox.Tag = "search";
             this.searchBox.Click += new System.EventHandler(this.SearchBoxClick);
             this.searchBox.Enter += new System.EventHandler(this.SearchBoxEnter);
             this.searchBox.Leave += new System.EventHandler(this.SearchBoxLeave);
@@ -531,6 +553,7 @@ namespace fPlayer_2
             this.Controls.Add(this.titlePanel);
             this.Controls.Add(this.bottomPanel);
             this.Name = "Player";
+            this.Load += new System.EventHandler(this.Player_Load);
             this.bottomPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repeatButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).EndInit();

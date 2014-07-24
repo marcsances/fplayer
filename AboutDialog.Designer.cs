@@ -78,25 +78,34 @@
             // 
             resources.ApplyResources(this.facebookIcon, "facebookIcon");
             this.facebookIcon.BackColor = System.Drawing.Color.Transparent;
+            this.facebookIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.facebookIcon.Name = "facebookIcon";
             this.facebookIcon.TabStop = false;
             this.facebookIcon.Click += new System.EventHandler(this.facebookIcon_Click);
+            this.facebookIcon.MouseEnter += new System.EventHandler(this.facebookIcon_MouseEnter);
+            this.facebookIcon.MouseLeave += new System.EventHandler(this.facebookIcon_MouseLeave);
             // 
             // twitterIcon
             // 
             resources.ApplyResources(this.twitterIcon, "twitterIcon");
             this.twitterIcon.BackColor = System.Drawing.Color.Transparent;
+            this.twitterIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.twitterIcon.Name = "twitterIcon";
             this.twitterIcon.TabStop = false;
             this.twitterIcon.Click += new System.EventHandler(this.twitterIcon_Click);
+            this.twitterIcon.MouseEnter += new System.EventHandler(this.twitterIcon_MouseEnter);
+            this.twitterIcon.MouseLeave += new System.EventHandler(this.twitterIcon_MouseLeave);
             // 
             // webIcon
             // 
             resources.ApplyResources(this.webIcon, "webIcon");
             this.webIcon.BackColor = System.Drawing.Color.Transparent;
+            this.webIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.webIcon.Name = "webIcon";
             this.webIcon.TabStop = false;
             this.webIcon.Click += new System.EventHandler(this.webIcon_Click);
+            this.webIcon.MouseEnter += new System.EventHandler(this.webIcon_MouseEnter);
+            this.webIcon.MouseLeave += new System.EventHandler(this.webIcon_MouseLeave);
             // 
             // AboutDialog
             // 

@@ -37,5 +37,35 @@ namespace fPlayer_2
             apiimplver.Text = apiimplver.Text.Replace("%a", libap.libAP.LIBAP_API_VER.ToString()).Replace("%imp", libap.libAP.LIBAP_API_IMPL.ToString());
             copyInfo.Text = copyInfo.Text + "\r\n" + libap.libAP.getLicenseInfo();
         }
+
+        private void facebookIcon_MouseEnter(object sender, EventArgs e)
+        {
+            facebookIcon.BackColor = Color.LightGray;
+        }
+
+        private void facebookIcon_MouseLeave(object sender, EventArgs e)
+        {
+            facebookIcon.BackColor = Color.White;
+        }
+
+        private void twitterIcon_MouseEnter(object sender, EventArgs e)
+        {
+            twitterIcon.BackColor = Color.LightGray;
+        }
+
+        private void twitterIcon_MouseLeave(object sender, EventArgs e)
+        {
+            twitterIcon.BackColor = Color.White;
+        }
+
+        private void webIcon_MouseEnter(object sender, EventArgs e)
+        {
+            webIcon.BackColor = Color.LightGray;
+        }
+
+        private void webIcon_MouseLeave(object sender, EventArgs e)
+        {
+            webIcon.BackColor = Color.White;
+        }
     }
 }

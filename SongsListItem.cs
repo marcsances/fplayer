@@ -28,31 +28,6 @@ namespace fPlayer_2
         SelectionMode lastmode = SelectionMode.MODE_UNFOCUSED;
         private void SongsListItem_Paint(object sender, PaintEventArgs e)
         {
-            SelectionMode newmode=getSelectionMode(this);
-            if (lastmode != newmode)
-            {
-                switch (newmode)
-                {
-                    case SelectionMode.MODE_ACTIVE:
-                        this.BackColor = Color.Black;
-                        this.ForeColor = Color.White;
-                        break;
-                    case SelectionMode.MODE_FOCUSED:
-                        this.BackColor = Color.LightGray;
-                        this.ForeColor = Color.Black;
-                        break;
-                    case SelectionMode.MODE_UNFOCUSED:
-                        this.BackColor = Color.White;
-                        this.ForeColor = Color.Black;
-                        break;
-                    case SelectionMode.MODE_SELECTED:
-                        this.BackColor = Color.Teal;
-                        this.ForeColor = Color.White;
-                        break;
-                }
-                lastmode = newmode;
-            }
-            
         }
 
         enum SelectionMode
@@ -67,6 +42,7 @@ namespace fPlayer_2
 
         private SelectionMode getSelectionMode(Control c)
         {
+            if (parentList == null) return SelectionMode.MODE_UNFOCUSED;
             if (Convert.ToInt32(this.parentList.Tag.ToString().Split(',').Contains(index.ToString()))==this.index)
             {
                 return SelectionMode.MODE_SELECTED;
@@ -131,6 +107,36 @@ namespace fPlayer_2
             this.songTitle.Text = title;
             this.songInfo.Text = info;
             this.songLength.Text = length;
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+
+            SelectionMode newmode = getSelectionMode(this);
+            if (lastmode != newmode)
+            {
+                switch (newmode)
+                {
+                    case SelectionMode.MODE_ACTIVE:
+                        this.BackColor = Color.Black;
+                        this.ForeColor = Color.White;
+                        break;
+                    case SelectionMode.MODE_FOCUSED:
+                        this.BackColor = Color.LightGray;
+                        this.ForeColor = Color.Black;
+                        break;
+                    case SelectionMode.MODE_UNFOCUSED:
+                        this.BackColor = Color.White;
+                        this.ForeColor = Color.Black;
+                        break;
+                    case SelectionMode.MODE_SELECTED:
+                        this.BackColor = Color.Teal;
+                        this.ForeColor = Color.White;
+                        break;
+                }
+                lastmode = newmode;
+            }
+            
         }
 
     }

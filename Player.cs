@@ -9,8 +9,10 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-
+using System.Collections.Generic;
+using System.IO;
+using libap;
+using System.Threading;
 namespace fPlayer_2
 {
 	/// <summary>
@@ -18,19 +20,34 @@ namespace fPlayer_2
 	/// </summary>
 	public partial class Player : Form
 	{
+        public static string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\fPlayer\\2.1\\";
 		private bool isMaximized=false;
 		private int tabFocused=0;
+        public List<AudioFile> songs;
+        public List<string> playlists;
+        public List<Control> items;
+        int count = 0;
 		public Player()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+            this.mainPane.MouseWheel += new MouseEventHandler(WheelHandler);
 		}
+        public splash s;
+
+        public void WheelHandler(object sender, MouseEventArgs e)
+        {
+            mainPane.AutoScrollPosition = new Point(mainPane.AutoScrollPosition.X, mainPane.AutoScrollPosition.Y + (5 * e.Delta));
+        }
+        public void ThreadRoutine()
+        {
+            
+            
+            
+        }
+
 		void CloseBoxClick(object sender, EventArgs e)
 		{
 			this.Close();
@@ -185,12 +202,39 @@ namespace fPlayer_2
 		void maximize() {
 			oldpos=Location;
 			oldsize=Size;
+            contentPane.Controls.Clear();
 			this.Top = 0;
 			this.Left = 0;
 			this.Height = Screen.PrimaryScreen.WorkingArea.Height;
 			this.Width = Screen.PrimaryScreen.WorkingArea.Width;
 			isMaximized=true;
 			maximizeBox.Text="2";
+            Update();
+            switch (tabFocused)
+            {
+                case 0:
+                    songsIcon_Click(this, new EventArgs());
+                    break;
+                case 1:
+                    artistsIcon_Click(this, new EventArgs());
+                    break;
+                case 2:
+                    albumsIcon_Click(this, new EventArgs());
+                    break;
+                case 3:
+                    playlistsIcon_Click(this, new EventArgs());
+                    break;
+                case 4:
+                    nowplayingIcon_Click(this, new EventArgs());
+                    break;
+                case 5:
+                    libraryIcon_Click(this, new EventArgs());
+                    break;
+                case 6:
+                    aboutIcon_Click(this, new EventArgs());
+                    break;
+                    
+            }
 		}
 		
 		void restorestate() {
@@ -213,7 +257,7 @@ namespace fPlayer_2
 			if (searchBox.Text=="") {
 				searchBox.ForeColor=Color.Gray;
 				searchBox.Font=new Font(searchBox.Font,FontStyle.Italic);
-                searchBox.Text = Properties.Resources.string_search;
+                searchBox.Text = searchBox.Tag.ToString();
 			}
 		}
 		void SearchBoxClick(object sender, EventArgs e)
@@ -233,7 +277,7 @@ namespace fPlayer_2
 
         private void focusController_Tick(object sender, EventArgs e)
         {
-            Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, aboutPanel, libraryPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
+            Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
             for (int i = 0; i < focusableControls.Length; i++ )
             {
                 Control c = focusableControls[i];
@@ -248,6 +292,10 @@ namespace fPlayer_2
                 else if (isMouseOver(c) && Control.MouseButtons == MouseButtons.Left)
                 {
                     doHover(c);
+                }
+                else if (c.BackColor == Color.FromArgb(0, 64, 64) && i != tabFocused)
+                {
+                    c.BackColor = Color.Teal;
                 }
             }
             
@@ -302,6 +350,270 @@ namespace fPlayer_2
         private void doHover(Control c)
         {
             if (c.Tag == null || c.Tag.ToString() != "B") { c.BackColor = Color.FromArgb(0, 32, 32); } else c.BackColor = Color.LightGray;
+        }
+
+        private void aboutLabel_Click(object sender, EventArgs e)
+        {
+            AboutDialog ab = new AboutDialog();
+            //  not working correctly: ab.Size = new Size(this.contentPaneTitle.Width, this.Height - this.titlePanel.Height - this.contentPaneTitle.Height - this.bottomPanel.Height - 30);
+            contentPane.Controls.Clear();
+            contentPane.Controls.Add(ab);
+            contentPaneTitle.Text = aboutLabel.Text;
+            tabFocused = 6;
+        }
+
+        private void aboutIcon_Click(object sender, EventArgs e)
+        {
+            aboutLabel_Click(sender, e);
+        }
+
+        private void aboutPanel_Click(object sender, EventArgs e)
+        {
+            aboutLabel_Click(sender, e);
+        }
+
+        private void songsLabel_Click(object sender, EventArgs e)
+        {
+            contentPaneTitle.Text = songsLabel.Text;
+            contentPane.Controls.Clear();
+            tabFocused = 0;
+            loadSongsList();
+        }
+
+        private void songsIcon_Click(object sender, EventArgs e)
+        {
+            songsLabel_Click(sender, e);
+        }
+
+        private void songsPanel_Click(object sender, EventArgs e)
+        {
+            songsLabel_Click(sender, e);
+        }
+
+        private void artistsLabel_Click(object sender, EventArgs e)
+        {
+            contentPaneTitle.Text = artistsLabel.Text;
+            contentPane.Controls.Clear();
+            loadArtistsList();
+            tabFocused = 1;
+        }
+
+        private void artistsIcon_Click(object sender, EventArgs e)
+        {
+            artistsLabel_Click(sender, e);
+        }
+
+        private void artistsPanel_Click(object sender, EventArgs e)
+        {
+            artistsLabel_Click(sender, e);
+        }
+
+        private void albumsLabel_Click(object sender, EventArgs e)
+        {
+            contentPaneTitle.Text = albumsLabel.Text;
+            contentPane.Controls.Clear();
+            loadAlbumsList();
+            tabFocused = 2;
+        }
+
+        private void albumsIcon_Click(object sender, EventArgs e)
+        {
+            albumsLabel_Click(sender, e);
+        }
+
+        private void albumsPanel_Click(object sender, EventArgs e)
+        {
+            albumsLabel_Click(sender, e);
+        }
+
+        private void playlistsLabel_Click(object sender, EventArgs e)
+        {
+            contentPaneTitle.Text = playlistsLabel.Text;
+            contentPane.Controls.Clear();
+            loadPlaylistsList();
+            tabFocused = 3;
+        }
+
+        private void playlistsIcon_Click(object sender, EventArgs e)
+        {
+            playlistsLabel_Click(sender, e);
+        }
+
+        private void playlistsPanel_Click(object sender, EventArgs e)
+        {
+            playlistsLabel_Click(sender, e);
+        }
+
+        private void nowplayingLabel_Click(object sender, EventArgs e)
+        {
+            contentPaneTitle.Text = nowplayingLabel.Text;
+            contentPane.Controls.Clear();
+            // TODO: populate content
+            tabFocused = 4;
+        }
+
+        private void nowplayingIcon_Click(object sender, EventArgs e)
+        {
+            nowplayingLabel_Click(sender, e);
+        }
+
+        private void nowplayingPanel_Click(object sender, EventArgs e)
+        {
+            nowplayingLabel_Click(sender, e);
+        }
+
+        private void libraryLabel_Click(object sender, EventArgs e)
+        {
+            libraryEditor le = new libraryEditor();
+            // not working correctly: le.Size = new Size(this.contentPaneTitle.Width, this.Height - this.titlePanel.Height - this.contentPaneTitle.Height - this.bottomPanel.Height - 30);
+            contentPaneTitle.Text = libraryLabel.Text;
+            contentPane.Controls.Clear();
+            contentPane.Controls.Add(new libraryEditor());
+            tabFocused = 5;
+        }
+
+        private void libraryIcon_Click(object sender, EventArgs e)
+        {
+            libraryLabel_Click(sender, e);
+        }
+
+        private void libraryPanel_Click(object sender, EventArgs e)
+        {
+            libraryLabel_Click(sender, e);
+        }
+
+
+        public void loadSongsList()
+        {
+            contentPane.Controls.Clear();
+            contentPane.Controls.AddRange(items.ToArray());
+        }
+
+        public void loadSongsList(splash s)
+        {
+            items = new List<Control>();
+            contentPane.Tag = "0";
+            foreach (AudioFile f in songs)
+            {
+                
+                SongsListItem sli = new SongsListItem();
+                sli.setData(f.ID3Information.Title, f.ID3Information.Artist + " / " + f.ID3Information.Album, getSongLength(f.FileName));
+                sli.Dock = DockStyle.Top;
+                sli.parentList = contentPane;
+                sli.Tag = f.FileName;
+                sli.OnMenuRequest += new EventHandler(OnMenuRequest);
+                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
+                
+                items.Add(sli);
+                count++;
+                s.curTask.Text = getStr(s.curTask.Tag.ToString(), 1) + " (" + count + ")";
+                s.Update();
+            }
+        }
+
+        public void loadSystemData()
+        {
+            s = new splash();
+            s.Show();
+            s.Update();
+            songs = new List<AudioFile>();
+            playlists = new List<string>();
+            s.curTask.Text = getStr(s.curTask.Tag.ToString(), 0);
+            s.Update();
+            retrieveSongs(s);
+            songs.Sort();
+            s.curTask.Text = getStr(s.curTask.Tag.ToString(), 1);
+            s.Update();
+            count = 0;
+            loadSongsList(s);
+            s.curTask.Text = getStr(s.curTask.Tag.ToString(), 2);
+            loadSongsList();
+            s.Update();
+            s.Close();
+
+        }
+
+        public string getStr(string str, int pos)
+        {
+            return str.Split('!')[pos];
+        }
+
+        public void retrieveSongs(splash s)
+        {
+            if (!localDataFolderExists())
+            {
+                Directory.CreateDirectory(AppFolder);
+            }
+            if (File.Exists(AppFolder + "\\library.lib"))
+            {
+                foreach (string k in File.ReadAllText(AppFolder + "\\library.lib").Replace("\r", "").Split('\n'))
+                {
+                    if (k != "" && Directory.Exists(k))
+                    {
+                        retrieveDir(k, s);
+                    }
+                }
+            }
+        }
+
+        public void add(string k, splash s, int i)
+        {
+            songs.Add(new AudioFile(k));
+            count++;
+            s.curTask.Text = getStr(s.curTask.Tag.ToString(), i) + " (" + count + ")";
+            s.Update();
+        }
+
+        public void retrieveDir(string dir, splash s)
+        {
+            string exts = "*.mp3;*.flac;*.wav;*.ogg";
+            foreach (string st in exts.Split(';'))
+            {
+                foreach (string k in Directory.GetFiles(dir, st, SearchOption.AllDirectories))
+                {
+                    add(k, s, 0);
+                }
+            }
+        }
+
+        public bool localDataFolderExists()
+        {
+            return Directory.Exists(Application.LocalUserAppDataPath + "\\MSS Software & Services\\fPlayer\\2.1\\");
+        }
+
+        public void OnPlaySelected(object sender, EventArgs e)
+        {
+
+        }
+
+        public void OnMenuRequest(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public string getSongLength(string filename)
+        {
+            return "";
+        }
+
+        public void loadArtistsList() {
+
+        }
+
+        public void loadAlbumsList()
+        {
+
+        }
+
+        public void loadPlaylistsList()
+        {
+
+        }
+
+        private void Player_Load(object sender, EventArgs e)
+        {
+            loadSystemData();
         }
 
        

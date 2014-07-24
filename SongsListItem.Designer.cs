@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SongsListItem));
             this.songTitle = new System.Windows.Forms.Label();
             this.songInfo = new System.Windows.Forms.Label();
             this.songLength = new System.Windows.Forms.Label();
             this.menuButton = new System.Windows.Forms.PictureBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +92,12 @@
             this.menuButton.Tag = "B";
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 1;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // SongsListItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
@@ -117,5 +125,6 @@
         private System.Windows.Forms.Label songInfo;
         private System.Windows.Forms.Label songLength;
         private System.Windows.Forms.PictureBox menuButton;
+        private System.Windows.Forms.Timer timer;
     }
 }

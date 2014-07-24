@@ -56,6 +56,12 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="libraryEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="libraryEditor.Designer.cs">
+      <DependentUpon>libraryEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     <Compile Include="SongsListItem.Designer.cs">
       <DependentUpon>SongsListItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -90,6 +102,15 @@
     <EmbeddedResource Include="AboutDialog.resx">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="libraryEditor.ca.resx">
+      <DependentUpon>libraryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libraryEditor.es.resx">
+      <DependentUpon>libraryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libraryEditor.resx">
+      <DependentUpon>libraryEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Player.resx">
       <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +120,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SongsListItem.resx">
       <DependentUpon>SongsListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.ca-ES.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.ca.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.es.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

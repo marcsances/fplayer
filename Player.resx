@@ -1113,6 +1113,9 @@
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
     <value>Close</value>
   </data>
+  <data name="mainSidebar.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
     <value>libraryPanel</value>
   </data>
@@ -2114,59 +2117,8 @@
   <data name="mainPane.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;contentPane.Name" xml:space="preserve">
-    <value>contentPane</value>
-  </data>
-  <data name="&gt;&gt;contentPane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contentPane.Parent" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;contentPane.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Name" xml:space="preserve">
-    <value>contentPaneTitle</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mainPane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="mainPane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 39</value>
-  </data>
-  <data name="mainPane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 497</value>
-  </data>
-  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Name" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="contentPane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
-  </data>
-  <data name="contentPane.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="contentPane.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2227,6 +2179,30 @@
   </data>
   <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="mainPane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainPane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 39</value>
+  </data>
+  <data name="mainPane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 497</value>
+  </data>
+  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Name" xml:space="preserve">
+    <value>mainPane</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="focusMisser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

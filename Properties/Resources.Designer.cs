@@ -59,14 +59,5 @@ namespace fPlayer_2.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a search.
-        /// </summary>
-        internal static string string_search {
-            get {
-                return ResourceManager.GetString("string_search", resourceCulture);
-            }
-        }
     }
 }
