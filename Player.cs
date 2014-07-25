@@ -186,7 +186,7 @@ namespace fPlayer_2
 		
 		protected override void WndProc(ref Message m)
 		{
-			if (m.Msg == 0x0313)
+			if (m.Msg == 0x0313 && (Environment.OSVersion.Version.Major<6 || Environment.OSVersion.Version.Minor==0))
 			{
 				int contMenuX = Cursor.Position.X - this.Location.X;
 				int contMenuY = Cursor.Position.Y - this.Location.Y;
@@ -465,6 +465,7 @@ namespace fPlayer_2
 
         public void loadNowPlaying()
         {
+            contentPane.Tag = "-1";
             loadStackList();
             npo.Dock = DockStyle.Top;
             contentPane.Controls.Add(npo);
