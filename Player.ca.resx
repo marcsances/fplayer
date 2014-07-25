@@ -401,13 +401,13 @@
     <value>Afegeix a cua</value>
   </data>
   <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>101, 22</value>
   </data>
   <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Nova</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
+    <value>98, 6</value>
   </data>
   <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 22</value>
@@ -1429,5 +1429,8 @@
         EAAAIAAAQAAAgAAAAAEAAAIAAAQAAAgAABAAACAAAEAAAIAAAAABAAACAAAEAAAIAAAQAAAgAACI4n8O
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>
