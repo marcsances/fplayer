@@ -22,6 +22,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace fPlayer_2
 {
@@ -49,7 +50,7 @@ namespace fPlayer_2
 
         private void AboutDialog_Load(object sender, EventArgs e)
         {
-            appVer.Text = appVer.Text.Replace("%v", Application.ProductVersion);
+            appVer.Text = appVer.Text.Replace("%v", Assembly.GetEntryAssembly().GetName().Version.ToString());
             apiimplver.Text = apiimplver.Text.Replace("%a", libap.libAP.LIBAP_API_VER.ToString()).Replace("%imp", libap.libAP.LIBAP_API_IMPL.ToString());
             copyInfo.Text = copyInfo.Text + "\r\n" + libap.libAP.getLicenseInfo();
         }

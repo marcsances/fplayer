@@ -385,13 +385,13 @@
     <value>Cançons</value>
   </data>
   <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
+    <value>127, 22</value>
   </data>
   <data name="playToolStripMenuItem.Text" xml:space="preserve">
     <value>Reprodueix</value>
   </data>
   <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
+    <value>127, 22</value>
   </data>
   <data name="stackToolStripMenuItem.Text" xml:space="preserve">
     <value>Afegeix a cua</value>
@@ -406,13 +406,13 @@
     <value>98, 6</value>
   </data>
   <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
+    <value>127, 22</value>
   </data>
   <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Afegeix a llista</value>
   </data>
   <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 70</value>
+    <value>128, 92</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1425,8 +1425,5 @@
         EAAAIAAAQAAAgAAAAAEAAAIAAAQAAAgAABAAACAAAEAAAIAAAAABAAACAAAEAAAIAAAQAAAgAACI4n8O
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

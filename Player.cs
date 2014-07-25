@@ -40,6 +40,7 @@ namespace fPlayer_2
         int count = 0;
         public bool playglyph = false;
         public nowPlayingOverlay npo = new nowPlayingOverlay();
+
 		public Player()
 		{
 			//
@@ -52,7 +53,7 @@ namespace fPlayer_2
 
         public void WheelHandler(object sender, MouseEventArgs e)
         {
-            mainPane.AutoScrollOffset = new Point(mainPane.AutoScrollOffset.X, mainPane.AutoScrollOffset.Y + (5 * e.Delta));
+            mainPane.AutoScrollOffset = new Point(mainPane.AutoScrollOffset.X, mainPane.AutoScrollOffset.Y + 5 * e.Delta);
         }
       
 		void CloseBoxClick(object sender, EventArgs e)
@@ -290,6 +291,7 @@ namespace fPlayer_2
 
         private void focusController_Tick(object sender, EventArgs e)
         {
+          
             if (this.isactive)
             {
                 Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
@@ -1051,6 +1053,7 @@ namespace fPlayer_2
 
         private void playbackTimer_Tick(object sender, EventArgs e)
         {
+            
             if (gI() != null)
             {
                 UpdateInfo();

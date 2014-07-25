@@ -39,7 +39,7 @@ namespace fPlayer_2
 
         private bool isMouseOver(Control c)
         {
-            return c.ClientRectangle.Contains(c.PointToClient(Cursor.Position)) && !isMouseOver(parent.bottomPanel,true);
+            return c.ClientRectangle.Contains(c.PointToClient(Cursor.Position)) && !isMouseOver(parent.bottomPanel,true) && !parent.songMenu.Visible;
         }
 
         private bool isMouseOver(Control c, bool overrides)
