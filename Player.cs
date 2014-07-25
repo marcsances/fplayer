@@ -724,6 +724,36 @@ namespace fPlayer_2
         }
 
         public void loadArtistsList() {
+            contentPane.Tag = "-1";
+            List<ArtistItem> queriedartists = new List<ArtistItem>();
+            int r = 0;
+            foreach (AudioFile k in songs)
+            {
+                bool found = false;
+                for (int i = 0; i < queriedartists.Count && !found; i++)
+                {
+                    if (k.ID3Information.Artist == queriedartists[i].getArtistName())
+                    {
+                        found = true;
+                    }
+                }
+
+                if (!found)
+                {
+                    ArtistItem a = new ArtistItem();
+                    a.setData(k.ID3Information.Artist);
+                    a.Dock = DockStyle.Top;
+                    a.parentList = contentPane;
+                    a.parent = this;
+
+                    a.index = r;
+                    r++;
+                    queriedartists.Add(a);
+                }
+            }
+            queriedartists.Sort();
+            queriedartists.Reverse();
+            contentPane.Controls.AddRange(queriedartists.ToArray());
 
         }
 
@@ -776,7 +806,21 @@ namespace fPlayer_2
 
         public void loadPlaylistsList()
         {
-
+            List<ArtistItem> queriedLists = new List<ArtistItem>();
+            int r = 0;
+            foreach (string k in Directory.GetFiles(AppFolder,"*.m3u")) {
+            ArtistItem a = new ArtistItem();
+                    a.setData(libAP.basename(k));
+                    a.Dock = DockStyle.Top;
+                    a.parentList = contentPane;
+                    a.parent = this;
+                    a.Tag = k;
+                    a.index = r;
+                    r++;
+                    queriedLists.Add(a);
+            }
+            queriedLists.Sort();
+            contentPane.Controls.AddRange(queriedLists.ToArray());
         }
 
         private void Player_Load(object sender, EventArgs e)

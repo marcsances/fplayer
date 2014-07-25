@@ -76,6 +76,12 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArtistItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArtistItem.Designer.cs">
+      <DependentUpon>ArtistItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="LabelThatDoesntCopyText.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AboutDialog.resx">
       <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistItem.resx">
+      <DependentUpon>ArtistItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="libraryEditor.ca.resx">
       <DependentUpon>libraryEditor.cs</DependentUpon>
