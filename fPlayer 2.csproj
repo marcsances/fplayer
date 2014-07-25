@@ -73,6 +73,9 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="LabelThatDoesntCopyText.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="libraryEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
