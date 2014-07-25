@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.songArtist = new System.Windows.Forms.Label();
-            this.songAlbum = new System.Windows.Forms.Label();
-            this.songtitle = new System.Windows.Forms.Label();
+            this.songArtist = new Label2();
+            this.songAlbum = new Label2();
+            this.songtitle = new Label2();
             this.SuspendLayout();
             // 
             // songArtist
@@ -90,8 +90,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label songArtist;
-        private System.Windows.Forms.Label songAlbum;
-        private System.Windows.Forms.Label songtitle;
+        private Label2 songArtist;
+        private Label2 songAlbum;
+        private Label2 songtitle;
     }
 }

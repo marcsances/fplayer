@@ -70,7 +70,7 @@ namespace fPlayer_2
             Player p = getParentPlayer();
             if (p != null)
             {
-                p.songsLabel_Click(p, e);
+                p.songsLabel2_Click(p, e);
             }
         }
 

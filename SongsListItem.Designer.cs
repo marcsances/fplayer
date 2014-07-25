@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SongsListItem));
-            this.songTitle = new System.Windows.Forms.Label();
-            this.songInfo = new System.Windows.Forms.Label();
-            this.songLength = new System.Windows.Forms.Label();
+            this.songTitle = new Label2();
+            this.songInfo = new Label2();
+            this.songLength = new Label2();
             this.menuButton = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -127,9 +127,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label songTitle;
-        private System.Windows.Forms.Label songInfo;
-        private System.Windows.Forms.Label songLength;
+        private Label2 songTitle;
+        private Label2 songInfo;
+        private Label2 songLength;
         private System.Windows.Forms.Timer timer;
         public System.Windows.Forms.PictureBox menuButton;
     }

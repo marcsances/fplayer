@@ -133,7 +133,7 @@
     <value>136, 3</value>
   </data>
   <data name="&gt;&gt;appName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;appName.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -389,7 +389,7 @@
     <value>Open Sans, 12pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;appVer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="copyInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -683,7 +683,7 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
     <value>twitterIcon</value>
   </data>
   <data name="&gt;&gt;apiimplver.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="appVer.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 32</value>
@@ -710,7 +710,7 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
     <value>webIcon</value>
   </data>
   <data name="&gt;&gt;copyInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;appVer.ZOrder" xml:space="preserve">
     <value>5</value>

@@ -45,12 +45,12 @@ namespace fPlayer_2
             this.nextButton = new System.Windows.Forms.PictureBox();
             this.playPauseButton = new System.Windows.Forms.PictureBox();
             this.previousButton = new System.Windows.Forms.PictureBox();
-            this.tracklength = new System.Windows.Forms.Label();
-            this.trackpos = new System.Windows.Forms.Label();
+            this.tracklength = new Label2();
+            this.trackpos = new Label2();
             this.trackbarProgress = new System.Windows.Forms.Panel();
             this.trackbarBack = new System.Windows.Forms.Panel();
-            this.songinfo = new System.Windows.Forms.Label();
-            this.songname = new System.Windows.Forms.Label();
+            this.songinfo = new Label2();
+            this.songname = new Label2();
             this.songalbum = new System.Windows.Forms.PictureBox();
             this.titlePanel = new System.Windows.Forms.Panel();
             this.windowContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -59,37 +59,37 @@ namespace fPlayer_2
             this.maximizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeBox = new System.Windows.Forms.Label();
-            this.maximizeBox = new System.Windows.Forms.Label();
-            this.minimizeBox = new System.Windows.Forms.Label();
+            this.closeBox = new Label2();
+            this.maximizeBox = new Label2();
+            this.minimizeBox = new Label2();
             this.appIcon = new System.Windows.Forms.PictureBox();
-            this.appTitle = new System.Windows.Forms.Label();
+            this.appTitle = new Label2();
             this.mainSidebar = new System.Windows.Forms.Panel();
             this.libraryPanel = new System.Windows.Forms.Panel();
             this.libraryIcon = new System.Windows.Forms.PictureBox();
-            this.libraryLabel = new System.Windows.Forms.Label();
+            this.libraryLabel2 = new Label2();
             this.aboutPanel = new System.Windows.Forms.Panel();
             this.aboutIcon = new System.Windows.Forms.PictureBox();
-            this.aboutLabel = new System.Windows.Forms.Label();
+            this.aboutLabel2 = new Label2();
             this.nowplayingPanel = new System.Windows.Forms.Panel();
             this.nowplayingIcon = new System.Windows.Forms.PictureBox();
-            this.nowplayingLabel = new System.Windows.Forms.Label();
+            this.nowplayingLabel2 = new Label2();
             this.playlistsPanel = new System.Windows.Forms.Panel();
             this.playlistsIcon = new System.Windows.Forms.PictureBox();
-            this.playlistsLabel = new System.Windows.Forms.Label();
+            this.playlistsLabel2 = new Label2();
             this.albumsPanel = new System.Windows.Forms.Panel();
             this.albumsIcon = new System.Windows.Forms.PictureBox();
-            this.albumsLabel = new System.Windows.Forms.Label();
+            this.albumsLabel2 = new Label2();
             this.artistsPanel = new System.Windows.Forms.Panel();
             this.artistsIcon = new System.Windows.Forms.PictureBox();
-            this.artistsLabel = new System.Windows.Forms.Label();
+            this.artistsLabel2 = new Label2();
             this.songsPanel = new System.Windows.Forms.Panel();
             this.songsIcon = new System.Windows.Forms.PictureBox();
-            this.songsLabel = new System.Windows.Forms.Label();
+            this.songsLabel2 = new Label2();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.mainPane = new System.Windows.Forms.Panel();
             this.contentPane = new System.Windows.Forms.Panel();
-            this.contentPaneTitle = new System.Windows.Forms.Label();
+            this.contentPaneTitle = new Label2();
             this.focusMisser = new System.Windows.Forms.Button();
             this.focusController = new System.Windows.Forms.Timer(this.components);
             this.songMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -365,7 +365,7 @@ namespace fPlayer_2
             // 
             resources.ApplyResources(this.libraryPanel, "libraryPanel");
             this.libraryPanel.Controls.Add(this.libraryIcon);
-            this.libraryPanel.Controls.Add(this.libraryLabel);
+            this.libraryPanel.Controls.Add(this.libraryLabel2);
             this.libraryPanel.Name = "libraryPanel";
             this.libraryPanel.Click += new System.EventHandler(this.libraryPanel_Click);
             // 
@@ -376,18 +376,18 @@ namespace fPlayer_2
             this.libraryIcon.TabStop = false;
             this.libraryIcon.Click += new System.EventHandler(this.libraryIcon_Click);
             // 
-            // libraryLabel
+            // libraryLabel2
             // 
-            resources.ApplyResources(this.libraryLabel, "libraryLabel");
-            this.libraryLabel.ForeColor = System.Drawing.Color.White;
-            this.libraryLabel.Name = "libraryLabel";
-            this.libraryLabel.Click += new System.EventHandler(this.libraryLabel_Click);
+            resources.ApplyResources(this.libraryLabel2, "libraryLabel2");
+            this.libraryLabel2.ForeColor = System.Drawing.Color.White;
+            this.libraryLabel2.Name = "libraryLabel2";
+            this.libraryLabel2.Click += new System.EventHandler(this.libraryLabel2_Click);
             // 
             // aboutPanel
             // 
             resources.ApplyResources(this.aboutPanel, "aboutPanel");
             this.aboutPanel.Controls.Add(this.aboutIcon);
-            this.aboutPanel.Controls.Add(this.aboutLabel);
+            this.aboutPanel.Controls.Add(this.aboutLabel2);
             this.aboutPanel.Name = "aboutPanel";
             this.aboutPanel.Click += new System.EventHandler(this.aboutPanel_Click);
             // 
@@ -398,18 +398,18 @@ namespace fPlayer_2
             this.aboutIcon.TabStop = false;
             this.aboutIcon.Click += new System.EventHandler(this.aboutIcon_Click);
             // 
-            // aboutLabel
+            // aboutLabel2
             // 
-            resources.ApplyResources(this.aboutLabel, "aboutLabel");
-            this.aboutLabel.ForeColor = System.Drawing.Color.White;
-            this.aboutLabel.Name = "aboutLabel";
-            this.aboutLabel.Click += new System.EventHandler(this.aboutLabel_Click);
+            resources.ApplyResources(this.aboutLabel2, "aboutLabel2");
+            this.aboutLabel2.ForeColor = System.Drawing.Color.White;
+            this.aboutLabel2.Name = "aboutLabel2";
+            this.aboutLabel2.Click += new System.EventHandler(this.aboutLabel2_Click);
             // 
             // nowplayingPanel
             // 
             resources.ApplyResources(this.nowplayingPanel, "nowplayingPanel");
             this.nowplayingPanel.Controls.Add(this.nowplayingIcon);
-            this.nowplayingPanel.Controls.Add(this.nowplayingLabel);
+            this.nowplayingPanel.Controls.Add(this.nowplayingLabel2);
             this.nowplayingPanel.Name = "nowplayingPanel";
             this.nowplayingPanel.Click += new System.EventHandler(this.nowplayingPanel_Click);
             // 
@@ -420,18 +420,18 @@ namespace fPlayer_2
             this.nowplayingIcon.TabStop = false;
             this.nowplayingIcon.Click += new System.EventHandler(this.nowplayingIcon_Click);
             // 
-            // nowplayingLabel
+            // nowplayingLabel2
             // 
-            resources.ApplyResources(this.nowplayingLabel, "nowplayingLabel");
-            this.nowplayingLabel.ForeColor = System.Drawing.Color.White;
-            this.nowplayingLabel.Name = "nowplayingLabel";
-            this.nowplayingLabel.Click += new System.EventHandler(this.nowplayingLabel_Click);
+            resources.ApplyResources(this.nowplayingLabel2, "nowplayingLabel2");
+            this.nowplayingLabel2.ForeColor = System.Drawing.Color.White;
+            this.nowplayingLabel2.Name = "nowplayingLabel2";
+            this.nowplayingLabel2.Click += new System.EventHandler(this.nowplayingLabel2_Click);
             // 
             // playlistsPanel
             // 
             resources.ApplyResources(this.playlistsPanel, "playlistsPanel");
             this.playlistsPanel.Controls.Add(this.playlistsIcon);
-            this.playlistsPanel.Controls.Add(this.playlistsLabel);
+            this.playlistsPanel.Controls.Add(this.playlistsLabel2);
             this.playlistsPanel.Name = "playlistsPanel";
             this.playlistsPanel.Click += new System.EventHandler(this.playlistsPanel_Click);
             // 
@@ -442,18 +442,18 @@ namespace fPlayer_2
             this.playlistsIcon.TabStop = false;
             this.playlistsIcon.Click += new System.EventHandler(this.playlistsIcon_Click);
             // 
-            // playlistsLabel
+            // playlistsLabel2
             // 
-            resources.ApplyResources(this.playlistsLabel, "playlistsLabel");
-            this.playlistsLabel.ForeColor = System.Drawing.Color.White;
-            this.playlistsLabel.Name = "playlistsLabel";
-            this.playlistsLabel.Click += new System.EventHandler(this.playlistsLabel_Click);
+            resources.ApplyResources(this.playlistsLabel2, "playlistsLabel2");
+            this.playlistsLabel2.ForeColor = System.Drawing.Color.White;
+            this.playlistsLabel2.Name = "playlistsLabel2";
+            this.playlistsLabel2.Click += new System.EventHandler(this.playlistsLabel2_Click);
             // 
             // albumsPanel
             // 
             resources.ApplyResources(this.albumsPanel, "albumsPanel");
             this.albumsPanel.Controls.Add(this.albumsIcon);
-            this.albumsPanel.Controls.Add(this.albumsLabel);
+            this.albumsPanel.Controls.Add(this.albumsLabel2);
             this.albumsPanel.Name = "albumsPanel";
             this.albumsPanel.Click += new System.EventHandler(this.albumsPanel_Click);
             // 
@@ -464,18 +464,18 @@ namespace fPlayer_2
             this.albumsIcon.TabStop = false;
             this.albumsIcon.Click += new System.EventHandler(this.albumsIcon_Click);
             // 
-            // albumsLabel
+            // albumsLabel2
             // 
-            resources.ApplyResources(this.albumsLabel, "albumsLabel");
-            this.albumsLabel.ForeColor = System.Drawing.Color.White;
-            this.albumsLabel.Name = "albumsLabel";
-            this.albumsLabel.Click += new System.EventHandler(this.albumsLabel_Click);
+            resources.ApplyResources(this.albumsLabel2, "albumsLabel2");
+            this.albumsLabel2.ForeColor = System.Drawing.Color.White;
+            this.albumsLabel2.Name = "albumsLabel2";
+            this.albumsLabel2.Click += new System.EventHandler(this.albumsLabel2_Click);
             // 
             // artistsPanel
             // 
             resources.ApplyResources(this.artistsPanel, "artistsPanel");
             this.artistsPanel.Controls.Add(this.artistsIcon);
-            this.artistsPanel.Controls.Add(this.artistsLabel);
+            this.artistsPanel.Controls.Add(this.artistsLabel2);
             this.artistsPanel.Name = "artistsPanel";
             this.artistsPanel.Click += new System.EventHandler(this.artistsPanel_Click);
             // 
@@ -486,19 +486,19 @@ namespace fPlayer_2
             this.artistsIcon.TabStop = false;
             this.artistsIcon.Click += new System.EventHandler(this.artistsIcon_Click);
             // 
-            // artistsLabel
+            // artistsLabel2
             // 
-            resources.ApplyResources(this.artistsLabel, "artistsLabel");
-            this.artistsLabel.ForeColor = System.Drawing.Color.White;
-            this.artistsLabel.Name = "artistsLabel";
-            this.artistsLabel.Click += new System.EventHandler(this.artistsLabel_Click);
+            resources.ApplyResources(this.artistsLabel2, "artistsLabel2");
+            this.artistsLabel2.ForeColor = System.Drawing.Color.White;
+            this.artistsLabel2.Name = "artistsLabel2";
+            this.artistsLabel2.Click += new System.EventHandler(this.artistsLabel2_Click);
             // 
             // songsPanel
             // 
             resources.ApplyResources(this.songsPanel, "songsPanel");
             this.songsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.songsPanel.Controls.Add(this.songsIcon);
-            this.songsPanel.Controls.Add(this.songsLabel);
+            this.songsPanel.Controls.Add(this.songsLabel2);
             this.songsPanel.Name = "songsPanel";
             this.songsPanel.Click += new System.EventHandler(this.songsPanel_Click);
             // 
@@ -509,12 +509,12 @@ namespace fPlayer_2
             this.songsIcon.TabStop = false;
             this.songsIcon.Click += new System.EventHandler(this.songsIcon_Click);
             // 
-            // songsLabel
+            // songsLabel2
             // 
-            resources.ApplyResources(this.songsLabel, "songsLabel");
-            this.songsLabel.ForeColor = System.Drawing.Color.White;
-            this.songsLabel.Name = "songsLabel";
-            this.songsLabel.Click += new System.EventHandler(this.songsLabel_Click);
+            resources.ApplyResources(this.songsLabel2, "songsLabel2");
+            this.songsLabel2.ForeColor = System.Drawing.Color.White;
+            this.songsLabel2.Name = "songsLabel2";
+            this.songsLabel2.Click += new System.EventHandler(this.songsLabel2_Click);
             // 
             // searchBox
             // 
@@ -665,49 +665,49 @@ namespace fPlayer_2
 		private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
 		private System.Windows.Forms.Panel libraryPanel;
 		private System.Windows.Forms.PictureBox libraryIcon;
-		private System.Windows.Forms.Label libraryLabel;
+		private Label2 libraryLabel2;
         private System.Windows.Forms.Panel mainPane;
-		private System.Windows.Forms.Label contentPaneTitle;
+		private Label2 contentPaneTitle;
 		
 		
-		private System.Windows.Forms.Label closeBox;
-		private System.Windows.Forms.Label maximizeBox;
-		private System.Windows.Forms.Label minimizeBox;
+		private Label2 closeBox;
+		private Label2 maximizeBox;
+		private Label2 minimizeBox;
 		private System.Windows.Forms.PictureBox repeatButton;
 		private System.Windows.Forms.PictureBox shuffleButton;
 		private System.Windows.Forms.PictureBox volumeButton;
 		private System.Windows.Forms.PictureBox nextButton;
 		private System.Windows.Forms.PictureBox playPauseButton;
 		private System.Windows.Forms.PictureBox previousButton;
-		private System.Windows.Forms.Label tracklength;
-		private System.Windows.Forms.Label trackpos;
+		private Label2 tracklength;
+		private Label2 trackpos;
 		private System.Windows.Forms.Panel trackbarProgress;
 		private System.Windows.Forms.Panel trackbarBack;
-		private System.Windows.Forms.Label songinfo;
-		private System.Windows.Forms.Label songname;
+		private Label2 songinfo;
+		private Label2 songname;
 		private System.Windows.Forms.PictureBox songalbum;
 		private System.Windows.Forms.Panel aboutPanel;
 		private System.Windows.Forms.PictureBox aboutIcon;
-		private System.Windows.Forms.Label aboutLabel;
+		private Label2 aboutLabel2;
 		private System.Windows.Forms.Panel nowplayingPanel;
 		private System.Windows.Forms.PictureBox nowplayingIcon;
-		private System.Windows.Forms.Label nowplayingLabel;
+		private Label2 nowplayingLabel2;
 		private System.Windows.Forms.Panel playlistsPanel;
 		private System.Windows.Forms.PictureBox playlistsIcon;
-		private System.Windows.Forms.Label playlistsLabel;
+		private Label2 playlistsLabel2;
 		private System.Windows.Forms.Panel albumsPanel;
 		private System.Windows.Forms.PictureBox albumsIcon;
-		private System.Windows.Forms.Label albumsLabel;
+		private Label2 albumsLabel2;
 		private System.Windows.Forms.Panel artistsPanel;
 		private System.Windows.Forms.PictureBox artistsIcon;
-		private System.Windows.Forms.Label artistsLabel;
+		private Label2 artistsLabel2;
 		private System.Windows.Forms.Panel songsPanel;
 		private System.Windows.Forms.PictureBox songsIcon;
-		private System.Windows.Forms.Label songsLabel;
+		private Label2 songsLabel2;
 		private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Panel titlePanel;
 		private System.Windows.Forms.Panel mainSidebar;
-		private System.Windows.Forms.Label appTitle;
+		private Label2 appTitle;
 		private System.Windows.Forms.PictureBox appIcon;
         private System.Windows.Forms.Timer focusController;
         private System.Windows.Forms.Panel contentPane;

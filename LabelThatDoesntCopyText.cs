@@ -15,7 +15,7 @@
     along with libAP.  If not, see <http://www.gnu.org/licenses/>.
  * */
 // This class directly comes out from a solution at Stack Overflow: http://stackoverflow.com/questions/2519587/is-there-any-way-to-disable-the-double-click-to-copy-functionality-of-a-net-l
-// Implements a workaround to solve that "feature" of NT 6.x that copies label text on double click.
+// Implements a workaround to solve that "feature" of NT 6.x that copies Label text on double click.
 // Solves bug BTC110
 
 using System.ComponentModel;
@@ -28,7 +28,7 @@ public class Label2 : Label
     private string clipboardText;
 
     [DefaultValue(false)]
-    [Description("Overrides default behavior of Label to copy label text to clipboard on double click")]
+    [Description("Overrides default behavior of Label to copy Label text to clipboard on double click")]
     public bool CopyTextOnDoubleClick { get; set; }
 
     protected override void OnDoubleClick(EventArgs e)

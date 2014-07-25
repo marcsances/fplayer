@@ -331,7 +331,7 @@
         PsC0oA2C4GmkdAAVvYczIgKF1QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="libraryLabel.Text" xml:space="preserve">
+  <data name="libraryLabel2.Text" xml:space="preserve">
     <value>Biblioteques</value>
   </data>
   <data name="aboutIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -346,7 +346,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="aboutLabel.Text" xml:space="preserve">
+  <data name="aboutLabel2.Text" xml:space="preserve">
     <value>Quant a</value>
   </data>
   <data name="nowplayingIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -362,7 +362,7 @@
         GYOUA9SIJtftS8EA4rp/TJ54DDabb6mZwVfW9FL1AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="nowplayingLabel.Text" xml:space="preserve">
+  <data name="nowplayingLabel2.Text" xml:space="preserve">
     <value>Ara sona</value>
   </data>
   <data name="playlistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -374,7 +374,7 @@
         cjwy9u43LXJF8UVaOwGnnlaM2BC6gQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="playlistsLabel.Text" xml:space="preserve">
+  <data name="playlistsLabel2.Text" xml:space="preserve">
     <value>Llistes</value>
   </data>
   <data name="albumsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -385,7 +385,7 @@
         4Ouh5vWcK0mD9YV1ep1/gtnMK2AABvj2Q0IIOY/IDRT3pL6afJevAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="albumsLabel.Text" xml:space="preserve">
+  <data name="albumsLabel2.Text" xml:space="preserve">
     <value>Àlbums</value>
   </data>
   <data name="artistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -399,7 +399,7 @@
         MIffd0FBnH36zOayb5dUVf2xmuYN1LCWbmlOCSEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="artistsLabel.Text" xml:space="preserve">
+  <data name="artistsLabel2.Text" xml:space="preserve">
     <value>Artistes</value>
   </data>
   <data name="songsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -414,7 +414,7 @@
         INvy2gHwrP+P4QFSD3SrCGnH7xDL3xE2tEHX/QGUpVsdUb8aqAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="songsLabel.Text" xml:space="preserve">
+  <data name="songsLabel2.Text" xml:space="preserve">
     <value>Cançons</value>
   </data>
   <data name="searchBox.Text" xml:space="preserve">

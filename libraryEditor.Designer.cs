@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(libraryEditor));
-            this.foldersinlibraryheader = new System.Windows.Forms.Label();
+            this.foldersinlibraryheader = new Label2();
             this.folderBox = new System.Windows.Forms.ListBox();
             this.okbutton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
@@ -101,7 +101,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label foldersinlibraryheader;
+        private Label2 foldersinlibraryheader;
         private System.Windows.Forms.ListBox folderBox;
         private System.Windows.Forms.Button okbutton;
         private System.Windows.Forms.Button cancelButton;

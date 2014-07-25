@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutDialog));
             this.appLogo = new System.Windows.Forms.PictureBox();
-            this.appName = new System.Windows.Forms.Label();
-            this.appVer = new System.Windows.Forms.Label();
-            this.apiimplver = new System.Windows.Forms.Label();
-            this.copyInfo = new System.Windows.Forms.Label();
+            this.appName = new Label2();
+            this.appVer = new Label2();
+            this.apiimplver = new Label2();
+            this.copyInfo = new Label2();
             this.facebookIcon = new System.Windows.Forms.PictureBox();
             this.twitterIcon = new System.Windows.Forms.PictureBox();
             this.webIcon = new System.Windows.Forms.PictureBox();
@@ -133,10 +133,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox appLogo;
-        private System.Windows.Forms.Label appName;
-        private System.Windows.Forms.Label appVer;
-        private System.Windows.Forms.Label apiimplver;
-        private System.Windows.Forms.Label copyInfo;
+        private Label2 appName;
+        private Label2 appVer;
+        private Label2 apiimplver;
+        private Label2 copyInfo;
         private System.Windows.Forms.PictureBox facebookIcon;
         private System.Windows.Forms.PictureBox twitterIcon;
         private System.Windows.Forms.PictureBox webIcon;

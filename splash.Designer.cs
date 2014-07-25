@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(splash));
-            this.curTask = new System.Windows.Forms.Label();
+            this.curTask = new Label2();
             this.SuspendLayout();
             // 
             // curTask
@@ -54,6 +54,6 @@
 
         #endregion
 
-        public System.Windows.Forms.Label curTask;
+        public Label2 curTask;
     }
 }

@@ -363,29 +363,29 @@ namespace fPlayer_2
             if (c.Tag == null || c.Tag.ToString() != "B") { c.BackColor = Color.FromArgb(0, 32, 32); } else c.BackColor = Color.LightGray;
         }
 
-        private void aboutLabel_Click(object sender, EventArgs e)
+        private void aboutLabel2_Click(object sender, EventArgs e)
         {
             AboutDialog ab = new AboutDialog();
             //  not working correctly: ab.Size = new Size(this.contentPaneTitle.Width, this.Height - this.titlePanel.Height - this.contentPaneTitle.Height - this.bottomPanel.Height - 30);
             contentPane.Controls.Clear();
             contentPane.Controls.Add(ab);
-            contentPaneTitle.Text = aboutLabel.Text;
+            contentPaneTitle.Text = aboutLabel2.Text;
             tabFocused = 6;
         }
 
         private void aboutIcon_Click(object sender, EventArgs e)
         {
-            aboutLabel_Click(sender, e);
+            aboutLabel2_Click(sender, e);
         }
 
         private void aboutPanel_Click(object sender, EventArgs e)
         {
-            aboutLabel_Click(sender, e);
+            aboutLabel2_Click(sender, e);
         }
 
-        public void songsLabel_Click(object sender, EventArgs e)
+        public void songsLabel2_Click(object sender, EventArgs e)
         {
-            contentPaneTitle.Text = songsLabel.Text;
+            contentPaneTitle.Text = songsLabel2.Text;
             contentPane.Controls.Clear();
             tabFocused = 0;
             loadSongsList();
@@ -393,17 +393,17 @@ namespace fPlayer_2
 
         private void songsIcon_Click(object sender, EventArgs e)
         {
-            songsLabel_Click(sender, e);
+            songsLabel2_Click(sender, e);
         }
 
         private void songsPanel_Click(object sender, EventArgs e)
         {
-            songsLabel_Click(sender, e);
+            songsLabel2_Click(sender, e);
         }
 
-        private void artistsLabel_Click(object sender, EventArgs e)
+        private void artistsLabel2_Click(object sender, EventArgs e)
         {
-            contentPaneTitle.Text = artistsLabel.Text;
+            contentPaneTitle.Text = artistsLabel2.Text;
             contentPane.Controls.Clear();
             loadArtistsList();
             tabFocused = 1;
@@ -411,17 +411,17 @@ namespace fPlayer_2
 
         private void artistsIcon_Click(object sender, EventArgs e)
         {
-            artistsLabel_Click(sender, e);
+            artistsLabel2_Click(sender, e);
         }
 
         private void artistsPanel_Click(object sender, EventArgs e)
         {
-            artistsLabel_Click(sender, e);
+            artistsLabel2_Click(sender, e);
         }
 
-        private void albumsLabel_Click(object sender, EventArgs e)
+        private void albumsLabel2_Click(object sender, EventArgs e)
         {
-            contentPaneTitle.Text = albumsLabel.Text;
+            contentPaneTitle.Text = albumsLabel2.Text;
             contentPane.Controls.Clear();
             loadAlbumsList();
             tabFocused = 2;
@@ -429,17 +429,17 @@ namespace fPlayer_2
 
         private void albumsIcon_Click(object sender, EventArgs e)
         {
-            albumsLabel_Click(sender, e);
+            albumsLabel2_Click(sender, e);
         }
 
         private void albumsPanel_Click(object sender, EventArgs e)
         {
-            albumsLabel_Click(sender, e);
+            albumsLabel2_Click(sender, e);
         }
 
-        private void playlistsLabel_Click(object sender, EventArgs e)
+        private void playlistsLabel2_Click(object sender, EventArgs e)
         {
-            contentPaneTitle.Text = playlistsLabel.Text;
+            contentPaneTitle.Text = playlistsLabel2.Text;
             contentPane.Controls.Clear();
             loadPlaylistsList();
             tabFocused = 3;
@@ -447,17 +447,17 @@ namespace fPlayer_2
 
         private void playlistsIcon_Click(object sender, EventArgs e)
         {
-            playlistsLabel_Click(sender, e);
+            playlistsLabel2_Click(sender, e);
         }
 
         private void playlistsPanel_Click(object sender, EventArgs e)
         {
-            playlistsLabel_Click(sender, e);
+            playlistsLabel2_Click(sender, e);
         }
 
-        private void nowplayingLabel_Click(object sender, EventArgs e)
+        private void nowplayingLabel2_Click(object sender, EventArgs e)
         {
-            contentPaneTitle.Text = nowplayingLabel.Text;
+            contentPaneTitle.Text = nowplayingLabel2.Text;
             contentPane.Controls.Clear();
             loadNowPlaying();
             tabFocused = 4;
@@ -491,19 +491,19 @@ namespace fPlayer_2
 
         private void nowplayingIcon_Click(object sender, EventArgs e)
         {
-            nowplayingLabel_Click(sender, e);
+            nowplayingLabel2_Click(sender, e);
         }
 
         private void nowplayingPanel_Click(object sender, EventArgs e)
         {
-            nowplayingLabel_Click(sender, e);
+            nowplayingLabel2_Click(sender, e);
         }
 
-        private void libraryLabel_Click(object sender, EventArgs e)
+        private void libraryLabel2_Click(object sender, EventArgs e)
         {
             libraryEditor le = new libraryEditor();
             // not working correctly: le.Size = new Size(this.contentPaneTitle.Width, this.Height - this.titlePanel.Height - this.contentPaneTitle.Height - this.bottomPanel.Height - 30);
-            contentPaneTitle.Text = libraryLabel.Text;
+            contentPaneTitle.Text = libraryLabel2.Text;
             contentPane.Controls.Clear();
             contentPane.Controls.Add(new libraryEditor());
             tabFocused = 5;
@@ -511,12 +511,12 @@ namespace fPlayer_2
 
         private void libraryIcon_Click(object sender, EventArgs e)
         {
-            libraryLabel_Click(sender, e);
+            libraryLabel2_Click(sender, e);
         }
 
         private void libraryPanel_Click(object sender, EventArgs e)
         {
-            libraryLabel_Click(sender, e);
+            libraryLabel2_Click(sender, e);
         }
 
         bool reversed = false;
