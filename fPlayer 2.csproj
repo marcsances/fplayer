@@ -79,6 +79,12 @@
     <Compile Include="libraryEditor.Designer.cs">
       <DependentUpon>libraryEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="nowPlayingOverlay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nowPlayingOverlay.Designer.cs">
+      <DependentUpon>nowPlayingOverlay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,8 +134,8 @@
     <EmbeddedResource Include="libraryEditor.resx">
       <DependentUpon>libraryEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Player.af.resx">
-      <DependentUpon>Player.cs</DependentUpon>
+    <EmbeddedResource Include="nowPlayingOverlay.resx">
+      <DependentUpon>nowPlayingOverlay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Player.ca.resx">
       <DependentUpon>Player.cs</DependentUpon>

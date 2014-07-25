@@ -22,7 +22,7 @@ namespace fPlayer_2
         public int index=0;
         public Control parentList;
         public Player parent;
-
+        public bool isStack = false;
         public SongsListItem()
         {
             InitializeComponent();

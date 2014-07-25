@@ -31,6 +31,7 @@ namespace fPlayer_2
         public int sta_pos=0;
         int count = 0;
         public bool playglyph = false;
+        public nowPlayingOverlay npo = new nowPlayingOverlay();
 		public Player()
 		{
 			//
@@ -45,13 +46,7 @@ namespace fPlayer_2
         {
             mainPane.AutoScrollOffset = new Point(mainPane.AutoScrollOffset.X, mainPane.AutoScrollOffset.Y + (5 * e.Delta));
         }
-        public void ThreadRoutine()
-        {
-            
-            
-            
-        }
-
+      
 		void CloseBoxClick(object sender, EventArgs e)
 		{
 			this.Close();
@@ -305,7 +300,7 @@ namespace fPlayer_2
                         c.BackColor = Color.Teal;
                     }
                 }
-                if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused < 4) mainPane.Focus();
+                if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused < 5) mainPane.Focus();
             }
         }
 
@@ -456,8 +451,34 @@ namespace fPlayer_2
         {
             contentPaneTitle.Text = nowplayingLabel.Text;
             contentPane.Controls.Clear();
-            // TODO: populate content
+            loadNowPlaying();
             tabFocused = 4;
+        }
+
+        public void loadNowPlaying()
+        {
+            loadStackList();
+            npo.Dock = DockStyle.Top;
+            contentPane.Controls.Add(npo);
+        }
+
+        public void loadStackList()
+        {
+            for (int i = (stack.Count - 1); i >= 0; i--)
+            {
+                AudioFile f = stack[i];
+                SongsListItem sli = new SongsListItem();
+                sli.setData(f.ID3Information.Title, f.ID3Information.Artist + " / " + f.ID3Information.Album, getSongLength(f.FileName));
+                sli.Dock = DockStyle.Top;
+                sli.parentList = contentPane;
+                sli.parent = this;
+                sli.Tag = i;
+                sli.isStack = true;
+                sli.OnMenuRequest += new EventHandler(OnMenuRequest);
+                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
+                sli.index = i;
+                contentPane.Controls.Add(sli);
+            }
         }
 
         private void nowplayingIcon_Click(object sender, EventArgs e)
@@ -606,7 +627,17 @@ namespace fPlayer_2
         {
             SongsListItem sli=(getSongsListItem((Control)sender));
             if (sli!=null) {
-            Play(sli.Tag.ToString());
+                if (!sli.isStack) { Play(sli.Tag.ToString()); }
+            else {
+                try {
+                    int pos=Convert.ToInt32(sli.Tag);
+                    sta_pos=pos;
+                    playnow();
+                } catch {
+
+                }
+            
+            }
             }
         }
 
@@ -628,7 +659,8 @@ namespace fPlayer_2
 
         public void OnMenuRequest(object sender, EventArgs e)
         {
-            songMenu.Show(MousePosition);
+            SongsListItem sli = getSongsListItem((Control)sender);
+            if (sli!=null && !sli.isStack) songMenu.Show(MousePosition);
         }
 
 
@@ -662,11 +694,21 @@ namespace fPlayer_2
         {
             next();
         }
-
-        public void UpdateInfo()
+        public void LoadInfo()
         {
             songname.Text = stack[sta_pos].ID3Information.Title;
             songinfo.Text = stack[sta_pos].ID3Information.Artist + " / " + stack[sta_pos].ID3Information.Album;
+            Bitmap img = new SongID3(stack[sta_pos].FileName).forceLoadImage();
+            if (img != null)
+            {
+                songalbum.Image = img;
+            }
+            else songalbum.Image = songalbum.ErrorImage;
+            npo.updateInfo(img, stack[sta_pos].ID3Information.Title, stack[sta_pos].ID3Information.Artist, stack[sta_pos].ID3Information.Album);
+        }
+        public void UpdateInfo()
+        {
+            
             trackpos.Text = formatMs(getPos());
             tracklength.Text = formatMs(getLength());
             UpdateBar();
@@ -788,7 +830,7 @@ namespace fPlayer_2
         {
             MediaPlayer.getInstance(stack[sta_pos]).OnPlaybackFinished += new EventHandler(OnPlaybackFinishedHandler);
             gI().play();
-            UpdateInfo();
+            LoadInfo();
             if (!playglyph)
             {
                 switchglyph();

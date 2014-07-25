@@ -571,6 +571,22 @@
   <data name="&gt;&gt;songname.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="songalbum.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACQklEQVRoQ+1ZC40CMRDFAAYQ
+        gAEMnAEEYAADGEAABjCAAQScgfPEvUeml8eEpd1uu9tL+pIXuO7MvJm29LO36ujoKIvH47EBd8aDMfy9
+        MbN2gKTW4B68gN/gT4S0oS0LW1uY+QFx9vQZfJfkGDLGfCMDMfb4ycQ/8eoYGx3GrDsiENiCdxNUMjn2
+        5Bc4mASfmQ1t3xXE2FszLwsEprAXpSDnf1bPma/vEGrszaQMEJA9ryJkkSFnDIvl4+/MZBoQiMn7ni/b
+        QwBjgqrD79OnE4LcJGiV5AMQm3uFat3sUR4Q4OgCVks+gBpO82iPxgGOnJs6pBd7VB3UEl3mMP63Bifu
+        lCEIOdtmQy1QO2/8KMBJl7ezNc8GaOrKdLfmNMDBL5t1NpcPgCZHIS8HGOv0mbYSTAC1JY/0aQRj/RGd
+        rHl2UFvySF9EYMzDV3CsvnQOAdo8voQ80meCOJFltvQMUFtzseY41AlcsoCXH7I1x5HlVAlZuWQ5VUJW
+        LllOlZCVi3fC57sjdWD2KkVfkCuervfhCvo8ukj7pAL8MVeZd1oE6OtiKZ+Lh7Y9nVKgTiA3k0UKAF9u
+        auYWhzqBHM6lCtANNa0AGPIeoIGaKQCMH+lh5G9ELRUQXzBg5IO2VEBci0bOqRcwBPq6WMpeQOC/K8C/
+        jWipgIO5DgNG/kLfUgFpF3vn2EoBV3OLA8bcjYNzCwXwM+vtHK90nFJLFUDtya/wKbRIAWZWBgjIacVC
+        lJPel9JfYrGYv3/JmklHR8dHrFa/G0Z3Zt/YVnQAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="songalbum.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
