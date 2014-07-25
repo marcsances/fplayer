@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace fPlayer_2
 {
-    public partial class ArtistItem : UserControl
+    public partial class PlaylistItem : UserControl
     {
         /*
          * Small explanation: parentList will contain the container where the item is on.
@@ -27,7 +27,7 @@ namespace fPlayer_2
         {
             return artist.Text;
         }
-        public ArtistItem()
+        public PlaylistItem()
         {
             InitializeComponent();
         }
@@ -180,9 +180,9 @@ namespace fPlayer_2
         }
         public int CompareTo(object af)
         {
-            if (af is ArtistItem)
+            if (af is PlaylistItem)
             {
-                return this.artist.Text.CompareTo(((ArtistItem)af).artist.Text);
+                return this.artist.Text.CompareTo(((PlaylistItem)af).artist.Text);
             }
             else return 1;
         }
@@ -195,6 +195,11 @@ namespace fPlayer_2
         private void ArtistItem_DoubleClick(object sender, EventArgs e)
         {
             this.OnMenuRequest(this, e);
+        }
+        public event EventHandler OnDeleteRequest;
+        private void deletebutton_Click(object sender, EventArgs e)
+        {
+            this.OnDeleteRequest(this, e);
         }
     }
 }

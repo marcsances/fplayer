@@ -1,7 +1,7 @@
 ﻿using System;
 namespace fPlayer_2
 {
-    partial class ArtistItem : IComparable
+    partial class PlaylistItem : IComparable
     {
         /// <summary> 
         /// Variable del diseñador requerida.
@@ -30,11 +30,13 @@ namespace fPlayer_2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArtistItem));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlaylistItem));
             this.menuButton = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.artist = new Label2();
+            this.deletebutton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deletebutton)).BeginInit();
             this.SuspendLayout();
             // 
             // menuButton
@@ -67,29 +69,46 @@ namespace fPlayer_2
             this.artist.Location = new System.Drawing.Point(4, 0);
             this.artist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artist.Name = "artist";
-            this.artist.Size = new System.Drawing.Size(444, 48);
+            this.artist.Size = new System.Drawing.Size(397, 48);
             this.artist.TabIndex = 0;
             this.artist.Text = "TITLE";
             this.artist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.artist.Click += new System.EventHandler(this.songTitle_Click);
             this.artist.DoubleClick += new System.EventHandler(this.artist_DoubleClick);
             // 
-            // ArtistItem
+            // deletebutton
+            // 
+            this.deletebutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.deletebutton.BackColor = System.Drawing.Color.Transparent;
+            this.deletebutton.Image = ((System.Drawing.Image)(resources.GetObject("deletebutton.Image")));
+            this.deletebutton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.deletebutton.Location = new System.Drawing.Point(407, 3);
+            this.deletebutton.Name = "deletebutton";
+            this.deletebutton.Size = new System.Drawing.Size(42, 42);
+            this.deletebutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.deletebutton.TabIndex = 11;
+            this.deletebutton.TabStop = false;
+            this.deletebutton.Tag = "B";
+            this.deletebutton.Click += new System.EventHandler(this.deletebutton_Click);
+            // 
+            // PlaylistItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.deletebutton);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.artist);
             this.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ArtistItem";
+            this.Name = "PlaylistItem";
             this.Size = new System.Drawing.Size(500, 48);
             this.Click += new System.EventHandler(this.SongsListItem_Click);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.SongsListItem_Paint);
             this.DoubleClick += new System.EventHandler(this.ArtistItem_DoubleClick);
             this.MouseHover += new System.EventHandler(this.SongsListItem_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deletebutton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -99,5 +118,6 @@ namespace fPlayer_2
         private Label2 artist;
         private System.Windows.Forms.Timer timer;
         public System.Windows.Forms.PictureBox menuButton;
+        public System.Windows.Forms.PictureBox deletebutton;
     }
 }

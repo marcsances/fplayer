@@ -40,5 +40,10 @@ namespace fPlayer_2
             if (albumBack != null && albumBack.Size.Width > 1) this.pictureBox.Image = albumBack;
             else this.pictureBox.Image = this.pictureBox.ErrorImage;
         }
+        public event EventHandler onSaveAsNewListOptionClicked;
+        private void savel_Click(object sender, EventArgs e)
+        {
+            if (this.onSaveAsNewListOptionClicked != null) this.onSaveAsNewListOptionClicked(sender, e);
+        }
     }
 }

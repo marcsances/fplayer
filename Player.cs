@@ -40,7 +40,8 @@ namespace fPlayer_2
         int count = 0;
         public bool playglyph = false;
         public nowPlayingOverlay npo = new nowPlayingOverlay();
-
+        public bool shuffle = false;
+        public bool repeat = false;
 		public Player()
 		{
 			//
@@ -317,6 +318,8 @@ namespace fPlayer_2
                 }
                 if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused < 5) mainPane.Focus();
             }
+            if (shuffle && shuffleButton.BackColor!=Color.White) shuffleButton.BackColor = Color.Green;
+            if (repeat && repeatButton.BackColor != Color.White) repeatButton.BackColor = Color.Green;
         }
 
         private bool isHighlighted(Control c)
@@ -495,7 +498,21 @@ namespace fPlayer_2
             {
                 loadStackList();
                 npo.Dock = DockStyle.Top;
+                npo.onSaveAsNewListOptionClicked += new EventHandler(newListHandler);
                 contentPane.Controls.Add(npo);
+            }
+        }
+        public void newListHandler(object sender,EventArgs e) {
+            InputDialog ind = new InputDialog();
+            ind.parent = this;
+            if (ind.ShowDialog() == DialogResult.OK)
+            {
+                string data = "";
+                foreach(AudioFile a in stack) {
+                    data = data + a.FileName + "\r\n";
+                }
+                data = data.Substring(0, data.Length - 4);
+                File.WriteAllText(AppFolder + inp + ".m3u", data);
             }
         }
 
@@ -724,15 +741,23 @@ namespace fPlayer_2
         }
 
         public void loadArtistsList() {
+            if (songs.Count == 0)
+            {
+                NoSongsMsg nsm = new NoSongsMsg();
+                nsm.Dock = DockStyle.Fill;
+                contentPane.Controls.Add(nsm); return;
+            }
             contentPane.Tag = "-1";
             List<ArtistItem> queriedartists = new List<ArtistItem>();
             int r = 0;
             foreach (AudioFile k in songs)
             {
                 bool found = false;
+                string artist = k.ID3Information.Artist;
+                if (artist.Length < 1) artist = getStr(translations.Text, 0);
                 for (int i = 0; i < queriedartists.Count && !found; i++)
                 {
-                    if (k.ID3Information.Artist == queriedartists[i].getArtistName())
+                    if (artist == queriedartists[i].getArtistName())
                     {
                         found = true;
                     }
@@ -741,12 +766,14 @@ namespace fPlayer_2
                 if (!found)
                 {
                     ArtistItem a = new ArtistItem();
-                    a.setData(k.ID3Information.Artist);
+
+                    a.OnMenuRequest += new EventHandler(artistHandler);
                     a.Dock = DockStyle.Top;
                     a.parentList = contentPane;
                     a.parent = this;
-
+                    a.Tag = artist;
                     a.index = r;
+                    a.setData(artist);
                     r++;
                     queriedartists.Add(a);
                 }
@@ -756,18 +783,43 @@ namespace fPlayer_2
             contentPane.Controls.AddRange(queriedartists.ToArray());
 
         }
-
+        public void artistHandler(object sender, EventArgs e)
+        {
+            addArtist(getArtistItem((Control)sender).Tag.ToString());
+        }
+        public void addArtist(string artist)
+        {
+            foreach (AudioFile k in songs)
+            {
+                if (k.ID3Information.Artist == artist)
+                {
+                    Stack(k.FileName);
+                }
+            }
+            if (gI() == null || !gI().playing())
+            {
+                playnow();
+            }
+        }
         public void loadAlbumsList()
         {
+            if (songs.Count == 0)
+            {
+                NoSongsMsg nsm = new NoSongsMsg();
+                nsm.Dock = DockStyle.Fill;
+                contentPane.Controls.Add(nsm); return;
+            }
             contentPane.Tag = "-1";
             List<AlbumItem> queriedalbums = new List<AlbumItem>();
             int r = 0;
             foreach (AudioFile k in songs)
             {
                 bool found = false;
+                string album = k.ID3Information.Album;
+                if (album.Length < 1) album = getStr(translations.Text, 1);
                 for (int i = 0; i < queriedalbums.Count && !found; i++)
                 {
-                    if (k.ID3Information.Album == queriedalbums[i].getAlbumName())
+                    if (album == queriedalbums[i].getAlbumName())
                     {
                         found = true;
                     }
@@ -776,12 +828,17 @@ namespace fPlayer_2
                 if (!found)
                 {
                     AlbumItem a = new AlbumItem();
-                    a.setData(k.ID3Information.Album, k.ID3Information.Artist, findAlbumPicture(k.FileName));
+                    string artist = k.ID3Information.Artist;
+                    if (artist.Length < 1) artist = getStr(translations.Text, 0);
+
+
+                    a.Tag = album;
                     a.Dock = DockStyle.Top;
                     a.parentList = contentPane;
                     a.parent = this;
-
+                    a.OnMenuRequest += new EventHandler(AlbumHandler);
                     a.index = r;
+                    a.setData(album, artist, null);
                     r++;
                     queriedalbums.Add(a);
                 }
@@ -791,7 +848,24 @@ namespace fPlayer_2
             contentPane.Controls.AddRange(queriedalbums.ToArray());
 
         }
-
+        public void AlbumHandler(object sender, EventArgs e)
+        {
+            addAlbum(getAlbumItem((Control)sender).Tag.ToString());
+        }
+        public void addAlbum(string album)
+        {
+            foreach (AudioFile k in songs)
+            {
+                if (k.ID3Information.Album == album)
+                {
+                    Stack(k.FileName);
+                }
+            }
+            if (gI() == null || !gI().playing())
+            {
+                playnow();
+            }
+        }
         public Bitmap findAlbumPicture(string f)
         {
             Bitmap b = null;
@@ -806,21 +880,69 @@ namespace fPlayer_2
 
         public void loadPlaylistsList()
         {
-            List<ArtistItem> queriedLists = new List<ArtistItem>();
+            if (Directory.GetFiles(AppFolder, "*.m3u").Length == 0)
+            {
+                NoListMsg nsm = new NoListMsg();
+                nsm.Dock = DockStyle.Fill;
+                contentPane.Controls.Add(nsm); return;
+            }
+            List<PlaylistItem> queriedLists = new List<PlaylistItem>();
             int r = 0;
             foreach (string k in Directory.GetFiles(AppFolder,"*.m3u")) {
-            ArtistItem a = new ArtistItem();
-                    a.setData(libAP.basename(k));
+                PlaylistItem a = new PlaylistItem();
+                   
                     a.Dock = DockStyle.Top;
                     a.parentList = contentPane;
                     a.parent = this;
                     a.Tag = k;
                     a.index = r;
+                    a.OnDeleteRequest += new EventHandler(playlistdeletehandler);
+                    a.OnMenuRequest += new EventHandler(playlistslistplayrequest);
+                    a.setData(libAP.basename(k));
                     r++;
                     queriedLists.Add(a);
             }
             queriedLists.Sort();
             contentPane.Controls.AddRange(queriedLists.ToArray());
+        }
+        public void playlistdeletehandler(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(getStr(translations.Text, 2), "fPlayer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) { File.Delete(getPlaylistItem((Control)sender).Tag.ToString()); contentPane.Controls.Clear();  loadPlaylistsList(); }
+        }
+        public ArtistItem getArtistItem(Control c)
+        {
+            if (c is ArtistItem) return (ArtistItem)c;
+            else if (c == null) return null;
+            else return getArtistItem(c.Parent);
+        }
+
+        public AlbumItem getAlbumItem(Control c)
+        {
+            if (c is AlbumItem) return (AlbumItem)c;
+            else if (c == null) return null;
+            else return getAlbumItem(c.Parent);
+        }
+        public PlaylistItem getPlaylistItem(Control c)
+        {
+            if (c is PlaylistItem) return (PlaylistItem)c;
+            else if (c == null) return null;
+            else return getPlaylistItem(c.Parent);
+        }
+        public void playlistslistplayrequest(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (string k in M3UReader.read(getPlaylistItem((Control)sender).Tag.ToString()))
+                {
+                    if (File.Exists(k)) Stack(k);
+                }
+
+                if (gI() != null || !gI().playing()) { sta_pos = 0; playnow(); }
+            }
+            catch
+            {
+
+            }
         }
 
         private void Player_Load(object sender, EventArgs e)
@@ -996,7 +1118,15 @@ namespace fPlayer_2
         public void prev()
         {
             stopanddispose();
-            sta_pos--;
+                if (shuffle)
+                {
+                    Random r = new Random(DateTime.Now.Millisecond + DateTime.Now.Second);
+                    sta_pos = r.Next(stack.Count);
+                }
+                else if (!repeat)
+                {
+                    sta_pos++;
+                }
             if (sta_pos == -1) 
                 if (stack.Count != 0) 
                 { 
@@ -1012,7 +1142,17 @@ namespace fPlayer_2
         public void next()
         {
             stopanddispose();
-            sta_pos++;
+            if (shuffle)
+            {
+                Random r = new Random(DateTime.Now.Millisecond + DateTime.Now.Second);
+                sta_pos = r.Next(stack.Count);
+            }
+            else if (!repeat)
+            {
+                sta_pos++;
+            }
+            
+            
             if (sta_pos == stack.Count)
             {
                 sta_pos = 0;
@@ -1266,17 +1406,51 @@ namespace fPlayer_2
 
         private void volumeButton_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(getStr(translations.Text, 3));
             this.contentPane.Tag = "-1";
         }
 
         private void shuffleButton_Click(object sender, EventArgs e)
         {
+            
+            if (shuffle)
+            {
+                shuffleButton.BackColor = Color.Black;
+                shuffle = false;
+                this.contentPane.Tag = "-1";
+
+            } else {
+                if (repeat)
+                {
+                    repeat = false;
+                    repeatButton.BackColor = Color.Black;
+                }
+                shuffleButton.BackColor = Color.Green;
+            shuffle = true;
             this.contentPane.Tag = "-1";
+            }
+            
         }
 
         private void repeatButton_Click(object sender, EventArgs e)
         {
-            this.contentPane.Tag = "-1";
+            if (repeat)
+            {
+                repeatButton.BackColor = Color.Black;
+                repeat = false;
+                this.contentPane.Tag = "-1";
+            }
+            else
+            {
+                if (shuffle)
+                {
+                    shuffle = false;
+                    shuffleButton.BackColor = Color.Black;
+                }
+                repeatButton.BackColor = Color.Green;
+                repeat = true;
+                this.contentPane.Tag = "-1";
+            }
         }
 
         private void appTitle_Click(object sender, EventArgs e)
@@ -1309,6 +1483,45 @@ namespace fPlayer_2
             trackbarProgress_MouseMove(sender, e);
         }
 
+        private void addToPlaylistToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+            addToPlaylistToolStripMenuItem.DropDownItems.Clear();
+            addToPlaylistToolStripMenuItem.DropDownItems.Add(newPlaylistToolStripMenuItem);
+            addToPlaylistToolStripMenuItem.DropDownItems.Add(toolStripMenuItem2);
+            foreach (string k in Directory.GetFiles(AppFolder, "*.m3u"))
+            {
+                ToolStripMenuItem tsmi = new ToolStripMenuItem(libAP.basename(k));
+                tsmi.Tag = k;
+                tsmi.Click += new EventHandler(tsmiclicked);
+                addToPlaylistToolStripMenuItem.DropDownItems.Add(tsmi);
+            }
+        }
+        public void tsmiclicked(object sender, EventArgs e)
+        {
+            foreach (int k in getSelectedItems()) {
+                M3UReader.append(((ToolStripMenuItem)sender).Tag.ToString(), songs[k].FileName);
+            }
+        }
+        public string inp = "";
+        private void newPlaylistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InputDialog ip = new InputDialog();
+            ip.parent = this;
+            if (ip.ShowDialog() == DialogResult.OK && inp!="")
+            {
+                foreach (int k in getSelectedItems())
+                {
+                    M3UReader.append(AppFolder + inp + ".m3u", songs[k].FileName);
+                }
+            }
+        }
+
+        private void searchBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar==13) MessageBox.Show(getStr(translations.Text,3));
+        }
+
+    
         
 	}
 }

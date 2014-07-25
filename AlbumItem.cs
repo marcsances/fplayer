@@ -108,7 +108,7 @@ namespace fPlayer_2
         private void menuButton_Click(object sender, EventArgs e)
         {
             if (!isMultiSelect()) SongsListItem_Click(sender, e);
-            if (this.OnMenuRequest!=null) this.OnMenuRequest(sender, e);
+            if (this.OnMenuRequest!=null) this.OnMenuRequest(this, e);
         }
 
         private bool isMultiSelect()
@@ -121,7 +121,7 @@ namespace fPlayer_2
         {
             this.albumTitle.Text = title;
             this.albumArtist.Text = artist;
-            if (image != null && image.Size.Width > 1) { this.albumIcon.Image = image; }
+            backgroundWorker.RunWorkerAsync();
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -187,5 +187,34 @@ namespace fPlayer_2
             }
             else return 1;
         }
+
+        private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            this.albumIcon.Image = parent.findAlbumPicture(this.albumTitle.Text);
+            if (this.albumIcon.Image == null) this.albumIcon.Image = this.albumIcon.ErrorImage;
+        }
+
+        private void albumArtist_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+        }
+
+        private void albumTitle_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+        }
+
+        private void albumIcon_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+        }
+
+        private void AlbumItem_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+        }
+
+
+       
     }
 }

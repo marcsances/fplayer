@@ -76,11 +76,29 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoListMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoListMsg.Designer.cs">
+      <DependentUpon>NoListMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylistItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlaylistItem.Designer.cs">
+      <DependentUpon>PlaylistItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="ArtistItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ArtistItem.Designer.cs">
       <DependentUpon>ArtistItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="LabelThatDoesntCopyText.cs">
       <SubType>Component</SubType>
@@ -155,8 +173,35 @@
     <EmbeddedResource Include="AboutDialog.resx">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NoListMsg.ca.resx">
+      <DependentUpon>NoListMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoListMsg.es.resx">
+      <DependentUpon>NoListMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoListMsg.resx">
+      <DependentUpon>NoListMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nowPlayingOverlay.ca.resx">
+      <DependentUpon>nowPlayingOverlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nowPlayingOverlay.es.resx">
+      <DependentUpon>nowPlayingOverlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaylistItem.resx">
+      <DependentUpon>PlaylistItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ArtistItem.resx">
       <DependentUpon>ArtistItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.ca.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.es.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="libraryEditor.ca.resx">
       <DependentUpon>libraryEditor.cs</DependentUpon>

@@ -31,41 +31,15 @@ namespace fPlayer_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlbumItem));
-            this.albumTitle = new Label2();
-            this.albumArtist = new Label2();
             this.menuButton = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.albumIcon = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.albumArtist = new Label2();
+            this.albumTitle = new Label2();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // albumTitle
-            // 
-            this.albumTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.albumTitle.Location = new System.Drawing.Point(52, 0);
-            this.albumTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.albumTitle.Name = "albumTitle";
-            this.albumTitle.Size = new System.Drawing.Size(380, 32);
-            this.albumTitle.TabIndex = 0;
-            this.albumTitle.Text = "TITLE";
-            this.albumTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.albumTitle.Click += new System.EventHandler(this.songTitle_Click);
-            // 
-            // albumArtist
-            // 
-            this.albumArtist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.albumArtist.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.albumArtist.Location = new System.Drawing.Point(53, 32);
-            this.albumArtist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.albumArtist.Name = "albumArtist";
-            this.albumArtist.Size = new System.Drawing.Size(380, 16);
-            this.albumArtist.TabIndex = 1;
-            this.albumArtist.Text = "INFO";
-            this.albumArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.albumArtist.Click += new System.EventHandler(this.songInfo_Click);
             // 
             // menuButton
             // 
@@ -93,15 +67,50 @@ namespace fPlayer_2
             // albumIcon
             // 
             this.albumIcon.BackColor = System.Drawing.Color.Transparent;
+            this.albumIcon.ErrorImage = ((System.Drawing.Image)(resources.GetObject("albumIcon.ErrorImage")));
             this.albumIcon.Image = ((System.Drawing.Image)(resources.GetObject("albumIcon.Image")));
             this.albumIcon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.albumIcon.Location = new System.Drawing.Point(3, 3);
             this.albumIcon.Name = "albumIcon";
             this.albumIcon.Size = new System.Drawing.Size(42, 42);
-            this.albumIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.albumIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.albumIcon.TabIndex = 11;
             this.albumIcon.TabStop = false;
             this.albumIcon.Tag = "B";
+            this.albumIcon.DoubleClick += new System.EventHandler(this.albumIcon_DoubleClick);
+            // 
+            // backgroundWorker
+            // 
+            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
+            // 
+            // albumArtist
+            // 
+            this.albumArtist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.albumArtist.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.albumArtist.Location = new System.Drawing.Point(53, 32);
+            this.albumArtist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.albumArtist.Name = "albumArtist";
+            this.albumArtist.Size = new System.Drawing.Size(380, 16);
+            this.albumArtist.TabIndex = 1;
+            this.albumArtist.Text = "INFO";
+            this.albumArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.albumArtist.Click += new System.EventHandler(this.songInfo_Click);
+            this.albumArtist.DoubleClick += new System.EventHandler(this.albumArtist_DoubleClick);
+            // 
+            // albumTitle
+            // 
+            this.albumTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.albumTitle.Location = new System.Drawing.Point(52, 0);
+            this.albumTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.albumTitle.Name = "albumTitle";
+            this.albumTitle.Size = new System.Drawing.Size(380, 32);
+            this.albumTitle.TabIndex = 0;
+            this.albumTitle.Text = "TITLE";
+            this.albumTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.albumTitle.Click += new System.EventHandler(this.songTitle_Click);
+            this.albumTitle.DoubleClick += new System.EventHandler(this.albumTitle_DoubleClick);
             // 
             // AlbumItem
             // 
@@ -118,6 +127,7 @@ namespace fPlayer_2
             this.Size = new System.Drawing.Size(500, 48);
             this.Click += new System.EventHandler(this.SongsListItem_Click);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.SongsListItem_Paint);
+            this.DoubleClick += new System.EventHandler(this.AlbumItem_DoubleClick);
             this.MouseHover += new System.EventHandler(this.SongsListItem_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumIcon)).EndInit();
@@ -132,5 +142,6 @@ namespace fPlayer_2
         private System.Windows.Forms.Timer timer;
         public System.Windows.Forms.PictureBox menuButton;
         public System.Windows.Forms.PictureBox albumIcon;
+        private System.ComponentModel.BackgroundWorker backgroundWorker;
     }
 }
