@@ -132,6 +132,7 @@ namespace fPlayer_2
             // 
             // bottomPanel
             // 
+            resources.ApplyResources(this.bottomPanel, "bottomPanel");
             this.bottomPanel.BackColor = System.Drawing.Color.Black;
             this.bottomPanel.Controls.Add(this.repeatButton);
             this.bottomPanel.Controls.Add(this.shuffleButton);
@@ -146,7 +147,6 @@ namespace fPlayer_2
             this.bottomPanel.Controls.Add(this.songinfo);
             this.bottomPanel.Controls.Add(this.songname);
             this.bottomPanel.Controls.Add(this.songalbum);
-            resources.ApplyResources(this.bottomPanel, "bottomPanel");
             this.bottomPanel.Name = "bottomPanel";
             // 
             // repeatButton
@@ -208,8 +208,8 @@ namespace fPlayer_2
             // 
             // trackbarProgress
             // 
-            this.trackbarProgress.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackbarProgress, "trackbarProgress");
+            this.trackbarProgress.BackColor = System.Drawing.Color.White;
             this.trackbarProgress.Name = "trackbarProgress";
             this.trackbarProgress.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseDown);
             this.trackbarProgress.MouseMove += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseMove);
@@ -244,6 +244,7 @@ namespace fPlayer_2
             // 
             // titlePanel
             // 
+            resources.ApplyResources(this.titlePanel, "titlePanel");
             this.titlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.titlePanel.ContextMenuStrip = this.windowContextMenu;
             this.titlePanel.Controls.Add(this.closeBox);
@@ -251,7 +252,6 @@ namespace fPlayer_2
             this.titlePanel.Controls.Add(this.minimizeBox);
             this.titlePanel.Controls.Add(this.appIcon);
             this.titlePanel.Controls.Add(this.appTitle);
-            resources.ApplyResources(this.titlePanel, "titlePanel");
             this.titlePanel.Name = "titlePanel";
             this.titlePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitlePanelMouseDown);
             this.titlePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TitlePanelMouseMove);
@@ -259,6 +259,7 @@ namespace fPlayer_2
             // 
             // windowContextMenu
             // 
+            resources.ApplyResources(this.windowContextMenu, "windowContextMenu");
             this.windowContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.restoreToolStripMenuItem,
             this.minimizeToolStripMenuItem,
@@ -266,31 +267,30 @@ namespace fPlayer_2
             this.toolStripMenuItem1,
             this.closeToolStripMenuItem});
             this.windowContextMenu.Name = "windowContextMenu";
-            resources.ApplyResources(this.windowContextMenu, "windowContextMenu");
             this.windowContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.WindowContextMenuOpening);
             // 
             // restoreToolStripMenuItem
             // 
-            this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
             resources.ApplyResources(this.restoreToolStripMenuItem, "restoreToolStripMenuItem");
+            this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
             this.restoreToolStripMenuItem.Click += new System.EventHandler(this.RestoreToolStripMenuItemClick);
             // 
             // minimizeToolStripMenuItem
             // 
-            this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
             resources.ApplyResources(this.minimizeToolStripMenuItem, "minimizeToolStripMenuItem");
+            this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
             this.minimizeToolStripMenuItem.Click += new System.EventHandler(this.MinimizeToolStripMenuItemClick);
             // 
             // maximizeToolStripMenuItem
             // 
-            this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
             resources.ApplyResources(this.maximizeToolStripMenuItem, "maximizeToolStripMenuItem");
+            this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
             this.maximizeToolStripMenuItem.Click += new System.EventHandler(this.MaximizeToolStripMenuItemClick);
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             // 
             // closeToolStripMenuItem
             // 
@@ -330,8 +330,9 @@ namespace fPlayer_2
             // 
             // appIcon
             // 
-            this.appIcon.ContextMenuStrip = this.windowContextMenu;
             resources.ApplyResources(this.appIcon, "appIcon");
+            this.appIcon.ContextMenuStrip = this.windowContextMenu;
+            this.appIcon.Cursor = System.Windows.Forms.Cursors.Default;
             this.appIcon.Name = "appIcon";
             this.appIcon.TabStop = false;
             this.appIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseDown);
@@ -417,8 +418,8 @@ namespace fPlayer_2
             // 
             // stackCount
             // 
-            this.stackCount.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.stackCount, "stackCount");
+            this.stackCount.BackColor = System.Drawing.Color.Transparent;
             this.stackCount.ForeColor = System.Drawing.Color.White;
             this.stackCount.Name = "stackCount";
             // 
@@ -571,8 +572,8 @@ namespace fPlayer_2
             // 
             // songMenu
             // 
-            this.songMenu.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.songMenu, "songMenu");
+            this.songMenu.BackColor = System.Drawing.Color.White;
             this.songMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.playToolStripMenuItem,
             this.stackToolStripMenuItem,
@@ -588,27 +589,27 @@ namespace fPlayer_2
             // 
             // stackToolStripMenuItem
             // 
-            this.stackToolStripMenuItem.Name = "stackToolStripMenuItem";
             resources.ApplyResources(this.stackToolStripMenuItem, "stackToolStripMenuItem");
+            this.stackToolStripMenuItem.Name = "stackToolStripMenuItem";
             this.stackToolStripMenuItem.Click += new System.EventHandler(this.stackToolStripMenuItem_Click);
             // 
             // addToPlaylistToolStripMenuItem
             // 
+            resources.ApplyResources(this.addToPlaylistToolStripMenuItem, "addToPlaylistToolStripMenuItem");
             this.addToPlaylistToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newPlaylistToolStripMenuItem,
             this.toolStripMenuItem2});
             this.addToPlaylistToolStripMenuItem.Name = "addToPlaylistToolStripMenuItem";
-            resources.ApplyResources(this.addToPlaylistToolStripMenuItem, "addToPlaylistToolStripMenuItem");
             // 
             // newPlaylistToolStripMenuItem
             // 
-            this.newPlaylistToolStripMenuItem.Name = "newPlaylistToolStripMenuItem";
             resources.ApplyResources(this.newPlaylistToolStripMenuItem, "newPlaylistToolStripMenuItem");
+            this.newPlaylistToolStripMenuItem.Name = "newPlaylistToolStripMenuItem";
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             // 
             // playbackTimer
             // 

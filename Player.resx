@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="repeatButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="artistsLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="nextButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;appIcon.Name" xml:space="preserve">
+    <value>appIcon</value>
+  </data>
+  <data name="mainSidebar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 497</value>
+  </data>
   <data name="repeatButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -134,78 +143,48 @@
         oKAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="repeatButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="repeatButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>761, 13</value>
-  </data>
-  <data name="repeatButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="repeatButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="playlistsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="contentPane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="artistsLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="repeatButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;repeatButton.Name" xml:space="preserve">
-    <value>repeatButton</value>
-  </data>
-  <data name="&gt;&gt;repeatButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;repeatButton.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;repeatButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="shuffleButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="shuffleButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFHSURBVFhH7ZYNDcIwEIVnAAMTgAEMYGACZgADGEAA
-        BjCAAQRgAE/jfeSW3ErZyiglIXvJC1vv79G7dasWLPhbdF23Fhu7LQ8V34g3cWdLZeEEwKO4MlMcOIgE
-        9azNNAuWoxcAz+LazM+QMQyAV/EgbswtCfLfWlws39bchpAhJsDzJI4Kkb0RL+Y/xufd1aJvAYn4BygO
-        g/fioJ+6JyalMPnSd1POiNpZoE9EPx8i9Ivd2yC7hVC/Rsy8uVIgQkjqk7EW9hmhrcX4luI3/hSkwBK9
-        Kj6Ycl33AvKfA0oaKx7OBSdhfOI/gZK24mhxoLX8ApQw1vNaZOC+1wIlCYewL/544QRr+YaQIHHqMQxb
-        At9/DGWkGKph+YMIg3OM8etHcUwAitmJIi8j3wJY9nWcGyrmBUx/kOSGE/CzT7LffpQuWJCGqroDqC3a
-        MPGYlJUAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="shuffleButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="shuffleButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 13</value>
-  </data>
-  <data name="shuffleButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="volumeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
   </data>
-  <data name="shuffleButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;songsIcon.Name" xml:space="preserve">
+    <value>songsIcon</value>
   </data>
-  <data name="shuffleButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="tracklength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;shuffleButton.Name" xml:space="preserve">
-    <value>shuffleButton</value>
+  <data name="&gt;&gt;playlistsIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;shuffleButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="nowplayingIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
   </data>
-  <data name="&gt;&gt;shuffleButton.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+  <data name="trackpos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
   </data>
-  <data name="&gt;&gt;shuffleButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="nextButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 13</value>
   </data>
-  <data name="volumeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="trackpos.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="songname.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="albumsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="volumeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -221,83 +200,143 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="volumeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="closeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
+    <value>mainPane</value>
+  </data>
+  <data name="playlistsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="volumeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 13</value>
+  <data name="&gt;&gt;maximizeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="volumeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
+  <data name="&gt;&gt;maximizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>maximizeToolStripMenuItem</value>
+  </data>
+  <data name="trackbarProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 25</value>
+  </data>
+  <data name="&gt;&gt;searchBox.Name" xml:space="preserve">
+    <value>searchBox</value>
+  </data>
+  <data name="trackbarBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 5</value>
+  </data>
+  <data name="&gt;&gt;restoreToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="volumeButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="volumeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;libraryIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;volumeButton.Name" xml:space="preserve">
-    <value>volumeButton</value>
+  <data name="&gt;&gt;stackCount.Parent" xml:space="preserve">
+    <value>nowplayingPanel</value>
   </data>
-  <data name="&gt;&gt;volumeButton.Type" xml:space="preserve">
+  <data name="searchBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 9.75pt, style=Italic</value>
+  </data>
+  <data name="&gt;&gt;repeatButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;volumeButton.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+  <data name="&gt;&gt;aboutIcon.Name" xml:space="preserve">
+    <value>aboutIcon</value>
   </data>
-  <data name="&gt;&gt;volumeButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="nextButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="nextButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="songsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADCSURBVFhH7ZUBDcIwEEVrAAMTgIEZwAACMIAObKAD
-        ARjAU/ev+W1uy9GQQjhC7iUv2a5/zW3tthQEQfBz5JwneOBpF+SOPOyC3JlOLD0HoRk+4BXuWTZRuZkl
-        E+bEbq4gIXWBeIE7Dq8wcuYdqsxQA+IdnhhpbDI1J4961bAaH26geoNtks2YVnJtH6n62w1UZd1ls1pj
-        2rKP1PnHGhj1fxpwWwK3Tej6Grp9iMr6sWyict2JmXu5Ad+fURAEwXdJaQFX2kEMXzDUigAAAABJRU5E
-        rkJggg==
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVFhH7ZcBjcJAFERrAAMIwAAGMICAM4ABDJwA
+        DGAAAwg4A+epNy+Z32zaLLu9dkNIOskk5f/5w5Ruu7Tb8FHo+/4kXsW7+CP+mhxTo3eyfD3I9Cw+xfjC
+        EtGePf5/yGQvPmwa5Ewv4nFEavRSLbN7282DBg9i+jN/i0UzNNbGHB4Ht+uggZ0Hw+DoVjWYGXns3CpD
+        4vgp56dPwKw98Lq7/BoSkpwBuHhF4zHLT6I4+7rEFZDXrcpTAhZQpJ193XPAK/HNL2Q1ud8RPV1aDXja
+        +8ulKdTkXkZ0c2k1yDNuzatLU6gZ1//i0mrA0975dUDToi0AYu5fPger14W0zHPNmeM49orqAGyrMTDQ
+        siLGcyJeeHJcFSCSpyZLAwzelk2hZmy9LQM8LJvCAtgyQN4nBBZvAd4SIDaMlgHyG52FiFoGeP2UlYAn
+        INvy2gHwrP+P4QFSD3SrCGnH7xDL3xE2tEHX/QGUpVsdUb8aqAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="nextButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;appTitle.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="nextButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 13</value>
+  <data name="albumsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
   </data>
-  <data name="nextButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
+  <data name="&gt;&gt;focusMisser.Name" xml:space="preserve">
+    <value>focusMisser</value>
   </data>
-  <data name="nextButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="nextButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;nextButton.Name" xml:space="preserve">
-    <value>nextButton</value>
-  </data>
-  <data name="&gt;&gt;nextButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nextButton.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+  <data name="tracklength.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;nextButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="playPauseButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;focusMisser.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="playPauseButton.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABQSURBVFhH7ZaxDQAgCARZgGnYfwN3Qk2oSDRSGAvv
-        ku/+yZUIAKxwdx2xTTSqpe4xMWybWFRL3WPmKB3JQQABBBBAAAEEELgu8PYlA/gEkQ6x4xE4277+8gAA
-        AABJRU5ErkJggg==
-</value>
+  <data name="nowplayingLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="maximizeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="libraryLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="aboutIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;trackbarProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libraryLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="artistsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="artistsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="albumsLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="songsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="&gt;&gt;playbackTimer.Name" xml:space="preserve">
+    <value>playbackTimer</value>
+  </data>
+  <data name="&gt;&gt;closeToolStripMenuItem.Name" xml:space="preserve">
+    <value>closeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;addToPlaylistToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 70</value>
+  </data>
+  <data name="closeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;artistsPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="nowplayingLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;closeBox.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="nowplayingIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="playPauseButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -309,283 +348,203 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="playPauseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="minimizeBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Webdings, 12pt</value>
   </data>
-  <data name="playPauseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 13</value>
+  <data name="mainSidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="playPauseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
+  <data name="aboutLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
   </data>
-  <data name="playPauseButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="&gt;&gt;aboutPanel.Name" xml:space="preserve">
+    <value>aboutPanel</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>fPlayer 2.1</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nowplayingIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="playPauseButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;playlistsPanel.Name" xml:space="preserve">
+    <value>playlistsPanel</value>
   </data>
-  <data name="&gt;&gt;playPauseButton.Name" xml:space="preserve">
-    <value>playPauseButton</value>
-  </data>
-  <data name="&gt;&gt;playPauseButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playPauseButton.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;playPauseButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;appTitle.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="previousButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="previousButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADGSURBVFhH7ZWBCcIwFESzgAs4QBfoAi7gAC7gHF3D
-        ORzABdwpvSv3pcQkNEWMwn9w0FyfIfi1DY7jOD9HjPGIXBlVVeCddVkF3ol7a1kG0og8GVVZ5N02eIN5
-        yKi6DCXJ2Y3R8xuazKl4h9RD9h8Aa27I0TzsvkXKC3QX5M1D9h0A15zf3fo00uyzRQ9pOwCynl8tHMsW
-        r/kAn87/HaDvCFSx6/MjVLWAdb+/4Rr0fR5EKfKWuavKgvvNj+K+LyPHcZzvEsIM0dtBDAppjncAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
-  <data name="previousButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="previousButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 13</value>
-  </data>
-  <data name="previousButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="previousButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="previousButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;previousButton.Name" xml:space="preserve">
-    <value>previousButton</value>
-  </data>
-  <data name="&gt;&gt;previousButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;previousButton.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;previousButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tracklength.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;songname.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="tracklength.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tracklength.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt</value>
-  </data>
-  <data name="tracklength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tracklength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 22</value>
-  </data>
-  <data name="tracklength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 15</value>
-  </data>
-  <data name="tracklength.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="tracklength.Text" xml:space="preserve">
-    <value>0:00</value>
-  </data>
-  <data name="tracklength.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="contentPaneTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;tracklength.Name" xml:space="preserve">
-    <value>tracklength</value>
+  <data name="&gt;&gt;songsIcon.Parent" xml:space="preserve">
+    <value>songsPanel</value>
   </data>
-  <data name="&gt;&gt;tracklength.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
+  <data name="nowplayingLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
   </data>
-  <data name="&gt;&gt;tracklength.Parent" xml:space="preserve">
+  <data name="appIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABGdBTUEAALEQa0zv0AAAACBjSFJNAACH
+        DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGHRF
+        WHRTb2Z0d2FyZQBwYWludC5uZXQgNC4wLjL74afGAAABo0lEQVRIS+2VS0+DQBSF/em+YhMfiY8YozWu
+        dGtiXBmNxoVuTYxxp66oQLVNqbbYUo4Hh8AwDAwluvPkWwC93A9mOsPMrIU/5V9gpJJgzsKei5s+uoH6
+        kxGDIOmbRCkwohHIz5uPUmwkI2gW900i11chI6iSxRbuB2i8pneVU0cQAp0AzXZ6YwlTCxZ+BMwkxHkv
+        mjC5Qx6DgL0Gk/hYJBGIPPlYLR0uvcAPsetiy4nYb0NWzFuZU+ZjgsO3tImCXsCnXrfjYyV5AcN3uu1H
+        Lyd3E0wt4KDnBSLWCJtO2k1QKFiz8eLjYYDHYXxRhGVFAuYrxHEnbUgKBUstnHZx6UUOOSwL5FnOZhTi
+        pJs2JFMPEcvGBYL3MXbctJugjoCPmQ9HsvErk8wy/onlcMWd9dImCnoBR/nuMz5WwrKhNMtegIPSPUMv
+        KAnL+H4izz5WTLteHQGXLgfp2jNvRKSOwB3jqHhvUMgIth1ceXBGcS9tWLZc+WNAMoIE7nFcYrbOpFQa
+        0QsSaLrooSWZlAIjBkHChh19XridKdeNVBXU5l9gwMI3JWdOQEFp2BoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;repeatButton.Parent" xml:space="preserve">
     <value>bottomPanel</value>
   </data>
-  <data name="&gt;&gt;tracklength.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;songsLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="trackpos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
+  <data name="&gt;&gt;closeBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="trackpos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;artistsIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="trackpos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt</value>
-  </data>
-  <data name="trackpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="trackpos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 22</value>
-  </data>
-  <data name="trackpos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 15</value>
-  </data>
-  <data name="trackpos.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="trackpos.Text" xml:space="preserve">
-    <value>0:00</value>
-  </data>
-  <data name="trackpos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;trackpos.Name" xml:space="preserve">
-    <value>trackpos</value>
-  </data>
-  <data name="&gt;&gt;trackpos.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;trackpos.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;trackpos.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="trackbarProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 25</value>
-  </data>
-  <data name="trackbarProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 9</value>
-  </data>
-  <data name="trackbarProgress.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;trackbarProgress.Name" xml:space="preserve">
-    <value>trackbarProgress</value>
-  </data>
-  <data name="&gt;&gt;trackbarProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackbarProgress.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;trackbarProgress.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="trackbarBack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="trackbarBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 27</value>
-  </data>
-  <data name="trackbarBack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 5</value>
-  </data>
-  <data name="trackbarBack.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;trackbarBack.Name" xml:space="preserve">
-    <value>trackbarBack</value>
-  </data>
-  <data name="&gt;&gt;trackbarBack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackbarBack.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;trackbarBack.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="songinfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="songinfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt, style=Italic</value>
-  </data>
-  <data name="songinfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="songinfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 29</value>
-  </data>
-  <data name="songinfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 25</value>
-  </data>
-  <data name="songinfo.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="songinfo.Text" xml:space="preserve">
-    <value>Nothing playing</value>
-  </data>
-  <data name="songinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;songinfo.Name" xml:space="preserve">
-    <value>songinfo</value>
-  </data>
-  <data name="&gt;&gt;songinfo.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;songinfo.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;songinfo.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="songname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="songname.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt, style=Bold</value>
-  </data>
-  <data name="songname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="songname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 6</value>
-  </data>
-  <data name="songname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 25</value>
-  </data>
-  <data name="songname.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="songname.Text" xml:space="preserve">
-    <value>Nothing playing</value>
-  </data>
-  <data name="songname.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;songname.Name" xml:space="preserve">
-    <value>songname</value>
-  </data>
-  <data name="&gt;&gt;songname.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;songname.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+  <data name="libraryLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
   </data>
   <data name="&gt;&gt;songname.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="songalbum.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="nextButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJCSURBVGhD7VkLjQIxEMUABhCAAQycAQRgAAMYQAAG
-        MIABBJyB88S9R6aXx4Sl3W6720v6khe47sy8mbb0s7fq6Ogoi8fjsQF3xoMx/L0xs3aApNbgHryA3+BP
-        hLShLQtbW5j5AXH29Bl8l+QYMsZ8IwMx9vjJxD/x6hgbHcasOyIQ2IJ3E1QyOfbkFziYBJ+ZDW3fFcTY
-        WzMvCwSmsBelIOd/Vs+Zr+8QauzNpAwQkD2vImSRIWcMi+Xj78xkGhCIyfueL9tDAGOCqsPv06cTgtwk
-        aJXkAxCbe4Vq3exRHhDg6AJWSz6AGk7zaI/GAY6cmzqkF3tUHdQSXeYw/rcGJ+6UIQg522ZDLVA7b/wo
-        wEmXt7M1zwZo6sp0t+Y0wMEvm3U2lw+AJkchLwcY6/SZthJMALUlj/RpBGP9EZ2seXZQW/JIX0RgzMNX
-        cKy+dA4B2jy+hDzSZ4I4kWW29AxQW3Ox5jjUCVyygJcfsjXHkeVUCVm5ZDlVQlYuWU6VkJWLd8LnuyN1
-        YPYqRV+QK56u9+EK+jy6SPukAvwxV5l3WgTo62Ipn4uHtj2dUqBOIDeTRQoAX25q5haHOoEczqUK0A01
-        rQAY8h6ggZopAIwf6WHkb0QtFRBfMGDkg7ZUQFyLRs6pFzAE+rpYyl5A4L8rwL+NaKmAg7kOA0b+Qt9S
-        AWkXe+fYSgFXc4sDxtyNg3MLBfAz6+0cr3ScUksVQO3Jr/AptEgBZlYGCMhpxUKUk96X0l9isZi/f8ma
-        SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADCSURBVFhH7ZUBDcIwEEVrAAMTgIEZwAACMIAObKAD
+        ARjAU/ev+W1uy9GQQjhC7iUv2a5/zW3tthQEQfBz5JwneOBpF+SOPOyC3JlOLD0HoRk+4BXuWTZRuZkl
+        E+bEbq4gIXWBeIE7Dq8wcuYdqsxQA+IdnhhpbDI1J4961bAaH26geoNtks2YVnJtH6n62w1UZd1ls1pj
+        2rKP1PnHGhj1fxpwWwK3Tej6Grp9iMr6sWyict2JmXu5Ad+fURAEwXdJaQFX2kEMXzDUigAAAABJRU5E
+        rkJggg==
 </value>
+  </data>
+  <data name="appIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;shuffleButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="playlistsLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="libraryIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="appTitle.Text" xml:space="preserve">
+    <value>fPlayer</value>
+  </data>
+  <data name="&gt;&gt;songsLabel2.Parent" xml:space="preserve">
+    <value>songsPanel</value>
+  </data>
+  <data name="&gt;&gt;songMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nextButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="stackCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 40</value>
+  </data>
+  <data name="aboutIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;playPauseButton.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;albumsIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nowplayingPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;songinfo.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="albumsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="songMenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;contentPane.Parent" xml:space="preserve">
+    <value>mainPane</value>
+  </data>
+  <data name="&gt;&gt;stackToolStripMenuItem.Name" xml:space="preserve">
+    <value>stackToolStripMenuItem</value>
+  </data>
+  <data name="playlistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="libraryIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bottomPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;songinfo.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="libraryPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 418</value>
+  </data>
+  <data name="focusMisser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;playlistsIcon.Name" xml:space="preserve">
+    <value>playlistsIcon</value>
+  </data>
+  <data name="artistsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="songinfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt, style=Italic</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="songsIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="libraryLabel2.Text" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;albumsPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;appTitle.Name" xml:space="preserve">
+    <value>appTitle</value>
+  </data>
+  <data name="&gt;&gt;playlistsIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="trackpos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="songalbum.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -603,395 +562,35 @@
         SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="songalbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="songalbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 6</value>
-  </data>
-  <data name="songalbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
-  </data>
-  <data name="songalbum.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="songalbum.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;songalbum.Name" xml:space="preserve">
-    <value>songalbum</value>
-  </data>
-  <data name="&gt;&gt;songalbum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songalbum.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;songalbum.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="bottomPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="bottomPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 536</value>
-  </data>
-  <data name="bottomPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 64</value>
-  </data>
-  <data name="bottomPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.Name" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="windowContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Minimize</value>
-  </data>
-  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Maximize</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 6</value>
-  </data>
-  <data name="closeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="closeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+F4</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 98</value>
-  </data>
-  <data name="&gt;&gt;windowContextMenu.Name" xml:space="preserve">
-    <value>windowContextMenu</value>
-  </data>
-  <data name="&gt;&gt;windowContextMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="closeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="closeBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="closeBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Webdings, 12pt</value>
-  </data>
-  <data name="closeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="closeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 0</value>
-  </data>
-  <data name="closeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 19</value>
-  </data>
-  <data name="closeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="closeBox.Text" xml:space="preserve">
-    <value>r</value>
-  </data>
-  <data name="closeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;closeBox.Name" xml:space="preserve">
-    <value>closeBox</value>
-  </data>
-  <data name="&gt;&gt;closeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;closeBox.Parent" xml:space="preserve">
-    <value>titlePanel</value>
-  </data>
-  <data name="&gt;&gt;closeBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="maximizeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="maximizeBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="maximizeBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Webdings, 12pt</value>
-  </data>
-  <data name="maximizeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="maximizeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>737, 0</value>
-  </data>
-  <data name="maximizeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 19</value>
-  </data>
-  <data name="maximizeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="maximizeBox.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="maximizeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;maximizeBox.Name" xml:space="preserve">
-    <value>maximizeBox</value>
-  </data>
-  <data name="&gt;&gt;maximizeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;maximizeBox.Parent" xml:space="preserve">
-    <value>titlePanel</value>
-  </data>
-  <data name="&gt;&gt;maximizeBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="minimizeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="minimizeBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="minimizeBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Webdings, 12pt</value>
-  </data>
-  <data name="minimizeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="minimizeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>706, 0</value>
-  </data>
-  <data name="minimizeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 19</value>
-  </data>
-  <data name="minimizeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="minimizeBox.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="minimizeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;minimizeBox.Name" xml:space="preserve">
-    <value>minimizeBox</value>
-  </data>
-  <data name="&gt;&gt;minimizeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;minimizeBox.Parent" xml:space="preserve">
-    <value>titlePanel</value>
-  </data>
-  <data name="&gt;&gt;minimizeBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="appIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        RU5ErkJggg==
-</value>
-  </data>
-  <data name="appIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="appIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="appIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="appIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
   </data>
   <data name="appIcon.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;appIcon.Name" xml:space="preserve">
-    <value>appIcon</value>
+  <data name="shuffleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
   </data>
-  <data name="&gt;&gt;appIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;bottomPanel.Name" xml:space="preserve">
+    <value>bottomPanel</value>
   </data>
-  <data name="&gt;&gt;appIcon.Parent" xml:space="preserve">
-    <value>titlePanel</value>
+  <data name="&gt;&gt;trackpos.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;appIcon.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="tracklength.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="appTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="appTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="appTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="appTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 3</value>
-  </data>
-  <data name="appTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>641, 32</value>
-  </data>
-  <data name="appTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="appTitle.Text" xml:space="preserve">
-    <value>fPlayer</value>
-  </data>
-  <data name="appTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;appTitle.Name" xml:space="preserve">
-    <value>appTitle</value>
-  </data>
-  <data name="&gt;&gt;appTitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;appTitle.Parent" xml:space="preserve">
-    <value>titlePanel</value>
-  </data>
-  <data name="&gt;&gt;appTitle.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="titlePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="titlePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="titlePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 39</value>
-  </data>
-  <data name="titlePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;titlePanel.Name" xml:space="preserve">
-    <value>titlePanel</value>
-  </data>
-  <data name="&gt;&gt;titlePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;titlePanel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="trackpos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;titlePanel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="mainSidebar.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;albumsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="libraryPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+  <data name="&gt;&gt;nextButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="libraryIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1002,934 +601,29 @@
         PsC0oA2C4GmkdAAVvYczIgKF1QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="libraryIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="libraryIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="libraryIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="libraryIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="libraryIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.Name" xml:space="preserve">
-    <value>libraryIcon</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.Parent" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="libraryLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="libraryLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="libraryLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="libraryLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="libraryLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="libraryLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="libraryLabel2.Text" xml:space="preserve">
-    <value>Libraries</value>
-  </data>
-  <data name="libraryLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.Name" xml:space="preserve">
-    <value>libraryLabel2</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.Parent" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="libraryPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 418</value>
-  </data>
-  <data name="libraryPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="libraryPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="aboutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="aboutIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE+SURBVFhH7ZaBDYJAEARpwAYowAZsgAZowzrszAbs
-        CXfMnkHh4UHia8ImG8n97Xp3zwPVjh1/h67rDuJJPL+R2MFp20PmtXgRr+ItQdbIqS3bBjJsbd7/k0ak
-        a8h1vzh+W8s/g4wYb3TIdXLMrDnnme+ldZABnUdHR4dnQa41aNdNQkL2PEwGf64Y3TJ2OJgKGjGKX35P
-        SIRxcoyKs/esw5PDL0Dr9YtDeZCA7qgcju65c5ITAM55+DiUBwmiu2TlWmOL6BAmR4yHmJzSKGyKqHFo
-        AAydM2mOh3PyTwTJFk0Z5xYQef9ZQLEtCPOpmzC3gOU3IZBg7hjOFoBWXH4MgUTlHkRAorlH8eRzAI2I
-        Fo91r2cJy72MAjKIMUKuv/c6Dsio3AdJQIblPsn6kDljpuu4AYPLzvmOHb+BqroD6HAWJpTMzJkAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
-  <data name="aboutIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="aboutIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="aboutIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="aboutIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="aboutIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.Name" xml:space="preserve">
-    <value>aboutIcon</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.Parent" xml:space="preserve">
-    <value>aboutPanel</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="aboutLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="aboutLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="aboutLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="aboutLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="aboutLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="aboutLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="aboutLabel2.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="aboutLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.Name" xml:space="preserve">
-    <value>aboutLabel2</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.Parent" xml:space="preserve">
-    <value>aboutPanel</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="aboutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 457</value>
-  </data>
-  <data name="aboutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="aboutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.Name" xml:space="preserve">
-    <value>aboutPanel</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="nowplayingPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="stackCount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt</value>
-  </data>
-  <data name="stackCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="stackCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 0</value>
-  </data>
-  <data name="stackCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 40</value>
-  </data>
-  <data name="stackCount.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="stackCount.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="stackCount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomRight</value>
-  </data>
-  <data name="&gt;&gt;stackCount.Name" xml:space="preserve">
-    <value>stackCount</value>
-  </data>
-  <data name="&gt;&gt;stackCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;stackCount.Parent" xml:space="preserve">
-    <value>nowplayingPanel</value>
-  </data>
-  <data name="&gt;&gt;stackCount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="nowplayingIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGcSURBVFhH7ZeBbcIwEEVZoAswAAuwQBdgABZgDgbo
-        Al2gC3SALsBO6X/Rv8pN4vgIkKoSX/oSufv3ndhnJ2ye+Jfoum4vHsWTye+9048BA4hv4qVBNPe7GZlt
-        xXebxwAH8WcQfjtW3iA1W0uWQQY78cuG54whGmupoXbn1HWg0Abw1eE0qCnqr7sJFfAUy4oLUFv45JdD
-        4ljzm5tJHsxE3xMOzYNBXXB26BcU/0DjyxTwsme7TqLo5Mkpcw6iS00ruqhxqI6W0Pkga8tB9OJ0FdL0
-        D+bLaUgQ039waATnh/wUqzWAvLX1ZVCSI3VW5HyNNO/krlE8Hu7o0BhKMp2z02STFmm60bI4d/LlGCQR
-        +XISNmlxciacm72BW5eg2guKp5ZgaRM2d4Ny7SYEFmW3Ya8VMy+p9jYEIayZOgfTJyJerkkdRK2jmOme
-        3fND4GXP1A1TEC+j0WtYseapVwIPe+VeRkDiv30dg0Hxuh8kAQpt0PeEmOn2+3ySBWwYPQHZJet8lJaQ
-        GYOUA9SIJtftS8EA4rp/TJ54DDabb6mZwVfW9FL1AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="nowplayingIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="nowplayingIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="nowplayingIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="nowplayingIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="nowplayingIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;nowplayingIcon.Name" xml:space="preserve">
-    <value>nowplayingIcon</value>
-  </data>
-  <data name="&gt;&gt;nowplayingIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nowplayingIcon.Parent" xml:space="preserve">
-    <value>nowplayingPanel</value>
-  </data>
-  <data name="&gt;&gt;nowplayingIcon.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="nowplayingLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="nowplayingLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="nowplayingLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="nowplayingLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="nowplayingLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="nowplayingLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="nowplayingLabel2.Text" xml:space="preserve">
-    <value>Now playing</value>
-  </data>
-  <data name="nowplayingLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;nowplayingLabel2.Name" xml:space="preserve">
-    <value>nowplayingLabel2</value>
-  </data>
-  <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nowplayingLabel2.Parent" xml:space="preserve">
-    <value>nowplayingPanel</value>
-  </data>
-  <data name="&gt;&gt;nowplayingLabel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="nowplayingPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 181</value>
-  </data>
-  <data name="nowplayingPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="nowplayingPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Name" xml:space="preserve">
-    <value>nowplayingPanel</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="playlistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="playlistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACkSURBVFhH7ZXBCYBADASvJ6uxAeuwDRuwGns6E1gh
-        jyBucqBIBuYj7HCIh60oPk3vfRshcjwyPkaIHI8Xi4gcjxeLiByPiUx49BjdXHs84rkCWZHj8WIRkeMx
-        kVnUV8qom2EH2EX3jt+om2EHSIkcj4ms4kKqm/8cICVyPCby+kf4+jVMiRyPF4uIHI+J1M8oJXI8Xiwi
-        cjwy9u43LXJF8UVaOwGnnlaM2BC6gQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="playlistsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="playlistsIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="playlistsIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="playlistsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="playlistsIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.Name" xml:space="preserve">
-    <value>playlistsIcon</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.Parent" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="playlistsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="playlistsLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
   <data name="playlistsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="playlistsLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="playlistsLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="playlistsLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="playlistsLabel2.Text" xml:space="preserve">
-    <value>Lists</value>
-  </data>
-  <data name="playlistsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.Name" xml:space="preserve">
-    <value>playlistsLabel2</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.Parent" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="playlistsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 142</value>
-  </data>
-  <data name="playlistsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="playlistsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Name" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="albumsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="albumsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAB5SURBVFhH7ZbRCcAwCETdKXNkjSyQabJTd7I5kCKS
-        fPiRth/34L485TAIEULIr1HVMtU2qmaDr4aaVzFbHhtwbTTMBt8INa9mtjxoDsO8GIABXgmA88LwlbrZ
-        4Ouh5vWcK0mD9YV1ep1/gtnMK2AABvj2Q0IIOY/IDRT3pL6afJevAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="albumsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="albumsIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="albumsIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="albumsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="albumsIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.Name" xml:space="preserve">
-    <value>albumsIcon</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.Parent" xml:space="preserve">
-    <value>albumsPanel</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="albumsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="albumsLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="albumsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="albumsLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="albumsLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="albumsLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="albumsLabel2.Text" xml:space="preserve">
-    <value>Albums</value>
-  </data>
-  <data name="albumsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.Name" xml:space="preserve">
-    <value>albumsLabel2</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.Parent" xml:space="preserve">
-    <value>albumsPanel</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="albumsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 103</value>
-  </data>
-  <data name="albumsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="albumsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.Name" xml:space="preserve">
-    <value>albumsPanel</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="artistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="artistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEjSURBVFhH7ZRhDcIwEIVnAAMImAEMzAACZmAGMIAA
-        DMwABhCAATyN9yXXpCnbGO3tB0lf8iVL23u3a3ttqqqqcjRNUyeuYjT47mx6PynJ0RK+FmDuaMt9JeOD
-        eFqiNVhzsDA/yXSt8pTRwnwkwzZJsIXWwsslsz4x30Jv4eWS2ZCYb2Gw8HJhlphvwfUHzpFx6P0l7oJ1
-        Zwsvl8ziFlw9W83zE/6tKMP4GD6qI6HgRWTeb/tjRQngJniST4IueQjGr7Z8HykB9yEki2HM79y/Scl4
-        nKge/B6dOSkB58sdoEq4CBIzDnwzFuZZ63MJZUSlmKZb/g1iynZGBlSXkzxAbP5OKDi+9bnkdYUCqX7O
-        MIffd0FBnH36zOayb5dUVf2xmuYN1LCWbmlOCSEAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="artistsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="artistsIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="artistsIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="artistsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="artistsIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.Name" xml:space="preserve">
-    <value>artistsIcon</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.Parent" xml:space="preserve">
-    <value>artistsPanel</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="artistsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="artistsLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="artistsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="artistsLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="artistsLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="artistsLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="artistsLabel2.Text" xml:space="preserve">
-    <value>Artists</value>
-  </data>
-  <data name="artistsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.Name" xml:space="preserve">
-    <value>artistsLabel2</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.Parent" xml:space="preserve">
-    <value>artistsPanel</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="artistsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 64</value>
-  </data>
-  <data name="artistsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="artistsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.Name" xml:space="preserve">
-    <value>artistsPanel</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="songsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="songsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVFhH7ZcBjcJAFERrAAMIwAAGMICAM4ABDJwA
-        DGAAAwg4A+epNy+Z32zaLLu9dkNIOskk5f/5w5Ruu7Tb8FHo+/4kXsW7+CP+mhxTo3eyfD3I9Cw+xfjC
-        EtGePf5/yGQvPmwa5Ewv4nFEavRSLbN7282DBg9i+jN/i0UzNNbGHB4Ht+uggZ0Hw+DoVjWYGXns3CpD
-        4vgp56dPwKw98Lq7/BoSkpwBuHhF4zHLT6I4+7rEFZDXrcpTAhZQpJ193XPAK/HNL2Q1ud8RPV1aDXja
-        +8ulKdTkXkZ0c2k1yDNuzatLU6gZ1//i0mrA0975dUDToi0AYu5fPger14W0zHPNmeM49orqAGyrMTDQ
-        siLGcyJeeHJcFSCSpyZLAwzelk2hZmy9LQM8LJvCAtgyQN4nBBZvAd4SIDaMlgHyG52FiFoGeP2UlYAn
-        INvy2gHwrP+P4QFSD3SrCGnH7xDL3xE2tEHX/QGUpVsdUb8aqAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="songsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="songsIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="songsIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="songsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="songsIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.Name" xml:space="preserve">
-    <value>songsIcon</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.Parent" xml:space="preserve">
-    <value>songsPanel</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="songsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="songsLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="songsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="songsLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 4</value>
-  </data>
-  <data name="songsLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 32</value>
-  </data>
-  <data name="songsLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="songsLabel2.Text" xml:space="preserve">
-    <value>Songs</value>
-  </data>
-  <data name="songsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.Name" xml:space="preserve">
-    <value>songsLabel2</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.Parent" xml:space="preserve">
-    <value>songsPanel</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="songsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 25</value>
-  </data>
-  <data name="songsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="songsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.Name" xml:space="preserve">
-    <value>songsPanel</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="searchBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 9.75pt, style=Italic</value>
-  </data>
-  <data name="searchBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="searchBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 25</value>
-  </data>
-  <data name="searchBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="searchBox.Text" xml:space="preserve">
-    <value>search</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Name" xml:space="preserve">
-    <value>searchBox</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;searchBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="mainSidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mainSidebar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 39</value>
-  </data>
-  <data name="mainSidebar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 497</value>
-  </data>
-  <data name="mainSidebar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.Name" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="mainPane.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="contentPane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="contentPane.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="contentPane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 35</value>
-  </data>
-  <data name="contentPane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 10</value>
-  </data>
-  <data name="contentPane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;contentPane.Name" xml:space="preserve">
-    <value>contentPane</value>
-  </data>
-  <data name="&gt;&gt;contentPane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contentPane.Parent" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;contentPane.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="contentPaneTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="contentPaneTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="contentPaneTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="contentPaneTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="contentPaneTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 32</value>
-  </data>
-  <data name="contentPaneTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="contentPaneTitle.Text" xml:space="preserve">
-    <value>Songs</value>
-  </data>
-  <data name="contentPaneTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Name" xml:space="preserve">
-    <value>contentPaneTitle</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mainPane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="mainPane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 39</value>
-  </data>
-  <data name="mainPane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 497</value>
-  </data>
-  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Name" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="focusMisser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="focusMisser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-300, -300</value>
-  </data>
-  <data name="focusMisser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 53</value>
-  </data>
-  <data name="focusMisser.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;focusMisser.Name" xml:space="preserve">
-    <value>focusMisser</value>
-  </data>
-  <data name="&gt;&gt;focusMisser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;focusMisser.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;focusMisser.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="focusController.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>185, 17</value>
-  </metadata>
-  <metadata name="songMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>320, 17</value>
-  </metadata>
-  <data name="songMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt</value>
-  </data>
-  <data name="playToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt, style=Bold</value>
-  </data>
-  <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="playToolStripMenuItem.Text" xml:space="preserve">
-    <value>Play</value>
-  </data>
-  <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="stackToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add to queue</value>
   </data>
   <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 22</value>
   </data>
-  <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>New playlist</value>
+  <data name="playlistsIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
   </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 6</value>
+  <data name="albumsLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
   </data>
-  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+  <data name="songsIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
   </data>
-  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add to playlist</value>
+  <data name="playlistsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
   </data>
-  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 70</value>
+  <data name="maximizeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;songMenu.Name" xml:space="preserve">
-    <value>songMenu</value>
-  </data>
-  <data name="&gt;&gt;songMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="playbackTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>430, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 600</value>
+  <data name="nextButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2943,88 +1637,1324 @@
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>fPlayer 2.1</value>
+  <data name="songinfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;restoreToolStripMenuItem.Name" xml:space="preserve">
-    <value>restoreToolStripMenuItem</value>
+  <data name="&gt;&gt;playlistsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;restoreToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="maximizeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>737, 0</value>
   </data>
-  <data name="&gt;&gt;minimizeToolStripMenuItem.Name" xml:space="preserve">
-    <value>minimizeToolStripMenuItem</value>
+  <data name="nowplayingIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;minimizeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;aboutIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;maximizeToolStripMenuItem.Name" xml:space="preserve">
-    <value>maximizeToolStripMenuItem</value>
+  <data name="&gt;&gt;tracklength.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;maximizeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="appIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
+  <data name="bottomPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;trackpos.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
   </data>
-  <data name="&gt;&gt;closeToolStripMenuItem.Name" xml:space="preserve">
-    <value>closeToolStripMenuItem</value>
+  <data name="&gt;&gt;artistsLabel2.Parent" xml:space="preserve">
+    <value>artistsPanel</value>
   </data>
-  <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;focusController.Name" xml:space="preserve">
-    <value>focusController</value>
-  </data>
-  <data name="&gt;&gt;focusController.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playToolStripMenuItem.Name" xml:space="preserve">
-    <value>playToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;playToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;stackToolStripMenuItem.Name" xml:space="preserve">
-    <value>stackToolStripMenuItem</value>
+  <data name="songsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;stackToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="stackToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add to queue</value>
+  </data>
+  <data name="artistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEjSURBVFhH7ZRhDcIwEIVnAAMImAEMzAACZmAGMIAA
+        DMwABhCAATyN9yXXpCnbGO3tB0lf8iVL23u3a3ttqqqqcjRNUyeuYjT47mx6PynJ0RK+FmDuaMt9JeOD
+        eFqiNVhzsDA/yXSt8pTRwnwkwzZJsIXWwsslsz4x30Jv4eWS2ZCYb2Gw8HJhlphvwfUHzpFx6P0l7oJ1
+        Zwsvl8ziFlw9W83zE/6tKMP4GD6qI6HgRWTeb/tjRQngJniST4IueQjGr7Z8HykB9yEki2HM79y/Scl4
+        nKge/B6dOSkB58sdoEq4CBIzDnwzFuZZ63MJZUSlmKZb/g1iynZGBlSXkzxAbP5OKDi+9bnkdYUCqX7O
+        MIffd0FBnH36zOayb5dUVf2xmuYN1LCWbmlOCSEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add to playlist</value>
+  </data>
+  <data name="closeBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="albumsIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="volumeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;volumeButton.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="songalbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="songinfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 29</value>
+  </data>
+  <data name="&gt;&gt;appIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;artistsIcon.Name" xml:space="preserve">
+    <value>artistsIcon</value>
+  </data>
+  <data name="&gt;&gt;libraryIcon.Parent" xml:space="preserve">
+    <value>libraryPanel</value>
+  </data>
+  <data name="playlistsIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;addToPlaylistToolStripMenuItem.Name" xml:space="preserve">
     <value>addToPlaylistToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;addToPlaylistToolStripMenuItem.Type" xml:space="preserve">
+  <data name="songinfo.Text" xml:space="preserve">
+    <value>Nothing playing</value>
+  </data>
+  <data name="&gt;&gt;shuffleButton.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;libraryIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tracklength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 22</value>
+  </data>
+  <data name="&gt;&gt;artistsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="playlistsIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="bottomPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 64</value>
+  </data>
+  <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
+    <value>libraryPanel</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 6</value>
+  </data>
+  <data name="&gt;&gt;trackbarProgress.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="nextButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="focusMisser.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;titlePanel.Name" xml:space="preserve">
+    <value>titlePanel</value>
+  </data>
+  <data name="mainSidebar.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="libraryPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="&gt;&gt;trackpos.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="previousButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="appIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="closeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F4</value>
+  </data>
+  <data name="artistsIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="aboutLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;playlistsLabel2.Name" xml:space="preserve">
+    <value>playlistsLabel2</value>
+  </data>
+  <data name="&gt;&gt;albumsIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aboutLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="mainPane.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="artistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="mainSidebar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="contentPane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;titlePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aboutIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libraryLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="albumsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 103</value>
+  </data>
+  <data name="shuffleButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;artistsLabel2.Name" xml:space="preserve">
+    <value>artistsLabel2</value>
+  </data>
+  <data name="searchBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="libraryIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;appTitle.Parent" xml:space="preserve">
+    <value>titlePanel</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel2.Parent" xml:space="preserve">
+    <value>libraryPanel</value>
+  </data>
+  <data name="albumsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="trackpos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 22</value>
+  </data>
+  <data name="albumsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="searchBox.Text" xml:space="preserve">
+    <value>search</value>
+  </data>
+  <data name="nowplayingLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="trackbarBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 27</value>
+  </data>
+  <data name="repeatButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;maximizeBox.Name" xml:space="preserve">
+    <value>maximizeBox</value>
+  </data>
+  <data name="&gt;&gt;playlistsLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="contentPaneTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="aboutLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;contentPane.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;libraryIcon.Name" xml:space="preserve">
+    <value>libraryIcon</value>
+  </data>
+  <data name="contentPane.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="artistsLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="nowplayingLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="tracklength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
+  </data>
+  <data name="maximizeBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;playToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;newPlaylistToolStripMenuItem.Name" xml:space="preserve">
-    <value>newPlaylistToolStripMenuItem</value>
+  <data name="songinfo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;newPlaylistToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;aboutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="trackbarBack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="songsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;stackCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;libraryLabel2.Name" xml:space="preserve">
+    <value>libraryLabel2</value>
+  </data>
+  <data name="previousButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="repeatButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;artistsIcon.Parent" xml:space="preserve">
+    <value>artistsPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nowplayingIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;trackbarBack.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="artistsLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="&gt;&gt;focusController.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistsIcon.Parent" xml:space="preserve">
+    <value>playlistsPanel</value>
+  </data>
+  <data name="songalbum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 6</value>
+  </data>
+  <data name="&gt;&gt;trackbarBack.Name" xml:space="preserve">
+    <value>trackbarBack</value>
+  </data>
+  <data name="nowplayingPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 181</value>
+  </data>
+  <data name="titlePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="nowplayingLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
-    <value>toolStripMenuItem2</value>
+  <data name="&gt;&gt;nowplayingLabel2.Parent" xml:space="preserve">
+    <value>nowplayingPanel</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;previousButton.Name" xml:space="preserve">
+    <value>previousButton</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="nowplayingPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;playbackTimer.Name" xml:space="preserve">
-    <value>playbackTimer</value>
+  <data name="playlistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACkSURBVFhH7ZXBCYBADASvJ6uxAeuwDRuwGns6E1gh
+        jyBucqBIBuYj7HCIh60oPk3vfRshcjwyPkaIHI8Xi4gcjxeLiByPiUx49BjdXHs84rkCWZHj8WIRkeMx
+        kVnUV8qom2EH2EX3jt+om2EHSIkcj4ms4kKqm/8cICVyPCby+kf4+jVMiRyPF4uIHI+J1M8oJXI8Xiwi
+        cjwy9u43LXJF8UVaOwGnnlaM2BC6gQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="&gt;&gt;playbackTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="nextButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;restoreToolStripMenuItem.Name" xml:space="preserve">
+    <value>restoreToolStripMenuItem</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="&gt;&gt;playPauseButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="stackCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="songname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 25</value>
+  </data>
+  <data name="previousButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADGSURBVFhH7ZWBCcIwFESzgAs4QBfoAi7gAC7gHF3D
+        ORzABdwpvSv3pcQkNEWMwn9w0FyfIfi1DY7jOD9HjPGIXBlVVeCddVkF3ol7a1kG0og8GVVZ5N02eIN5
+        yKi6DCXJ2Y3R8xuazKl4h9RD9h8Aa27I0TzsvkXKC3QX5M1D9h0A15zf3fo00uyzRQ9pOwCynl8tHMsW
+        r/kAn87/HaDvCFSx6/MjVLWAdb+/4Rr0fR5EKfKWuavKgvvNj+K+LyPHcZzvEsIM0dtBDAppjncAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="songsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="&gt;&gt;trackbarProgress.Name" xml:space="preserve">
+    <value>trackbarProgress</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="&gt;&gt;contentPane.Name" xml:space="preserve">
+    <value>contentPane</value>
+  </data>
+  <data name="albumsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Name" xml:space="preserve">
+    <value>mainPane</value>
+  </data>
+  <data name="previousButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>571, 13</value>
+  </data>
+  <data name="&gt;&gt;tracklength.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="contentPaneTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="maximizeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="libraryIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="closeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;mainSidebar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maximizeBox.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maximizeBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="shuffleButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="playToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;aboutPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;previousButton.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;volumeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stackCount.Name" xml:space="preserve">
+    <value>stackCount</value>
+  </data>
+  <data name="&gt;&gt;songalbum.Name" xml:space="preserve">
+    <value>songalbum</value>
+  </data>
+  <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="trackpos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="aboutIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="albumsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAB5SURBVFhH7ZbRCcAwCETdKXNkjSyQabJTd7I5kCKS
+        fPiRth/34L485TAIEULIr1HVMtU2qmaDr4aaVzFbHhtwbTTMBt8INa9mtjxoDsO8GIABXgmA88LwlbrZ
+        4Ouh5vWcK0mD9YV1ep1/gtnMK2AABvj2Q0IIOY/IDRT3pL6afJevAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="playlistsLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="&gt;&gt;repeatButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.Name" xml:space="preserve">
+    <value>songsPanel</value>
+  </data>
+  <data name="playlistsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;libraryPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;songinfo.Name" xml:space="preserve">
+    <value>songinfo</value>
+  </data>
+  <data name="&gt;&gt;minimizeBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nowplayingLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;trackbarBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="closeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="aboutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="libraryPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;artistsLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="albumsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="minimizeBox.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;nowplayingIcon.Name" xml:space="preserve">
+    <value>nowplayingIcon</value>
+  </data>
+  <data name="minimizeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="&gt;&gt;nextButton.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="songsLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="&gt;&gt;albumsPanel.Name" xml:space="preserve">
+    <value>albumsPanel</value>
+  </data>
+  <data name="songsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="shuffleButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="mainPane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 39</value>
+  </data>
+  <data name="playPauseButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="nowplayingIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGcSURBVFhH7ZeBbcIwEEVZoAswAAuwQBdgABZgDgbo
+        Al2gC3SALsBO6X/Rv8pN4vgIkKoSX/oSufv3ndhnJ2ye+Jfoum4vHsWTye+9048BA4hv4qVBNPe7GZlt
+        xXebxwAH8WcQfjtW3iA1W0uWQQY78cuG54whGmupoXbn1HWg0Abw1eE0qCnqr7sJFfAUy4oLUFv45JdD
+        4ljzm5tJHsxE3xMOzYNBXXB26BcU/0DjyxTwsme7TqLo5Mkpcw6iS00ruqhxqI6W0Pkga8tB9OJ0FdL0
+        D+bLaUgQ039waATnh/wUqzWAvLX1ZVCSI3VW5HyNNO/krlE8Hu7o0BhKMp2z02STFmm60bI4d/LlGCQR
+        +XISNmlxciacm72BW5eg2guKp5ZgaRM2d4Ny7SYEFmW3Ya8VMy+p9jYEIayZOgfTJyJerkkdRK2jmOme
+        3fND4GXP1A1TEC+j0WtYseapVwIPe+VeRkDiv30dg0Hxuh8kAQpt0PeEmOn2+3ySBWwYPQHZJet8lJaQ
+        GYOUA9SIJtftS8EA4rp/TJ54DDabb6mZwVfW9FL1AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;songalbum.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="previousButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;minimizeBox.Name" xml:space="preserve">
+    <value>minimizeBox</value>
+  </data>
+  <data name="closeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="previousButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;contentPaneTitle.Name" xml:space="preserve">
+    <value>contentPaneTitle</value>
+  </data>
+  <data name="&gt;&gt;nowplayingIcon.Parent" xml:space="preserve">
+    <value>nowplayingPanel</value>
+  </data>
+  <data name="playPauseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="tracklength.Text" xml:space="preserve">
+    <value>0:00</value>
+  </data>
+  <data name="&gt;&gt;artistsPanel.Name" xml:space="preserve">
+    <value>artistsPanel</value>
+  </data>
+  <data name="volumeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 13</value>
+  </data>
+  <data name="tracklength.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;artistsPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="stackCount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="albumsLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="aboutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 457</value>
+  </data>
+  <data name="songname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 6</value>
+  </data>
+  <data name="aboutLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="contentPane.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;playlistsPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="libraryLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="songalbum.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="stackCount.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="contentPane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 10</value>
+  </data>
+  <data name="trackbarProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;windowContextMenu.Name" xml:space="preserve">
+    <value>windowContextMenu</value>
+  </data>
+  <data name="&gt;&gt;playPauseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tracklength.Name" xml:space="preserve">
+    <value>tracklength</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;appIcon.Parent" xml:space="preserve">
+    <value>titlePanel</value>
+  </data>
+  <data name="&gt;&gt;volumeButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;albumsLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="artistsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 64</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Player</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="playlistsLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
   </data>
+  <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="&gt;&gt;libraryPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="playPauseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 13</value>
+  </data>
+  <data name="&gt;&gt;artistsIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="appTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="&gt;&gt;mainSidebar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="closeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="repeatButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>761, 13</value>
+  </data>
+  <data name="&gt;&gt;newPlaylistToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="artistsIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="songsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="songsLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="&gt;&gt;aboutPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="albumsIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="contentPaneTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="songname.Text" xml:space="preserve">
+    <value>Nothing playing</value>
+  </data>
+  <data name="stackCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 0</value>
+  </data>
+  <data name="&gt;&gt;contentPane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="minimizeBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tracklength.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;trackbarBack.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;nowplayingIcon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;minimizeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;albumsIcon.Name" xml:space="preserve">
+    <value>albumsIcon</value>
+  </data>
+  <data name="searchBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="nowplayingLabel2.Text" xml:space="preserve">
+    <value>Now playing</value>
+  </data>
+  <data name="songsLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="albumsLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="repeatButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="shuffleButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="aboutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="searchBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="trackpos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="songsIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;previousButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="playPauseButton.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABQSURBVFhH7ZaxDQAgCARZgGnYfwN3Qk2oSDRSGAvv
+        ku/+yZUIAKxwdx2xTTSqpe4xMWybWFRL3WPmKB3JQQABBBBAAAEEELgu8PYlA/gEkQ6x4xE4277+8gAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="songsLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="albumsLabel2.Text" xml:space="preserve">
+    <value>Albums</value>
+  </data>
+  <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
+    <value>New playlist</value>
+  </data>
+  <data name="&gt;&gt;focusController.Name" xml:space="preserve">
+    <value>focusController</value>
+  </data>
+  <data name="volumeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="libraryLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="shuffleButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFHSURBVFhH7ZYNDcIwEIVnAAMTgAEMYGACZgADGEAA
+        BjCAAQRgAE/jfeSW3ErZyiglIXvJC1vv79G7dasWLPhbdF23Fhu7LQ8V34g3cWdLZeEEwKO4MlMcOIgE
+        9azNNAuWoxcAz+LazM+QMQyAV/EgbswtCfLfWlws39bchpAhJsDzJI4Kkb0RL+Y/xufd1aJvAYn4BygO
+        g/fioJ+6JyalMPnSd1POiNpZoE9EPx8i9Ivd2yC7hVC/Rsy8uVIgQkjqk7EW9hmhrcX4luI3/hSkwBK9
+        Kj6Ycl33AvKfA0oaKx7OBSdhfOI/gZK24mhxoLX8ApQw1vNaZOC+1wIlCYewL/544QRr+YaQIHHqMQxb
+        At9/DGWkGKph+YMIg3OM8etHcUwAitmJIi8j3wJY9nWcGyrmBUx/kOSGE/CzT7LffpQuWJCGqroDqC3a
+        MPGYlJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="maximizeBox.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="albumsIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="trackpos.Text" xml:space="preserve">
+    <value>0:00</value>
+  </data>
+  <data name="&gt;&gt;titlePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;albumsLabel2.Name" xml:space="preserve">
+    <value>albumsLabel2</value>
+  </data>
+  <data name="&gt;&gt;albumsPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 6</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;songsLabel2.Name" xml:space="preserve">
+    <value>songsLabel2</value>
+  </data>
+  <data name="&gt;&gt;volumeButton.Name" xml:space="preserve">
+    <value>volumeButton</value>
+  </data>
+  <data name="contentPaneTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="closeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>768, 0</value>
+  </data>
+  <data name="minimizeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="shuffleButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>723, 13</value>
+  </data>
+  <data name="closeBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Webdings, 12pt</value>
+  </data>
+  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 98</value>
+  </data>
+  <data name="&gt;&gt;previousButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="songinfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 25</value>
+  </data>
+  <data name="&gt;&gt;libraryPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playToolStripMenuItem.Name" xml:space="preserve">
+    <value>playToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;closeBox.Parent" xml:space="preserve">
+    <value>titlePanel</value>
+  </data>
+  <data name="aboutLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="&gt;&gt;appIcon.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;songsIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;focusMisser.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="libraryLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;songalbum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="aboutIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE+SURBVFhH7ZaBDYJAEARpwAYowAZsgAZowzrszAbs
+        CXfMnkHh4UHia8ImG8n97Xp3zwPVjh1/h67rDuJJPL+R2MFp20PmtXgRr+ItQdbIqS3bBjJsbd7/k0ak
+        a8h1vzh+W8s/g4wYb3TIdXLMrDnnme+ldZABnUdHR4dnQa41aNdNQkL2PEwGf64Y3TJ2OJgKGjGKX35P
+        SIRxcoyKs/esw5PDL0Dr9YtDeZCA7qgcju65c5ITAM55+DiUBwmiu2TlWmOL6BAmR4yHmJzSKGyKqHFo
+        AAydM2mOh3PyTwTJFk0Z5xYQef9ZQLEtCPOpmzC3gOU3IZBg7hjOFoBWXH4MgUTlHkRAorlH8eRzAI2I
+        Fo91r2cJy72MAjKIMUKuv/c6Dsio3AdJQIblPsn6kDljpuu4AYPLzvmOHb+BqroD6HAWJpTMzJkAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;playbackTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libraryPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="&gt;&gt;playlistsLabel2.Parent" xml:space="preserve">
+    <value>playlistsPanel</value>
+  </data>
+  <data name="&gt;&gt;aboutIcon.Parent" xml:space="preserve">
+    <value>aboutPanel</value>
+  </data>
+  <data name="minimizeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="playlistsLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.Name" xml:space="preserve">
+    <value>nowplayingPanel</value>
+  </data>
+  <data name="stackCount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="songsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="appTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>641, 32</value>
+  </data>
+  <data name="appTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="minimizeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="appTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 3</value>
+  </data>
+  <data name="contentPaneTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel2.Name" xml:space="preserve">
+    <value>aboutLabel2</value>
+  </data>
+  <data name="stackCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;searchBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;mainSidebar.Name" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="songalbum.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="songsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;playPauseButton.Name" xml:space="preserve">
+    <value>playPauseButton</value>
+  </data>
+  <data name="playlistsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 142</value>
+  </data>
+  <data name="maximizeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;closeBox.Name" xml:space="preserve">
+    <value>closeBox</value>
+  </data>
+  <data name="focusMisser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 53</value>
+  </data>
+  <data name="&gt;&gt;playlistsPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="songalbum.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJCSURBVGhD7VkLjQIxEMUABhCAAQycAQRgAAMYQAAG
+        MIABBJyB88S9R6aXx4Sl3W6720v6khe47sy8mbb0s7fq6Ogoi8fjsQF3xoMx/L0xs3aApNbgHryA3+BP
+        hLShLQtbW5j5AXH29Bl8l+QYMsZ8IwMx9vjJxD/x6hgbHcasOyIQ2IJ3E1QyOfbkFziYBJ+ZDW3fFcTY
+        WzMvCwSmsBelIOd/Vs+Zr+8QauzNpAwQkD2vImSRIWcMi+Xj78xkGhCIyfueL9tDAGOCqsPv06cTgtwk
+        aJXkAxCbe4Vq3exRHhDg6AJWSz6AGk7zaI/GAY6cmzqkF3tUHdQSXeYw/rcGJ+6UIQg522ZDLVA7b/wo
+        wEmXt7M1zwZo6sp0t+Y0wMEvm3U2lw+AJkchLwcY6/SZthJMALUlj/RpBGP9EZ2seXZQW/JIX0RgzMNX
+        cKy+dA4B2jy+hDzSZ4I4kWW29AxQW3Ox5jjUCVyygJcfsjXHkeVUCVm5ZDlVQlYuWU6VkJWLd8LnuyN1
+        YPYqRV+QK56u9+EK+jy6SPukAvwxV5l3WgTo62Ipn4uHtj2dUqBOIDeTRQoAX25q5haHOoEczqUK0A01
+        rQAY8h6ggZopAIwf6WHkb0QtFRBfMGDkg7ZUQFyLRs6pFzAE+rpYyl5A4L8rwL+NaKmAg7kOA0b+Qt9S
+        AWkXe+fYSgFXc4sDxtyNg3MLBfAz6+0cr3ScUksVQO3Jr/AptEgBZlYGCMhpxUKUk96X0l9isZi/f8ma
+        SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;minimizeBox.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;stackCount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newPlaylistToolStripMenuItem.Name" xml:space="preserve">
+    <value>newPlaylistToolStripMenuItem</value>
+  </data>
+  <data name="libraryIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="songsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="contentPaneTitle.Text" xml:space="preserve">
+    <value>Songs</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="songinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="artistsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;repeatButton.Name" xml:space="preserve">
+    <value>repeatButton</value>
+  </data>
+  <data name="mainSidebar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="artistsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;minimizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>minimizeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5319.29890, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;songname.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="songalbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 48</value>
+  </data>
+  <data name="&gt;&gt;windowContextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchBox.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="playPauseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="trackpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nowplayingPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="songinfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;minimizeBox.Parent" xml:space="preserve">
+    <value>titlePanel</value>
+  </data>
+  <data name="maximizeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;songname.Name" xml:space="preserve">
+    <value>songname</value>
+  </data>
+  <data name="contentPaneTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 32</value>
+  </data>
+  <data name="minimizeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;shuffleButton.Name" xml:space="preserve">
+    <value>shuffleButton</value>
+  </data>
+  <data name="&gt;&gt;nowplayingIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="repeatButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="mainPane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 497</value>
+  </data>
+  <data name="trackbarBack.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="titlePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 39</value>
+  </data>
+  <data name="playlistsLabel2.Text" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="aboutIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;albumsIcon.Parent" xml:space="preserve">
+    <value>albumsPanel</value>
+  </data>
+  <data name="&gt;&gt;songalbum.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="aboutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="aboutLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="artistsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="albumsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="songsLabel2.Text" xml:space="preserve">
+    <value>Songs</value>
+  </data>
+  <data name="&gt;&gt;songinfo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="aboutIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;trackpos.Name" xml:space="preserve">
+    <value>trackpos</value>
+  </data>
+  <data name="&gt;&gt;shuffleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="closeBox.Text" xml:space="preserve">
+    <value>r</value>
+  </data>
+  <data name="playToolStripMenuItem.Text" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;nextButton.Name" xml:space="preserve">
+    <value>nextButton</value>
+  </data>
+  <data name="&gt;&gt;albumsLabel2.Parent" xml:space="preserve">
+    <value>albumsPanel</value>
+  </data>
+  <data name="playPauseButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;mainSidebar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="songname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="playlistsLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;songMenu.Name" xml:space="preserve">
+    <value>songMenu</value>
+  </data>
+  <data name="trackbarProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 9</value>
+  </data>
+  <data name="playlistsLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="songname.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="songname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="titlePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="songname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;songsIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;aboutLabel2.Parent" xml:space="preserve">
+    <value>aboutPanel</value>
+  </data>
+  <data name="mainPane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="minimizeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="volumeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;nowplayingLabel2.Name" xml:space="preserve">
+    <value>nowplayingLabel2</value>
+  </data>
+  <data name="maximizeBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Webdings, 12pt</value>
+  </data>
+  <data name="&gt;&gt;focusMisser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nowplayingLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tracklength.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="appTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;trackbarProgress.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="artistsLabel2.Text" xml:space="preserve">
+    <value>Artists</value>
+  </data>
+  <data name="artistsIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="aboutLabel2.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="appTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="titlePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="appTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="artistsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="playPauseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="bottomPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 536</value>
+  </data>
+  <data name="&gt;&gt;maximizeBox.Parent" xml:space="preserve">
+    <value>titlePanel</value>
+  </data>
+  <data name="focusMisser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-300, -300</value>
+  </data>
+  <data name="previousButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <metadata name="windowContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="songMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>320, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="playbackTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>430, 17</value>
+  </metadata>
+  <metadata name="focusController.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>185, 17</value>
+  </metadata>
 </root>
