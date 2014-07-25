@@ -85,6 +85,18 @@
     <Compile Include="libraryEditor.Designer.cs">
       <DependentUpon>libraryEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoSongsMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoSongsMsg.Designer.cs">
+      <DependentUpon>NoSongsMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NothingPlayingMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NothingPlayingMsg.Designer.cs">
+      <DependentUpon>NothingPlayingMsg.cs</DependentUpon>
+    </Compile>
     <Compile Include="nowPlayingOverlay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +157,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="libraryEditor.resx">
       <DependentUpon>libraryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoSongsMsg.ca.resx">
+      <DependentUpon>NoSongsMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoSongsMsg.es.resx">
+      <DependentUpon>NoSongsMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoSongsMsg.resx">
+      <DependentUpon>NoSongsMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NothingPlayingMsg.ca.resx">
+      <DependentUpon>NothingPlayingMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NothingPlayingMsg.es.resx">
+      <DependentUpon>NothingPlayingMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NothingPlayingMsg.resx">
+      <DependentUpon>NothingPlayingMsg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nowPlayingOverlay.resx">
       <DependentUpon>nowPlayingOverlay.cs</DependentUpon>

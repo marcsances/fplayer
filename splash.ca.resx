@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="taskLabels.Text" xml:space="preserve">
+    <value>Carregant biblioteques...!Carregant cançons...!Un moment...</value>
+  </data>
   <data name="curTask.Text" xml:space="preserve">
     <value>Carregant...</value>
   </data>
@@ -179,5 +182,9 @@
         d5dCe7D4dEzkiwvCHz68f7skn14Wrf5D8LfzzEcXR2tAPaB8ifi9+Xp/yQbEtAZz/nM4HA6Hw+FwOBwO
         h8PhcDgcDofD4XA4HA6Hw+FQwvP+B0C48aqL3Zk3AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

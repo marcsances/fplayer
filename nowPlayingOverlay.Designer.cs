@@ -28,16 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nowPlayingOverlay));
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.songtitle = new Label2();
             this.songAlbum = new Label2();
             this.songArtist = new Label2();
+            this.songPos = new Label2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox
             // 
             this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.ErrorImage")));
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
             this.pictureBox.Location = new System.Drawing.Point(250, 0);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(150, 150);
@@ -87,12 +92,27 @@
             this.songArtist.Text = "Artist";
             this.songArtist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // songPos
+            // 
+            this.songPos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.songPos.BackColor = System.Drawing.Color.Transparent;
+            this.songPos.Font = new System.Drawing.Font("Open Sans", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.songPos.Location = new System.Drawing.Point(8, 32);
+            this.songPos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.songPos.Name = "songPos";
+            this.songPos.Size = new System.Drawing.Size(235, 67);
+            this.songPos.TabIndex = 5;
+            this.songPos.Text = "--:--";
+            this.songPos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // nowPlayingOverlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.songPos);
             this.Controls.Add(this.songtitle);
             this.Controls.Add(this.songAlbum);
             this.Controls.Add(this.songArtist);
@@ -111,5 +131,6 @@
         private Label2 songAlbum;
         private Label2 songtitle;
         private System.Windows.Forms.PictureBox pictureBox;
+        public Label2 songPos;
     }
 }

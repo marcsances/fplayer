@@ -194,9 +194,6 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="trackbarProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 9</value>
-  </data>
   <data name="songinfo.Text" xml:space="preserve">
     <value>Nada en reproducción</value>
   </data>
@@ -235,23 +232,6 @@
         SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 98</value>
-  </data>
-  <data name="appIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABGdBTUEAALEQa0zv0AAAACBjSFJNAACH
-        DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGHRF
-        WHRTb2Z0d2FyZQBwYWludC5uZXQgNC4wLjL74afGAAABo0lEQVRIS+2VS0+DQBSF/em+YhMfiY8YozWu
-        dGtiXBmNxoVuTYxxp66oQLVNqbbYUo4Hh8AwDAwluvPkWwC93A9mOsPMrIU/5V9gpJJgzsKei5s+uoH6
-        kxGDIOmbRCkwohHIz5uPUmwkI2gW900i11chI6iSxRbuB2i8pneVU0cQAp0AzXZ6YwlTCxZ+BMwkxHkv
-        mjC5Qx6DgL0Gk/hYJBGIPPlYLR0uvcAPsetiy4nYb0NWzFuZU+ZjgsO3tImCXsCnXrfjYyV5AcN3uu1H
-        Lyd3E0wt4KDnBSLWCJtO2k1QKFiz8eLjYYDHYXxRhGVFAuYrxHEnbUgKBUstnHZx6UUOOSwL5FnOZhTi
-        pJs2JFMPEcvGBYL3MXbctJugjoCPmQ9HsvErk8wy/onlcMWd9dImCnoBR/nuMz5WwrKhNMtegIPSPUMv
-        KAnL+H4izz5WTLteHQGXLgfp2jNvRKSOwB3jqHhvUMgIth1ceXBGcS9tWLZc+WNAMoIE7nFcYrbOpFQa
-        0QsSaLrooSWZlAIjBkHChh19XridKdeNVBXU5l9gwMI3JWdOQEFp2BoAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 22</value>
   </data>
@@ -278,6 +258,23 @@
   </data>
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
     <value>Cerrar</value>
+  </data>
+  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 98</value>
+  </data>
+  <data name="appIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABGdBTUEAALEQa0zv0AAAACBjSFJNAACH
+        DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGHRF
+        WHRTb2Z0d2FyZQBwYWludC5uZXQgNC4wLjL74afGAAABo0lEQVRIS+2VS0+DQBSF/em+YhMfiY8YozWu
+        dGtiXBmNxoVuTYxxp66oQLVNqbbYUo4Hh8AwDAwluvPkWwC93A9mOsPMrIU/5V9gpJJgzsKei5s+uoH6
+        kxGDIOmbRCkwohHIz5uPUmwkI2gW900i11chI6iSxRbuB2i8pneVU0cQAp0AzXZ6YwlTCxZ+BMwkxHkv
+        mjC5Qx6DgL0Gk/hYJBGIPPlYLR0uvcAPsetiy4nYb0NWzFuZU+ZjgsO3tImCXsCnXrfjYyV5AcN3uu1H
+        Lyd3E0wt4KDnBSLWCJtO2k1QKFiz8eLjYYDHYXxRhGVFAuYrxHEnbUgKBUstnHZx6UUOOSwL5FnOZhTi
+        pJs2JFMPEcvGBYL3MXbctJugjoCPmQ9HsvErk8wy/onlcMWd9dImCnoBR/nuMz5WwrKhNMtegIPSPUMv
+        KAnL+H4izz5WTLteHQGXLgfp2jNvRKSOwB3jqHhvUMgIth1ceXBGcS9tWLZc+WNAMoIE7nFcYrbOpFQa
+        0QsSaLrooSWZlAIjBkHChh19XridKdeNVBXU5l9gwMI3JWdOQEFp2BoAAAAASUVORK5CYII=
+</value>
   </data>
   <data name="libraryIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -377,11 +374,18 @@
   <data name="searchBox.Text" xml:space="preserve">
     <value>buscar</value>
   </data>
+  <data name="translations.Text" xml:space="preserve">
+    <value>Artista desconocido!Álbum desconocido</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="contentPane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="contentPane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 462</value>
+  </data>
   <data name="contentPaneTitle.Text" xml:space="preserve">
     <value>Canciones</value>
-  </data>
-  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 70</value>
   </data>
   <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
@@ -395,12 +399,6 @@
   <data name="stackToolStripMenuItem.Text" xml:space="preserve">
     <value>Agregar a cola</value>
   </data>
-  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
-  </data>
-  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>Agregar a lista</value>
-  </data>
   <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 22</value>
   </data>
@@ -409,6 +407,15 @@
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 6</value>
+  </data>
+  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
+    <value>Agregar a lista</value>
+  </data>
+  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 70</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1422,8 +1429,7 @@
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
   </data>
 </root>

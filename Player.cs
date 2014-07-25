@@ -6,13 +6,13 @@
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    LibAP is distributed in the hope that it will be useful,
+    fPlayer is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with libAP.  If not, see <http://www.gnu.org/licenses/>.
+    along with fPlayer.  If not, see <http://www.gnu.org/licenses/>.
  * */
 using System;
 using System.Drawing;
@@ -287,6 +287,7 @@ namespace fPlayer_2
             return c.ClientRectangle.Contains(c.PointToClient(Cursor.Position));
         }
 
+
         private void focusController_Tick(object sender, EventArgs e)
         {
             if (this.isactive)
@@ -375,6 +376,8 @@ namespace fPlayer_2
             contentPane.Controls.Add(ab);
             contentPaneTitle.Text = aboutLabel2.Text;
             tabFocused = 6;
+            this.Refresh();
+            contentPane.Refresh();
         }
 
         private void aboutIcon_Click(object sender, EventArgs e)
@@ -393,6 +396,8 @@ namespace fPlayer_2
             contentPane.Controls.Clear();
             tabFocused = 0;
             loadSongsList();
+            this.Refresh();
+            contentPane.Refresh();
         }
 
         private void songsIcon_Click(object sender, EventArgs e)
@@ -411,6 +416,8 @@ namespace fPlayer_2
             contentPane.Controls.Clear();
             loadArtistsList();
             tabFocused = 1;
+            this.Refresh();
+            contentPane.Refresh();
         }
 
         private void artistsIcon_Click(object sender, EventArgs e)
@@ -429,6 +436,8 @@ namespace fPlayer_2
             contentPane.Controls.Clear();
             loadAlbumsList();
             tabFocused = 2;
+            this.Refresh();
+            contentPane.Refresh();
         }
 
         private void albumsIcon_Click(object sender, EventArgs e)
@@ -447,6 +456,8 @@ namespace fPlayer_2
             contentPane.Controls.Clear();
             loadPlaylistsList();
             tabFocused = 3;
+            this.Refresh();
+            contentPane.Refresh();
         }
 
         private void playlistsIcon_Click(object sender, EventArgs e)
@@ -465,14 +476,25 @@ namespace fPlayer_2
             contentPane.Controls.Clear();
             loadNowPlaying();
             tabFocused = 4;
+            this.Refresh();
+            contentPane.Refresh();
         }
 
         public void loadNowPlaying()
         {
             contentPane.Tag = "-1";
-            loadStackList();
-            npo.Dock = DockStyle.Top;
-            contentPane.Controls.Add(npo);
+            if (stack.Count == 0)
+            {
+                NothingPlayingMsg npm = new NothingPlayingMsg();
+                npm.Dock = DockStyle.Fill;
+                contentPane.Controls.Add(npm);
+            }
+            else
+            {
+                loadStackList();
+                npo.Dock = DockStyle.Top;
+                contentPane.Controls.Add(npo);
+            }
         }
 
         public void loadStackList()
@@ -481,7 +503,11 @@ namespace fPlayer_2
             {
                 AudioFile f = stack[i];
                 SongsListItem sli = new SongsListItem();
-                sli.setData(f.ID3Information.Title, f.ID3Information.Artist + " / " + f.ID3Information.Album, getSongLength(f.FileName));
+                string artist = f.ID3Information.Artist;
+                string album = f.ID3Information.Album;
+                if (artist.Length < 1) artist = getStr(translations.Text, 0);
+                if (album.Length < 1) artist = getStr(translations.Text, 1);
+                sli.setData(f.ID3Information.Title, artist + " / " + album, getSongLength(f.FileName));
                 sli.Dock = DockStyle.Top;
                 sli.parentList = contentPane;
                 sli.parent = this;
@@ -529,34 +555,47 @@ namespace fPlayer_2
         {
             contentPane.Controls.Clear();
             if (!reversed) { items.Reverse(); reversed = true; } // Controls are docked from bottom to top, this will correctly sort them
-            contentPane.Controls.AddRange(items.ToArray());
+            if (songs.Count != 0) { contentPane.Controls.AddRange(items.ToArray()); }
+            else
+            {
+                NoSongsMsg nsm = new NoSongsMsg();
+                nsm.Dock = DockStyle.Fill;
+                contentPane.Controls.Add(nsm);
+            }
         }
 
         public void loadSongsList(splash s)
         {
-            items = new List<Control>();
-            contentPane.Tag = "-1";
-            int i = 0;
-            reversed = false;
-            count = 0;
-            foreach (AudioFile f in songs)
-            {
-                
-                SongsListItem sli = new SongsListItem();
-                sli.setData(f.ID3Information.Title, f.ID3Information.Artist + " / " + f.ID3Information.Album, getSongLength(f.FileName));
-                sli.Dock = DockStyle.Top;
-                sli.parentList = contentPane;
-                sli.parent = this;
-                sli.Tag = f.FileName;
-                sli.OnMenuRequest += new EventHandler(OnMenuRequest);
-                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
-                sli.index = i;
-                i++;
-                items.Add(sli);
-                count++;
-                s.curTask.Text = getStr(s.curTask.Tag.ToString(), 1) + " (" + count + ")";
-                s.Update();
-            }
+            
+            
+                items = new List<Control>();
+                contentPane.Tag = "-1";
+                int i = 0;
+                reversed = false;
+                count = 0;
+                foreach (AudioFile f in songs)
+                {
+
+                    SongsListItem sli = new SongsListItem();
+                    string artist = f.ID3Information.Artist;
+                    string album = f.ID3Information.Album;
+                    if (artist.Length <= 1) artist = getStr(this.translations.Text, 0);
+                    if (album.Length <= 1) album = getStr(this.translations.Text, 1);
+                    sli.setData(f.ID3Information.Title, artist + " / " + album, getSongLength(f.FileName));
+                    sli.Dock = DockStyle.Top;
+                    sli.parentList = contentPane;
+                    sli.parent = this;
+                    sli.Tag = f.FileName;
+                    sli.OnMenuRequest += new EventHandler(OnMenuRequest);
+                    sli.OnPlaySelected += new EventHandler(OnPlaySelected);
+                    sli.index = i;
+                    i++;
+                    items.Add(sli);
+                    count++;
+                    s.curTask.Text = getStr(s.taskLabels.Text, 1) + " (" + count + ")";
+                    s.Update();
+                }
+            
         }
         public void reloadAll()
         {
@@ -571,16 +610,16 @@ namespace fPlayer_2
             songs = new List<AudioFile>();
             playlists = new List<string>();
             foreach (string q in Directory.GetFiles(AppFolder, "*.m3u")) { playlists.Add(q); }
-            s.curTask.Text = getStr(s.curTask.Tag.ToString(), 0);
+            s.curTask.Text = getStr(s.taskLabels.Text, 0);
             s.Update();
             count = 0;
             retrieveSongs(s);
             songs.Sort();
-            s.curTask.Text = getStr(s.curTask.Tag.ToString(), 1);
+            s.curTask.Text = getStr(s.taskLabels.Text, 1);
             s.Update();
             count = 0;
             loadSongsList(s);
-            s.curTask.Text = getStr(s.curTask.Tag.ToString(), 2);
+            s.curTask.Text = getStr(s.taskLabels.Text, 2);
             loadSongsList();
             s.Update();
             s.Close();
@@ -615,7 +654,7 @@ namespace fPlayer_2
         {
             songs.Add(new AudioFile(k));
             count++;
-            s.curTask.Text = getStr(s.curTask.Tag.ToString(), i) + " (" + count + ")";
+            s.curTask.Text = getStr(s.taskLabels.Text, i) + " (" + count + ")";
             s.Update();
         }
 
@@ -751,21 +790,26 @@ namespace fPlayer_2
         }
         public void LoadInfo()
         {
+            string artist = stack[sta_pos].ID3Information.Artist;
+            string album = stack[sta_pos].ID3Information.Album;
+            if (artist.Length <= 1) artist = getStr(this.translations.Text, 0);
+            if (album.Length <= 1) album = getStr(this.translations.Text, 1);
             songname.Text = stack[sta_pos].ID3Information.Title;
-            songinfo.Text = stack[sta_pos].ID3Information.Artist + " / " + stack[sta_pos].ID3Information.Album;
+            songinfo.Text = artist + " / " + album;
             Bitmap img = new SongID3(stack[sta_pos].FileName).forceLoadImage();
             if (img != null)
             {
                 songalbum.Image = img;
             }
             else songalbum.Image = songalbum.ErrorImage;
-            npo.updateInfo(img, stack[sta_pos].ID3Information.Title, stack[sta_pos].ID3Information.Artist, stack[sta_pos].ID3Information.Album);
+            npo.updateInfo(img, stack[sta_pos].ID3Information.Title,artist,album);
         }
         public void UpdateInfo()
         {
             if (stack.Count.ToString() != stackCount.Text) stackCount.Text = stack.Count.ToString();
             trackpos.Text = formatMs(getPos());
             tracklength.Text = formatMs(getLength());
+            npo.songPos.Text = formatMs(getPos()) + " / " + formatMs(getLength());
             UpdateBar();
         }
 
@@ -1065,7 +1109,7 @@ namespace fPlayer_2
 
         private void trackbarBack_MouseMove(object sender, MouseEventArgs e)
         {
-            if (drags && gI() != null && gI().playing())
+            if (drags && gI() != null && gI().playing() && isMouseOver(trackbarRegion))
             {
                 int mouseXOnElement = this.trackbarBack.PointToScreen(new Point(0, 0)).X;
                 mouseXOnElement = MousePosition.X - mouseXOnElement;
@@ -1201,6 +1245,21 @@ namespace fPlayer_2
         private void appIcon_Click(object sender, EventArgs e)
         {
             this.contentPane.Tag = "-1";
+        }
+
+        private void trackbarRegion_MouseDown(object sender, MouseEventArgs e)
+        {
+            trackbarProgress_MouseDown(sender, e);
+        }
+
+        private void trackbarRegion_MouseUp(object sender, MouseEventArgs e)
+        {
+            trackbarProgress_MouseUp(sender, e);
+        }
+
+        private void trackbarRegion_MouseMove(object sender, MouseEventArgs e)
+        {
+            trackbarProgress_MouseMove(sender, e);
         }
 
         

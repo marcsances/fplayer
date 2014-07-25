@@ -37,7 +37,8 @@ namespace fPlayer_2
             this.songtitle.Text = Title;
             this.songArtist.Text = Artist;
             this.songAlbum.Text = Album;
-            this.pictureBox.Image = albumBack;
+            if (albumBack != null && albumBack.Size.Width > 1) this.pictureBox.Image = albumBack;
+            else this.pictureBox.Image = this.pictureBox.ErrorImage;
         }
     }
 }

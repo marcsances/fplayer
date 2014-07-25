@@ -374,6 +374,13 @@
   <data name="searchBox.Text" xml:space="preserve">
     <value>cerca</value>
   </data>
+  <data name="translations.Text" xml:space="preserve">
+    <value>Artista desconegut!Àlbum desconegut</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="contentPane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="contentPaneTitle.Text" xml:space="preserve">
     <value>Cançons</value>
   </data>
@@ -1419,8 +1426,7 @@
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
   </data>
 </root>

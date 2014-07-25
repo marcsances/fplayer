@@ -29,8 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(splash));
+            this.taskLabels = new Label2();
             this.curTask = new Label2();
             this.SuspendLayout();
+            // 
+            // taskLabels
+            // 
+            resources.ApplyResources(this.taskLabels, "taskLabels");
+            this.taskLabels.BackColor = System.Drawing.Color.Transparent;
+            this.taskLabels.ForeColor = System.Drawing.Color.Black;
+            this.taskLabels.Name = "taskLabels";
+            this.taskLabels.Tag = "";
             // 
             // curTask
             // 
@@ -44,6 +53,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.taskLabels);
             this.Controls.Add(this.curTask);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "splash";
@@ -55,5 +65,6 @@
         #endregion
 
         public Label2 curTask;
+        public Label2 taskLabels;
     }
 }
