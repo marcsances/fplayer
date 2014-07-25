@@ -407,7 +407,7 @@
     <value>tracklength</value>
   </data>
   <data name="&gt;&gt;tracklength.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tracklength.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -446,7 +446,7 @@
     <value>trackpos</value>
   </data>
   <data name="&gt;&gt;trackpos.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;trackpos.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -527,7 +527,7 @@
     <value>songinfo</value>
   </data>
   <data name="&gt;&gt;songinfo.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songinfo.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -563,7 +563,7 @@
     <value>songname</value>
   </data>
   <data name="&gt;&gt;songname.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songname.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -730,7 +730,7 @@
     <value>closeBox</value>
   </data>
   <data name="&gt;&gt;closeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;closeBox.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -769,7 +769,7 @@
     <value>maximizeBox</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -808,7 +808,7 @@
     <value>minimizeBox</value>
   </data>
   <data name="&gt;&gt;minimizeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;minimizeBox.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -955,7 +955,7 @@
     <value>appTitle</value>
   </data>
   <data name="&gt;&gt;appTitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;appTitle.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -1057,7 +1057,7 @@
     <value>libraryLabel2</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Parent" xml:space="preserve">
     <value>libraryPanel</value>
@@ -1156,7 +1156,7 @@
     <value>aboutLabel2</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Parent" xml:space="preserve">
     <value>aboutPanel</value>
@@ -1289,7 +1289,7 @@
     <value>nowplayingLabel2</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Parent" xml:space="preserve">
     <value>nowplayingPanel</value>
@@ -1385,7 +1385,7 @@
     <value>playlistsLabel2</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Parent" xml:space="preserve">
     <value>playlistsPanel</value>
@@ -1480,7 +1480,7 @@
     <value>albumsLabel2</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Parent" xml:space="preserve">
     <value>albumsPanel</value>
@@ -1578,7 +1578,7 @@
     <value>artistsLabel2</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Parent" xml:space="preserve">
     <value>artistsPanel</value>
@@ -1677,7 +1677,7 @@
     <value>songsLabel2</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Parent" xml:space="preserve">
     <value>songsPanel</value>
@@ -1815,7 +1815,7 @@
     <value>contentPaneTitle</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.27637, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
     <value>mainPane</value>
