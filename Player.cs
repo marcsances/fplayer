@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.IO;
 using libap;
 using System.Threading;
+using System.Globalization;
 namespace fPlayer_2
 {
 	/// <summary>
@@ -515,7 +516,11 @@ namespace fPlayer_2
                 File.WriteAllText(AppFolder + inp + ".m3u", data);
             }
         }
-
+        public void OnStackRequest(object sender, EventArgs e)
+        {
+            SongsListItem sli = getSongsListItem((Control)sender);
+            if (sli != null) quicklistmenu.Show(MousePosition);
+        }
         public void loadStackList()
         {
             for (int i = (stack.Count - 1); i >= 0; i--)
@@ -532,7 +537,7 @@ namespace fPlayer_2
                 sli.parent = this;
                 sli.Tag = i;
                 sli.isStack = true;
-                sli.OnMenuRequest += new EventHandler(OnMenuRequest);
+                sli.OnMenuRequest += new EventHandler(OnStackRequest);
                 sli.OnPlaySelected += new EventHandler(OnPlaySelected);
                 sli.index = i;
                 contentPane.Controls.Add(sli);
@@ -621,8 +626,10 @@ namespace fPlayer_2
             tabFocused = 0;
             loadSystemData();
         }
+        
         public void loadSystemData()
         {
+           
             s = new splash();
             s.Show();
             s.Update();
@@ -642,7 +649,7 @@ namespace fPlayer_2
             loadSongsList();
             s.Update();
             s.Close();
-
+            
         }
 
         public string getStr(string str, int pos)
@@ -1025,7 +1032,7 @@ namespace fPlayer_2
                 {
 
                 }
-                if (val > 0 && val < songs.Count) si.Add(val);
+                if (val >= 0 && val < songs.Count) si.Add(val);
 
             }
             return si.ToArray();
@@ -1455,6 +1462,7 @@ namespace fPlayer_2
 
         private void appTitle_Click(object sender, EventArgs e)
         {
+
             this.contentPane.Tag = "-1";
         }
 
@@ -1521,6 +1529,24 @@ namespace fPlayer_2
             if (e.KeyChar==13) MessageBox.Show(getStr(translations.Text,3));
         }
 
+        private void playToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int si = getSelectedItem();
+            if (si != -1) Play(songs[si].FileName);
+        }
+
+        private void removeFromQueueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int si = getSelectedItem();
+            int i = 0;
+            bool found = false;
+            while (!found && i < stack.Count)
+            {
+                if (stack[i].FileName == songs[si].FileName) { found = true; stack.RemoveAt(i); contentPane.Controls.Clear(); loadNowPlaying(); }
+            }
+        }
+
+      
     
         
 	}

@@ -414,6 +414,21 @@
   <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 70</value>
   </data>
+  <data name="playToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="playToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Reprodueix</value>
+  </data>
+  <data name="removeFromQueueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="removeFromQueueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Elimina de la cua</value>
+  </data>
+  <data name="quicklistmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 48</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABABkAEBACAAEAAQCwAAAAlgEAABAQAgABAAEAsAAAAEYCAAAQEAAAAQAIAGgFAAD2AgAAEBAAAAEA
@@ -1425,8 +1440,5 @@
         EAAAIAAAQAAAgAAAAAEAAAIAAAQAAAgAABAAACAAAEAAAIAAAAABAAACAAAEAAAIAAAQAAAgAACI4n8O
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

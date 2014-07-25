@@ -102,6 +102,9 @@ namespace fPlayer_2
             this.newPlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.playbackTimer = new System.Windows.Forms.Timer(this.components);
+            this.quicklistmenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.playToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeFromQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repeatButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).BeginInit();
@@ -130,6 +133,7 @@ namespace fPlayer_2
             ((System.ComponentModel.ISupportInitialize)(this.songsIcon)).BeginInit();
             this.mainPane.SuspendLayout();
             this.songMenu.SuspendLayout();
+            this.quicklistmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // bottomPanel
@@ -654,6 +658,28 @@ namespace fPlayer_2
             this.playbackTimer.Interval = 1;
             this.playbackTimer.Tick += new System.EventHandler(this.playbackTimer_Tick);
             // 
+            // quicklistmenu
+            // 
+            resources.ApplyResources(this.quicklistmenu, "quicklistmenu");
+            this.quicklistmenu.BackColor = System.Drawing.Color.White;
+            this.quicklistmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playToolStripMenuItem1,
+            this.removeFromQueueToolStripMenuItem});
+            this.quicklistmenu.Name = "songMenu";
+            this.quicklistmenu.ShowImageMargin = false;
+            // 
+            // playToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.playToolStripMenuItem1, "playToolStripMenuItem1");
+            this.playToolStripMenuItem1.Name = "playToolStripMenuItem1";
+            this.playToolStripMenuItem1.Click += new System.EventHandler(this.playToolStripMenuItem1_Click);
+            // 
+            // removeFromQueueToolStripMenuItem
+            // 
+            resources.ApplyResources(this.removeFromQueueToolStripMenuItem, "removeFromQueueToolStripMenuItem");
+            this.removeFromQueueToolStripMenuItem.Name = "removeFromQueueToolStripMenuItem";
+            this.removeFromQueueToolStripMenuItem.Click += new System.EventHandler(this.removeFromQueueToolStripMenuItem_Click);
+            // 
             // Player
             // 
             resources.ApplyResources(this, "$this");
@@ -701,6 +727,7 @@ namespace fPlayer_2
             this.mainPane.ResumeLayout(false);
             this.mainPane.PerformLayout();
             this.songMenu.ResumeLayout(false);
+            this.quicklistmenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -770,5 +797,8 @@ namespace fPlayer_2
         private System.Windows.Forms.Panel trackbarRegion;
         private Label2 translations;
         public System.Windows.Forms.ContextMenuStrip songMenu;
+        public System.Windows.Forms.ContextMenuStrip quicklistmenu;
+        private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem removeFromQueueToolStripMenuItem;
 	}
 }

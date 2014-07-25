@@ -285,6 +285,9 @@
         PsC0oA2C4GmkdAAVvYczIgKF1QAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="libraryLabel2.Text" xml:space="preserve">
+    <value>Bibliotecas</value>
+  </data>
   <data name="aboutIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -296,6 +299,9 @@
         Fo91r2cJy72MAjKIMUKuv/c6Dsio3AdJQIblPsn6kDljpuu4AYPLzvmOHb+BqroD6HAWJpTMzJkAAAAA
         SUVORK5CYII=
 </value>
+  </data>
+  <data name="aboutLabel2.Text" xml:space="preserve">
+    <value>Acerca de</value>
   </data>
   <data name="nowplayingIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -310,6 +316,9 @@
         GYOUA9SIJtftS8EA4rp/TJ54DDabb6mZwVfW9FL1AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="nowplayingLabel2.Text" xml:space="preserve">
+    <value>Ahora suena</value>
+  </data>
   <data name="playlistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -319,6 +328,9 @@
         cjwy9u43LXJF8UVaOwGnnlaM2BC6gQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="playlistsLabel2.Text" xml:space="preserve">
+    <value>Listas</value>
+  </data>
   <data name="albumsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -326,6 +338,9 @@
         fPiRth/34L485TAIEULIr1HVMtU2qmaDr4aaVzFbHhtwbTTMBt8INa9mtjxoDsO8GIABXgmA88LwlbrZ
         4Ouh5vWcK0mD9YV1ep1/gtnMK2AABvj2Q0IIOY/IDRT3pL6afJevAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="albumsLabel2.Text" xml:space="preserve">
+    <value>Álbumes</value>
   </data>
   <data name="artistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -338,6 +353,9 @@
         MIffd0FBnH36zOayb5dUVf2xmuYN1LCWbmlOCSEAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="artistsLabel2.Text" xml:space="preserve">
+    <value>Artistas</value>
+  </data>
   <data name="songsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -349,6 +367,9 @@
         siLGcyJeeHJcFSCSpyZLAwzelk2hZmy9LQM8LJvCAtgyQN4nBBZvAd4SIDaMlgHyG52FiFoGeP2UlYAn
         INvy2gHwrP+P4QFSD3SrCGnH7xDL3xE2tEHX/QGUpVsdUb8aqAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="songsLabel2.Text" xml:space="preserve">
+    <value>Canciones</value>
   </data>
   <data name="searchBox.Text" xml:space="preserve">
     <value>buscar</value>
@@ -389,26 +410,20 @@
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 6</value>
   </data>
-  <data name="libraryLabel2.Text" xml:space="preserve">
-    <value>Bibliotecas</value>
+  <data name="playToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
   </data>
-  <data name="aboutLabel2.Text" xml:space="preserve">
-    <value>Acerca de</value>
+  <data name="playToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Reproducir</value>
   </data>
-  <data name="nowplayingLabel2.Text" xml:space="preserve">
-    <value>Ahora suena</value>
+  <data name="removeFromQueueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
   </data>
-  <data name="playlistsLabel2.Text" xml:space="preserve">
-    <value>Listas</value>
+  <data name="removeFromQueueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Quitar de la cola</value>
   </data>
-  <data name="albumsLabel2.Text" xml:space="preserve">
-    <value>Álbumes</value>
-  </data>
-  <data name="artistsLabel2.Text" xml:space="preserve">
-    <value>Artistas</value>
-  </data>
-  <data name="songsLabel2.Text" xml:space="preserve">
-    <value>Canciones</value>
+  <data name="quicklistmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 70</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1424,6 +1439,6 @@
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
   </data>
 </root>
