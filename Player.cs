@@ -683,7 +683,49 @@ namespace fPlayer_2
 
         public void loadAlbumsList()
         {
+            contentPane.Tag = "-1";
+            List<AlbumItem> queriedalbums = new List<AlbumItem>();
+            int r = 0;
+            foreach (AudioFile k in songs)
+            {
+                bool found = false;
+                for (int i = 0; i < queriedalbums.Count && !found; i++)
+                {
+                    if (k.ID3Information.Album == queriedalbums[i].getAlbumName())
+                    {
+                        found = true;
+                    }
+                }
+                
+                if (!found)
+                {
+                    AlbumItem a = new AlbumItem();
+                    a.setData(k.ID3Information.Album, k.ID3Information.Artist, findAlbumPicture(k.FileName));
+                    a.Dock = DockStyle.Top;
+                    a.parentList = contentPane;
+                    a.parent = this;
 
+                    a.index = r;
+                    r++;
+                    queriedalbums.Add(a);
+                }
+            }
+            queriedalbums.Sort();
+            queriedalbums.Reverse();
+            contentPane.Controls.AddRange(queriedalbums.ToArray());
+
+        }
+
+        public Bitmap findAlbumPicture(string f)
+        {
+            Bitmap b = null;
+            int i=0;
+            while (b == null && i < songs.Count)
+            {
+                if (songs[i].ID3Information.Album==f) b = new SongID3(songs[i].FileName).forceLoadImage();
+                i++;
+            }
+            return b;
         }
 
         public void loadPlaylistsList()
@@ -716,7 +758,7 @@ namespace fPlayer_2
         }
         public void UpdateInfo()
         {
-            
+            if (stack.Count.ToString() != stackCount.Text) stackCount.Text = stack.Count.ToString();
             trackpos.Text = formatMs(getPos());
             tracklength.Text = formatMs(getLength());
             UpdateBar();
@@ -1038,6 +1080,35 @@ namespace fPlayer_2
         private void trackbarProgress_MouseUp(object sender, MouseEventArgs e)
         {
             trackbarBack_MouseUp(sender, e);
+        }
+
+        private void Player_ResizeEnd(object sender, EventArgs e)
+        {
+            switch (tabFocused)
+            {
+                case 0:
+                    songsIcon_Click(this, new EventArgs());
+                    break;
+                case 1:
+                    artistsIcon_Click(this, new EventArgs());
+                    break;
+                case 2:
+                    albumsIcon_Click(this, new EventArgs());
+                    break;
+                case 3:
+                    playlistsIcon_Click(this, new EventArgs());
+                    break;
+                case 4:
+                    nowplayingIcon_Click(this, new EventArgs());
+                    break;
+                case 5:
+                    libraryIcon_Click(this, new EventArgs());
+                    break;
+                case 6:
+                    aboutIcon_Click(this, new EventArgs());
+                    break;
+
+            }
         }
 	}
 }

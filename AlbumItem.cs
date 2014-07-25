@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace fPlayer_2
 {
-    public partial class SongsListItem : UserControl
+    public partial class AlbumItem : UserControl
     {
         /*
          * Small explanation: parentList will contain the container where the item is on.
@@ -23,7 +23,11 @@ namespace fPlayer_2
         public Control parentList;
         public Player parent;
         public bool isStack = false;
-        public SongsListItem()
+        public string getAlbumName()
+        {
+            return albumTitle.Text;
+        }
+        public AlbumItem()
         {
             InitializeComponent();
         }
@@ -99,17 +103,12 @@ namespace fPlayer_2
                 toggle();
             }
         }
-        public event EventHandler OnPlaySelected;
         public event EventHandler OnMenuRequest;
-        private void songTitle_DoubleClick(object sender, EventArgs e)
-        {
-            this.OnPlaySelected(sender,e);
-        }
 
         private void menuButton_Click(object sender, EventArgs e)
         {
             if (!isMultiSelect()) SongsListItem_Click(sender, e);
-            if (this.OnMenuRequest != null) this.OnMenuRequest(sender, e);
+            if (this.OnMenuRequest!=null) this.OnMenuRequest(sender, e);
         }
 
         private bool isMultiSelect()
@@ -117,20 +116,12 @@ namespace fPlayer_2
             return parentList.Tag.ToString().Replace(",,", ",").Split(',').Length > 2;
         }
 
-        private void songInfo_DoubleClick(object sender, EventArgs e)
-        {
-            this.OnPlaySelected(sender, e);
-        }
 
-        private void songLength_DoubleClick(object sender, EventArgs e)
+        public void setData(string title, string artist, Bitmap image)
         {
-            this.OnPlaySelected(sender, e);
-        }
-
-        public void setData(string title, string info, string length)
-        {
-            this.songTitle.Text = title;
-            this.songInfo.Text = info;
+            this.albumTitle.Text = title;
+            this.albumArtist.Text = artist;
+            if (image != null && image.Size.Width > 1) { this.albumIcon.Image = image; }
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -188,6 +179,13 @@ namespace fPlayer_2
         {
             SongsListItem_Click(sender, e);
         }
-
+        public int CompareTo(object af)
+        {
+            if (af is AlbumItem)
+            {
+                return this.albumTitle.Text.CompareTo(((AlbumItem)af).albumTitle.Text);
+            }
+            else return 1;
+        }
     }
 }

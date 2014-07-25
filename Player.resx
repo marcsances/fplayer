@@ -293,10 +293,10 @@
   </data>
   <data name="playPauseButton.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAUElEQVRYR+2WsQ0AIAgEWYBp
-        2H8Dd0JNqEg0UhgL75Lv/smVCACscHcdsU00qqXuMTFsm1hUS91j5igdyUEAAQQQQAABBBC4LvD2JQP4
-        BJEOseMRONu+/vIAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABQSURBVFhH7ZaxDQAgCARZgGnYfwN3Qk2oSDRSGAvv
+        ku/+yZUIAKxwdx2xTTSqpe4xMWybWFRL3WPmKB3JQQABBBBAAAEEELgu8PYlA/gEkQ6x4xE4277+8gAA
+        AABJRU5ErkJggg==
 </value>
   </data>
   <data name="playPauseButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -407,7 +407,7 @@
     <value>tracklength</value>
   </data>
   <data name="&gt;&gt;tracklength.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tracklength.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -446,7 +446,7 @@
     <value>trackpos</value>
   </data>
   <data name="&gt;&gt;trackpos.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;trackpos.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -527,7 +527,7 @@
     <value>songinfo</value>
   </data>
   <data name="&gt;&gt;songinfo.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songinfo.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -563,7 +563,7 @@
     <value>songname</value>
   </data>
   <data name="&gt;&gt;songname.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songname.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -573,18 +573,18 @@
   </data>
   <data name="songalbum.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="songalbum.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -657,6 +657,39 @@
   <metadata name="windowContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 6</value>
+  </data>
+  <data name="closeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="closeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F4</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 98</value>
   </data>
@@ -697,7 +730,7 @@
     <value>closeBox</value>
   </data>
   <data name="&gt;&gt;closeBox.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;closeBox.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -736,7 +769,7 @@
     <value>maximizeBox</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -775,7 +808,7 @@
     <value>minimizeBox</value>
   </data>
   <data name="&gt;&gt;minimizeBox.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;minimizeBox.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -922,7 +955,7 @@
     <value>appTitle</value>
   </data>
   <data name="&gt;&gt;appTitle.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;appTitle.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -954,209 +987,11 @@
   <data name="&gt;&gt;titlePanel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Minimize</value>
-  </data>
-  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Maximize</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 6</value>
-  </data>
-  <data name="closeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="closeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+F4</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
   <data name="mainSidebar.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.Name" xml:space="preserve">
-    <value>aboutPanel</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;aboutPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Name" xml:space="preserve">
-    <value>nowplayingPanel</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Name" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.Name" xml:space="preserve">
-    <value>albumsPanel</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;albumsPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.Name" xml:space="preserve">
-    <value>artistsPanel</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;artistsPanel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.Name" xml:space="preserve">
-    <value>songsPanel</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;songsPanel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Name" xml:space="preserve">
-    <value>searchBox</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;searchBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="mainSidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mainSidebar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 39</value>
-  </data>
-  <data name="mainSidebar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 497</value>
-  </data>
-  <data name="mainSidebar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.Name" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainSidebar.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="libraryPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.Name" xml:space="preserve">
-    <value>libraryIcon</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.Parent" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.Name" xml:space="preserve">
-    <value>libraryLabel2</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.Parent" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="libraryPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 418</value>
-  </data>
-  <data name="libraryPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="libraryPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
-    <value>libraryPanel</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;libraryPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="libraryIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1222,7 +1057,7 @@
     <value>libraryLabel2</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Parent" xml:space="preserve">
     <value>libraryPanel</value>
@@ -1230,53 +1065,29 @@
   <data name="&gt;&gt;libraryLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="aboutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+  <data name="libraryPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 418</value>
   </data>
-  <data name="&gt;&gt;aboutIcon.Name" xml:space="preserve">
-    <value>aboutIcon</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.Parent" xml:space="preserve">
-    <value>aboutPanel</value>
-  </data>
-  <data name="&gt;&gt;aboutIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.Name" xml:space="preserve">
-    <value>aboutLabel2</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.Parent" xml:space="preserve">
-    <value>aboutPanel</value>
-  </data>
-  <data name="&gt;&gt;aboutLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="aboutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 457</value>
-  </data>
-  <data name="aboutPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="libraryPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
   </data>
-  <data name="aboutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="libraryPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;aboutPanel.Name" xml:space="preserve">
-    <value>aboutPanel</value>
+  <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
+    <value>libraryPanel</value>
   </data>
-  <data name="&gt;&gt;aboutPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;libraryPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;aboutPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;libraryPanel.Parent" xml:space="preserve">
     <value>mainSidebar</value>
   </data>
-  <data name="&gt;&gt;aboutPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;libraryPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aboutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
   </data>
   <data name="aboutIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1345,7 +1156,7 @@
     <value>aboutLabel2</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Parent" xml:space="preserve">
     <value>aboutPanel</value>
@@ -1353,53 +1164,62 @@
   <data name="&gt;&gt;aboutLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="aboutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 457</value>
+  </data>
+  <data name="aboutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="aboutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;aboutPanel.Name" xml:space="preserve">
+    <value>aboutPanel</value>
+  </data>
+  <data name="&gt;&gt;aboutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;aboutPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="nowplayingPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;nowplayingIcon.Name" xml:space="preserve">
-    <value>nowplayingIcon</value>
+  <data name="stackCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
   </data>
-  <data name="&gt;&gt;nowplayingIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="stackCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;nowplayingIcon.Parent" xml:space="preserve">
-    <value>nowplayingPanel</value>
+  <data name="stackCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 0</value>
   </data>
-  <data name="&gt;&gt;nowplayingIcon.ZOrder" xml:space="preserve">
+  <data name="stackCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 40</value>
+  </data>
+  <data name="stackCount.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="stackCount.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;nowplayingLabel2.Name" xml:space="preserve">
-    <value>nowplayingLabel2</value>
+  <data name="stackCount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
   </data>
-  <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;stackCount.Name" xml:space="preserve">
+    <value>stackCount</value>
   </data>
-  <data name="&gt;&gt;nowplayingLabel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;stackCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stackCount.Parent" xml:space="preserve">
     <value>nowplayingPanel</value>
   </data>
-  <data name="&gt;&gt;nowplayingLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="nowplayingPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 181</value>
-  </data>
-  <data name="nowplayingPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="nowplayingPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Name" xml:space="preserve">
-    <value>nowplayingPanel</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;stackCount.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="nowplayingIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1439,7 +1259,7 @@
     <value>nowplayingPanel</value>
   </data>
   <data name="&gt;&gt;nowplayingIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="nowplayingLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -1469,61 +1289,37 @@
     <value>nowplayingLabel2</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Parent" xml:space="preserve">
     <value>nowplayingPanel</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="nowplayingPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 181</value>
+  </data>
+  <data name="nowplayingPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="nowplayingPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.Name" xml:space="preserve">
+    <value>nowplayingPanel</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="playlistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.Name" xml:space="preserve">
-    <value>playlistsIcon</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.Parent" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.Name" xml:space="preserve">
-    <value>playlistsLabel2</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.Parent" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="playlistsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 142</value>
-  </data>
-  <data name="playlistsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="playlistsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Name" xml:space="preserve">
-    <value>playlistsPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.Parent" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
-  <data name="&gt;&gt;playlistsPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="playlistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1589,7 +1385,7 @@
     <value>playlistsLabel2</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Parent" xml:space="preserve">
     <value>playlistsPanel</value>
@@ -1597,53 +1393,29 @@
   <data name="&gt;&gt;playlistsLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="albumsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="playlistsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 142</value>
   </data>
-  <data name="&gt;&gt;albumsIcon.Name" xml:space="preserve">
-    <value>albumsIcon</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.Parent" xml:space="preserve">
-    <value>albumsPanel</value>
-  </data>
-  <data name="&gt;&gt;albumsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.Name" xml:space="preserve">
-    <value>albumsLabel2</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.Parent" xml:space="preserve">
-    <value>albumsPanel</value>
-  </data>
-  <data name="&gt;&gt;albumsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="albumsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 103</value>
-  </data>
-  <data name="albumsPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="playlistsPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
   </data>
-  <data name="albumsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="playlistsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;albumsPanel.Name" xml:space="preserve">
-    <value>albumsPanel</value>
+  <data name="&gt;&gt;playlistsPanel.Name" xml:space="preserve">
+    <value>playlistsPanel</value>
   </data>
-  <data name="&gt;&gt;albumsPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;playlistsPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;albumsPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;playlistsPanel.Parent" xml:space="preserve">
     <value>mainSidebar</value>
   </data>
-  <data name="&gt;&gt;albumsPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;playlistsPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="albumsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="albumsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1708,7 +1480,7 @@
     <value>albumsLabel2</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Parent" xml:space="preserve">
     <value>albumsPanel</value>
@@ -1716,53 +1488,29 @@
   <data name="&gt;&gt;albumsLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="artistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="albumsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 103</value>
   </data>
-  <data name="&gt;&gt;artistsIcon.Name" xml:space="preserve">
-    <value>artistsIcon</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.Parent" xml:space="preserve">
-    <value>artistsPanel</value>
-  </data>
-  <data name="&gt;&gt;artistsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.Name" xml:space="preserve">
-    <value>artistsLabel2</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.Parent" xml:space="preserve">
-    <value>artistsPanel</value>
-  </data>
-  <data name="&gt;&gt;artistsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="artistsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 64</value>
-  </data>
-  <data name="artistsPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="albumsPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
   </data>
-  <data name="artistsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="albumsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;artistsPanel.Name" xml:space="preserve">
-    <value>artistsPanel</value>
+  <data name="&gt;&gt;albumsPanel.Name" xml:space="preserve">
+    <value>albumsPanel</value>
   </data>
-  <data name="&gt;&gt;artistsPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;albumsPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;artistsPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;albumsPanel.Parent" xml:space="preserve">
     <value>mainSidebar</value>
   </data>
-  <data name="&gt;&gt;artistsPanel.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;albumsPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="artistsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="artistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1830,7 +1578,7 @@
     <value>artistsLabel2</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Parent" xml:space="preserve">
     <value>artistsPanel</value>
@@ -1838,53 +1586,29 @@
   <data name="&gt;&gt;artistsLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="songsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="artistsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 64</value>
   </data>
-  <data name="&gt;&gt;songsIcon.Name" xml:space="preserve">
-    <value>songsIcon</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.Parent" xml:space="preserve">
-    <value>songsPanel</value>
-  </data>
-  <data name="&gt;&gt;songsIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.Name" xml:space="preserve">
-    <value>songsLabel2</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.Parent" xml:space="preserve">
-    <value>songsPanel</value>
-  </data>
-  <data name="&gt;&gt;songsLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="songsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 25</value>
-  </data>
-  <data name="songsPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="artistsPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
   </data>
-  <data name="songsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="artistsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;songsPanel.Name" xml:space="preserve">
-    <value>songsPanel</value>
+  <data name="&gt;&gt;artistsPanel.Name" xml:space="preserve">
+    <value>artistsPanel</value>
   </data>
-  <data name="&gt;&gt;songsPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;artistsPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;songsPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;artistsPanel.Parent" xml:space="preserve">
     <value>mainSidebar</value>
   </data>
-  <data name="&gt;&gt;songsPanel.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;artistsPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="songsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="songsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1953,13 +1677,34 @@
     <value>songsLabel2</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Parent" xml:space="preserve">
     <value>songsPanel</value>
   </data>
   <data name="&gt;&gt;songsLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="songsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="songsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="songsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.Name" xml:space="preserve">
+    <value>songsPanel</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.Parent" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;songsPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="searchBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 9.75pt, style=Italic</value>
@@ -1988,56 +1733,32 @@
   <data name="&gt;&gt;searchBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="mainPane.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="mainSidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="&gt;&gt;contentPane.Name" xml:space="preserve">
-    <value>contentPane</value>
+  <data name="mainSidebar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
   </data>
-  <data name="&gt;&gt;contentPane.Type" xml:space="preserve">
+  <data name="mainSidebar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 497</value>
+  </data>
+  <data name="mainSidebar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;mainSidebar.Name" xml:space="preserve">
+    <value>mainSidebar</value>
+  </data>
+  <data name="&gt;&gt;mainSidebar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;contentPane.Parent" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;contentPane.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Name" xml:space="preserve">
-    <value>contentPaneTitle</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mainPane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="mainPane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 39</value>
-  </data>
-  <data name="mainPane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 497</value>
-  </data>
-  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Name" xml:space="preserve">
-    <value>mainPane</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainPane.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mainSidebar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;mainSidebar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="mainPane.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="contentPane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2094,13 +1815,37 @@
     <value>contentPaneTitle</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, fPlayer 2, Version=2.1.5319.26160, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
     <value>mainPane</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="mainPane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainPane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 39</value>
+  </data>
+  <data name="mainPane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 497</value>
+  </data>
+  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Name" xml:space="preserve">
+    <value>mainPane</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="focusMisser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2135,15 +1880,6 @@
   <data name="songMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 8.25pt</value>
   </data>
-  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 70</value>
-  </data>
-  <data name="&gt;&gt;songMenu.Name" xml:space="preserve">
-    <value>songMenu</value>
-  </data>
-  <data name="&gt;&gt;songMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="playToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 8.25pt, style=Bold</value>
   </data>
@@ -2159,12 +1895,6 @@
   <data name="stackToolStripMenuItem.Text" xml:space="preserve">
     <value>Add to queue</value>
   </data>
-  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add to playlist</value>
-  </data>
   <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 22</value>
   </data>
@@ -2173,6 +1903,21 @@
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 6</value>
+  </data>
+  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add to playlist</value>
+  </data>
+  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 70</value>
+  </data>
+  <data name="&gt;&gt;songMenu.Name" xml:space="preserve">
+    <value>songMenu</value>
+  </data>
+  <data name="&gt;&gt;songMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="playbackTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>430, 17</value>
