@@ -22,6 +22,7 @@ namespace fPlayer_2
         public int index=0;
         public Control parentList;
         public Player parent;
+
         public SongsListItem()
         {
             InitializeComponent();
@@ -107,8 +108,13 @@ namespace fPlayer_2
 
         private void menuButton_Click(object sender, EventArgs e)
         {
-            SongsListItem_Click(sender, e);
+            if (!isMultiSelect()) SongsListItem_Click(sender, e);
             this.OnMenuRequest(sender, e);
+        }
+
+        private bool isMultiSelect()
+        {
+            return parentList.Tag.ToString().Replace(",,", ",").Split(',').Length > 2;
         }
 
         private void songInfo_DoubleClick(object sender, EventArgs e)
@@ -130,32 +136,33 @@ namespace fPlayer_2
 
         private void timer_Tick(object sender, EventArgs e)
         {
-
-            SelectionMode newmode = getSelectionMode(this);
-            if (lastmode != newmode)
+            if (parent != null && parent.isactive)
             {
-                switch (newmode)
+                SelectionMode newmode = getSelectionMode(this);
+                if (lastmode != newmode)
                 {
-                    case SelectionMode.MODE_ACTIVE:
-                        this.BackColor = Color.Black;
-                        this.ForeColor = Color.White;
-                        break;
-                    case SelectionMode.MODE_FOCUSED:
-                        this.BackColor = Color.LightGray;
-                        this.ForeColor = Color.Black;
-                        break;
-                    case SelectionMode.MODE_UNFOCUSED:
-                        this.BackColor = Color.White;
-                        this.ForeColor = Color.Black;
-                        break;
-                    case SelectionMode.MODE_SELECTED:
-                        this.BackColor = Color.Teal;
-                        this.ForeColor = Color.White;
-                        break;
+                    switch (newmode)
+                    {
+                        case SelectionMode.MODE_ACTIVE:
+                            this.BackColor = Color.Black;
+                            this.ForeColor = Color.White;
+                            break;
+                        case SelectionMode.MODE_FOCUSED:
+                            this.BackColor = Color.LightGray;
+                            this.ForeColor = Color.Black;
+                            break;
+                        case SelectionMode.MODE_UNFOCUSED:
+                            this.BackColor = Color.White;
+                            this.ForeColor = Color.Black;
+                            break;
+                        case SelectionMode.MODE_SELECTED:
+                            this.BackColor = Color.Teal;
+                            this.ForeColor = Color.White;
+                            break;
+                    }
+                    lastmode = newmode;
                 }
-                lastmode = newmode;
             }
-            
         }
 
         private void menuButton_MouseEnter(object sender, EventArgs e)

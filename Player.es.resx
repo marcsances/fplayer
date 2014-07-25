@@ -202,6 +202,9 @@
         SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 98</value>
+  </data>
   <data name="appIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -286,6 +289,33 @@
         RU5ErkJggg==
 </value>
   </data>
+  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restaurar</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Minimizar</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Maximizar</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 6</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
   <data name="libraryIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -363,20 +393,35 @@
   <data name="searchBox.Text" xml:space="preserve">
     <value>buscar</value>
   </data>
+  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 70</value>
+  </data>
+  <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
   <data name="playToolStripMenuItem.Text" xml:space="preserve">
     <value>Reproducir</value>
+  </data>
+  <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
   </data>
   <data name="stackToolStripMenuItem.Text" xml:space="preserve">
     <value>Agregar a cola</value>
   </data>
+  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
   <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Agregar a lista</value>
   </data>
-  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 70</value>
+  <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
   </data>
   <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Nueva</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 6</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

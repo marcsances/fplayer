@@ -98,6 +98,7 @@ namespace fPlayer_2
             this.addToPlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newPlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.playbackTimer = new System.Windows.Forms.Timer(this.components);
             this.bottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repeatButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).BeginInit();
@@ -174,6 +175,7 @@ namespace fPlayer_2
             this.nextButton.Name = "nextButton";
             this.nextButton.TabStop = false;
             this.nextButton.Tag = "B";
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // playPauseButton
             // 
@@ -181,6 +183,7 @@ namespace fPlayer_2
             this.playPauseButton.Name = "playPauseButton";
             this.playPauseButton.TabStop = false;
             this.playPauseButton.Tag = "B";
+            this.playPauseButton.Click += new System.EventHandler(this.playPauseButton_Click);
             // 
             // previousButton
             // 
@@ -188,6 +191,7 @@ namespace fPlayer_2
             this.previousButton.Name = "previousButton";
             this.previousButton.TabStop = false;
             this.previousButton.Tag = "B";
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // tracklength
             // 
@@ -206,12 +210,18 @@ namespace fPlayer_2
             this.trackbarProgress.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackbarProgress, "trackbarProgress");
             this.trackbarProgress.Name = "trackbarProgress";
+            this.trackbarProgress.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseDown);
+            this.trackbarProgress.MouseMove += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseMove);
+            this.trackbarProgress.MouseUp += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseUp);
             // 
             // trackbarBack
             // 
             resources.ApplyResources(this.trackbarBack, "trackbarBack");
             this.trackbarBack.BackColor = System.Drawing.Color.White;
             this.trackbarBack.Name = "trackbarBack";
+            this.trackbarBack.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackbarBack_MouseDown);
+            this.trackbarBack.MouseMove += new System.Windows.Forms.MouseEventHandler(this.trackbarBack_MouseMove);
+            this.trackbarBack.MouseUp += new System.Windows.Forms.MouseEventHandler(this.trackbarBack_MouseUp);
             // 
             // songinfo
             // 
@@ -571,6 +581,7 @@ namespace fPlayer_2
             // 
             this.stackToolStripMenuItem.Name = "stackToolStripMenuItem";
             resources.ApplyResources(this.stackToolStripMenuItem, "stackToolStripMenuItem");
+            this.stackToolStripMenuItem.Click += new System.EventHandler(this.stackToolStripMenuItem_Click);
             // 
             // addToPlaylistToolStripMenuItem
             // 
@@ -590,6 +601,12 @@ namespace fPlayer_2
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             // 
+            // playbackTimer
+            // 
+            this.playbackTimer.Enabled = true;
+            this.playbackTimer.Interval = 1;
+            this.playbackTimer.Tick += new System.EventHandler(this.playbackTimer_Tick);
+            // 
             // Player
             // 
             resources.ApplyResources(this, "$this");
@@ -601,8 +618,11 @@ namespace fPlayer_2
             this.Controls.Add(this.titlePanel);
             this.Controls.Add(this.bottomPanel);
             this.Name = "Player";
+            this.Activated += new System.EventHandler(this.Player_Activated);
+            this.Deactivate += new System.EventHandler(this.Player_Deactivate);
             this.Load += new System.EventHandler(this.Player_Load);
             this.bottomPanel.ResumeLayout(false);
+            this.bottomPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repeatButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.volumeButton)).EndInit();
@@ -698,5 +718,6 @@ namespace fPlayer_2
         private System.Windows.Forms.ToolStripMenuItem addToPlaylistToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newPlaylistToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.Timer playbackTimer;
 	}
 }

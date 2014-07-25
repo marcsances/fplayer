@@ -208,6 +208,36 @@
         SUdHx0esVr8bRndm39hWdAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restaura</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Minimitza</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Maximitza</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 6</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tanca</value>
+  </data>
+  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 98</value>
+  </data>
   <data name="appIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -393,32 +423,35 @@
   <data name="contentPaneTitle.Text" xml:space="preserve">
     <value>Cançons</value>
   </data>
-  <data name="playToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt, style=Bold</value>
-  </data>
   <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>123, 22</value>
   </data>
   <data name="playToolStripMenuItem.Text" xml:space="preserve">
     <value>Reprodueix</value>
   </data>
   <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>123, 22</value>
   </data>
   <data name="stackToolStripMenuItem.Text" xml:space="preserve">
     <value>Afegeix a cua</value>
   </data>
+  <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
   <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Nova</value>
   </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 6</value>
+  </data>
   <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>123, 22</value>
   </data>
   <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Afegeix a llista</value>
   </data>
   <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 70</value>
+    <value>124, 70</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

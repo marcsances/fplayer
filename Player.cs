@@ -27,9 +27,10 @@ namespace fPlayer_2
         public List<string> playlists;
         public List<Control> items;
         public List<AudioFile> stack=new List<AudioFile>();
-        
+        public bool isactive = false;
         public int sta_pos=0;
         int count = 0;
+        public bool playglyph = false;
 		public Player()
 		{
 			//
@@ -111,7 +112,7 @@ namespace fPlayer_2
 		}
 		void AppTitleMouseMove(object sender, MouseEventArgs e)
 		{
-			if (isMouseMovingForm && this.WindowState==FormWindowState.Normal) {
+			if (isMouseMovingForm && this.WindowState==FormWindowState.Normal && !isMaximized) {
 				    Point p1 = new Point(e.X, e.Y);
                 	Point p2 = this.PointToScreen(p1);
                 	Point p3 = new Point(p2.X - this.lastMousePos.X,p2.Y - this.lastMousePos.Y);
@@ -281,28 +282,31 @@ namespace fPlayer_2
 
         private void focusController_Tick(object sender, EventArgs e)
         {
-            Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
-            for (int i = 0; i < focusableControls.Length; i++ )
+            if (this.isactive)
             {
-                Control c = focusableControls[i];
-                if (isMouseOver(c) && !isHighlighted(c) && Control.MouseButtons!=MouseButtons.Left)
+                Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
+                for (int i = 0; i < focusableControls.Length; i++)
                 {
-                    doFocusHighlight(c,i);
+                    Control c = focusableControls[i];
+                    if (isMouseOver(c) && !isHighlighted(c) && Control.MouseButtons != MouseButtons.Left)
+                    {
+                        doFocusHighlight(c, i);
+                    }
+                    else if (!isMouseOver(c) && (c.BackColor != Color.Teal && c.BackColor != Color.FromArgb(0, 64, 64)))
+                    {
+                        unHighlight(c, i);
+                    }
+                    else if (isMouseOver(c) && Control.MouseButtons == MouseButtons.Left)
+                    {
+                        doHover(c);
+                    }
+                    else if (c.BackColor == Color.FromArgb(0, 64, 64) && i != tabFocused)
+                    {
+                        c.BackColor = Color.Teal;
+                    }
                 }
-                else if (!isMouseOver(c) && (c.BackColor!=Color.Teal && c.BackColor!=Color.FromArgb(0,64,64)))
-                {
-                    unHighlight(c,i);
-                }
-                else if (isMouseOver(c) && Control.MouseButtons == MouseButtons.Left)
-                {
-                    doHover(c);
-                }
-                else if (c.BackColor == Color.FromArgb(0, 64, 64) && i != tabFocused)
-                {
-                    c.BackColor = Color.Teal;
-                }
+                if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused < 4) mainPane.Focus();
             }
-            if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused<4) mainPane.Focus();
         }
 
         private bool isHighlighted(Control c)
@@ -652,30 +656,20 @@ namespace fPlayer_2
             loadSystemData();
         }
 
-        public void Play(string filename)
-        {
-            Stack(filename);
-            sta_pos = stack.Count - 1;
-            playnow();
-        }
+       
 
-        public void Stack(string filename)
+        public void OnPlaybackFinishedHandler(object sender, EventArgs e)
         {
-            stack.Add(new AudioFile(filename));
+            next();
         }
-
-        public void playnow()
-        {
-            MediaPlayer mp = MediaPlayer.getInstance(stack[sta_pos]);
-            mp.play();
-            UpdateInfo();
-        }
-
 
         public void UpdateInfo()
         {
             songname.Text = stack[sta_pos].ID3Information.Title;
             songinfo.Text = stack[sta_pos].ID3Information.Artist + " / " + stack[sta_pos].ID3Information.Album;
+            trackpos.Text = formatMs(getPos());
+            tracklength.Text = formatMs(getLength());
+            UpdateBar();
         }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
@@ -685,8 +679,315 @@ namespace fPlayer_2
 
         private void playToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            int si = getSelectedItem();
+            if (si!=-1) Play(songs[si].FileName);
         }
-       
+
+        public int getSelectedItem()
+        {
+            foreach (string k in contentPane.Tag.ToString().Split(','))
+            {
+                int val = -1;
+                try
+                {
+                    val = Convert.ToInt32(k);
+                }
+                catch
+                {
+
+                }
+                if (val >= 0 && val < songs.Count) return val;
+
+            }
+            return -1;
+        }
+
+        public int[] getSelectedItems()
+        {
+            List<int> si = new List<int>();
+            foreach (string k in contentPane.Tag.ToString().Split(','))
+            {
+                int val = -1;
+                try
+                {
+                    val = Convert.ToInt32(k);
+                }
+                catch
+                {
+
+                }
+                if (val > 0 && val < songs.Count) si.Add(val);
+
+            }
+            return si.ToArray();
+        }
+
+        /** 
+         * Format a millisecond position in mm:ss format.
+         */
+        public string formatMs(long pos)
+        {
+
+            long s=0;
+            long m = Math.DivRem(pos/1000, 60, out s);
+            return fixedDigit(m) + ":" + fixedDigit(s);
+        }
+
+        /**
+         * Format a number to have fixed digits.
+         * \return a string containing the fixed digits.
+         */
+        public string fixedDigit(long a) {
+            if (a < 10) return "0" + a.ToString(); else return a.ToString();
+        }
+        /**
+         * Updates the progress bar.
+         * Length - TrackbarBack.Width
+         * Pos - X
+         */
+        public void UpdateBar()
+        {
+            if (getLength()>0) trackbarProgress.Width = (int)((getPos() * (long)trackbarBack.Width) / getLength());
+        }
+
+        /*-------------------
+         * PLAYBACK FUNCTIONS
+         *-------------------*/
+
+        /**
+         * Shortcut to MediaPlayer.getInstance() for fast coding.
+         * \return current MediaPlayer instance, if any.
+         */
+        public MediaPlayer gI()
+        {
+            return MediaPlayer.getInstance();
+        }
+        /**
+         * Plays an audio file cleaning stack.
+         */
+        public void Play(string filename)
+        {
+            stack.Clear();
+            Stack(filename);
+            sta_pos = stack.Count - 1;
+            playnow();
+        }
+
+        /**
+         * Stacks an audio file.
+         */
+        public void Stack(string filename)
+        {
+            stack.Add(new AudioFile(filename));
+        }
+
+        /**
+         * Starts playing stack.
+         */
+        public void playnow()
+        {
+            MediaPlayer.getInstance(stack[sta_pos]).OnPlaybackFinished += new EventHandler(OnPlaybackFinishedHandler);
+            gI().play();
+            UpdateInfo();
+            if (!playglyph)
+            {
+                switchglyph();
+            }
+        }
+
+        public void switchglyph()
+        {
+            Image tmp = playPauseButton.ErrorImage;
+            playPauseButton.ErrorImage = playPauseButton.Image;
+            playPauseButton.Image = tmp;
+            playglyph = !playglyph;
+        }
+
+        /**
+         * Switches to previous track if any.
+         */
+        public void prev()
+        {
+            stopanddispose();
+            sta_pos--;
+            if (sta_pos == -1) 
+                if (stack.Count != 0) 
+                { 
+                    sta_pos = stack.Count - 1; 
+                    playnow(); 
+                } else sta_pos = 0;
+            else playnow();
+        }
+
+        /**
+         * Switches to next track if any.
+         */
+        public void next()
+        {
+            stopanddispose();
+            sta_pos++;
+            if (sta_pos == stack.Count)
+            {
+                sta_pos = 0;
+                if (stack.Count != 0) playnow();
+            }
+            else playnow();
+        }
+
+        /**
+         * Stops playback and disposes media player.
+         */
+        public void stopanddispose()
+        {
+            if (gI() != null) gI().stop();
+            if (gI() != null) gI().Dispose();
+        }
+
+        /**
+         * Pause playback.
+         */
+        public void pause()
+        {
+            if (gI() != null)
+            {
+                gI().pause();
+                if (playglyph)
+                {
+                    switchglyph();
+                }
+            }
+        }
+
+        /**
+         * Resume playback.
+         */
+        public void resume()
+        {
+            if (gI() != null)
+            {
+                gI().play();
+                if (!playglyph)
+                {
+                    switchglyph();
+                }
+            }
+        }
+
+        /**
+         * Get position of current audio file.
+         * \return the position
+         */
+        public long getPos()
+        {
+            if (gI() != null) return gI().getPosition(); else return 0;
+        }
+
+        /**
+         * Get length of current audio file.
+         * \return the length
+         */
+        public long getLength()
+        {
+            if (gI() != null) return gI().getLength(); else return 0;
+        }
+
+        /**
+         * Seek to a position.
+         */
+        public void seek(long pos)
+        {
+            if (gI()!=null) gI().seek(pos);
+        }
+
+        /**
+         * Plays or pauses.
+         */
+        public void playpause()
+        {
+            if (gI() != null) gI().playpause();
+            switchglyph();
+        }
+
+        private void playbackTimer_Tick(object sender, EventArgs e)
+        {
+            if (gI() != null)
+            {
+                UpdateInfo();
+            }
+        }
+
+        private void Player_Activated(object sender, EventArgs e)
+        {
+            this.isactive = true;
+        }
+
+        private void Player_Deactivate(object sender, EventArgs e)
+        {
+            this.isactive = false;
+        }
+
+        private void stackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (int i in getSelectedItems())
+            {
+                if (songs[i]!=null) Stack(songs[i].FileName);
+                if (gI()==null || !gI().playing()) playnow();
+            }
+        }
+
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            prev();
+        }
+
+        private void playPauseButton_Click(object sender, EventArgs e)
+        {
+            playpause();
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            next();
+        }
+
+
+        private bool drags = false;
+        private void trackbarProgress_MouseDown(object sender, MouseEventArgs e)
+        {
+            drags = true;
+            
+        }
+
+        private void trackbarBack_MouseDown(object sender, MouseEventArgs e)
+        {
+            trackbarProgress_MouseDown(sender, e);
+        }
+
+        private void trackbarBack_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drags && gI() != null && gI().playing())
+            {
+                int mouseXOnElement = this.trackbarBack.PointToScreen(new Point(0, 0)).X;
+                mouseXOnElement = MousePosition.X - mouseXOnElement;
+                long posToSeek = (mouseXOnElement * getLength()) / trackbarBack.Width;
+                seek(posToSeek);
+            }
+        }
+
+        private void trackbarBack_MouseUp(object sender, MouseEventArgs e)
+        {
+            trackbarBack_MouseMove(sender, e);
+            drags = false;
+        }
+
+        private void trackbarProgress_MouseMove(object sender, MouseEventArgs e)
+        {
+            trackbarBack_MouseMove(sender, e);
+        }
+
+        private void trackbarProgress_MouseUp(object sender, MouseEventArgs e)
+        {
+            trackbarBack_MouseUp(sender, e);
+        }
 	}
 }
