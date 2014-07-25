@@ -57,10 +57,12 @@ namespace fPlayer_2
       
 		void CloseBoxClick(object sender, EventArgs e)
 		{
+            this.contentPane.Tag = "-1";
 			this.Close();
 		}
 		void MaximizeBoxClick(object sender, EventArgs e)
 		{
+            this.contentPane.Tag = "-1";
 			if (isMaximized) {
 				restorestate();
 			} else {
@@ -71,6 +73,7 @@ namespace fPlayer_2
 		void MinimizeBoxClick(object sender, EventArgs e)
 		{
 			this.WindowState=FormWindowState.Minimized;
+            this.contentPane.Tag = "-1";
 			focusMisser.Focus();
 		}
 		void MaximizeBoxMouseEnter(object sender, EventArgs e)
@@ -274,6 +277,7 @@ namespace fPlayer_2
 		}
 		void SearchBoxValidating(object sender, System.ComponentModel.CancelEventArgs e)
 		{
+            this.contentPane.Tag = "-1";
 			SearchBoxLeave(sender,e);
 		}
 		
@@ -1030,16 +1034,19 @@ namespace fPlayer_2
 
         private void previousButton_Click(object sender, EventArgs e)
         {
+            this.contentPane.Tag = "-1";
             prev();
         }
 
         private void playPauseButton_Click(object sender, EventArgs e)
         {
+            this.contentPane.Tag = "-1";
             playpause();
         }
 
         private void nextButton_Click(object sender, EventArgs e)
         {
+            this.contentPane.Tag = "-1";
             next();
         }
 
@@ -1111,5 +1118,91 @@ namespace fPlayer_2
 
             }
         }
+
+        private void mainSidebar_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void bottomPanel_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void songalbum_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void songname_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void songinfo_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void trackbarBack_Paint(object sender, PaintEventArgs e)
+        {
+            
+
+        }
+
+        private void trackpos_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void tracklength_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void trackbarBack_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+
+        }
+
+        private void volumeButton_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+        }
+
+        private void shuffleButton_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+        }
+
+        private void repeatButton_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+        }
+
+        private void appTitle_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+        }
+
+        private void titlePanel_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+        }
+
+        private void appIcon_Click(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+        }
+
+        
 	}
 }
