@@ -530,7 +530,7 @@ namespace fPlayer_2
                 string artist = f.ID3Information.Artist;
                 string album = f.ID3Information.Album;
                 if (artist.Length < 1) artist = getStr(translations.Text, 0);
-                if (album.Length < 1) artist = getStr(translations.Text, 1);
+                if (album.Length < 1) album = getStr(translations.Text, 1);
                 sli.setData(f.ID3Information.Title, artist + " / " + album, getSongLength(f.FileName));
                 sli.Dock = DockStyle.Top;
                 sli.parentList = contentPane;
@@ -1544,6 +1544,11 @@ namespace fPlayer_2
             {
                 if (stack[i].FileName == songs[si].FileName) { found = true; stack.RemoveAt(i); contentPane.Controls.Clear(); loadNowPlaying(); }
             }
+        }
+
+        private void nowplayingPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
       

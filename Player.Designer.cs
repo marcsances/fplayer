@@ -445,6 +445,7 @@ namespace fPlayer_2
             this.nowplayingPanel.Controls.Add(this.nowplayingLabel2);
             this.nowplayingPanel.Name = "nowplayingPanel";
             this.nowplayingPanel.Click += new System.EventHandler(this.nowplayingPanel_Click);
+            this.nowplayingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.nowplayingPanel_Paint);
             // 
             // stackCount
             // 
