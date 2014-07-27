@@ -189,9 +189,32 @@ namespace fPlayer_2
 			this.Close();
 			
 		}
-		
 		protected override void WndProc(ref Message m)
 		{
+            
+	    if (m.Msg == 0x319)   // WM_APPCOMMAND message
+	    {
+		// extract cmd from LPARAM (as GET_APPCOMMAND_LPARAM macro does)
+		int cmd = (int)((uint)m.LParam >> 16 & ~0xf000);
+		switch (cmd)
+		{
+			    case 13:  // APPCOMMAND_MEDIA_STOP constant
+                stopanddispose();
+				break;
+			    case 14:  // APPCOMMAND_MEDIA_PLAY_PAUSE
+                playpause();
+				break;
+			    case 11:  // APPCOMMAND_MEDIA_NEXTTRACK
+                next();
+				    break;
+			    case 12:  // APPCOMMAND_MEDIA_PREVIOUSTRACK
+                    prev();
+				    break;
+			    default:
+			    	break;
+	        	}
+        	}
+
 			if (m.Msg == 0x0313 && (Environment.OSVersion.Version.Major<6 || Environment.OSVersion.Version.Minor==0))
 			{
 				int contMenuX = Cursor.Position.X - this.Location.X;
@@ -215,11 +238,11 @@ namespace fPlayer_2
 		void maximize() {
 			oldpos=Location;
 			oldsize=Size;
+            this.Top = 0;
+            this.Left = 0;
+            this.Height = SystemInformation.WorkingArea.Height;
+            this.Width = SystemInformation.WorkingArea.Width;
             contentPane.Controls.Clear();
-			this.Top = 0;
-			this.Left = 0;
-			this.Height = Screen.PrimaryScreen.WorkingArea.Height;
-			this.Width = Screen.PrimaryScreen.WorkingArea.Width;
 			isMaximized=true;
 			maximizeBox.Text="2";
             Update();
@@ -538,7 +561,6 @@ namespace fPlayer_2
                 sli.Tag = i;
                 sli.isStack = true;
                 sli.OnMenuRequest += new EventHandler(OnStackRequest);
-                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
                 sli.index = i;
                 contentPane.Controls.Add(sli);
             }
@@ -844,6 +866,7 @@ namespace fPlayer_2
                     a.parentList = contentPane;
                     a.parent = this;
                     a.OnMenuRequest += new EventHandler(AlbumHandler);
+                    a.OnPlayRequest += new EventHandler(AlbumPlayHandler);
                     a.index = r;
                     a.setData(album, artist, null);
                     r++;
@@ -855,6 +878,14 @@ namespace fPlayer_2
             contentPane.Controls.AddRange(queriedalbums.ToArray());
 
         }
+        public void AlbumPlayHandler(object sender,EventArgs e) {
+            stack.Clear();
+            sta_pos = 0;
+            AlbumHandler(sender,e);
+            playnow();
+        }
+
+
         public void AlbumHandler(object sender, EventArgs e)
         {
             addAlbum(getAlbumItem((Control)sender).Tag.ToString());
@@ -884,7 +915,13 @@ namespace fPlayer_2
             }
             return b;
         }
-
+        public void playlistplayhandler(object sender, EventArgs e)
+        {
+            stack.Clear();
+            playlistslistplayrequest(sender, e);
+            sta_pos = 0;
+            playnow();
+        }
         public void loadPlaylistsList()
         {
             if (Directory.GetFiles(AppFolder, "*.m3u").Length == 0)
@@ -905,6 +942,7 @@ namespace fPlayer_2
                     a.index = r;
                     a.OnDeleteRequest += new EventHandler(playlistdeletehandler);
                     a.OnMenuRequest += new EventHandler(playlistslistplayrequest);
+                    a.OnPlayRequest += new EventHandler(playlistplayhandler);
                     a.setData(libAP.basename(k));
                     r++;
                     queriedLists.Add(a);
@@ -981,7 +1019,7 @@ namespace fPlayer_2
         }
         public void UpdateInfo()
         {
-            if (stack.Count.ToString() != stackCount.Text) stackCount.Text = stack.Count.ToString();
+            
             trackpos.Text = formatMs(getPos());
             tracklength.Text = formatMs(getLength());
             npo.songPos.Text = formatMs(getPos()) + " / " + formatMs(getLength());
@@ -1132,7 +1170,7 @@ namespace fPlayer_2
                 }
                 else if (!repeat)
                 {
-                    sta_pos++;
+                    sta_pos--;
                 }
             if (sta_pos == -1) 
                 if (stack.Count != 0) 
@@ -1244,7 +1282,7 @@ namespace fPlayer_2
 
         private void playbackTimer_Tick(object sender, EventArgs e)
         {
-            
+            if (stack.Count.ToString() != stackCount.Text) stackCount.Text = stack.Count.ToString();
             if (gI() != null)
             {
                 UpdateInfo();
@@ -1550,6 +1588,12 @@ namespace fPlayer_2
         {
 
         }
+
+        private void Player_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        }
+
+
 
       
     

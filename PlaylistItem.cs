@@ -189,17 +189,31 @@ namespace fPlayer_2
 
         private void artist_DoubleClick(object sender, EventArgs e)
         {
-            this.OnMenuRequest(this, e);
+            if (this.OnPlayRequest!=null) this.OnPlayRequest(this, e);
         }
 
         private void ArtistItem_DoubleClick(object sender, EventArgs e)
         {
-            this.OnMenuRequest(this, e);
+            if (this.OnPlayRequest != null) this.OnPlayRequest(this, e);
         }
         public event EventHandler OnDeleteRequest;
         private void deletebutton_Click(object sender, EventArgs e)
         {
-            this.OnDeleteRequest(this, e);
+            if (this.OnDeleteRequest != null) this.OnDeleteRequest(this, e);
         }
+
+        private void deletebutton_MouseEnter(object sender, EventArgs e)
+        {
+            deletebutton.BackColor = Color.White;
+        }
+
+        private void deletebutton_MouseLeave(object sender, EventArgs e)
+        {
+            deletebutton.BackColor = Color.Transparent;
+        }
+
+        public event EventHandler OnPlayRequest;
+
+
     }
 }

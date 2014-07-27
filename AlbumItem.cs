@@ -104,7 +104,7 @@ namespace fPlayer_2
             }
         }
         public event EventHandler OnMenuRequest;
-
+        public event EventHandler OnPlayRequest;
         private void menuButton_Click(object sender, EventArgs e)
         {
             if (!isMultiSelect()) SongsListItem_Click(sender, e);
@@ -196,22 +196,22 @@ namespace fPlayer_2
 
         private void albumArtist_DoubleClick(object sender, EventArgs e)
         {
-            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+            if (this.OnPlayRequest != null) this.OnPlayRequest(this, e);
         }
 
         private void albumTitle_DoubleClick(object sender, EventArgs e)
         {
-            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+            if (this.OnPlayRequest != null) this.OnPlayRequest(this, e);
         }
 
         private void albumIcon_DoubleClick(object sender, EventArgs e)
         {
-            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+            if (this.OnPlayRequest != null) this.OnPlayRequest(this, e);
         }
 
         private void AlbumItem_DoubleClick(object sender, EventArgs e)
         {
-            if (this.OnMenuRequest != null) this.OnMenuRequest(this, e);
+            if (this.OnPlayRequest != null) this.OnPlayRequest(this, e);
         }
 
 
