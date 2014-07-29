@@ -45,5 +45,20 @@ namespace fPlayer_2
         {
             if (this.onSaveAsNewListOptionClicked != null) this.onSaveAsNewListOptionClicked(sender, e);
         }
+
+        private void savel_MouseEnter(object sender, EventArgs e)
+        {
+            savel.BackColor = Color.LightGray;
+        }
+
+        private void savel_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void savel_MouseLeave(object sender, EventArgs e)
+        {
+            savel.BackColor = Color.White;
+        }
     }
 }

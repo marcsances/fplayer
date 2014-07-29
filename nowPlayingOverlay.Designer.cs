@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nowPlayingOverlay));
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.savel = new Label2();
             this.songPos = new Label2();
             this.songtitle = new Label2();
             this.songAlbum = new Label2();
             this.songArtist = new Label2();
-            this.savel = new Label2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,6 +44,16 @@
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.TabStop = false;
+            // 
+            // savel
+            // 
+            resources.ApplyResources(this.savel, "savel");
+            this.savel.BackColor = System.Drawing.Color.White;
+            this.savel.Name = "savel";
+            this.savel.Click += new System.EventHandler(this.savel_Click);
+            this.savel.MouseEnter += new System.EventHandler(this.savel_MouseEnter);
+            this.savel.MouseLeave += new System.EventHandler(this.savel_MouseLeave);
+            this.savel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.savel_MouseMove);
             // 
             // songPos
             // 
@@ -68,13 +78,6 @@
             resources.ApplyResources(this.songArtist, "songArtist");
             this.songArtist.BackColor = System.Drawing.Color.Transparent;
             this.songArtist.Name = "songArtist";
-            // 
-            // savel
-            // 
-            resources.ApplyResources(this.savel, "savel");
-            this.savel.BackColor = System.Drawing.Color.White;
-            this.savel.Name = "savel";
-            this.savel.Click += new System.EventHandler(this.savel_Click);
             // 
             // nowPlayingOverlay
             // 

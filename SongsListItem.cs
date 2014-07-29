@@ -103,7 +103,7 @@ namespace fPlayer_2
         public event EventHandler OnMenuRequest;
         private void songTitle_DoubleClick(object sender, EventArgs e)
         {
-            this.OnPlaySelected(sender,e);
+            if (this.OnPlaySelected!=null) this.OnPlaySelected(sender,e);
         }
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -119,12 +119,12 @@ namespace fPlayer_2
 
         private void songInfo_DoubleClick(object sender, EventArgs e)
         {
-            this.OnPlaySelected(sender, e);
+            if (this.OnPlaySelected != null) this.OnPlaySelected(sender, e);
         }
 
         private void songLength_DoubleClick(object sender, EventArgs e)
         {
-            this.OnPlaySelected(sender, e);
+            if (this.OnPlaySelected != null) this.OnPlaySelected(sender, e);
         }
 
         public void setData(string title, string info, string length)

@@ -561,6 +561,7 @@ namespace fPlayer_2
                 sli.Tag = i;
                 sli.isStack = true;
                 sli.OnMenuRequest += new EventHandler(OnStackRequest);
+                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
                 sli.index = i;
                 contentPane.Controls.Add(sli);
             }
