@@ -1581,6 +1581,7 @@ namespace fPlayer_2
             while (!found && i < stack.Count)
             {
                 if (stack[i].FileName == songs[si].FileName) { found = true; stack.RemoveAt(i); contentPane.Controls.Clear(); loadNowPlaying(); }
+                i++;
             }
         }
 
