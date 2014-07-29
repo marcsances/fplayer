@@ -542,7 +542,7 @@ namespace fPlayer_2
         public void OnStackRequest(object sender, EventArgs e)
         {
             SongsListItem sli = getSongsListItem((Control)sender);
-            if (sli != null) quicklistmenu.Show(MousePosition);
+            if (sli != null) { quicklistmenu.Tag = stack[safeconvertint32(sli.Tag)].FileName; quicklistmenu.Show(MousePosition); }
         }
         public void loadStackList()
         {
@@ -1575,12 +1575,11 @@ namespace fPlayer_2
 
         private void removeFromQueueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int si = getSelectedItem();
             int i = 0;
             bool found = false;
             while (!found && i < stack.Count)
             {
-                if (stack[i].FileName == songs[si].FileName) { found = true; stack.RemoveAt(i); contentPane.Controls.Clear(); loadNowPlaying(); }
+                if (stack[i].FileName == ((ToolStripMenuItem)sender).GetCurrentParent().Tag.ToString()) { found = true; stack.RemoveAt(i); contentPane.Controls.Clear(); loadNowPlaying(); }
                 i++;
             }
         }
@@ -1596,7 +1595,19 @@ namespace fPlayer_2
 
 
 
-      
+        public int safeconvertint32(Object data)
+        {
+            int n = 0;
+            try
+            {
+                n = Convert.ToInt32(data);
+                return n;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
     
         
 	}
