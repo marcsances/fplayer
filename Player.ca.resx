@@ -1441,4 +1441,7 @@
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
 </root>

@@ -687,7 +687,8 @@ namespace fPlayer_2
 
         public string getStr(string str, int pos)
         {
-            return str.Split('!')[pos];
+            string[] l10n = str.Split('!');
+            if (pos >= 0 && pos < l10n.Length) return l10n[pos]; else return "";
         }
 
         public void retrieveSongs(splash s)
@@ -1595,10 +1596,73 @@ namespace fPlayer_2
                 }
             }
         }
+        public void search(string text)
+        {
+            tabFocused = -1;
+            contentPaneTitle.Text = "\"" + text + "\"";
+            contentPane.Controls.Clear();
+            loadArray(getSearchResults(text));
+        }
 
+        public List<AudioFile> getSearchResults(string text)
+        {
+            List<AudioFile> l=new List<AudioFile>();
+            foreach (AudioFile k in songs)
+            {
+                if (searchItem(k,text))
+                {
+                    l.Add(k);
+                }
+            }
+            return l;
+        }
+
+        public bool searchItem(AudioFile k, string text)
+        {
+            string ttl=text.ToLower();
+            string tittl = k.ID3Information.Title.ToLower();
+            string arttl = k.ID3Information.Artist.ToLower();
+            string albtl = k.ID3Information.Album.ToLower();
+            return tittl.Contains(text) || arttl.Contains(text) || albtl.Contains(text);
+        }
+
+        public void loadArray(List<AudioFile> songs)
+        {
+            List<Control> items = new List<Control>();
+            contentPane.Tag = "-1";
+            int i = 0;
+            reversed = false;
+            count = 0;
+            foreach (AudioFile f in songs)
+            {
+
+                SongsListItem sli = new SongsListItem();
+                string artist = f.ID3Information.Artist;
+                string album = f.ID3Information.Album;
+                if (artist.Length <= 1) artist = getStr(this.translations.Text, 0);
+                if (album.Length <= 1) album = getStr(this.translations.Text, 1);
+                sli.setData(f.ID3Information.Title, artist + " / " + album, getSongLength(f.FileName));
+                sli.Dock = DockStyle.Top;
+                sli.parentList = contentPane;
+                sli.parent = this;
+                sli.Tag = f.FileName;
+                sli.OnMenuRequest += new EventHandler(OnMenuRequest);
+                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
+                sli.index = i;
+                sli.ContextMenuStrip = songMenu;
+                i++;
+                items.Add(sli);
+                count++;
+                s.curTask.Text = getStr(s.taskLabels.Text, 1) + " (" + count + ")";
+                s.Update();
+            }
+            items.Reverse();
+            reversed = true;
+            contentPane.Controls.AddRange(items.ToArray());
+        }
         private void searchBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar==13) MessageBox.Show(getStr(translations.Text,3));
+            if (e.KeyChar==13) search(searchBox.Text);
         }
 
         private void playToolStripMenuItem1_Click(object sender, EventArgs e)
