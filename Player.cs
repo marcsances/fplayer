@@ -636,6 +636,7 @@ namespace fPlayer_2
                     sli.OnMenuRequest += new EventHandler(OnMenuRequest);
                     sli.OnPlaySelected += new EventHandler(OnPlaySelected);
                     sli.index = i;
+                    sli.ContextMenuStrip = songMenu;
                     i++;
                     items.Add(sli);
                     count++;
@@ -656,20 +657,27 @@ namespace fPlayer_2
             s = new splash();
             s.Show();
             s.Update();
-            songs = new List<AudioFile>();
-            playlists = new List<string>();
-            foreach (string q in Directory.GetFiles(AppFolder, "*.m3u")) { playlists.Add(q); }
-            s.curTask.Text = getStr(s.taskLabels.Text, 0);
-            s.Update();
-            count = 0;
-            retrieveSongs(s);
-            songs.Sort();
-            s.curTask.Text = getStr(s.taskLabels.Text, 1);
-            s.Update();
-            count = 0;
-            loadSongsList(s);
-            s.curTask.Text = getStr(s.taskLabels.Text, 2);
-            loadSongsList();
+            try
+            {
+                songs = new List<AudioFile>();
+                playlists = new List<string>();
+                foreach (string q in Directory.GetFiles(AppFolder, "*.m3u")) { playlists.Add(q); }
+                s.curTask.Text = getStr(s.taskLabels.Text, 0);
+                s.Update();
+                count = 0;
+                retrieveSongs(s);
+                songs.Sort();
+                s.curTask.Text = getStr(s.taskLabels.Text, 1);
+                s.Update();
+                count = 0;
+                loadSongsList(s);
+                s.curTask.Text = getStr(s.taskLabels.Text, 2);
+                loadSongsList();
+            }
+            catch
+            {
+
+            }
             s.Update();
             s.Close();
             
@@ -1134,6 +1142,7 @@ namespace fPlayer_2
         public void Stack(string filename)
         {
             stack.Add(new AudioFile(filename));
+            if (tabFocused == 4) { contentPane.Controls.Clear(); loadNowPlaying(); }
         }
 
         /**
@@ -1570,8 +1579,13 @@ namespace fPlayer_2
 
         private void playToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            int si = getSelectedItem();
-            if (si != -1) Play(songs[si].FileName);
+            int i = 0;
+            bool found = false;
+            while (!found && i < stack.Count)
+            {
+                if (stack[i].FileName == ((ToolStripMenuItem)sender).GetCurrentParent().Tag.ToString()) { found = true; Play(stack[i].FileName); }
+                i++;
+            }
         }
 
         private void removeFromQueueToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1606,10 +1620,94 @@ namespace fPlayer_2
             }
             catch
             {
-                return 0;
+                return -1;
             }
         }
-    
+
+
+        public void move(int pos)
+        {
+            if (tabFocused <= 4)
+            {
+                contentPane.Tag = pos;
+            }
+        }
         
+
+        public void scroll(int offset)
+        {
+            int curPos=safeconvertint32(contentPane.Tag.ToString());
+            int listlen = contentPane.Controls.Count;
+            if (tabFocused == 4) { listlen--; } // as Now Playing has the overlay too.
+            if (curPos+offset<0)
+            {
+                if (tabFocused != 4)
+                {
+                    move(listlen + curPos + offset);
+
+                }
+                else
+                {
+                    move(listlen + curPos + offset - 1);
+                }
+            }
+            move(curPos + offset);
+        }
+
+
+        public void pgUp()
+        {
+            int itemsInView = (mainPane.Height / new SongsListItem().Height)-1;
+            scroll(-itemsInView);
+        }
+
+        public void pgDown()
+        {
+            int itemsInView = (mainPane.Height / new SongsListItem().Height) - 1;
+            scroll(-itemsInView);
+        }
+
+        public int getFirstIndex(string tag)
+        {
+            int ind=-1;
+            int i = 0;
+            string[] arr=tag.Split(',');
+            while (ind==-1 && i<arr.Length) {
+                ind = safeconvertint32(arr[i]);
+                i++;
+            }
+            return ind;
+        }
+
+        public void scrollToAlpha(char k)
+        {
+
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            switch (keyData)
+            {
+                case Keys.Up:
+                    scroll(-1);
+                    break;
+                case Keys.Down:
+                    scroll(1);
+                    break;
+                case Keys.PageUp:
+                    pgUp();
+                    break;
+                case Keys.PageDown:
+                    pgDown();
+                    break;
+                default:
+                    if (Char.IsLetterOrDigit((char)keyData))
+                    {
+                        scrollToAlpha((char)keyData);
+                    }
+                    break;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
 	}
 }

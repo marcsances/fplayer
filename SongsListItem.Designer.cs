@@ -51,6 +51,7 @@
             this.menuButton.TabStop = false;
             this.menuButton.Tag = "B";
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            this.menuButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuButton_MouseDown);
             this.menuButton.MouseEnter += new System.EventHandler(this.menuButton_MouseEnter);
             this.menuButton.MouseLeave += new System.EventHandler(this.menuButton_MouseLeave);
             // 
@@ -74,6 +75,7 @@
             this.songInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.songInfo.Click += new System.EventHandler(this.songInfo_Click);
             this.songInfo.DoubleClick += new System.EventHandler(this.songInfo_DoubleClick);
+            this.songInfo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.songInfo_MouseDown);
             // 
             // songTitle
             // 
@@ -88,6 +90,7 @@
             this.songTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.songTitle.Click += new System.EventHandler(this.songTitle_Click);
             this.songTitle.DoubleClick += new System.EventHandler(this.songTitle_DoubleClick);
+            this.songTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.songTitle_MouseDown);
             // 
             // SongsListItem
             // 
@@ -103,6 +106,7 @@
             this.Size = new System.Drawing.Size(500, 48);
             this.Click += new System.EventHandler(this.SongsListItem_Click);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.SongsListItem_Paint);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SongsListItem_MouseDown);
             this.MouseHover += new System.EventHandler(this.SongsListItem_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);

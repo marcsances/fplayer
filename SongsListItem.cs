@@ -189,5 +189,25 @@ namespace fPlayer_2
             SongsListItem_Click(sender, e);
         }
 
+        private void SongsListItem_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && this.OnMenuRequest != null) { if (!isMultiSelect()) SongsListItem_Click(sender, e); this.OnMenuRequest(this, (EventArgs)e); }
+        }
+
+        private void menuButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && this.OnMenuRequest != null) { if (!isMultiSelect()) SongsListItem_Click(sender, e); this.OnMenuRequest(this, (EventArgs)e); }
+        }
+
+        private void songInfo_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && this.OnMenuRequest != null) { if (!isMultiSelect()) SongsListItem_Click(sender, e); this.OnMenuRequest(this, (EventArgs)e); }
+        }
+
+        private void songTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && this.OnMenuRequest != null) { if (!isMultiSelect()) SongsListItem_Click(sender, e); this.OnMenuRequest(this, (EventArgs)e); }
+        }
+
     }
 }

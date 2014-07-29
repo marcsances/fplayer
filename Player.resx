@@ -220,9 +220,6 @@
   <data name="&gt;&gt;quicklistmenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;maximizeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -289,6 +286,9 @@
   <data name="&gt;&gt;nextButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="trackbarRegion.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
   <data name="&gt;&gt;focusMisser.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -311,7 +311,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;translations.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="repeatButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>761, 13</value>
@@ -329,7 +329,7 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="songsPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 40</value>
@@ -350,7 +350,7 @@
     <value>1</value>
   </data>
   <data name="&gt;&gt;closeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="nowplayingIcon.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -396,7 +396,7 @@
     <value>4</value>
   </data>
   <data name="&gt;&gt;songname.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="tracklength.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -480,14 +480,11 @@
   <data name="nowplayingPanel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="&gt;&gt;songinfo.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="translations.Text" xml:space="preserve">
     <value>Unknown artist!Unknown album!Are you sure you want to delete this playlist?!Not yet implemented.</value>
@@ -500,6 +497,9 @@
   </data>
   <data name="songMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="focusMisser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-300, -300</value>
   </data>
   <data name="&gt;&gt;contentPane.Parent" xml:space="preserve">
     <value>mainPane</value>
@@ -544,13 +544,16 @@
     <value>3, 3</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="libraryLabel2.Text" xml:space="preserve">
     <value>Libraries</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;focusController.Name" xml:space="preserve">
+    <value>focusController</value>
   </data>
   <data name="&gt;&gt;albumsPanel.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -590,7 +593,7 @@
     <value>bottomPanel</value>
   </data>
   <data name="&gt;&gt;trackpos.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="tracklength.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -599,7 +602,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;titlePanel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;albumsPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -615,9 +618,6 @@
         3mYGrY9KzV32Bq0PxaWPsBSXf8NpQeujUvMx9Qbti9DU9eMbDloflZq77A1aH4pl+nqX5Vve5E7Q+lBc
         PsC0oA2C4GmkdAAVvYczIgKF1QAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="closeBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="playlistsLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -659,7 +659,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;tracklength.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="appIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -699,17 +699,17 @@
   <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Add to playlist</value>
   </data>
-  <data name="artistsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="closeBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="translations.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 32</value>
   </data>
   <data name="&gt;&gt;appTitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;volumeButton.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -763,7 +763,7 @@
     <value>Zoom</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;libraryPanel.Name" xml:space="preserve">
     <value>libraryPanel</value>
@@ -810,8 +810,8 @@
   <data name="minimizeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="albumsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="aboutLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;playToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1903,6 +1903,9 @@
   <data name="&gt;&gt;maximizeBox.Name" xml:space="preserve">
     <value>maximizeBox</value>
   </data>
+  <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
+    <value>New playlist</value>
+  </data>
   <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2091,13 +2094,10 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="maximizeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="libraryIcon.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -2109,7 +2109,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;shuffleButton.Name" xml:space="preserve">
     <value>shuffleButton</value>
@@ -2369,9 +2369,6 @@
   <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 22</value>
   </data>
-  <data name="&gt;&gt;mainSidebar.Name" xml:space="preserve">
-    <value>mainSidebar</value>
-  </data>
   <data name="&gt;&gt;libraryPanel.Parent" xml:space="preserve">
     <value>mainSidebar</value>
   </data>
@@ -2435,8 +2432,8 @@
   <data name="minimizeBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="focusMisser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-300, -300</value>
+  <data name="albumsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;nowplayingIcon.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2447,8 +2444,8 @@
   <data name="&gt;&gt;albumsIcon.Name" xml:space="preserve">
     <value>albumsIcon</value>
   </data>
-  <data name="albumsLabel2.Text" xml:space="preserve">
-    <value>Albums</value>
+  <data name="&gt;&gt;mainSidebar.Name" xml:space="preserve">
+    <value>mainSidebar</value>
   </data>
   <data name="searchBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2477,6 +2474,9 @@
   <data name="contentPane.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;repeatButton.Name" xml:space="preserve">
+    <value>repeatButton</value>
+  </data>
   <data name="songsIcon.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -2497,14 +2497,14 @@
   <data name="songsLabel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="maximizeBox.Text" xml:space="preserve">
-    <value>1</value>
+  <data name="albumsLabel2.Text" xml:space="preserve">
+    <value>Albums</value>
   </data>
-  <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>New playlist</value>
+  <data name="&gt;&gt;songname.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
   </data>
-  <data name="&gt;&gt;focusController.Name" xml:space="preserve">
-    <value>focusController</value>
+  <data name="aboutIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
   </data>
   <data name="&gt;&gt;artistsPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2548,8 +2548,8 @@
   <data name="trackbarRegion.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 64</value>
   </data>
-  <data name="trackbarRegion.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;searchBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Name" xml:space="preserve">
     <value>albumsLabel2</value>
@@ -2615,7 +2615,7 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;focusMisser.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="appIcon.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -2699,7 +2699,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2751,7 +2751,7 @@
 </value>
   </data>
   <data name="&gt;&gt;minimizeBox.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;stackCount.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2771,11 +2771,11 @@
   <data name="contentPaneTitle.Text" xml:space="preserve">
     <value>Songs</value>
   </data>
-  <data name="&gt;&gt;trackbarBack.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="aboutIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
+  <data name="&gt;&gt;nowplayingPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="songinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -2783,8 +2783,8 @@
   <data name="artistsPanel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;repeatButton.Name" xml:space="preserve">
-    <value>repeatButton</value>
+  <data name="&gt;&gt;trackbarBack.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
   </data>
   <data name="mainSidebar.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2796,7 +2796,7 @@
     <value>minimizeToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5320.30661, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, fPlayer 2, Version=2.1.5323.28040, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="minimizeBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -2847,7 +2847,7 @@
     <value>trackpos</value>
   </data>
   <data name="&gt;&gt;mainPane.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="repeatButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -2918,8 +2918,8 @@
   <data name="libraryIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;songname.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+  <data name="mainPane.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;nextButton.Name" xml:space="preserve">
     <value>nextButton</value>
@@ -2931,7 +2931,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;mainSidebar.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="playPauseButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2979,7 +2979,7 @@
     <value>songsPanel</value>
   </data>
   <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="playlistsIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3023,8 +3023,8 @@
   <data name="maximizeBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="aboutLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="artistsIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="artistsLabel2.Text" xml:space="preserve">
     <value>Artists</value>
@@ -3035,8 +3035,8 @@
   <data name="&gt;&gt;closeBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="maximizeBox.Text" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="previousButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
