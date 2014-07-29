@@ -308,7 +308,7 @@ namespace fPlayer_2
 		}
 		
 
-        private bool isMouseOver(Control c)
+        public bool isMouseOver(Control c)
         {
             return c.ClientRectangle.Contains(c.PointToClient(Cursor.Position));
         }
@@ -344,6 +344,7 @@ namespace fPlayer_2
             }
             if (shuffle && shuffleButton.BackColor!=Color.White) shuffleButton.BackColor = Color.Green;
             if (repeat && repeatButton.BackColor != Color.White) repeatButton.BackColor = Color.Green;
+            if (MouseButtons == MouseButtons.Left && !isMouseOver(volumeButton) && !drags2 && !isMouseOver(volFront) && !isMouseOver(volBack) && !isMouseOver(volVal)) voldefocus();
         }
 
         private bool isHighlighted(Control c)
@@ -541,6 +542,7 @@ namespace fPlayer_2
         }
         public void OnStackRequest(object sender, EventArgs e)
         {
+            
             SongsListItem sli = getSongsListItem((Control)sender);
             if (sli != null) { quicklistmenu.Tag = stack[safeconvertint32(sli.Tag)].FileName; quicklistmenu.Show(MousePosition); }
         }
@@ -770,6 +772,7 @@ namespace fPlayer_2
         {
             SongsListItem sli = getSongsListItem((Control)sender);
             if (sli!=null && !sli.isStack) songMenu.Show(MousePosition);
+            
         }
 
 
@@ -1028,11 +1031,23 @@ namespace fPlayer_2
         }
         public void UpdateInfo()
         {
-            
+            UpdateVol(gI().getVolume());
             trackpos.Text = formatMs(getPos());
             tracklength.Text = formatMs(getLength());
             npo.songPos.Text = formatMs(getPos()) + " / " + formatMs(getLength());
             UpdateBar();
+        }
+
+        public void UpdateVol(int vol) {
+            if (volVal.Text != vol.ToString())
+            {
+                volVal.Text = vol.ToString();
+                volFront.Height = vol;
+                volFront.Top = 100 - vol;
+                
+                volFront.BringToFront();
+
+            }
         }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
@@ -1461,7 +1476,16 @@ namespace fPlayer_2
 
         private void volumeButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(getStr(translations.Text, 3));
+            if (gI() != null)
+            {
+                
+                volFront.Visible = !volFront.Visible;
+                volBack.Visible = !volBack.Visible;
+                volVal.Visible = !volVal.Visible;
+                volFront.BringToFront();
+                volVal.BringToFront();
+                UpdateVol(gI().getVolume());
+            }
             this.contentPane.Tag = "-1";
         }
 
@@ -1708,6 +1732,49 @@ namespace fPlayer_2
                     break;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        public bool drags2 = false;
+        private void volBack_MouseDown(object sender, MouseEventArgs e)
+        {
+            drags2 = true;
+        }
+
+        private void volBack_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drags2 && gI() != null && gI().playing() && isMouseOver(volBack))
+            {
+                int mouseYOnElement = this.volBack.PointToScreen(new Point(0, 0)).Y;
+                mouseYOnElement = MousePosition.Y - mouseYOnElement;
+                int newVol = 100-mouseYOnElement;
+                gI().setVolume(newVol);
+            }
+        }
+
+        private void volBack_MouseUp(object sender, MouseEventArgs e)
+        {
+            volBack_MouseMove(sender, e);
+            drags2 = false;
+        }
+
+        private void volFront_MouseDown(object sender, MouseEventArgs e)
+        {
+            volBack_MouseDown(sender, e);
+        }
+
+        private void volFront_MouseMove(object sender, MouseEventArgs e)
+        {
+            volBack_MouseMove(sender, e);
+        }
+
+        private void volFront_MouseUp(object sender, MouseEventArgs e)
+        {
+            volBack_MouseUp(sender, e);
+        }
+
+        public void voldefocus()
+        {
+            if (volFront.Visible) volumeButton_Click(this,new EventArgs());
         }
 	}
 }
