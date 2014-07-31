@@ -276,6 +276,22 @@
         0QsSaLrooSWZlAIjBkHChh19XridKdeNVBXU5l9gwMI3JWdOQEFp2BoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="pluginLabel.Text" xml:space="preserve">
+    <value>Extensiones</value>
+  </data>
+  <data name="pluginIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGcSURBVFhH7ZeBbcIwEEVZoAswAAuwQBdgABZgDgbo
+        Al2gC3SALsBO6X/Rv8pN4vgIkKoSX/oSufv3ndhnJ2ye+Jfoum4vHsWTye+9048BA4hv4qVBNPe7GZlt
+        xXebxwAH8WcQfjtW3iA1W0uWQQY78cuG54whGmupoXbn1HWg0Abw1eE0qCnqr7sJFfAUy4oLUFv45JdD
+        4ljzm5tJHsxE3xMOzYNBXXB26BcU/0DjyxTwsme7TqLo5Mkpcw6iS00ruqhxqI6W0Pkga8tB9OJ0FdL0
+        D+bLaUgQ039waATnh/wUqzWAvLX1ZVCSI3VW5HyNNO/krlE8Hu7o0BhKMp2z02STFmm60bI4d/LlGCQR
+        +XISNmlxciacm72BW5eg2guKp5ZgaRM2d4Ny7SYEFmW3Ya8VMy+p9jYEIayZOgfTJyJerkkdRK2jmOme
+        3fND4GXP1A1TEC+j0WtYseapVwIPe+VeRkDiv30dg0Hxuh8kAQpt0PeEmOn2+3ySBWwYPQHZJet8lJaQ
+        GYOUA9SIJtftS8EA4rp/TJ54DDabb6mZwVfW9FL1AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="libraryIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -1436,5 +1452,9 @@
         EAAAIAAAQAAAgAAAAAEAAAIAAAQAAAgAABAAACAAAEAAAIAAAAABAAACAAAEAAAIAAAQAAAgAACI4n8O
         P5iXEfHzMQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

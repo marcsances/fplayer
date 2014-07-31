@@ -76,11 +76,18 @@
     <Compile Include="AboutDialog.Designer.cs">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="IPlugin.cs" />
     <Compile Include="NoListMsg.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="NoListMsg.Designer.cs">
       <DependentUpon>NoListMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PluginItem.Designer.cs">
+      <DependentUpon>PluginItem.cs</DependentUpon>
     </Compile>
     <Compile Include="PlaylistItem.cs">
       <SubType>UserControl</SubType>
@@ -187,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nowPlayingOverlay.es.resx">
       <DependentUpon>nowPlayingOverlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginItem.resx">
+      <DependentUpon>PluginItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlaylistItem.resx">
       <DependentUpon>PlaylistItem.cs</DependentUpon>

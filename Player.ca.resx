@@ -276,6 +276,17 @@
         0QsSaLrooSWZlAIjBkHChh19XridKdeNVBXU5l9gwMI3JWdOQEFp2BoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEESURBVFhH7ZbrDcIwDIS7AAswAAt0gS7AACzAHB2A
+        BViABRiABbpTuJMcZCz/KFIcCyknndSH669JYzfT0FCESilH+Co+y+U+IhDejB/wQULiRAj8Eqj1KmFx
+        AmQx0C9LWJwA8ab/YwmLEQCEPzXQ+C6hbYXEM5MrkPcSXBcneaSNmBDWYB7Pco+zwXN6hX+H4yGu6ItK
+        UpOzxnlewRxx21pHQo7OK6ebOub9mCZjQNYEs8PFNRYF8xzfWh2o9iJhcQIk/RPkLkIKyVmGHGn/Mtwj
+        QPc2Is5a2y6oheQ5rdgKgJyfkRYgeb9jCpD0DUnulowCyPsMfTalVYDlbcuH/kzT9AaicP05Fr8y4QAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <data name="libraryIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -1442,6 +1453,6 @@
 </value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
   </data>
 </root>

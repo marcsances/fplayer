@@ -66,6 +66,9 @@ namespace fPlayer_2
             this.appIcon = new System.Windows.Forms.PictureBox();
             this.appTitle = new Label2();
             this.mainSidebar = new System.Windows.Forms.Panel();
+            this.pluginPanel = new System.Windows.Forms.Panel();
+            this.pluginLabel = new Label2();
+            this.pluginIcon = new System.Windows.Forms.PictureBox();
             this.libraryPanel = new System.Windows.Forms.Panel();
             this.libraryIcon = new System.Windows.Forms.PictureBox();
             this.libraryLabel2 = new Label2();
@@ -120,6 +123,8 @@ namespace fPlayer_2
             this.windowContextMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appIcon)).BeginInit();
             this.mainSidebar.SuspendLayout();
+            this.pluginPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pluginIcon)).BeginInit();
             this.libraryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.libraryIcon)).BeginInit();
             this.aboutPanel.SuspendLayout();
@@ -386,6 +391,7 @@ namespace fPlayer_2
             // 
             resources.ApplyResources(this.mainSidebar, "mainSidebar");
             this.mainSidebar.BackColor = System.Drawing.Color.Teal;
+            this.mainSidebar.Controls.Add(this.pluginPanel);
             this.mainSidebar.Controls.Add(this.libraryPanel);
             this.mainSidebar.Controls.Add(this.aboutPanel);
             this.mainSidebar.Controls.Add(this.nowplayingPanel);
@@ -396,6 +402,28 @@ namespace fPlayer_2
             this.mainSidebar.Controls.Add(this.searchBox);
             this.mainSidebar.Name = "mainSidebar";
             this.mainSidebar.Click += new System.EventHandler(this.mainSidebar_Click);
+            // 
+            // pluginPanel
+            // 
+            resources.ApplyResources(this.pluginPanel, "pluginPanel");
+            this.pluginPanel.Controls.Add(this.pluginLabel);
+            this.pluginPanel.Controls.Add(this.pluginIcon);
+            this.pluginPanel.Name = "pluginPanel";
+            this.pluginPanel.Click += new System.EventHandler(this.pluginPanel_Click);
+            // 
+            // pluginLabel
+            // 
+            resources.ApplyResources(this.pluginLabel, "pluginLabel");
+            this.pluginLabel.ForeColor = System.Drawing.Color.White;
+            this.pluginLabel.Name = "pluginLabel";
+            this.pluginLabel.Click += new System.EventHandler(this.pluginPanel_Click);
+            // 
+            // pluginIcon
+            // 
+            resources.ApplyResources(this.pluginIcon, "pluginIcon");
+            this.pluginIcon.Name = "pluginIcon";
+            this.pluginIcon.TabStop = false;
+            this.pluginIcon.Click += new System.EventHandler(this.pluginPanel_Click);
             // 
             // libraryPanel
             // 
@@ -745,6 +773,8 @@ namespace fPlayer_2
             ((System.ComponentModel.ISupportInitialize)(this.appIcon)).EndInit();
             this.mainSidebar.ResumeLayout(false);
             this.mainSidebar.PerformLayout();
+            this.pluginPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pluginIcon)).EndInit();
             this.libraryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.libraryIcon)).EndInit();
             this.aboutPanel.ResumeLayout(false);
@@ -839,5 +869,8 @@ namespace fPlayer_2
         private System.Windows.Forms.Panel volFront;
         public System.Windows.Forms.Panel volBack;
         private System.Windows.Forms.Label volVal;
+        private System.Windows.Forms.Panel pluginPanel;
+        private Label2 pluginLabel;
+        private System.Windows.Forms.PictureBox pluginIcon;
 	}
 }

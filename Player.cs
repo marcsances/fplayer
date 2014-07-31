@@ -22,6 +22,7 @@ using System.IO;
 using libap;
 using System.Threading;
 using System.Globalization;
+using System.Reflection;
 namespace fPlayer_2
 {
 	/// <summary>
@@ -55,7 +56,53 @@ namespace fPlayer_2
             }
             if (!Directory.Exists(AppFolder+"\\hashes\\")) Directory.CreateDirectory(AppFolder+"\\hashes\\");
             this.mainPane.MouseWheel += new MouseEventHandler(WheelHandler);
+            loadPlugins();
 		}
+        Dictionary<string, IPlugin> _Plugins = new Dictionary<string, IPlugin>();
+        public void loadPlugins()
+        {
+            string[] dllFileNames = null;
+            if (Directory.Exists(AppFolder+"\\plugins\\"))
+            {
+                dllFileNames = Directory.GetFiles(AppFolder + "\\plugins\\", "*.dll");
+            }
+            ICollection<Assembly> assemblies = new List<Assembly>(dllFileNames.Length);
+            foreach (string dllFile in dllFileNames)
+            {
+                AssemblyName an = AssemblyName.GetAssemblyName(dllFile);
+                Assembly assembly = Assembly.Load(an);
+                assemblies.Add(assembly);
+            }
+            Type pluginType = typeof(IPlugin);
+            ICollection<Type> pluginTypes = new List<Type>();
+            foreach (Assembly assembly in assemblies)
+            {
+                if (assembly != null)
+                {
+                    Type[] types = assembly.GetTypes();
+                    foreach (Type type in types)
+                    {
+                        if (type.IsInterface || type.IsAbstract)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            if (type.GetInterface(pluginType.FullName) != null)
+                            {
+                                pluginTypes.Add(type);
+                            }
+                        }
+                    }
+                }
+            }
+            foreach (Type type in pluginTypes)
+            {
+                IPlugin plugin = (IPlugin)Activator.CreateInstance(type);
+                _Plugins.Add(plugin.Name, plugin);
+            }
+            
+        }
         
         public splash s;
 
@@ -325,7 +372,7 @@ namespace fPlayer_2
           
             if (this.isactive)
             {
-                Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
+                Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, pluginPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
                 for (int i = 0; i < focusableControls.Length; i++)
                 {
                     Control c = focusableControls[i];
@@ -1891,5 +1938,55 @@ namespace fPlayer_2
         {
             if (volFront.Visible) volumeButton_Click(this,new EventArgs());
         }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+            pluginPanel_Click(sender, e);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pluginPanel_Click(sender, e);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        public void loadExtensionList()
+        {
+            contentPaneTitle.Text = pluginLabel.Text;
+            contentPane.Controls.Clear();
+            int i = 0;
+            foreach (string k in _Plugins.Keys)
+            {
+                PluginItem pi = new PluginItem();
+                pi.Dock = DockStyle.Top;
+                pi.setData(_Plugins[k].Name);
+                pi.Dock = DockStyle.Top;
+                pi.parentList = contentPane;
+                pi.parent = this;
+                pi.Tag = k;
+                pi.OnPlayRequest += pi_OnPlayRequest;
+                pi.index = i;
+                i++;
+                contentPane.Controls.Add(pi);
+            }
+        }
+
+        void pi_OnPlayRequest(object sender, EventArgs e)
+        {
+            contentPane.Controls.Clear();
+            contentPaneTitle.Text = _Plugins[((PluginItem)sender).Tag.ToString()].Name;
+            contentPane.Controls.Add(_Plugins[((PluginItem)sender).Tag.ToString()].getGUI(this));
+        }
+        
+        private void pluginPanel_Click(object sender, EventArgs e)
+        {
+            tabFocused = 7;
+            loadExtensionList();
+        }
+
 	}
 }
