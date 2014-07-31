@@ -49,8 +49,14 @@ namespace fPlayer_2
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+            if (!localDataFolderExists())
+            {
+                Directory.CreateDirectory(AppFolder);
+            }
+            if (!Directory.Exists(AppFolder+"\\hashes\\")) Directory.CreateDirectory(AppFolder+"\\hashes\\");
             this.mainPane.MouseWheel += new MouseEventHandler(WheelHandler);
 		}
+        
         public splash s;
 
         public void WheelHandler(object sender, MouseEventArgs e)
@@ -661,6 +667,7 @@ namespace fPlayer_2
             s.Update();
             try
             {
+                contentPaneTitle.Text = songsLabel2.Text;
                 songs = new List<AudioFile>();
                 playlists = new List<string>();
                 foreach (string q in Directory.GetFiles(AppFolder, "*.m3u")) { playlists.Add(q); }
@@ -712,10 +719,14 @@ namespace fPlayer_2
 
         public void add(string k, splash s, int i)
         {
-            songs.Add(new AudioFile(k));
-            count++;
-            s.curTask.Text = getStr(s.taskLabels.Text, i) + " (" + count + ")";
-            s.Update();
+            string hash=BitConverter.ToString(System.Security.Cryptography.MD5.Create().ComputeHash(File.OpenRead(k))).Replace("-","").ToLower();;
+            
+            
+                songs.Add(new AudioFile(k));
+                count++;
+                s.curTask.Text = getStr(s.taskLabels.Text, i) + " (" + count + ")";
+                s.Update();
+           
         }
 
         public void retrieveDir(string dir, splash s)
@@ -742,9 +753,13 @@ namespace fPlayer_2
                 if (!sli.isStack) { Play(sli.Tag.ToString()); }
             else {
                 try {
-                    int pos=Convert.ToInt32(sli.Tag);
-                    sta_pos=pos;
-                    playnow();
+                    int pos = -1;
+                    if ((sli.Tag is string && sli.Tag.ToString().Length > 0) || sli.Tag is int) { pos = Convert.ToInt32(sli.Tag); } else { pos = 0; }
+                    if (pos >= 0 && pos < stack.Count)
+                    {
+                        sta_pos = pos;
+                        playnow();
+                    }
                 } catch {
 
                 }
@@ -1069,7 +1084,7 @@ namespace fPlayer_2
                 int val = -1;
                 try
                 {
-                    val = Convert.ToInt32(k);
+                    if (k.Length > 0) { val = Convert.ToInt32(k); }
                 }
                 catch
                 {
@@ -1089,7 +1104,7 @@ namespace fPlayer_2
                 int val = -1;
                 try
                 {
-                    val = Convert.ToInt32(k);
+                    if (k.Length>0) val = Convert.ToInt32(k);
                 }
                 catch
                 {
@@ -1166,7 +1181,14 @@ namespace fPlayer_2
          */
         public void playnow()
         {
+            int volume = 100;
+            if (gI() != null)
+            {
+                // fix for BTC106: push volume before destroying instance
+                volume = gI().getVolume();
+            }
             MediaPlayer.getInstance(stack[sta_pos]).OnPlaybackFinished += new EventHandler(OnPlaybackFinishedHandler);
+            gI().setVolume(volume); // return volume
             gI().play();
             LoadInfo();
             if (!playglyph)
@@ -1701,6 +1723,7 @@ namespace fPlayer_2
         public int safeconvertint32(Object data)
         {
             int n = 0;
+            if (data is string && ((String)data).Length == 0) return -1;
             try
             {
                 n = Convert.ToInt32(data);
@@ -1712,6 +1735,12 @@ namespace fPlayer_2
             }
         }
 
+        public void scrollTo(int pos)
+        {
+            mainPane.AutoScrollPosition = new Point(0,pos*48) ;
+            Update();
+        }
+
 
         public void move(int pos)
         {
@@ -1719,6 +1748,7 @@ namespace fPlayer_2
             {
                 contentPane.Tag = pos;
             }
+            scrollTo(pos);
         }
         
 
@@ -1727,19 +1757,16 @@ namespace fPlayer_2
             int curPos=safeconvertint32(contentPane.Tag.ToString());
             int listlen = contentPane.Controls.Count;
             if (tabFocused == 4) { listlen--; } // as Now Playing has the overlay too.
-            if (curPos+offset<0)
+            int newpos = curPos + offset;
+            if (newpos < 0)
             {
-                if (tabFocused != 4)
-                {
-                    move(listlen + curPos + offset);
-
-                }
-                else
-                {
-                    move(listlen + curPos + offset - 1);
-                }
+                newpos = listlen - Math.Abs(newpos);
             }
-            move(curPos + offset);
+            if (newpos >= listlen)
+            {
+                newpos = newpos - listlen;
+            }
+            move(newpos);
         }
 
 
@@ -1752,7 +1779,7 @@ namespace fPlayer_2
         public void pgDown()
         {
             int itemsInView = (mainPane.Height / new SongsListItem().Height) - 1;
-            scroll(-itemsInView);
+            scroll(itemsInView);
         }
 
         public int getFirstIndex(string tag)
@@ -1787,6 +1814,30 @@ namespace fPlayer_2
                     break;
                 case Keys.PageDown:
                     pgDown();
+                    break;
+                case Keys.Enter:
+                    try
+                    {
+                        switch (tabFocused)
+                        {
+                            case 0:
+                            case 4:
+                                OnPlaySelected(contentPane.Controls[contentPane.Controls.Count - 1 - getSelectedItem()], new EventArgs());
+                                break;
+                            case 1:
+                                artistHandler(contentPane.Controls[contentPane.Controls.Count - 1 - getSelectedItem()], new EventArgs());
+                                break;
+                            case 2:
+                                AlbumPlayHandler(contentPane.Controls[contentPane.Controls.Count - 1 - getSelectedItem()], new EventArgs());
+                                break;
+                            case 3:
+                                playlistslistplayrequest(contentPane.Controls[contentPane.Controls.Count - 1 - getSelectedItem()], new EventArgs());
+                                break;
+
+
+                        }
+                    }
+                    catch { }
                     break;
                 default:
                     if (Char.IsLetterOrDigit((char)keyData))

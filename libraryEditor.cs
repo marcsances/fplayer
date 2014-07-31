@@ -101,10 +101,6 @@ namespace fPlayer_2
         public void loadFolders()
         {
             folderBox.Items.Clear();
-            if (!localDataFolderExists())
-            {
-                Directory.CreateDirectory(AppFolder);
-            }
             if (File.Exists(AppFolder + "\\library.lib"))
             {
                 stringToArray(File.ReadAllText(AppFolder + "library.lib"), ref folderBox);
@@ -113,18 +109,14 @@ namespace fPlayer_2
 
         public void saveFolders()
         {
-            if (!localDataFolderExists())
-            {
-                Directory.CreateDirectory(AppFolder);
-            }
+
+            Directory.Delete(AppFolder + "\\hashes\\",true);
+            Directory.CreateDirectory(AppFolder + "\\hashes\\");
             File.WriteAllText(AppFolder + "library.lib", arrayToString(folderBox.Items));
             
         }
 
-        public bool localDataFolderExists()
-        {
-            return Directory.Exists(Application.LocalUserAppDataPath + "\\MSS Software & Services\\fPlayer\\2.1\\");
-        }
+        
 
         private void libraryEditor_Load(object sender, EventArgs e)
         {

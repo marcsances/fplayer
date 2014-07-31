@@ -117,71 +117,80 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;licenseinfo.Name" xml:space="preserve">
-    <value>licenseinfo</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="infolibs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 53</value>
   </data>
-  <data name="&gt;&gt;advicetext.Parent" xml:space="preserve">
-    <value>$this</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="webIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="advicetext.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="licenseinfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="licenseinfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt</value>
-  </data>
-  <data name="&gt;&gt;advice2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.32051, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="advicetext.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="&gt;&gt;licenseinfo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="advicetext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;twitterIcon.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="advice2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;webIcon.Name" xml:space="preserve">
+    <value>webIcon</value>
   </data>
-  <data name="advice2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 32</value>
+  <data name="&gt;&gt;webIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;advicetext.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;licenseinfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;facebookIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="twitterIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="infolibs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>NoSongsMsg</value>
   </data>
-  <data name="&gt;&gt;infolibs.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.32051, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="advicetext.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="advice2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="licenseinfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="infolibs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 347</value>
   </data>
   <data name="infolibs.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;infolibs.Name" xml:space="preserve">
-    <value>infolibs</value>
+  <data name="&gt;&gt;licenseinfo.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5323.31448, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;advicetext.Name" xml:space="preserve">
-    <value>advicetext</value>
+  <data name="&gt;&gt;advicetext.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="advice2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="&gt;&gt;advice2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="advicetext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;infolibs.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5323.31448, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="advice2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="facebookIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;facebookIcon.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="licenseinfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>400, 283</value>
@@ -189,26 +198,14 @@
   <data name="infolibs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;advicetext.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.32051, Culture=neutral, PublicKeyToken=null</value>
+  <data name="licenseinfo.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="licenseinfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 64</value>
+  <data name="twitterIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 307</value>
   </data>
-  <data name="&gt;&gt;licenseinfo.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.32051, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="infolibs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="advice2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="advice2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="licenseinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="licenseinfo.Text" xml:space="preserve">
     <value>fPlayer is free software: you can redistribute it and/or modify
@@ -226,81 +223,138 @@
     along with fPlayer (Yes you have, it's the COPYING file in setup folder).
     If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
-  <data name="infolibs.Text" xml:space="preserve">
-    <value>First of all, let's add some music.
-Click the "Libraries" icon at the left sidebar.</value>
+  <data name="&gt;&gt;advicetext.Name" xml:space="preserve">
+    <value>advicetext</value>
   </data>
-  <data name="advice2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 32</value>
-  </data>
-  <data name="infolibs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="advicetext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="licenseinfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="infolibs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 53</value>
-  </data>
-  <data name="&gt;&gt;advice2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="advicetext.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt, style=Bold</value>
-  </data>
-  <data name="advicetext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="advicetext.Text" xml:space="preserve">
-    <value>Welcome to fPlayer!</value>
-  </data>
-  <data name="infolibs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="&gt;&gt;infolibs.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;infolibs.Parent" xml:space="preserve">
+  <data name="&gt;&gt;webIcon.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="advice2.Text" xml:space="preserve">
-    <value>Thanks for choosing fPlayer. It's time to get started.</value>
-  </data>
-  <data name="licenseinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="licenseinfo.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;advice2.Name" xml:space="preserve">
-    <value>advice2</value>
-  </data>
-  <data name="infolibs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 347</value>
-  </data>
-  <data name="infolibs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;advice2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;licenseinfo.Parent" xml:space="preserve">
+  <data name="advice2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 32</value>
+  </data>
+  <data name="advicetext.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="infolibs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="licenseinfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 64</value>
+  </data>
+  <data name="infolibs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;infolibs.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="advicetext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="advice2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="advice2.Text" xml:space="preserve">
+    <value>Thanks for choosing fPlayer. It's time to get started.</value>
+  </data>
+  <data name="licenseinfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;advicetext.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5323.31448, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="advicetext.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt, style=Bold</value>
+  </data>
+  <data name="licenseinfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="advice2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="advicetext.Text" xml:space="preserve">
+    <value>Welcome to fPlayer!</value>
+  </data>
+  <data name="advicetext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;infolibs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;webIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;facebookIcon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;infolibs.Name" xml:space="preserve">
+    <value>infolibs</value>
+  </data>
+  <data name="&gt;&gt;advice2.Type" xml:space="preserve">
+    <value>Label2, fPlayer 2, Version=2.1.5323.31448, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="advice2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 32</value>
+  </data>
+  <data name="&gt;&gt;facebookIcon.Name" xml:space="preserve">
+    <value>facebookIcon</value>
+  </data>
+  <data name="infolibs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;twitterIcon.Name" xml:space="preserve">
+    <value>twitterIcon</value>
+  </data>
+  <data name="advice2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>400, 400</value>
   </data>
-  <data name="advicetext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 32</value>
+  <data name="&gt;&gt;twitterIcon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;advicetext.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="advicetext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="advice2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="advicetext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 32</value>
+  </data>
+  <data name="&gt;&gt;advice2.Name" xml:space="preserve">
+    <value>advice2</value>
+  </data>
+  <data name="licenseinfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="webIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 307</value>
+  </data>
+  <data name="&gt;&gt;licenseinfo.Name" xml:space="preserve">
+    <value>licenseinfo</value>
+  </data>
+  <data name="&gt;&gt;twitterIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="advice2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="facebookIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 307</value>
+  </data>
+  <data name="infolibs.Text" xml:space="preserve">
+    <value>First of all, let's add some music.
+Click the "Libraries" icon at the left sidebar.</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
