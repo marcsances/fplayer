@@ -1,18 +1,18 @@
 ﻿/*
- * This file is part of fPlayer.
+ * This file is part of urMusik.
 
-    fPlayer is free software: you can redistribute it and/or modify
+    urMusik is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    fPlayer is distributed in the hope that it will be useful,
+    urMusik is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with fPlayer.  If not, see <http://www.gnu.org/licenses/>.
+    along with urMusik.  If not, see <http://www.gnu.org/licenses/>.
  * */
 using System;
 using System.Drawing;
@@ -30,7 +30,7 @@ namespace fPlayer_2
 	/// </summary>
 	public partial class Player : Form
 	{
-        public static string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\fPlayer\\2.1\\";
+        public static string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\urMusik\\2.1\\";
 		private bool isMaximized=false;
 		public int tabFocused=0;
         public List<AudioFile> songs;
@@ -53,11 +53,25 @@ namespace fPlayer_2
             if (!localDataFolderExists())
             {
                 Directory.CreateDirectory(AppFolder);
+                TryMigrate();
             }
-            if (!Directory.Exists(AppFolder+"\\hashes\\")) Directory.CreateDirectory(AppFolder+"\\hashes\\");
             this.mainPane.MouseWheel += new MouseEventHandler(WheelHandler);
             loadPlugins();
 		}
+
+        public void TryMigrate()
+        {
+            try
+            {
+                string olddir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\fPlayer\\2.1\\";
+                if (Directory.Exists(olddir))
+                {
+                    File.Copy(olddir + "library.lib", AppFolder + "library.lib");
+                }
+            }
+            catch { }
+        }
+
         Dictionary<string, IPlugin> _Plugins = new Dictionary<string, IPlugin>();
         public void loadPlugins()
         {
@@ -66,7 +80,7 @@ namespace fPlayer_2
             {
                 dllFileNames = Directory.GetFiles(AppFolder + "\\plugins\\", "*.dll");
             }
-            ICollection<Assembly> assemblies = new List<Assembly>(dllFileNames.Length);
+            if (dllFileNames == null) return;  ICollection<Assembly> assemblies = new List<Assembly>(dllFileNames.Length);
             foreach (string dllFile in dllFileNames)
             {
                 AssemblyName an = AssemblyName.GetAssemblyName(dllFile);
@@ -790,7 +804,7 @@ namespace fPlayer_2
 
         public bool localDataFolderExists()
         {
-            return Directory.Exists(Application.LocalUserAppDataPath + "\\MSS Software & Services\\fPlayer\\2.1\\");
+            return Directory.Exists(Application.LocalUserAppDataPath + "\\MSS Software & Services\\urMusik\\2.1\\");
         }
 
         public void OnPlaySelected(object sender, EventArgs e)
@@ -1027,7 +1041,7 @@ namespace fPlayer_2
         }
         public void playlistdeletehandler(object sender, EventArgs e)
         {
-            if (MessageBox.Show(getStr(translations.Text, 2), "fPlayer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) { File.Delete(getPlaylistItem((Control)sender).Tag.ToString()); contentPane.Controls.Clear();  loadPlaylistsList(); }
+            if (MessageBox.Show(getStr(translations.Text, 2), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) { File.Delete(getPlaylistItem((Control)sender).Tag.ToString()); contentPane.Controls.Clear();  loadPlaylistsList(); }
         }
         public ArtistItem getArtistItem(Control c)
         {

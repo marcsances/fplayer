@@ -132,9 +132,6 @@
   <data name="appLogo.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 3</value>
   </data>
-  <data name="&gt;&gt;appName.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;appName.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
@@ -317,19 +314,25 @@
     <value>AboutDialog</value>
   </data>
   <data name="appName.Text" xml:space="preserve">
-    <value>fPlayer</value>
-  </data>
-  <data name="webIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 88</value>
+    <value>urMusik</value>
   </data>
   <data name="apiimplver.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
   </data>
   <data name="&gt;&gt;apiimplver.Name" xml:space="preserve">
     <value>apiimplver</value>
   </data>
   <data name="appLogo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;webIcon.Name" xml:space="preserve">
+    <value>webIcon</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="appVer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -343,14 +346,11 @@
   <data name="&gt;&gt;appLogo.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="webIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 43</value>
-  </data>
   <data name="&gt;&gt;facebookIcon.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 400</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="twitterIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -366,6 +366,65 @@
   </data>
   <data name="appName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="appLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFgOX/
+        gub/heb/iOb/jOf/jej/kej/lOn/lur/mer/nev/oOv/oez/pez/qO3/qu7/re7/se//s/D/tfD/ufD/
+        vPH/vfL/wfL/xfP/xvT/yPP/yvT/zfT/0PX/0vb/1fb/2Pf/2vj/3fj/4fn/5Pn/5fr/6fr/7Pv/7vz/
+        8fz/9f3/+P3/+f7//v7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6Z+17QAAAAlwSFlzAAAO
+        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
+</value>
   </data>
   <data name="appLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
@@ -385,11 +444,8 @@
   <data name="copyInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 170</value>
   </data>
-  <data name="appVer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt, style=Bold</value>
-  </data>
   <data name="&gt;&gt;appVer.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="copyInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -397,14 +453,29 @@
   <data name="appName.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 136</value>
+  </data>
+  <data name="appVer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;facebookIcon.Name" xml:space="preserve">
+    <value>facebookIcon</value>
+  </data>
   <data name="&gt;&gt;appVer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;webIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;apiimplver.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;appLogo.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;apiimplver.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="facebookIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -592,12 +663,9 @@
   <data name="appName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="copyInfo.Text" xml:space="preserve">
     <value>Copyright © 2014, MSS Software &amp; Services.
-fPlayer is licensed under the terms of the GNU General Public License, version 3.</value>
+urMusik is licensed under the terms of the GNU General Public License, version 3.</value>
   </data>
   <data name="apiimplver.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 12pt</value>
@@ -610,9 +678,6 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
   </data>
   <data name="facebookIcon.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
-  </data>
-  <data name="&gt;&gt;appLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;facebookIcon.Parent" xml:space="preserve">
     <value>$this</value>
@@ -631,6 +696,9 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
   </data>
   <data name="apiimplver.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 32</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="webIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -679,11 +747,11 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
   <data name="&gt;&gt;appName.Name" xml:space="preserve">
     <value>appName</value>
   </data>
-  <data name="&gt;&gt;twitterIcon.Name" xml:space="preserve">
-    <value>twitterIcon</value>
+  <data name="webIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 43</value>
   </data>
   <data name="&gt;&gt;apiimplver.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="appVer.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 32</value>
@@ -691,100 +759,47 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
   <data name="&gt;&gt;appName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;apiimplver.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 400</value>
   </data>
   <data name="&gt;&gt;twitterIcon.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;apiimplver.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;appName.Type" xml:space="preserve">
+    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="apiimplver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;copyInfo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="appName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 134</value>
   </data>
-  <data name="&gt;&gt;webIcon.Name" xml:space="preserve">
-    <value>webIcon</value>
+  <data name="appVer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;copyInfo.Type" xml:space="preserve">
-    <value>Label2, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;appVer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;twitterIcon.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="appLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFgOX/
-        gub/heb/iOb/jOf/jej/kej/lOn/lur/mer/nev/oOv/oez/pez/qO3/qu7/re7/se//s/D/tfD/ufD/
-        vPH/vfL/wfL/xfP/xvT/yPP/yvT/zfT/0PX/0vb/1fb/2Pf/2vj/3fj/4fn/5Pn/5fr/6fr/7Pv/7vz/
-        8fz/9f3/+P3/+f7//v7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6Z+17QAAAAlwSFlzAAAO
-        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
-</value>
+  <data name="webIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 88</value>
   </data>
   <data name="&gt;&gt;twitterIcon.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;facebookIcon.Name" xml:space="preserve">
-    <value>facebookIcon</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="appVer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;twitterIcon.Name" xml:space="preserve">
+    <value>twitterIcon</value>
   </data>
   <data name="webIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -792,14 +807,17 @@ fPlayer is licensed under the terms of the GNU General Public License, version 3
   <data name="apiimplver.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 198</value>
   </data>
-  <data name="apiimplver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;appLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="facebookIcon.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
   <data name="apiimplver.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

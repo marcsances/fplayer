@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="licenseinfo.Text" xml:space="preserve">
-    <value>    L'fPlayer és programari lliure, i el podeu redistribuir i/o modificar sota
+    <value>    L'urMusik és programari lliure, i el podeu redistribuir i/o modificar sota
     les condicions de la Llicència Pública General GNU com la ha publicat
     la Free Software Foundation, sigui la versió 3 de la Llicència o, a la
     vostra elecció, qualsevol posterior.
 
 
-    Distribuïm l'fPlayer amb la finalitat que sigui útil, però SENSE CAP
+    Distribuïm l'urMusik amb la finalitat que sigui útil, però SENSE CAP
     MENA DE GARANTIA; ni tan sols la corresponent garantia de
     COMERCIABILITZACIÓ o UTILITAT PER A UNA FINALITAT
     CONCRETA. Vegeu la Llicència Pública General GNU per a detalls.
 
     Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU
-    amb l'fPlayer (i ho heu fet, és el fitxer COPYING de la carpeta
-    on heu instal·lat l'fPlayer).
+    amb l'urMusik (i ho heu fet, és el fitxer COPYING de la carpeta
+    on heu instal·lat l'urMusik).
     Si no és el cas, vegeu &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="infolibs.Text" xml:space="preserve">
@@ -139,9 +139,9 @@
 Feu clic a la icona "Biblioteques" a la barra lateral.</value>
   </data>
   <data name="advice2.Text" xml:space="preserve">
-    <value>Gràcies per escollir fPlayer. És hora de començar.</value>
+    <value>Gràcies per escollir urMusik. És hora de començar.</value>
   </data>
   <data name="advicetext.Text" xml:space="preserve">
-    <value>Benvingut a l'fPlayer!</value>
+    <value>Benvingut a l'urMusik!</value>
   </data>
 </root>

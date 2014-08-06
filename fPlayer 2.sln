@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fPlayer 2", "fPlayer 2.csproj", "{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libap", "..\..\libap\libap\libap.csproj", "{93EAACEA-75B4-4ABA-89ED-FA01BF252550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Debug|x64.ActiveCfg = Debug|x64
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Debug|x64.Build.0 = Debug|x64
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Release|x64.ActiveCfg = Release|x64
+		{DFEA13BF-0907-4222-BCCE-4F01FF2E9A86}.Release|x64.Build.0 = Release|x64
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Debug|x64.ActiveCfg = Debug|x64
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Debug|x64.Build.0 = Debug|x64
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|x64.ActiveCfg = Release|x64
+		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

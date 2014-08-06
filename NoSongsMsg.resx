@@ -208,19 +208,19 @@
     <value>MiddleCenter</value>
   </data>
   <data name="licenseinfo.Text" xml:space="preserve">
-    <value>fPlayer is free software: you can redistribute it and/or modify
+    <value>urMusik is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
 
-    fPlayer is distributed in the hope that it will be useful,
+    urMusik is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with fPlayer (Yes you have, it's the COPYING file in setup folder).
+    along with urMusik (Yes you have, it's the COPYING file in setup folder).
     If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="&gt;&gt;advicetext.Name" xml:space="preserve">
@@ -257,7 +257,7 @@
     <value>NoControl</value>
   </data>
   <data name="advice2.Text" xml:space="preserve">
-    <value>Thanks for choosing fPlayer. It's time to get started.</value>
+    <value>Thanks for choosing urMusik. It's time to get started.</value>
   </data>
   <data name="licenseinfo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 8.25pt</value>
@@ -275,7 +275,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="advicetext.Text" xml:space="preserve">
-    <value>Welcome to fPlayer!</value>
+    <value>Welcome to urMusik!</value>
   </data>
   <data name="advicetext.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

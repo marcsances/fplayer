@@ -30,17 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutDialog));
             this.appLogo = new System.Windows.Forms.PictureBox();
-            this.appName = new Label2();
             this.appVer = new Label2();
             this.apiimplver = new Label2();
             this.copyInfo = new Label2();
             this.facebookIcon = new System.Windows.Forms.PictureBox();
             this.twitterIcon = new System.Windows.Forms.PictureBox();
             this.webIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.appLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebookIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.twitterIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.webIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // appLogo
@@ -48,12 +49,6 @@
             resources.ApplyResources(this.appLogo, "appLogo");
             this.appLogo.Name = "appLogo";
             this.appLogo.TabStop = false;
-            // 
-            // appName
-            // 
-            resources.ApplyResources(this.appName, "appName");
-            this.appName.ForeColor = System.Drawing.Color.Black;
-            this.appName.Name = "appName";
             // 
             // appVer
             // 
@@ -107,18 +102,24 @@
             this.webIcon.MouseEnter += new System.EventHandler(this.webIcon_MouseEnter);
             this.webIcon.MouseLeave += new System.EventHandler(this.webIcon_MouseLeave);
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // AboutDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.webIcon);
             this.Controls.Add(this.twitterIcon);
             this.Controls.Add(this.facebookIcon);
             this.Controls.Add(this.copyInfo);
             this.Controls.Add(this.apiimplver);
             this.Controls.Add(this.appVer);
-            this.Controls.Add(this.appName);
             this.Controls.Add(this.appLogo);
             this.Name = "AboutDialog";
             this.Load += new System.EventHandler(this.AboutDialog_Load);
@@ -126,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.facebookIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.twitterIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.webIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -133,12 +135,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox appLogo;
-        private Label2 appName;
         private Label2 appVer;
         private Label2 apiimplver;
         private Label2 copyInfo;
         private System.Windows.Forms.PictureBox facebookIcon;
         private System.Windows.Forms.PictureBox twitterIcon;
         private System.Windows.Forms.PictureBox webIcon;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

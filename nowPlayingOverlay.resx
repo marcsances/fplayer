@@ -121,15 +121,12 @@
   <data name="songAlbum.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="songArtist.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
+  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="songtitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 12pt, style=Bold</value>
-  </data>
-  <data name="songPos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 67</value>
   </data>
   <data name="&gt;&gt;pictureBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -160,7 +157,7 @@
     <value>songPos</value>
   </data>
   <data name="&gt;&gt;savel.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5323.27331, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songtitle.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -218,7 +215,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;songPos.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5323.27331, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -236,7 +233,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;songAlbum.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5323.27331, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songAlbum.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -327,6 +324,9 @@
   <data name="&gt;&gt;songAlbum.Name" xml:space="preserve">
     <value>songAlbum</value>
   </data>
+  <data name="songArtist.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
   <data name="songPos.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 32</value>
   </data>
@@ -339,8 +339,8 @@
   <data name="songAlbum.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;songtitle.Name" xml:space="preserve">
+    <value>songtitle</value>
   </data>
   <data name="&gt;&gt;songPos.Parent" xml:space="preserve">
     <value>$this</value>
@@ -354,20 +354,20 @@
   <data name="&gt;&gt;songAlbum.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;songtitle.Name" xml:space="preserve">
-    <value>songtitle</value>
+  <data name="songPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 67</value>
   </data>
   <data name="songArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 99</value>
   </data>
   <data name="&gt;&gt;songtitle.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5323.27331, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="songPos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Open Sans, 27.75pt</value>
   </data>
   <data name="&gt;&gt;songArtist.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5323.27331, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5331.35748, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>400, 170</value>

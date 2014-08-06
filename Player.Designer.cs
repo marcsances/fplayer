@@ -45,12 +45,8 @@ namespace fPlayer_2
             this.nextButton = new System.Windows.Forms.PictureBox();
             this.playPauseButton = new System.Windows.Forms.PictureBox();
             this.previousButton = new System.Windows.Forms.PictureBox();
-            this.tracklength = new Label2();
-            this.trackpos = new Label2();
             this.trackbarProgress = new System.Windows.Forms.Panel();
             this.trackbarBack = new System.Windows.Forms.Panel();
-            this.songinfo = new Label2();
-            this.songname = new Label2();
             this.songalbum = new System.Windows.Forms.PictureBox();
             this.trackbarRegion = new System.Windows.Forms.Panel();
             this.titlePanel = new System.Windows.Forms.Panel();
@@ -60,42 +56,28 @@ namespace fPlayer_2
             this.maximizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeBox = new Label2();
-            this.maximizeBox = new Label2();
-            this.minimizeBox = new Label2();
             this.appIcon = new System.Windows.Forms.PictureBox();
-            this.appTitle = new Label2();
             this.mainSidebar = new System.Windows.Forms.Panel();
             this.pluginPanel = new System.Windows.Forms.Panel();
-            this.pluginLabel = new Label2();
             this.pluginIcon = new System.Windows.Forms.PictureBox();
             this.libraryPanel = new System.Windows.Forms.Panel();
             this.libraryIcon = new System.Windows.Forms.PictureBox();
-            this.libraryLabel2 = new Label2();
             this.aboutPanel = new System.Windows.Forms.Panel();
             this.aboutIcon = new System.Windows.Forms.PictureBox();
-            this.aboutLabel2 = new Label2();
             this.nowplayingPanel = new System.Windows.Forms.Panel();
             this.stackCount = new System.Windows.Forms.Label();
             this.nowplayingIcon = new System.Windows.Forms.PictureBox();
-            this.nowplayingLabel2 = new Label2();
             this.playlistsPanel = new System.Windows.Forms.Panel();
             this.playlistsIcon = new System.Windows.Forms.PictureBox();
-            this.playlistsLabel2 = new Label2();
             this.albumsPanel = new System.Windows.Forms.Panel();
             this.albumsIcon = new System.Windows.Forms.PictureBox();
-            this.albumsLabel2 = new Label2();
             this.artistsPanel = new System.Windows.Forms.Panel();
             this.artistsIcon = new System.Windows.Forms.PictureBox();
-            this.artistsLabel2 = new Label2();
             this.songsPanel = new System.Windows.Forms.Panel();
             this.songsIcon = new System.Windows.Forms.PictureBox();
-            this.songsLabel2 = new Label2();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.mainPane = new System.Windows.Forms.Panel();
-            this.translations = new Label2();
             this.contentPane = new System.Windows.Forms.Panel();
-            this.contentPaneTitle = new Label2();
             this.focusMisser = new System.Windows.Forms.Button();
             this.focusController = new System.Windows.Forms.Timer(this.components);
             this.songMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -111,6 +93,23 @@ namespace fPlayer_2
             this.volBack = new System.Windows.Forms.Panel();
             this.volFront = new System.Windows.Forms.Panel();
             this.volVal = new System.Windows.Forms.Label();
+            this.translations = new Label2();
+            this.contentPaneTitle = new Label2();
+            this.pluginLabel = new Label2();
+            this.libraryLabel2 = new Label2();
+            this.aboutLabel2 = new Label2();
+            this.nowplayingLabel2 = new Label2();
+            this.playlistsLabel2 = new Label2();
+            this.albumsLabel2 = new Label2();
+            this.artistsLabel2 = new Label2();
+            this.songsLabel2 = new Label2();
+            this.closeBox = new Label2();
+            this.maximizeBox = new Label2();
+            this.minimizeBox = new Label2();
+            this.tracklength = new Label2();
+            this.trackpos = new Label2();
+            this.songinfo = new Label2();
+            this.songname = new Label2();
             this.bottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repeatButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).BeginInit();
@@ -147,6 +146,7 @@ namespace fPlayer_2
             // 
             // bottomPanel
             // 
+            resources.ApplyResources(this.bottomPanel, "bottomPanel");
             this.bottomPanel.BackColor = System.Drawing.Color.Black;
             this.bottomPanel.Controls.Add(this.repeatButton);
             this.bottomPanel.Controls.Add(this.shuffleButton);
@@ -162,7 +162,6 @@ namespace fPlayer_2
             this.bottomPanel.Controls.Add(this.songname);
             this.bottomPanel.Controls.Add(this.songalbum);
             this.bottomPanel.Controls.Add(this.trackbarRegion);
-            resources.ApplyResources(this.bottomPanel, "bottomPanel");
             this.bottomPanel.Name = "bottomPanel";
             this.bottomPanel.Click += new System.EventHandler(this.bottomPanel_Click);
             // 
@@ -214,24 +213,10 @@ namespace fPlayer_2
             this.previousButton.Tag = "B";
             this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
-            // tracklength
-            // 
-            resources.ApplyResources(this.tracklength, "tracklength");
-            this.tracklength.ForeColor = System.Drawing.Color.White;
-            this.tracklength.Name = "tracklength";
-            this.tracklength.Click += new System.EventHandler(this.tracklength_Click);
-            // 
-            // trackpos
-            // 
-            resources.ApplyResources(this.trackpos, "trackpos");
-            this.trackpos.ForeColor = System.Drawing.Color.White;
-            this.trackpos.Name = "trackpos";
-            this.trackpos.Click += new System.EventHandler(this.trackpos_Click);
-            // 
             // trackbarProgress
             // 
-            this.trackbarProgress.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackbarProgress, "trackbarProgress");
+            this.trackbarProgress.BackColor = System.Drawing.Color.White;
             this.trackbarProgress.Name = "trackbarProgress";
             this.trackbarProgress.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseDown);
             this.trackbarProgress.MouseMove += new System.Windows.Forms.MouseEventHandler(this.trackbarProgress_MouseMove);
@@ -247,20 +232,6 @@ namespace fPlayer_2
             this.trackbarBack.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackbarBack_MouseDown);
             this.trackbarBack.MouseMove += new System.Windows.Forms.MouseEventHandler(this.trackbarBack_MouseMove);
             this.trackbarBack.MouseUp += new System.Windows.Forms.MouseEventHandler(this.trackbarBack_MouseUp);
-            // 
-            // songinfo
-            // 
-            resources.ApplyResources(this.songinfo, "songinfo");
-            this.songinfo.ForeColor = System.Drawing.Color.White;
-            this.songinfo.Name = "songinfo";
-            this.songinfo.Click += new System.EventHandler(this.songinfo_Click);
-            // 
-            // songname
-            // 
-            resources.ApplyResources(this.songname, "songname");
-            this.songname.ForeColor = System.Drawing.Color.White;
-            this.songname.Name = "songname";
-            this.songname.Click += new System.EventHandler(this.songname_Click);
             // 
             // songalbum
             // 
@@ -279,14 +250,13 @@ namespace fPlayer_2
             // 
             // titlePanel
             // 
-            this.titlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            resources.ApplyResources(this.titlePanel, "titlePanel");
+            this.titlePanel.BackColor = System.Drawing.Color.White;
             this.titlePanel.ContextMenuStrip = this.windowContextMenu;
             this.titlePanel.Controls.Add(this.closeBox);
             this.titlePanel.Controls.Add(this.maximizeBox);
             this.titlePanel.Controls.Add(this.minimizeBox);
             this.titlePanel.Controls.Add(this.appIcon);
-            this.titlePanel.Controls.Add(this.appTitle);
-            resources.ApplyResources(this.titlePanel, "titlePanel");
             this.titlePanel.Name = "titlePanel";
             this.titlePanel.Click += new System.EventHandler(this.titlePanel_Click);
             this.titlePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TitlePanelMouseDown);
@@ -295,6 +265,7 @@ namespace fPlayer_2
             // 
             // windowContextMenu
             // 
+            resources.ApplyResources(this.windowContextMenu, "windowContextMenu");
             this.windowContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.restoreToolStripMenuItem,
             this.minimizeToolStripMenuItem,
@@ -302,37 +273,401 @@ namespace fPlayer_2
             this.toolStripMenuItem1,
             this.closeToolStripMenuItem});
             this.windowContextMenu.Name = "windowContextMenu";
-            resources.ApplyResources(this.windowContextMenu, "windowContextMenu");
             this.windowContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.WindowContextMenuOpening);
             // 
             // restoreToolStripMenuItem
             // 
-            this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
             resources.ApplyResources(this.restoreToolStripMenuItem, "restoreToolStripMenuItem");
+            this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
             this.restoreToolStripMenuItem.Click += new System.EventHandler(this.RestoreToolStripMenuItemClick);
             // 
             // minimizeToolStripMenuItem
             // 
-            this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
             resources.ApplyResources(this.minimizeToolStripMenuItem, "minimizeToolStripMenuItem");
+            this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
             this.minimizeToolStripMenuItem.Click += new System.EventHandler(this.MinimizeToolStripMenuItemClick);
             // 
             // maximizeToolStripMenuItem
             // 
-            this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
             resources.ApplyResources(this.maximizeToolStripMenuItem, "maximizeToolStripMenuItem");
+            this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
             this.maximizeToolStripMenuItem.Click += new System.EventHandler(this.MaximizeToolStripMenuItemClick);
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             // 
             // closeToolStripMenuItem
             // 
             resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItemClick);
+            // 
+            // appIcon
+            // 
+            resources.ApplyResources(this.appIcon, "appIcon");
+            this.appIcon.BackColor = System.Drawing.Color.Transparent;
+            this.appIcon.ContextMenuStrip = this.windowContextMenu;
+            this.appIcon.Cursor = System.Windows.Forms.Cursors.Default;
+            this.appIcon.Name = "appIcon";
+            this.appIcon.TabStop = false;
+            this.appIcon.Click += new System.EventHandler(this.appIcon_Click);
+            this.appIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseDown);
+            this.appIcon.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseMove);
+            this.appIcon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseUp);
+            // 
+            // mainSidebar
+            // 
+            resources.ApplyResources(this.mainSidebar, "mainSidebar");
+            this.mainSidebar.BackColor = System.Drawing.Color.Teal;
+            this.mainSidebar.Controls.Add(this.pluginPanel);
+            this.mainSidebar.Controls.Add(this.libraryPanel);
+            this.mainSidebar.Controls.Add(this.aboutPanel);
+            this.mainSidebar.Controls.Add(this.nowplayingPanel);
+            this.mainSidebar.Controls.Add(this.playlistsPanel);
+            this.mainSidebar.Controls.Add(this.albumsPanel);
+            this.mainSidebar.Controls.Add(this.artistsPanel);
+            this.mainSidebar.Controls.Add(this.songsPanel);
+            this.mainSidebar.Controls.Add(this.searchBox);
+            this.mainSidebar.Name = "mainSidebar";
+            this.mainSidebar.Click += new System.EventHandler(this.mainSidebar_Click);
+            // 
+            // pluginPanel
+            // 
+            resources.ApplyResources(this.pluginPanel, "pluginPanel");
+            this.pluginPanel.Controls.Add(this.pluginLabel);
+            this.pluginPanel.Controls.Add(this.pluginIcon);
+            this.pluginPanel.Name = "pluginPanel";
+            this.pluginPanel.Click += new System.EventHandler(this.pluginPanel_Click);
+            // 
+            // pluginIcon
+            // 
+            resources.ApplyResources(this.pluginIcon, "pluginIcon");
+            this.pluginIcon.Name = "pluginIcon";
+            this.pluginIcon.TabStop = false;
+            this.pluginIcon.Click += new System.EventHandler(this.pluginPanel_Click);
+            // 
+            // libraryPanel
+            // 
+            resources.ApplyResources(this.libraryPanel, "libraryPanel");
+            this.libraryPanel.Controls.Add(this.libraryIcon);
+            this.libraryPanel.Controls.Add(this.libraryLabel2);
+            this.libraryPanel.Name = "libraryPanel";
+            this.libraryPanel.Click += new System.EventHandler(this.libraryPanel_Click);
+            // 
+            // libraryIcon
+            // 
+            resources.ApplyResources(this.libraryIcon, "libraryIcon");
+            this.libraryIcon.Name = "libraryIcon";
+            this.libraryIcon.TabStop = false;
+            this.libraryIcon.Click += new System.EventHandler(this.libraryIcon_Click);
+            // 
+            // aboutPanel
+            // 
+            resources.ApplyResources(this.aboutPanel, "aboutPanel");
+            this.aboutPanel.Controls.Add(this.aboutIcon);
+            this.aboutPanel.Controls.Add(this.aboutLabel2);
+            this.aboutPanel.Name = "aboutPanel";
+            this.aboutPanel.Click += new System.EventHandler(this.aboutPanel_Click);
+            // 
+            // aboutIcon
+            // 
+            resources.ApplyResources(this.aboutIcon, "aboutIcon");
+            this.aboutIcon.Name = "aboutIcon";
+            this.aboutIcon.TabStop = false;
+            this.aboutIcon.Click += new System.EventHandler(this.aboutIcon_Click);
+            // 
+            // nowplayingPanel
+            // 
+            resources.ApplyResources(this.nowplayingPanel, "nowplayingPanel");
+            this.nowplayingPanel.Controls.Add(this.stackCount);
+            this.nowplayingPanel.Controls.Add(this.nowplayingIcon);
+            this.nowplayingPanel.Controls.Add(this.nowplayingLabel2);
+            this.nowplayingPanel.Name = "nowplayingPanel";
+            this.nowplayingPanel.Click += new System.EventHandler(this.nowplayingPanel_Click);
+            this.nowplayingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.nowplayingPanel_Paint);
+            // 
+            // stackCount
+            // 
+            resources.ApplyResources(this.stackCount, "stackCount");
+            this.stackCount.BackColor = System.Drawing.Color.Transparent;
+            this.stackCount.ForeColor = System.Drawing.Color.White;
+            this.stackCount.Name = "stackCount";
+            // 
+            // nowplayingIcon
+            // 
+            resources.ApplyResources(this.nowplayingIcon, "nowplayingIcon");
+            this.nowplayingIcon.Name = "nowplayingIcon";
+            this.nowplayingIcon.TabStop = false;
+            this.nowplayingIcon.Click += new System.EventHandler(this.nowplayingIcon_Click);
+            // 
+            // playlistsPanel
+            // 
+            resources.ApplyResources(this.playlistsPanel, "playlistsPanel");
+            this.playlistsPanel.Controls.Add(this.playlistsIcon);
+            this.playlistsPanel.Controls.Add(this.playlistsLabel2);
+            this.playlistsPanel.Name = "playlistsPanel";
+            this.playlistsPanel.Click += new System.EventHandler(this.playlistsPanel_Click);
+            // 
+            // playlistsIcon
+            // 
+            resources.ApplyResources(this.playlistsIcon, "playlistsIcon");
+            this.playlistsIcon.Name = "playlistsIcon";
+            this.playlistsIcon.TabStop = false;
+            this.playlistsIcon.Click += new System.EventHandler(this.playlistsIcon_Click);
+            // 
+            // albumsPanel
+            // 
+            resources.ApplyResources(this.albumsPanel, "albumsPanel");
+            this.albumsPanel.Controls.Add(this.albumsIcon);
+            this.albumsPanel.Controls.Add(this.albumsLabel2);
+            this.albumsPanel.Name = "albumsPanel";
+            this.albumsPanel.Click += new System.EventHandler(this.albumsPanel_Click);
+            // 
+            // albumsIcon
+            // 
+            resources.ApplyResources(this.albumsIcon, "albumsIcon");
+            this.albumsIcon.Name = "albumsIcon";
+            this.albumsIcon.TabStop = false;
+            this.albumsIcon.Click += new System.EventHandler(this.albumsIcon_Click);
+            // 
+            // artistsPanel
+            // 
+            resources.ApplyResources(this.artistsPanel, "artistsPanel");
+            this.artistsPanel.Controls.Add(this.artistsIcon);
+            this.artistsPanel.Controls.Add(this.artistsLabel2);
+            this.artistsPanel.Name = "artistsPanel";
+            this.artistsPanel.Click += new System.EventHandler(this.artistsPanel_Click);
+            // 
+            // artistsIcon
+            // 
+            resources.ApplyResources(this.artistsIcon, "artistsIcon");
+            this.artistsIcon.Name = "artistsIcon";
+            this.artistsIcon.TabStop = false;
+            this.artistsIcon.Click += new System.EventHandler(this.artistsIcon_Click);
+            // 
+            // songsPanel
+            // 
+            resources.ApplyResources(this.songsPanel, "songsPanel");
+            this.songsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.songsPanel.Controls.Add(this.songsIcon);
+            this.songsPanel.Controls.Add(this.songsLabel2);
+            this.songsPanel.Name = "songsPanel";
+            this.songsPanel.Click += new System.EventHandler(this.songsPanel_Click);
+            // 
+            // songsIcon
+            // 
+            resources.ApplyResources(this.songsIcon, "songsIcon");
+            this.songsIcon.Name = "songsIcon";
+            this.songsIcon.TabStop = false;
+            this.songsIcon.Click += new System.EventHandler(this.songsIcon_Click);
+            // 
+            // searchBox
+            // 
+            resources.ApplyResources(this.searchBox, "searchBox");
+            this.searchBox.ForeColor = System.Drawing.Color.Gray;
+            this.searchBox.Name = "searchBox";
+            this.searchBox.TabStop = false;
+            this.searchBox.Tag = "search";
+            this.searchBox.Click += new System.EventHandler(this.SearchBoxClick);
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
+            this.searchBox.Enter += new System.EventHandler(this.SearchBoxEnter);
+            this.searchBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchBox_KeyPress);
+            this.searchBox.Leave += new System.EventHandler(this.SearchBoxLeave);
+            this.searchBox.Validating += new System.ComponentModel.CancelEventHandler(this.SearchBoxValidating);
+            // 
+            // mainPane
+            // 
+            resources.ApplyResources(this.mainPane, "mainPane");
+            this.mainPane.Controls.Add(this.translations);
+            this.mainPane.Controls.Add(this.contentPane);
+            this.mainPane.Controls.Add(this.contentPaneTitle);
+            this.mainPane.Name = "mainPane";
+            this.mainPane.Tag = "0";
+            // 
+            // contentPane
+            // 
+            resources.ApplyResources(this.contentPane, "contentPane");
+            this.contentPane.Name = "contentPane";
+            // 
+            // focusMisser
+            // 
+            resources.ApplyResources(this.focusMisser, "focusMisser");
+            this.focusMisser.Name = "focusMisser";
+            this.focusMisser.UseVisualStyleBackColor = true;
+            // 
+            // focusController
+            // 
+            this.focusController.Enabled = true;
+            this.focusController.Interval = 10;
+            this.focusController.Tick += new System.EventHandler(this.focusController_Tick);
+            // 
+            // songMenu
+            // 
+            resources.ApplyResources(this.songMenu, "songMenu");
+            this.songMenu.BackColor = System.Drawing.Color.White;
+            this.songMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playToolStripMenuItem,
+            this.stackToolStripMenuItem,
+            this.addToPlaylistToolStripMenuItem});
+            this.songMenu.Name = "songMenu";
+            this.songMenu.ShowImageMargin = false;
+            // 
+            // playToolStripMenuItem
+            // 
+            resources.ApplyResources(this.playToolStripMenuItem, "playToolStripMenuItem");
+            this.playToolStripMenuItem.Name = "playToolStripMenuItem";
+            this.playToolStripMenuItem.Click += new System.EventHandler(this.playToolStripMenuItem_Click);
+            // 
+            // stackToolStripMenuItem
+            // 
+            resources.ApplyResources(this.stackToolStripMenuItem, "stackToolStripMenuItem");
+            this.stackToolStripMenuItem.Name = "stackToolStripMenuItem";
+            this.stackToolStripMenuItem.Click += new System.EventHandler(this.stackToolStripMenuItem_Click);
+            // 
+            // addToPlaylistToolStripMenuItem
+            // 
+            resources.ApplyResources(this.addToPlaylistToolStripMenuItem, "addToPlaylistToolStripMenuItem");
+            this.addToPlaylistToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newPlaylistToolStripMenuItem,
+            this.toolStripMenuItem2});
+            this.addToPlaylistToolStripMenuItem.Name = "addToPlaylistToolStripMenuItem";
+            this.addToPlaylistToolStripMenuItem.DropDownOpening += new System.EventHandler(this.addToPlaylistToolStripMenuItem_DropDownOpening);
+            // 
+            // newPlaylistToolStripMenuItem
+            // 
+            resources.ApplyResources(this.newPlaylistToolStripMenuItem, "newPlaylistToolStripMenuItem");
+            this.newPlaylistToolStripMenuItem.Name = "newPlaylistToolStripMenuItem";
+            this.newPlaylistToolStripMenuItem.Click += new System.EventHandler(this.newPlaylistToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            // 
+            // playbackTimer
+            // 
+            this.playbackTimer.Enabled = true;
+            this.playbackTimer.Interval = 1;
+            this.playbackTimer.Tick += new System.EventHandler(this.playbackTimer_Tick);
+            // 
+            // quicklistmenu
+            // 
+            resources.ApplyResources(this.quicklistmenu, "quicklistmenu");
+            this.quicklistmenu.BackColor = System.Drawing.Color.White;
+            this.quicklistmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playToolStripMenuItem1,
+            this.removeFromQueueToolStripMenuItem});
+            this.quicklistmenu.Name = "songMenu";
+            this.quicklistmenu.ShowImageMargin = false;
+            // 
+            // playToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.playToolStripMenuItem1, "playToolStripMenuItem1");
+            this.playToolStripMenuItem1.Name = "playToolStripMenuItem1";
+            this.playToolStripMenuItem1.Click += new System.EventHandler(this.playToolStripMenuItem1_Click);
+            // 
+            // removeFromQueueToolStripMenuItem
+            // 
+            resources.ApplyResources(this.removeFromQueueToolStripMenuItem, "removeFromQueueToolStripMenuItem");
+            this.removeFromQueueToolStripMenuItem.Name = "removeFromQueueToolStripMenuItem";
+            this.removeFromQueueToolStripMenuItem.Click += new System.EventHandler(this.removeFromQueueToolStripMenuItem_Click);
+            // 
+            // volBack
+            // 
+            resources.ApplyResources(this.volBack, "volBack");
+            this.volBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.volBack.Controls.Add(this.volFront);
+            this.volBack.Name = "volBack";
+            this.volBack.MouseDown += new System.Windows.Forms.MouseEventHandler(this.volBack_MouseDown);
+            this.volBack.MouseMove += new System.Windows.Forms.MouseEventHandler(this.volBack_MouseMove);
+            this.volBack.MouseUp += new System.Windows.Forms.MouseEventHandler(this.volBack_MouseUp);
+            // 
+            // volFront
+            // 
+            resources.ApplyResources(this.volFront, "volFront");
+            this.volFront.BackColor = System.Drawing.Color.Lime;
+            this.volFront.Name = "volFront";
+            this.volFront.MouseDown += new System.Windows.Forms.MouseEventHandler(this.volFront_MouseDown);
+            this.volFront.MouseMove += new System.Windows.Forms.MouseEventHandler(this.volFront_MouseMove);
+            this.volFront.MouseUp += new System.Windows.Forms.MouseEventHandler(this.volFront_MouseUp);
+            // 
+            // volVal
+            // 
+            resources.ApplyResources(this.volVal, "volVal");
+            this.volVal.BackColor = System.Drawing.Color.Black;
+            this.volVal.ForeColor = System.Drawing.Color.White;
+            this.volVal.Name = "volVal";
+            // 
+            // translations
+            // 
+            resources.ApplyResources(this.translations, "translations");
+            this.translations.ForeColor = System.Drawing.Color.White;
+            this.translations.Name = "translations";
+            this.translations.Tag = "";
+            // 
+            // contentPaneTitle
+            // 
+            resources.ApplyResources(this.contentPaneTitle, "contentPaneTitle");
+            this.contentPaneTitle.ForeColor = System.Drawing.Color.Black;
+            this.contentPaneTitle.Name = "contentPaneTitle";
+            // 
+            // pluginLabel
+            // 
+            resources.ApplyResources(this.pluginLabel, "pluginLabel");
+            this.pluginLabel.ForeColor = System.Drawing.Color.White;
+            this.pluginLabel.Name = "pluginLabel";
+            this.pluginLabel.Click += new System.EventHandler(this.pluginPanel_Click);
+            // 
+            // libraryLabel2
+            // 
+            resources.ApplyResources(this.libraryLabel2, "libraryLabel2");
+            this.libraryLabel2.ForeColor = System.Drawing.Color.White;
+            this.libraryLabel2.Name = "libraryLabel2";
+            this.libraryLabel2.Click += new System.EventHandler(this.libraryLabel2_Click);
+            // 
+            // aboutLabel2
+            // 
+            resources.ApplyResources(this.aboutLabel2, "aboutLabel2");
+            this.aboutLabel2.ForeColor = System.Drawing.Color.White;
+            this.aboutLabel2.Name = "aboutLabel2";
+            this.aboutLabel2.Click += new System.EventHandler(this.aboutLabel2_Click);
+            // 
+            // nowplayingLabel2
+            // 
+            resources.ApplyResources(this.nowplayingLabel2, "nowplayingLabel2");
+            this.nowplayingLabel2.ForeColor = System.Drawing.Color.White;
+            this.nowplayingLabel2.Name = "nowplayingLabel2";
+            this.nowplayingLabel2.Click += new System.EventHandler(this.nowplayingLabel2_Click);
+            // 
+            // playlistsLabel2
+            // 
+            resources.ApplyResources(this.playlistsLabel2, "playlistsLabel2");
+            this.playlistsLabel2.ForeColor = System.Drawing.Color.White;
+            this.playlistsLabel2.Name = "playlistsLabel2";
+            this.playlistsLabel2.Click += new System.EventHandler(this.playlistsLabel2_Click);
+            // 
+            // albumsLabel2
+            // 
+            resources.ApplyResources(this.albumsLabel2, "albumsLabel2");
+            this.albumsLabel2.ForeColor = System.Drawing.Color.White;
+            this.albumsLabel2.Name = "albumsLabel2";
+            this.albumsLabel2.Click += new System.EventHandler(this.albumsLabel2_Click);
+            // 
+            // artistsLabel2
+            // 
+            resources.ApplyResources(this.artistsLabel2, "artistsLabel2");
+            this.artistsLabel2.ForeColor = System.Drawing.Color.White;
+            this.artistsLabel2.Name = "artistsLabel2";
+            this.artistsLabel2.Click += new System.EventHandler(this.artistsLabel2_Click);
+            // 
+            // songsLabel2
+            // 
+            resources.ApplyResources(this.songsLabel2, "songsLabel2");
+            this.songsLabel2.ForeColor = System.Drawing.Color.White;
+            this.songsLabel2.Name = "songsLabel2";
+            this.songsLabel2.Click += new System.EventHandler(this.songsLabel2_Click);
             // 
             // closeBox
             // 
@@ -364,380 +699,33 @@ namespace fPlayer_2
             this.minimizeBox.MouseEnter += new System.EventHandler(this.MinimizeBoxMouseEnter);
             this.minimizeBox.MouseLeave += new System.EventHandler(this.MinimizeBoxMouseLeave);
             // 
-            // appIcon
+            // tracklength
             // 
-            this.appIcon.ContextMenuStrip = this.windowContextMenu;
-            this.appIcon.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.appIcon, "appIcon");
-            this.appIcon.Name = "appIcon";
-            this.appIcon.TabStop = false;
-            this.appIcon.Click += new System.EventHandler(this.appIcon_Click);
-            this.appIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseDown);
-            this.appIcon.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseMove);
-            this.appIcon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AppIconMouseUp);
+            resources.ApplyResources(this.tracklength, "tracklength");
+            this.tracklength.ForeColor = System.Drawing.Color.White;
+            this.tracklength.Name = "tracklength";
+            this.tracklength.Click += new System.EventHandler(this.tracklength_Click);
             // 
-            // appTitle
+            // trackpos
             // 
-            resources.ApplyResources(this.appTitle, "appTitle");
-            this.appTitle.ContextMenuStrip = this.windowContextMenu;
-            this.appTitle.ForeColor = System.Drawing.Color.White;
-            this.appTitle.Name = "appTitle";
-            this.appTitle.Click += new System.EventHandler(this.appTitle_Click);
-            this.appTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AppTitleMouseDown);
-            this.appTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AppTitleMouseMove);
-            this.appTitle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AppTitleMouseUp);
+            resources.ApplyResources(this.trackpos, "trackpos");
+            this.trackpos.ForeColor = System.Drawing.Color.White;
+            this.trackpos.Name = "trackpos";
+            this.trackpos.Click += new System.EventHandler(this.trackpos_Click);
             // 
-            // mainSidebar
+            // songinfo
             // 
-            resources.ApplyResources(this.mainSidebar, "mainSidebar");
-            this.mainSidebar.BackColor = System.Drawing.Color.Teal;
-            this.mainSidebar.Controls.Add(this.pluginPanel);
-            this.mainSidebar.Controls.Add(this.libraryPanel);
-            this.mainSidebar.Controls.Add(this.aboutPanel);
-            this.mainSidebar.Controls.Add(this.nowplayingPanel);
-            this.mainSidebar.Controls.Add(this.playlistsPanel);
-            this.mainSidebar.Controls.Add(this.albumsPanel);
-            this.mainSidebar.Controls.Add(this.artistsPanel);
-            this.mainSidebar.Controls.Add(this.songsPanel);
-            this.mainSidebar.Controls.Add(this.searchBox);
-            this.mainSidebar.Name = "mainSidebar";
-            this.mainSidebar.Click += new System.EventHandler(this.mainSidebar_Click);
+            resources.ApplyResources(this.songinfo, "songinfo");
+            this.songinfo.ForeColor = System.Drawing.Color.White;
+            this.songinfo.Name = "songinfo";
+            this.songinfo.Click += new System.EventHandler(this.songinfo_Click);
             // 
-            // pluginPanel
+            // songname
             // 
-            resources.ApplyResources(this.pluginPanel, "pluginPanel");
-            this.pluginPanel.Controls.Add(this.pluginLabel);
-            this.pluginPanel.Controls.Add(this.pluginIcon);
-            this.pluginPanel.Name = "pluginPanel";
-            this.pluginPanel.Click += new System.EventHandler(this.pluginPanel_Click);
-            // 
-            // pluginLabel
-            // 
-            resources.ApplyResources(this.pluginLabel, "pluginLabel");
-            this.pluginLabel.ForeColor = System.Drawing.Color.White;
-            this.pluginLabel.Name = "pluginLabel";
-            this.pluginLabel.Click += new System.EventHandler(this.pluginPanel_Click);
-            // 
-            // pluginIcon
-            // 
-            resources.ApplyResources(this.pluginIcon, "pluginIcon");
-            this.pluginIcon.Name = "pluginIcon";
-            this.pluginIcon.TabStop = false;
-            this.pluginIcon.Click += new System.EventHandler(this.pluginPanel_Click);
-            // 
-            // libraryPanel
-            // 
-            resources.ApplyResources(this.libraryPanel, "libraryPanel");
-            this.libraryPanel.Controls.Add(this.libraryIcon);
-            this.libraryPanel.Controls.Add(this.libraryLabel2);
-            this.libraryPanel.Name = "libraryPanel";
-            this.libraryPanel.Click += new System.EventHandler(this.libraryPanel_Click);
-            // 
-            // libraryIcon
-            // 
-            resources.ApplyResources(this.libraryIcon, "libraryIcon");
-            this.libraryIcon.Name = "libraryIcon";
-            this.libraryIcon.TabStop = false;
-            this.libraryIcon.Click += new System.EventHandler(this.libraryIcon_Click);
-            // 
-            // libraryLabel2
-            // 
-            resources.ApplyResources(this.libraryLabel2, "libraryLabel2");
-            this.libraryLabel2.ForeColor = System.Drawing.Color.White;
-            this.libraryLabel2.Name = "libraryLabel2";
-            this.libraryLabel2.Click += new System.EventHandler(this.libraryLabel2_Click);
-            // 
-            // aboutPanel
-            // 
-            resources.ApplyResources(this.aboutPanel, "aboutPanel");
-            this.aboutPanel.Controls.Add(this.aboutIcon);
-            this.aboutPanel.Controls.Add(this.aboutLabel2);
-            this.aboutPanel.Name = "aboutPanel";
-            this.aboutPanel.Click += new System.EventHandler(this.aboutPanel_Click);
-            // 
-            // aboutIcon
-            // 
-            resources.ApplyResources(this.aboutIcon, "aboutIcon");
-            this.aboutIcon.Name = "aboutIcon";
-            this.aboutIcon.TabStop = false;
-            this.aboutIcon.Click += new System.EventHandler(this.aboutIcon_Click);
-            // 
-            // aboutLabel2
-            // 
-            resources.ApplyResources(this.aboutLabel2, "aboutLabel2");
-            this.aboutLabel2.ForeColor = System.Drawing.Color.White;
-            this.aboutLabel2.Name = "aboutLabel2";
-            this.aboutLabel2.Click += new System.EventHandler(this.aboutLabel2_Click);
-            // 
-            // nowplayingPanel
-            // 
-            resources.ApplyResources(this.nowplayingPanel, "nowplayingPanel");
-            this.nowplayingPanel.Controls.Add(this.stackCount);
-            this.nowplayingPanel.Controls.Add(this.nowplayingIcon);
-            this.nowplayingPanel.Controls.Add(this.nowplayingLabel2);
-            this.nowplayingPanel.Name = "nowplayingPanel";
-            this.nowplayingPanel.Click += new System.EventHandler(this.nowplayingPanel_Click);
-            this.nowplayingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.nowplayingPanel_Paint);
-            // 
-            // stackCount
-            // 
-            this.stackCount.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.stackCount, "stackCount");
-            this.stackCount.ForeColor = System.Drawing.Color.White;
-            this.stackCount.Name = "stackCount";
-            // 
-            // nowplayingIcon
-            // 
-            resources.ApplyResources(this.nowplayingIcon, "nowplayingIcon");
-            this.nowplayingIcon.Name = "nowplayingIcon";
-            this.nowplayingIcon.TabStop = false;
-            this.nowplayingIcon.Click += new System.EventHandler(this.nowplayingIcon_Click);
-            // 
-            // nowplayingLabel2
-            // 
-            resources.ApplyResources(this.nowplayingLabel2, "nowplayingLabel2");
-            this.nowplayingLabel2.ForeColor = System.Drawing.Color.White;
-            this.nowplayingLabel2.Name = "nowplayingLabel2";
-            this.nowplayingLabel2.Click += new System.EventHandler(this.nowplayingLabel2_Click);
-            // 
-            // playlistsPanel
-            // 
-            resources.ApplyResources(this.playlistsPanel, "playlistsPanel");
-            this.playlistsPanel.Controls.Add(this.playlistsIcon);
-            this.playlistsPanel.Controls.Add(this.playlistsLabel2);
-            this.playlistsPanel.Name = "playlistsPanel";
-            this.playlistsPanel.Click += new System.EventHandler(this.playlistsPanel_Click);
-            // 
-            // playlistsIcon
-            // 
-            resources.ApplyResources(this.playlistsIcon, "playlistsIcon");
-            this.playlistsIcon.Name = "playlistsIcon";
-            this.playlistsIcon.TabStop = false;
-            this.playlistsIcon.Click += new System.EventHandler(this.playlistsIcon_Click);
-            // 
-            // playlistsLabel2
-            // 
-            resources.ApplyResources(this.playlistsLabel2, "playlistsLabel2");
-            this.playlistsLabel2.ForeColor = System.Drawing.Color.White;
-            this.playlistsLabel2.Name = "playlistsLabel2";
-            this.playlistsLabel2.Click += new System.EventHandler(this.playlistsLabel2_Click);
-            // 
-            // albumsPanel
-            // 
-            resources.ApplyResources(this.albumsPanel, "albumsPanel");
-            this.albumsPanel.Controls.Add(this.albumsIcon);
-            this.albumsPanel.Controls.Add(this.albumsLabel2);
-            this.albumsPanel.Name = "albumsPanel";
-            this.albumsPanel.Click += new System.EventHandler(this.albumsPanel_Click);
-            // 
-            // albumsIcon
-            // 
-            resources.ApplyResources(this.albumsIcon, "albumsIcon");
-            this.albumsIcon.Name = "albumsIcon";
-            this.albumsIcon.TabStop = false;
-            this.albumsIcon.Click += new System.EventHandler(this.albumsIcon_Click);
-            // 
-            // albumsLabel2
-            // 
-            resources.ApplyResources(this.albumsLabel2, "albumsLabel2");
-            this.albumsLabel2.ForeColor = System.Drawing.Color.White;
-            this.albumsLabel2.Name = "albumsLabel2";
-            this.albumsLabel2.Click += new System.EventHandler(this.albumsLabel2_Click);
-            // 
-            // artistsPanel
-            // 
-            resources.ApplyResources(this.artistsPanel, "artistsPanel");
-            this.artistsPanel.Controls.Add(this.artistsIcon);
-            this.artistsPanel.Controls.Add(this.artistsLabel2);
-            this.artistsPanel.Name = "artistsPanel";
-            this.artistsPanel.Click += new System.EventHandler(this.artistsPanel_Click);
-            // 
-            // artistsIcon
-            // 
-            resources.ApplyResources(this.artistsIcon, "artistsIcon");
-            this.artistsIcon.Name = "artistsIcon";
-            this.artistsIcon.TabStop = false;
-            this.artistsIcon.Click += new System.EventHandler(this.artistsIcon_Click);
-            // 
-            // artistsLabel2
-            // 
-            resources.ApplyResources(this.artistsLabel2, "artistsLabel2");
-            this.artistsLabel2.ForeColor = System.Drawing.Color.White;
-            this.artistsLabel2.Name = "artistsLabel2";
-            this.artistsLabel2.Click += new System.EventHandler(this.artistsLabel2_Click);
-            // 
-            // songsPanel
-            // 
-            resources.ApplyResources(this.songsPanel, "songsPanel");
-            this.songsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.songsPanel.Controls.Add(this.songsIcon);
-            this.songsPanel.Controls.Add(this.songsLabel2);
-            this.songsPanel.Name = "songsPanel";
-            this.songsPanel.Click += new System.EventHandler(this.songsPanel_Click);
-            // 
-            // songsIcon
-            // 
-            resources.ApplyResources(this.songsIcon, "songsIcon");
-            this.songsIcon.Name = "songsIcon";
-            this.songsIcon.TabStop = false;
-            this.songsIcon.Click += new System.EventHandler(this.songsIcon_Click);
-            // 
-            // songsLabel2
-            // 
-            resources.ApplyResources(this.songsLabel2, "songsLabel2");
-            this.songsLabel2.ForeColor = System.Drawing.Color.White;
-            this.songsLabel2.Name = "songsLabel2";
-            this.songsLabel2.Click += new System.EventHandler(this.songsLabel2_Click);
-            // 
-            // searchBox
-            // 
-            resources.ApplyResources(this.searchBox, "searchBox");
-            this.searchBox.ForeColor = System.Drawing.Color.Gray;
-            this.searchBox.Name = "searchBox";
-            this.searchBox.TabStop = false;
-            this.searchBox.Tag = "search";
-            this.searchBox.Click += new System.EventHandler(this.SearchBoxClick);
-            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
-            this.searchBox.Enter += new System.EventHandler(this.SearchBoxEnter);
-            this.searchBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchBox_KeyPress);
-            this.searchBox.Leave += new System.EventHandler(this.SearchBoxLeave);
-            this.searchBox.Validating += new System.ComponentModel.CancelEventHandler(this.SearchBoxValidating);
-            // 
-            // mainPane
-            // 
-            resources.ApplyResources(this.mainPane, "mainPane");
-            this.mainPane.Controls.Add(this.translations);
-            this.mainPane.Controls.Add(this.contentPane);
-            this.mainPane.Controls.Add(this.contentPaneTitle);
-            this.mainPane.Name = "mainPane";
-            this.mainPane.Tag = "0";
-            // 
-            // translations
-            // 
-            resources.ApplyResources(this.translations, "translations");
-            this.translations.ForeColor = System.Drawing.Color.White;
-            this.translations.Name = "translations";
-            this.translations.Tag = "";
-            // 
-            // contentPane
-            // 
-            resources.ApplyResources(this.contentPane, "contentPane");
-            this.contentPane.Name = "contentPane";
-            // 
-            // contentPaneTitle
-            // 
-            resources.ApplyResources(this.contentPaneTitle, "contentPaneTitle");
-            this.contentPaneTitle.ForeColor = System.Drawing.Color.Black;
-            this.contentPaneTitle.Name = "contentPaneTitle";
-            // 
-            // focusMisser
-            // 
-            resources.ApplyResources(this.focusMisser, "focusMisser");
-            this.focusMisser.Name = "focusMisser";
-            this.focusMisser.UseVisualStyleBackColor = true;
-            // 
-            // focusController
-            // 
-            this.focusController.Enabled = true;
-            this.focusController.Interval = 10;
-            this.focusController.Tick += new System.EventHandler(this.focusController_Tick);
-            // 
-            // songMenu
-            // 
-            this.songMenu.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.songMenu, "songMenu");
-            this.songMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.playToolStripMenuItem,
-            this.stackToolStripMenuItem,
-            this.addToPlaylistToolStripMenuItem});
-            this.songMenu.Name = "songMenu";
-            this.songMenu.ShowImageMargin = false;
-            // 
-            // playToolStripMenuItem
-            // 
-            resources.ApplyResources(this.playToolStripMenuItem, "playToolStripMenuItem");
-            this.playToolStripMenuItem.Name = "playToolStripMenuItem";
-            this.playToolStripMenuItem.Click += new System.EventHandler(this.playToolStripMenuItem_Click);
-            // 
-            // stackToolStripMenuItem
-            // 
-            this.stackToolStripMenuItem.Name = "stackToolStripMenuItem";
-            resources.ApplyResources(this.stackToolStripMenuItem, "stackToolStripMenuItem");
-            this.stackToolStripMenuItem.Click += new System.EventHandler(this.stackToolStripMenuItem_Click);
-            // 
-            // addToPlaylistToolStripMenuItem
-            // 
-            this.addToPlaylistToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newPlaylistToolStripMenuItem,
-            this.toolStripMenuItem2});
-            this.addToPlaylistToolStripMenuItem.Name = "addToPlaylistToolStripMenuItem";
-            resources.ApplyResources(this.addToPlaylistToolStripMenuItem, "addToPlaylistToolStripMenuItem");
-            this.addToPlaylistToolStripMenuItem.DropDownOpening += new System.EventHandler(this.addToPlaylistToolStripMenuItem_DropDownOpening);
-            // 
-            // newPlaylistToolStripMenuItem
-            // 
-            this.newPlaylistToolStripMenuItem.Name = "newPlaylistToolStripMenuItem";
-            resources.ApplyResources(this.newPlaylistToolStripMenuItem, "newPlaylistToolStripMenuItem");
-            this.newPlaylistToolStripMenuItem.Click += new System.EventHandler(this.newPlaylistToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
-            // 
-            // playbackTimer
-            // 
-            this.playbackTimer.Enabled = true;
-            this.playbackTimer.Interval = 1;
-            this.playbackTimer.Tick += new System.EventHandler(this.playbackTimer_Tick);
-            // 
-            // quicklistmenu
-            // 
-            this.quicklistmenu.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.quicklistmenu, "quicklistmenu");
-            this.quicklistmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.playToolStripMenuItem1,
-            this.removeFromQueueToolStripMenuItem});
-            this.quicklistmenu.Name = "songMenu";
-            this.quicklistmenu.ShowImageMargin = false;
-            // 
-            // playToolStripMenuItem1
-            // 
-            resources.ApplyResources(this.playToolStripMenuItem1, "playToolStripMenuItem1");
-            this.playToolStripMenuItem1.Name = "playToolStripMenuItem1";
-            this.playToolStripMenuItem1.Click += new System.EventHandler(this.playToolStripMenuItem1_Click);
-            // 
-            // removeFromQueueToolStripMenuItem
-            // 
-            this.removeFromQueueToolStripMenuItem.Name = "removeFromQueueToolStripMenuItem";
-            resources.ApplyResources(this.removeFromQueueToolStripMenuItem, "removeFromQueueToolStripMenuItem");
-            this.removeFromQueueToolStripMenuItem.Click += new System.EventHandler(this.removeFromQueueToolStripMenuItem_Click);
-            // 
-            // volBack
-            // 
-            resources.ApplyResources(this.volBack, "volBack");
-            this.volBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.volBack.Controls.Add(this.volFront);
-            this.volBack.Name = "volBack";
-            this.volBack.MouseDown += new System.Windows.Forms.MouseEventHandler(this.volBack_MouseDown);
-            this.volBack.MouseMove += new System.Windows.Forms.MouseEventHandler(this.volBack_MouseMove);
-            this.volBack.MouseUp += new System.Windows.Forms.MouseEventHandler(this.volBack_MouseUp);
-            // 
-            // volFront
-            // 
-            resources.ApplyResources(this.volFront, "volFront");
-            this.volFront.BackColor = System.Drawing.Color.Lime;
-            this.volFront.Name = "volFront";
-            this.volFront.MouseDown += new System.Windows.Forms.MouseEventHandler(this.volFront_MouseDown);
-            this.volFront.MouseMove += new System.Windows.Forms.MouseEventHandler(this.volFront_MouseMove);
-            this.volFront.MouseUp += new System.Windows.Forms.MouseEventHandler(this.volFront_MouseUp);
-            // 
-            // volVal
-            // 
-            resources.ApplyResources(this.volVal, "volVal");
-            this.volVal.BackColor = System.Drawing.Color.Black;
-            this.volVal.ForeColor = System.Drawing.Color.White;
-            this.volVal.Name = "volVal";
+            resources.ApplyResources(this.songname, "songname");
+            this.songname.ForeColor = System.Drawing.Color.White;
+            this.songname.Name = "songname";
+            this.songname.Click += new System.EventHandler(this.songname_Click);
             // 
             // Player
             // 
@@ -845,8 +833,7 @@ namespace fPlayer_2
 		private Label2 songsLabel2;
 		private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Panel titlePanel;
-		private System.Windows.Forms.Panel mainSidebar;
-		private Label2 appTitle;
+        private System.Windows.Forms.Panel mainSidebar;
 		private System.Windows.Forms.PictureBox appIcon;
         private System.Windows.Forms.Timer focusController;
         private System.Windows.Forms.Panel contentPane;

@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("fPlayer 2.1")]
-[assembly: AssemblyDescription("The fPlayer free audio player")]
+[assembly: AssemblyTitle("urMusik 2.1")]
+[assembly: AssemblyDescription("live ur music, live urMusik")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MSS Software & Services")]
-[assembly: AssemblyProduct("fPlayer 2.1")]
+[assembly: AssemblyProduct("urMusik 2.1")]
 [assembly: AssemblyCopyright("Copyright © 2014, MSS Software & Services.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
