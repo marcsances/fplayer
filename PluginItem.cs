@@ -133,19 +133,19 @@ namespace fPlayer_2
                     {
                         case SelectionMode.MODE_ACTIVE:
                             this.BackColor = Color.Black;
-                            this.ForeColor = Color.White;
+                            this.ForeColor = Color.Transparent;
                             break;
                         case SelectionMode.MODE_FOCUSED:
                             this.BackColor = Color.LightGray;
                             this.ForeColor = Color.Black;
                             break;
                         case SelectionMode.MODE_UNFOCUSED:
-                            this.BackColor = Color.White;
+                            this.BackColor = Color.Transparent;
                             this.ForeColor = Color.Black;
                             break;
                         case SelectionMode.MODE_SELECTED:
                             this.BackColor = Color.Teal;
-                            this.ForeColor = Color.White;
+                            this.ForeColor = Color.Transparent;
                             break;
                     }
                     lastmode = newmode;
@@ -190,11 +190,17 @@ namespace fPlayer_2
         public event EventHandler OnDeleteRequest;
         private void deletebutton_Click(object sender, EventArgs e)
         {
-            if (this.OnDeleteRequest != null) this.OnDeleteRequest(this, e);
+
         }
 
 
         public event EventHandler OnPlayRequest;
+
+        private void deletebutton_Click_1(object sender, EventArgs e)
+        {
+            this.OnDeleteRequest(sender, e);
+        }
+
 
 
     }

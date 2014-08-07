@@ -148,7 +148,7 @@
     <value>advice2</value>
   </data>
   <data name="&gt;&gt;advice2.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.40380, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5332.19107, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;advice2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -184,7 +184,7 @@
     <value>advicetext</value>
   </data>
   <data name="&gt;&gt;advicetext.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.40380, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5332.19107, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;advicetext.Parent" xml:space="preserve">
     <value>$this</value>

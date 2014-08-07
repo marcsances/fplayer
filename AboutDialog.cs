@@ -45,7 +45,7 @@ namespace fPlayer_2
 
         private void webIcon_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://mss.16mb.com/");
+            System.Diagnostics.Process.Start("http://mss.16mb.com/portal/proyectos/urmusik/");
         }
 
         private void AboutDialog_Load(object sender, EventArgs e)
@@ -55,34 +55,20 @@ namespace fPlayer_2
             copyInfo.Text = copyInfo.Text + "\r\n" + libap.libAP.getLicenseInfo();
         }
 
-        private void facebookIcon_MouseEnter(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
-            facebookIcon.BackColor = Color.LightGray;
+            System.Diagnostics.Process.Start("http://github.com/marcsances/urmusik/");
         }
 
-        private void facebookIcon_MouseLeave(object sender, EventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
-            facebookIcon.BackColor = Color.White;
+            System.Diagnostics.Process.Start("mailto:msssoftware@outlook.com");
         }
 
-        private void twitterIcon_MouseEnter(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            twitterIcon.BackColor = Color.LightGray;
+            System.Diagnostics.Process.Start("http://mss.16mb.com/portal/");
         }
 
-        private void twitterIcon_MouseLeave(object sender, EventArgs e)
-        {
-            twitterIcon.BackColor = Color.White;
-        }
-
-        private void webIcon_MouseEnter(object sender, EventArgs e)
-        {
-            webIcon.BackColor = Color.LightGray;
-        }
-
-        private void webIcon_MouseLeave(object sender, EventArgs e)
-        {
-            webIcon.BackColor = Color.White;
-        }
     }
 }

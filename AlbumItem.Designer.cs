@@ -116,7 +116,7 @@ namespace fPlayer_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.albumIcon);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.albumArtist);

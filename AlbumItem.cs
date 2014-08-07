@@ -135,19 +135,19 @@ namespace fPlayer_2
                     {
                         case SelectionMode.MODE_ACTIVE:
                             this.BackColor = Color.Black;
-                            this.ForeColor = Color.White;
+                            this.ForeColor = Color.Transparent;
                             break;
                         case SelectionMode.MODE_FOCUSED:
                             this.BackColor = Color.LightGray;
                             this.ForeColor = Color.Black;
                             break;
                         case SelectionMode.MODE_UNFOCUSED:
-                            this.BackColor = Color.White;
+                            this.BackColor = Color.Transparent;
                             this.ForeColor = Color.Black;
                             break;
                         case SelectionMode.MODE_SELECTED:
                             this.BackColor = Color.Teal;
-                            this.ForeColor = Color.White;
+                            this.ForeColor = Color.Transparent;
                             break;
                     }
                     lastmode = newmode;
@@ -157,7 +157,7 @@ namespace fPlayer_2
 
         private void menuButton_MouseEnter(object sender, EventArgs e)
         {
-            menuButton.BackColor = Color.White;
+            menuButton.BackColor = Color.Transparent;
         }
 
         private void menuButton_MouseLeave(object sender, EventArgs e)

@@ -148,27 +148,27 @@ namespace fPlayer_2
 		}
 		void MaximizeBoxMouseEnter(object sender, EventArgs e)
 		{
-			maximizeBox.BackColor=Color.FromArgb(255,192,192,0);
+            maximizeBox.BackColor = Color.LightGray;
 		}
 		void MaximizeBoxMouseLeave(object sender, EventArgs e)
 		{
-			maximizeBox.BackColor=Color.Olive;
+            maximizeBox.BackColor = Color.Teal;
 		}
 		void MinimizeBoxMouseEnter(object sender, EventArgs e)
 		{
-			minimizeBox.BackColor=Color.FromArgb(255,192,192,0);
+            minimizeBox.BackColor = Color.LightGray;
 		}
 		void MinimizeBoxMouseLeave(object sender, EventArgs e)
 		{
-			minimizeBox.BackColor=Color.Olive;
+            minimizeBox.BackColor = Color.Teal;
 		}
 		void CloseBoxMouseEnter(object sender, EventArgs e)
 		{
-			closeBox.BackColor=Color.Red;
+            closeBox.BackColor = Color.FromArgb(255, 128, 128);
 		}
 		void CloseBoxMouseLeave(object sender, EventArgs e)
 		{
-			closeBox.BackColor=Color.FromArgb(255,192,0,0);
+            closeBox.BackColor = Color.Teal;
 		}
 		private bool isMouseMovingForm=false;
 		private Point lastMousePos;
@@ -404,7 +404,7 @@ namespace fPlayer_2
                     }
                     else if (c.BackColor == Color.FromArgb(0, 64, 64) && i != tabFocused)
                     {
-                        c.BackColor = Color.Teal;
+                        c.BackColor = Color.Transparent;
                     }
                 }
                 if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused < 5) mainPane.Focus();
@@ -431,11 +431,11 @@ namespace fPlayer_2
             {
                 if (i != tabFocused)
                 {
-                    c.BackColor = Color.FromArgb(0, 192, 192);
+                    c.BackColor = Color.White;
                 }
                 else
                 {
-                    c.BackColor = Color.FromArgb(0, 96, 96);
+                    c.BackColor = Color.Gainsboro;
                 }
             }
             else
@@ -450,19 +450,19 @@ namespace fPlayer_2
             {
                 if (i != tabFocused)
                 {
-                    c.BackColor = Color.Teal;
+                    c.BackColor = Color.Transparent;
                 }
                 else
                 {
-                    c.BackColor = Color.FromArgb(0, 64, 64);
+                    c.BackColor = Color.LightGray;
                 }
             }
-            else c.BackColor = Color.Black;
+            else c.BackColor = Color.Transparent;
         }
 
         private void doHover(Control c)
         {
-            if (c.Tag == null || c.Tag.ToString() != "B") { c.BackColor = Color.FromArgb(0, 32, 32); } else c.BackColor = Color.LightGray;
+            if (c.Tag == null || c.Tag.ToString() != "B") { c.BackColor = Color.Gray; } else c.BackColor = Color.LightGray;
         }
 
         private void aboutLabel2_Click(object sender, EventArgs e)
@@ -743,6 +743,15 @@ namespace fPlayer_2
                 loadSongsList(s);
                 s.curTask.Text = getStr(s.taskLabels.Text, 2);
                 loadSongsList();
+                bottomPanel.Controls.Remove(shuffleButton);
+                bottomPanel.Controls.Remove(repeatButton);
+                shuffleButton.Location = new Point(4,13);
+                repeatButton.Location = new Point(42,13);
+                decorBottom.Controls.Add(shuffleButton);
+                decorBottom.Controls.Add(repeatButton);
+                shuffleButton.BackColor = Color.Transparent;
+                repeatButton.BackColor = Color.Transparent;
+                
             }
             catch
             {
@@ -1900,11 +1909,12 @@ namespace fPlayer_2
                     }
                     catch { }
                     break;
-                default:
+                default: /*
                     if (Char.IsLetterOrDigit((char)keyData))
                     {
                         scrollToAlpha((char)keyData);
                     }
+                          */
                     break;
             }
             return base.ProcessCmdKey(ref msg, keyData);
@@ -1973,6 +1983,7 @@ namespace fPlayer_2
             contentPaneTitle.Text = pluginLabel.Text;
             contentPane.Controls.Clear();
             int i = 0;
+            List<Control> c = new List<Control>();
             foreach (string k in _Plugins.Keys)
             {
                 PluginItem pi = new PluginItem();
@@ -1985,9 +1996,12 @@ namespace fPlayer_2
                 pi.OnPlayRequest += pi_OnPlayRequest;
                 pi.index = i;
                 i++;
-                contentPane.Controls.Add(pi);
+                c.Add(pi);
             }
+            c.Reverse();
+            contentPane.Controls.AddRange(c.ToArray());
         }
+
 
         void pi_OnPlayRequest(object sender, EventArgs e)
         {
@@ -2000,6 +2014,107 @@ namespace fPlayer_2
         {
             tabFocused = 7;
             loadExtensionList();
+        }
+
+        private void contentPaneTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseDown(sender, e);
+        }
+
+        private void contentPaneTitle_MouseMove(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseMove(sender, e);
+        }
+
+        private void contentPaneTitle_MouseUp(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseUp(sender, e);
+        }
+
+        private void label21_MouseEnter(object sender, EventArgs e)
+        {
+            langLabel.BackColor = Color.LightGray;
+        }
+
+        private void label21_MouseLeave(object sender, EventArgs e)
+        {
+            langLabel.BackColor = Color.Teal;
+        }
+
+        private void langLabel_Click(object sender, EventArgs e)
+        {
+            systemDefaultToolStripMenuItem.Checked = false;
+            forceEnglishToolStripMenuItem.Checked = false;
+            forçaCatalaToolStripMenuItem.Checked = false;
+            forzarEspañolToolStripMenuItem.Checked = false;
+            if (!File.Exists(AppFolder + "\\langoverride"))
+            {
+                systemDefaultToolStripMenuItem.Checked = true;
+               
+            }
+            else switch (File.ReadAllText(AppFolder + "\\langoverride"))
+                {
+                case "en":
+                        forceEnglishToolStripMenuItem.Checked = true;
+                        break;
+                case "es":
+                        forzarEspañolToolStripMenuItem.Checked = true;
+                        break;
+                case "ca":
+                        forçaCatalaToolStripMenuItem.Checked = true;
+                        break;
+                }
+            languageMenu.Show(MousePosition);
+        }
+        void reloadlangs()
+        {
+            switch (File.ReadAllText(AppFolder + "\\langoverride"))
+            {
+                case "en":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    break;
+                case "es":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("es-ES");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-ES");
+                    break;
+                case "ca":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("ca-ES");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ca-ES");
+                    break;
+            }
+            if (MessageBox.Show(getStr(translations.Text, 5), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                Application.Restart();
+            }
+        }
+        private void forceEnglishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText(AppFolder + "\\langoverride", "en");
+            reloadlangs();
+        }
+
+        private void systemDefaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.Delete(AppFolder + "\\langoverride");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InstalledUICulture;
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.InstalledUICulture;
+            if (MessageBox.Show(getStr(translations.Text, 5), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Restart();
+            }
+        }
+
+        private void forzarEspañolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText(AppFolder + "\\langoverride", "es");
+            reloadlangs();
+        }
+
+        private void forçaCatalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText(AppFolder + "\\langoverride", "ca");
+            reloadlangs();
         }
 
 	}

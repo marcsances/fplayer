@@ -217,7 +217,7 @@
     <value>artist</value>
   </data>
   <data name="&gt;&gt;artist.Type" xml:space="preserve">
-    <value>Label2, fPlayer 2, Version=2.1.5319.39313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5332.19107, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;artist.Parent" xml:space="preserve">
     <value>$this</value>

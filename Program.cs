@@ -9,7 +9,8 @@
 using System;
 using System.Globalization;
 using System.Windows.Forms;
-
+using System.IO;
+using System.Threading;
 namespace fPlayer_2
 {
 	/// <summary>
@@ -17,6 +18,7 @@ namespace fPlayer_2
 	/// </summary>
 	internal sealed class Program
 	{
+        public static string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\urMusik\\2.1\\";
 		/// <summary>
 		/// Program entry point.
 		/// </summary>
@@ -25,6 +27,24 @@ namespace fPlayer_2
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+            if (Directory.Exists(AppFolder) && File.Exists(AppFolder + "\\langoverride"))
+            {
+                switch (File.ReadAllText(AppFolder + "\\langoverride"))
+                {
+                    case "en":
+                        Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                        Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                        break;
+                    case "es":
+                        Thread.CurrentThread.CurrentCulture = new CultureInfo("es-ES");
+                        Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-ES");
+                        break;
+                    case "ca":
+                        Thread.CurrentThread.CurrentCulture = new CultureInfo("ca-ES");
+                        Thread.CurrentThread.CurrentUICulture = new CultureInfo("ca-ES");
+                        break;
+                }
+            }
 			Application.Run(new Player());
 		}
 		

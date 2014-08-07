@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fPlayer 2", "fPlayer 2.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libap", "..\..\libap\libap\libap.csproj", "{93EAACEA-75B4-4ABA-89ED-FA01BF252550}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visualization", "..\..\visualizationPlugin\visualization.csproj", "{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,12 @@ Global
 		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|x64.ActiveCfg = Release|x64
 		{93EAACEA-75B4-4ABA-89ED-FA01BF252550}.Release|x64.Build.0 = Release|x64
+		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
