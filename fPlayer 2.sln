@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libap", "..\..\libap\libap\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visualization", "..\..\visualizationPlugin\visualization.csproj", "{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "fPlayer_Setup", "..\fPlayer_Setup\fPlayer_Setup.vdproj", "{E0871551-D1A0-488B-9CA8-C1DE675EF432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,14 @@ Global
 		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF2C6B54-FCE8-44B8-96E9-6C62EB14069D}.Release|x64.ActiveCfg = Release|Any CPU
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Debug|Any CPU.ActiveCfg = Debug
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Debug|Any CPU.Build.0 = Debug
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Debug|x64.ActiveCfg = Debug
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Debug|x64.Build.0 = Debug
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Release|Any CPU.ActiveCfg = Release
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Release|Any CPU.Build.0 = Release
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Release|x64.ActiveCfg = Release
+		{E0871551-D1A0-488B-9CA8-C1DE675EF432}.Release|x64.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

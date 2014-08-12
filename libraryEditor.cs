@@ -109,11 +109,14 @@ namespace fPlayer_2
 
         public void saveFolders()
         {
+            try
+            {
+                File.WriteAllText(AppFolder + "library.lib", arrayToString(folderBox.Items));
+            }
+            catch
+            {
 
-            Directory.Delete(AppFolder + "\\hashes\\",true);
-            Directory.CreateDirectory(AppFolder + "\\hashes\\");
-            File.WriteAllText(AppFolder + "library.lib", arrayToString(folderBox.Items));
-            
+            }
         }
 
         
