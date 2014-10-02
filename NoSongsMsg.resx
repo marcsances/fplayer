@@ -164,7 +164,7 @@
     <value>licenseinfo</value>
   </data>
   <data name="&gt;&gt;licenseinfo.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.30514, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5337.15085, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;licenseinfo.Parent" xml:space="preserve">
     <value>$this</value>
@@ -204,7 +204,7 @@ Click the "Libraries" icon at the left sidebar.</value>
     <value>infolibs</value>
   </data>
   <data name="&gt;&gt;infolibs.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.30514, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5337.15085, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;infolibs.Parent" xml:space="preserve">
     <value>$this</value>
@@ -243,7 +243,7 @@ Click the "Libraries" icon at the left sidebar.</value>
     <value>advice2</value>
   </data>
   <data name="&gt;&gt;advice2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.30514, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5337.15085, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;advice2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -282,7 +282,7 @@ Click the "Libraries" icon at the left sidebar.</value>
     <value>advicetext</value>
   </data>
   <data name="&gt;&gt;advicetext.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.30514, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5337.15085, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;advicetext.Parent" xml:space="preserve">
     <value>$this</value>
@@ -290,6 +290,9 @@ Click the "Libraries" icon at the left sidebar.</value>
   <data name="&gt;&gt;advicetext.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ca</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

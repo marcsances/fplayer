@@ -468,7 +468,6 @@ namespace fPlayer_2
         private void aboutLabel2_Click(object sender, EventArgs e)
         {
             AboutDialog ab = new AboutDialog();
-            //  not working correctly: ab.Size = new Size(this.contentPaneTitle.Width, this.Height - this.titlePanel.Height - this.contentPaneTitle.Height - this.bottomPanel.Height - 30);
             contentPane.Controls.Clear();
             contentPane.Controls.Add(ab);
             contentPaneTitle.Text = aboutLabel2.Text;
@@ -603,7 +602,7 @@ namespace fPlayer_2
                 foreach(AudioFile a in stack) {
                     data = data + a.FileName + "\r\n";
                 }
-                data = data.Substring(0, data.Length - 4);
+                
                 File.WriteAllText(AppFolder + inp + ".m3u", data);
             }
         }
@@ -671,11 +670,11 @@ namespace fPlayer_2
         {
             contentPane.Controls.Clear();
             if (!reversed) { items.Reverse(); reversed = true; } // Controls are docked from bottom to top, this will correctly sort them
-            if (songs.Count != 0) { contentPane.Controls.AddRange(items.ToArray()); }
+            if (items.Count != 0) { contentPane.Controls.AddRange(items.ToArray()); }
             else
             {
                 NoSongsMsg nsm = new NoSongsMsg();
-                nsm.Dock = DockStyle.Fill;
+                
                 contentPane.Controls.Add(nsm);
             }
         }
@@ -820,7 +819,10 @@ namespace fPlayer_2
         {
             SongsListItem sli=(getSongsListItem((Control)sender));
             if (sli!=null) {
-                if (!sli.isStack) { Play(sli.Tag.ToString()); }
+                if (!sli.isStack && stack.Count!=0) { 
+                    Stack(sli.Tag.ToString());
+                } else { Play(sli.Tag.ToString());  }
+            }
             else {
                 try {
                     int pos = -1;
@@ -835,7 +837,7 @@ namespace fPlayer_2
                 }
             
             }
-            }
+            
         }
 
         public SongsListItem getSongsListItem(Control c)
@@ -868,10 +870,10 @@ namespace fPlayer_2
         }
 
         public void loadArtistsList() {
-            if (songs.Count == 0)
+            if (items.Count == 0)
             {
                 NoSongsMsg nsm = new NoSongsMsg();
-                nsm.Dock = DockStyle.Fill;
+                
                 contentPane.Controls.Add(nsm); return;
             }
             contentPane.Tag = "-1";
@@ -930,10 +932,10 @@ namespace fPlayer_2
         }
         public void loadAlbumsList()
         {
-            if (songs.Count == 0)
+            if (items.Count == 0)
             {
                 NoSongsMsg nsm = new NoSongsMsg();
-                nsm.Dock = DockStyle.Fill;
+                
                 contentPane.Controls.Add(nsm); return;
             }
             contentPane.Tag = "-1";
@@ -1017,15 +1019,18 @@ namespace fPlayer_2
         {
             stack.Clear();
             playlistslistplayrequest(sender, e);
-            sta_pos = 0;
-            playnow();
+            if (stack.Count != 0)
+            {
+                sta_pos = 0;
+                playnow();
+            }
         }
         public void loadPlaylistsList()
         {
             if (Directory.GetFiles(AppFolder, "*.m3u").Length == 0)
             {
                 NoListMsg nsm = new NoListMsg();
-                nsm.Dock = DockStyle.Fill;
+                
                 contentPane.Controls.Add(nsm); return;
             }
             List<PlaylistItem> queriedLists = new List<PlaylistItem>();
@@ -1245,19 +1250,20 @@ namespace fPlayer_2
             stack.Add(new AudioFile(filename));
             if (tabFocused == 4) { contentPane.Controls.Clear(); loadNowPlaying(); }
         }
-
+        int volume = 100;
         /**
          * Starts playing stack.
          */
         public void playnow()
         {
-            int volume = 100;
+            if (stack.Count == 0) return;
+            
             if (gI() != null)
             {
                 // fix for BTC106: push volume before destroying instance
                 volume = gI().getVolume();
             }
-            MediaPlayer.getInstance(stack[sta_pos]).OnPlaybackFinished += new EventHandler(OnPlaybackFinishedHandler);
+            MediaPlayer.getInstance(stack[sta_pos]).OnPlaybackFinished += new EventHandler(OnPlaybackFinishedHandler); // destroy old instance and add event handler
             gI().setVolume(volume); // return volume
             gI().play();
             LoadInfo();
@@ -1329,8 +1335,17 @@ namespace fPlayer_2
          */
         public void stopanddispose()
         {
-            if (gI() != null) gI().stop();
-            if (gI() != null) gI().Dispose();
+            if (gI() != null)
+            {
+                // fix for BTC106: push volume before destroying instance
+                volume = gI().getVolume();
+                if (gI() != null)
+                {
+                    gI().stop();
+                    if (gI() != null) gI().Dispose();
+                }
+            }
+            
         }
 
         /**
