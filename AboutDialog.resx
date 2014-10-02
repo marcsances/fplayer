@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="&gt;&gt;appVer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -127,14 +124,14 @@
     <value>libAP API %a / Impl %imp</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 570</value>
+  </data>
   <data name="appLogo.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 3</value>
   </data>
   <data name="pictureBox6.AccessibleDescription" xml:space="preserve">
     <value>GitHub</value>
-  </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -147,251 +144,6 @@
   </data>
   <data name="appVer.Text" xml:space="preserve">
     <value>Version %v</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="appLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;appLogo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;appVer.Name" xml:space="preserve">
-    <value>appVer</value>
-  </data>
-  <data name="copyInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AboutDialog</value>
-  </data>
-  <data name="pictureBox5.AccessibleDescription" xml:space="preserve">
-    <value>WWW</value>
-  </data>
-  <data name="copyInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 170</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="&gt;&gt;apiimplver.Name" xml:space="preserve">
-    <value>apiimplver</value>
-  </data>
-  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="appVer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;appLogo.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 501</value>
-  </data>
-  <data name="appLogo.AccessibleDescription" xml:space="preserve">
-    <value>urMusik</value>
-  </data>
-  <data name="pictureBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="copyInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 8.25pt</value>
-  </data>
-  <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAsdJREFUeF7t
-        2kGoDWEYxvGTJEmSJEmSJMlCVlaSJAtJspAkWUiykCQLWytJFrK2kGRhaSELSZLF7SYLSRYWkiwsJEn8
-        nzQ1Tu+Mecd5v2tO71O/rns7882cp5n5Zr6MMplMJpMxcwH3psRVuKMNf06JGbiTBcAabIiyALiTBcAa
-        bIiyALiTBcAabIiyALiTBcAabIgGU8AP3MU+rMIirMNRPIG1zVvjb+PCC/iEpgPs6j22oy3H8BXfcB8H
-        cAbWeHXhBVzBMryo/c1DBW5El+iMWPz7n6PV0LbWmHXhBeyGshzPYX2mjU5xb3SJvIQugYewxq2EF7AB
-        VXTd3oL1OcsbzIMn+vwuaL8r8Q7W2JXwAjZjPIfxAdbn666hb3TGzcIaty68gEOwshSX8BnWdnISfbIJ
-        r2GNOS68AE1dbVkCfdFH+I76tifQJzpz6uO0CS9A8/cWdInK0E3zHK7jIPpE21rHYgkvQPPyK+iaLBXP
-        jTa8gK04jYtYiBLR5WQdiyW8AE1JpfMR1rFYwgu4gZJZD+s4moQXoOfztSgVzSjWcTQJL0CeoXpGj84D
-        WMfQpEgBohKiz4Q10LRr7b9JsQL0kKPLQfcEXacR0Zunte82xQp4Cr0MzUdE9OLzBda+2xQrQLSaE5Wb
-        sPb5N0UL0PzcdXHDkz2w9tdF0QJEJezHpKKVny6v1k2KF1DRrHAWO+Fd9KiiV2p9AWv8ruasANGKzw70
-        idYZdWO1xvWYkwL0dngKC9Anmka15meN7RVWgOZ9LYJqB49xG+eht8N/iZa/21aRvELPAC2F78Uksg2e
-        19yuilwCKkKn/Ap4ohWiI4j44pWi9wA9p+vur/+bdxyaAbRcpmcD/dTvOsUvQ19aq0nWOJNUtID/URYA
-        d7IAWIMNURYAd7IAWIMNURYAd7IAWIMNUa8C9CirDafBHWQymUwm80dGo19pNByNAgKpdgAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 501</value>
-  </data>
-  <data name="pictureBox6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;copyInfo.Name" xml:space="preserve">
-    <value>copyInfo</value>
-  </data>
-  <data name="copyInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 230</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;pictureBox7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 90</value>
-  </data>
-  <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="&gt;&gt;appVer.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.27455, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="pictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="appLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 130</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox7.Name" xml:space="preserve">
-    <value>pictureBox7</value>
-  </data>
-  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;apiimplver.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;copyInfo.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.27455, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="pictureBox7.AccessibleDescription" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="appLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="copyInfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.AccessibleDescription" xml:space="preserve">
-    <value>urMusik 2.1</value>
-  </data>
-  <data name="appLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 128</value>
-  </data>
-  <data name="copyInfo.Text" xml:space="preserve">
-    <value>Copyright © 2014, MSS Software &amp; Services.
-urMusik is licensed under the terms of the GNU General Public License, version 3.</value>
-  </data>
-  <data name="pictureBox7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="apiimplver.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhXgBeAIcAAAAAAP////39/QcHB/Ly8v7+/gEBAfz8/Pv7+xsbGwUFBfPz8xEREc3NzR4eHggI
-        CIeHh+zs7NHR0e/v79XV1YODg5ycnFFRUe3t7erq6l5eXgkJCRUVFQICAjQ0NPj4+M7OztjY2A0NDZGR
-        kdDQ0Ds7O+fn5+vr66Ojo7GxsWJiYlpaWl9fX/Dw8KWlpeTk5EdHR+Dg4CsrK9zc3H5+fsnJyRgYGCcn
-        JzU1Ne7u7oKCgltbWxkZGTg4OJaWlri4uAQEBDIyMvX19RwcHD4+PsvLy9PT04uLixoaGi4uLqurq5+f
-        n1dXV56engMDA1VVVRQUFA4ODrOzszc3NzMzM3p6ejExMa6urqqqqjo6OsrKyqioqC8vL1JSUqysrOjo
-        6K2trcTExKmpqRcXF8bGxs/PzwYGBqKiokpKSvT09I2NjczMzNTU1HV1dbS0tPr6+ru7u/f39wwMDC0t
-        LZWVleLi4mdnZ25ubuXl5cfHx+Hh4XFxcfHx8XJyciAgIDw8PCgoKL+/v8XFxfn5+dLS0jY2Nunp6ebm
-        5pOTk0BAQLy8vBYWFk5OTtra2l1dXXBwcGVlZXh4eIGBgaenpzAwMIWFhXR0dDk5OZmZmSYmJn9/f3t7
-        e09PT6Ghod3d3Xx8fFRUVJqamlZWVlNTUwoKChAQECoqKsLCwqCgoMjIyGtra29vb3l5efb29k1NTX19
-        fePj42RkZHd3d2hoaMPDw4qKiiIiIlBQUB0dHT8/P3Nzc0xMTD09PY6OjmNjY0VFRUNDQ0lJSZubm5KS
-        krCwsFxcXCMjI2lpabm5uSwsLJiYmNnZ2SQkJAsLC97e3m1tbcDAwLW1tb29vQAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQAAAAAACwAAAAAXgBeAAAI/wADCBxIsKDBgwgTKlzIsKHDhxAj
-        SpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlwEKFIgpoKbNmzhz6tzJs6fPnzlnyowZoCZM
-        kzOJJg1AgA+Bp1CjSp1KtarVq1izQl1QcGaOPpk2DBhLtqzZs2jTql3Ltm3ZDTcs8REoQBAHAHjz6t3L
-        t6/fv4ADCwbMY43ATYMTK17MWLABvDoCvAlAp7Hly5gBhyoI50Hmz6AVywk0UKaAAJ4AhV7NGu9jGTEO
-        zlwAo7Xtz2jiFHTUqOCd28AZPyo4oweAB3AKIgrOPLCPgj8U6H1O8Ifn5tjxylFUcFjfPaUDhP8wlj34
-        4xszfP8N9oFgGmDlgcNoPzDNr7+v6xQ8Fr/1s4LOqCaYCNAUNEJ/odFRkDQbLGZBeNEMgGBjjzWDTEHK
-        WNZHeBT4MSFjzCxT0CqYXdCKQDNFUNuHg6ExAYpMufLZHC8UZAeLgakSXgymhFbKKQWpgaNfIxQUiAit
-        oVKQG9INidcGPxRkAXBthMcGLjg+5kcIBe3B3C0HwDjBHzjmwtVAg+zC3Gt4FBTLh7OEp8cN5TGQR0G1
-        IKhGQbREgSAKBaXgRHOPDeBGQUuwKEtBbDhgHgC2cEmQLkM+gQCMJ5QQHBE5wBjHBUM+FoQJBBWgwW0q
-        FARLEk7mxUAqBUH/0NoR4YXhZ6t6uVAQGB1k9pgZKRR0Bq59vRKeBAlc9pgDFBTECrF+PZHUTBhoahkR
-        LRCEAKjQ+mVFm0QFsEJjLMiZTLd+PSYCCAEccFoAFSwGwUACFKCFhOj+lUVsNQ2FxWP4AaDAFaXVNIMH
-        +fplR3gwNjAGYAmQgFABviS8V5EErSEEQRFksRfAvLw40AINFNRLwo89IIWUACRBKkHF8FUujC/MAUAT
-        4REDRL7MFtRGXjywS5AwQ+DFw4MEFbFIXlUcmyy0iZwpkBCM8LWFQSRIXJALfHUxCEFjEgtJQXVw4Vdk
-        C9HgFxWHFKRCq7QSJAgDgGkAIwIIFBCmuIBx/1BDrB8WujJBTQxWSAQFB2BIEIOdEejOCDpASLgBRDLY
-        YwmQQVAYNij2yUBhlvF0eSUQoC0njV3QCQqgNDZKQTkYl12qMc30gtkTevAFjAGc2ty8BJFBt2UAY8aB
-        FgXFa9tjpHiBaPETPqYAoASJgS9rQxhRUBXQ0hBeGUiw1gPiAyHQBbqiTBtABgiDNjNRX1CSsAcnlLrD
-        Z5WEV8PwCXNQMkGSuEwHwFCQSVhML0BQQkHEsBjMSaAgajvgXtBGFBA8LDFTwABBDsAECfZlB+HJAA4G
-        s4OkhMkEVPCgX6ZQPxN2EDAV0B8UVPgXG/xvIJrwixOuBqN/0TBdAiMYQZ24thcoFCF5PxwM8IiSB/7h
-        QIP0GlcSB2M3gmTACgDwwrtmIsIpKuYSUBTIBxRIkAaEz4uD6ZUDHqgtARzgAD5Ao2UwUYCaTCZvRuic
-        Aszglj768Y+ALMsDOpAAChTgUrUTSAtaoJVGOvKRkJyK1JZyFJYMpY5AyaQmN8nJnQiFkpUMpShHScpS
-        mvKUqEylKlfJyla68pWwjKUsCRIQADs=
-</value>
-  </data>
-  <data name="apiimplver.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -616,32 +368,12 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
         gIrQ6J9//jkIfdBPrl27VrrzgoeHo1D6rQyIuP597/8AF97oVq0PRNoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="appLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="appVer.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 27</value>
-  </data>
-  <data name="&gt;&gt;appLogo.Name" xml:space="preserve">
-    <value>appLogo</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="appVer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
-    <value>pictureBox3</value>
-  </data>
-  <data name="&gt;&gt;apiimplver.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.27455, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;appLogo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -657,41 +389,63 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
         8fyPNBpffVHQxIzeECQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="apiimplver.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;appVer.Name" xml:space="preserve">
+    <value>appVer</value>
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 501</value>
+  <data name="copyInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AboutDialog</value>
   </data>
-  <data name="&gt;&gt;appLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 405</value>
-  </data>
-  <data name="pictureBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="appVer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 166</value>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
   </data>
-  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
   </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;apiimplver.Name" xml:space="preserve">
+    <value>apiimplver</value>
   </data>
-  <data name="copyInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pictureBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="appVer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;appLogo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pictureBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="appLogo.AccessibleDescription" xml:space="preserve">
+    <value>urMusik</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1266,6 +1020,214 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
         g/v/AUV35hfeKGNtAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="copyInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 8.25pt</value>
+  </data>
+  <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAsdJREFUeF7t
+        2kGoDWEYxvGTJEmSJEmSJMlCVlaSJAtJspAkWUiykCQLWytJFrK2kGRhaSELSZLF7SYLSRYWkiwsJEn8
+        nzQ1Tu+Mecd5v2tO71O/rns7882cp5n5Zr6MMplMJpMxcwH3psRVuKMNf06JGbiTBcAabIiyALiTBcAa
+        bIiyALiTBcAabIiyALiTBcAabIgGU8AP3MU+rMIirMNRPIG1zVvjb+PCC/iEpgPs6j22oy3H8BXfcB8H
+        cAbWeHXhBVzBMryo/c1DBW5El+iMWPz7n6PV0LbWmHXhBeyGshzPYX2mjU5xb3SJvIQugYewxq2EF7AB
+        VXTd3oL1OcsbzIMn+vwuaL8r8Q7W2JXwAjZjPIfxAdbn666hb3TGzcIaty68gEOwshSX8BnWdnISfbIJ
+        r2GNOS68AE1dbVkCfdFH+I76tifQJzpz6uO0CS9A8/cWdInK0E3zHK7jIPpE21rHYgkvQPPyK+iaLBXP
+        jTa8gK04jYtYiBLR5WQdiyW8AE1JpfMR1rFYwgu4gZJZD+s4moQXoOfztSgVzSjWcTQJL0CeoXpGj84D
+        WMfQpEgBohKiz4Q10LRr7b9JsQL0kKPLQfcEXacR0Zunte82xQp4Cr0MzUdE9OLzBda+2xQrQLSaE5Wb
+        sPb5N0UL0PzcdXHDkz2w9tdF0QJEJezHpKKVny6v1k2KF1DRrHAWO+Fd9KiiV2p9AWv8ruasANGKzw70
+        idYZdWO1xvWYkwL0dngKC9Anmka15meN7RVWgOZ9LYJqB49xG+eht8N/iZa/21aRvELPAC2F78Uksg2e
+        19yuilwCKkKn/Ap4ohWiI4j44pWi9wA9p+vur/+bdxyaAbRcpmcD/dTvOsUvQ19aq0nWOJNUtID/URYA
+        d7IAWIMNURYAd7IAWIMNURYAd7IAWIMNUa8C9CirDafBHWQymUwm80dGo19pNByNAgKpdgAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 501</value>
+  </data>
+  <data name="pictureBox6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;copyInfo.Name" xml:space="preserve">
+    <value>copyInfo</value>
+  </data>
+  <data name="copyInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 230</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 90</value>
+  </data>
+  <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;appVer.Type" xml:space="preserve">
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="appLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 130</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.Name" xml:space="preserve">
+    <value>pictureBox7</value>
+  </data>
+  <data name="apiimplver.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="apiimplver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;copyInfo.Type" xml:space="preserve">
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="appLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.AccessibleDescription" xml:space="preserve">
+    <value>urMusik 2.1</value>
+  </data>
+  <data name="appLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 128</value>
+  </data>
+  <data name="copyInfo.Text" xml:space="preserve">
+    <value>Copyright © 2014, MSS Software &amp; Services.
+urMusik is licensed under the terms of the GNU General Public License, version 3.</value>
+  </data>
+  <data name="pictureBox7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="apiimplver.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Open Sans, 12pt</value>
+  </data>
+  <data name="&gt;&gt;apiimplver.Type" xml:space="preserve">
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;appVer.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="copyInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 170</value>
+  </data>
+  <data name="copyInfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="appVer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 27</value>
+  </data>
+  <data name="&gt;&gt;appLogo.Name" xml:space="preserve">
+    <value>appLogo</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 501</value>
+  </data>
+  <data name="appVer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 501</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="pictureBox5.AccessibleDescription" xml:space="preserve">
+    <value>WWW</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox7.AccessibleDescription" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 405</value>
+  </data>
+  <data name="pictureBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="appVer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 166</value>
+  </data>
+  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="copyInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="appVer.Size" type="System.Drawing.Size, System.Drawing">
     <value>344, 32</value>
   </data>
@@ -1339,8 +1301,8 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
         AiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD//Z
 </value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 570</value>
+  <data name="&gt;&gt;apiimplver.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -2383,17 +2345,17 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
   <data name="pictureBox4.AccessibleDescription" xml:space="preserve">
     <value>Twitter</value>
   </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 501</value>
-  </data>
   <data name="pictureBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox3.AccessibleDescription" xml:space="preserve">
     <value>MSS Software &amp; Services</value>
   </data>
-  <data name="&gt;&gt;appVer.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 501</value>
   </data>
   <data name="apiimplver.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5752,17 +5714,20 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
         vAnmbYP0//0b/wdtBWYg3iF78AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;copyInfo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pictureBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
+  <data name="pictureBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
   </data>
   <data name="appVer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -5773,17 +5738,52 @@ urMusik is licensed under the terms of the GNU General Public License, version 3
   <data name="apiimplver.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 198</value>
   </data>
-  <data name="apiimplver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;appLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="apiimplver.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
+  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhXgBeAIcAAAAAAP////39/QcHB/Ly8v7+/gEBAfz8/Pv7+xsbGwUFBfPz8xEREc3NzR4eHggI
+        CIeHh+zs7NHR0e/v79XV1YODg5ycnFFRUe3t7erq6l5eXgkJCRUVFQICAjQ0NPj4+M7OztjY2A0NDZGR
+        kdDQ0Ds7O+fn5+vr66Ojo7GxsWJiYlpaWl9fX/Dw8KWlpeTk5EdHR+Dg4CsrK9zc3H5+fsnJyRgYGCcn
+        JzU1Ne7u7oKCgltbWxkZGTg4OJaWlri4uAQEBDIyMvX19RwcHD4+PsvLy9PT04uLixoaGi4uLqurq5+f
+        n1dXV56engMDA1VVVRQUFA4ODrOzszc3NzMzM3p6ejExMa6urqqqqjo6OsrKyqioqC8vL1JSUqysrOjo
+        6K2trcTExKmpqRcXF8bGxs/PzwYGBqKiokpKSvT09I2NjczMzNTU1HV1dbS0tPr6+ru7u/f39wwMDC0t
+        LZWVleLi4mdnZ25ubuXl5cfHx+Hh4XFxcfHx8XJyciAgIDw8PCgoKL+/v8XFxfn5+dLS0jY2Nunp6ebm
+        5pOTk0BAQLy8vBYWFk5OTtra2l1dXXBwcGVlZXh4eIGBgaenpzAwMIWFhXR0dDk5OZmZmSYmJn9/f3t7
+        e09PT6Ghod3d3Xx8fFRUVJqamlZWVlNTUwoKChAQECoqKsLCwqCgoMjIyGtra29vb3l5efb29k1NTX19
+        fePj42RkZHd3d2hoaMPDw4qKiiIiIlBQUB0dHT8/P3Nzc0xMTD09PY6OjmNjY0VFRUNDQ0lJSZubm5KS
+        krCwsFxcXCMjI2lpabm5uSwsLJiYmNnZ2SQkJAsLC97e3m1tbcDAwLW1tb29vQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQAAAAAACwAAAAAXgBeAAAI/wADCBxIsKDBgwgTKlzIsKHDhxAj
+        SpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlwEKFIgpoKbNmzhz6tzJs6fPnzlnyowZoCZM
+        kzOJJg1AgA+Bp1CjSp1KtarVq1izQl1QcGaOPpk2DBhLtqzZs2jTql3Ltm3ZDTcs8REoQBAHAHjz6t3L
+        t6/fv4ADCwbMY43ATYMTK17MWLABvDoCvAlAp7Hly5gBhyoI50Hmz6AVywk0UKaAAJ4AhV7NGu9jGTEO
+        zlwAo7Xtz2jiFHTUqOCd28AZPyo4oweAB3AKIgrOPLCPgj8U6H1O8Ifn5tjxylFUcFjfPaUDhP8wlj34
+        4xszfP8N9oFgGmDlgcNoPzDNr7+v6xQ8Fr/1s4LOqCaYCNAUNEJ/odFRkDQbLGZBeNEMgGBjjzWDTEHK
+        WNZHeBT4MSFjzCxT0CqYXdCKQDNFUNuHg6ExAYpMufLZHC8UZAeLgakSXgymhFbKKQWpgaNfIxQUiAit
+        oVKQG9INidcGPxRkAXBthMcGLjg+5kcIBe3B3C0HwDjBHzjmwtVAg+zC3Gt4FBTLh7OEp8cN5TGQR0G1
+        IKhGQbREgSAKBaXgRHOPDeBGQUuwKEtBbDhgHgC2cEmQLkM+gQCMJ5QQHBE5wBjHBUM+FoQJBBWgwW0q
+        FARLEk7mxUAqBUH/0NoR4YXhZ6t6uVAQGB1k9pgZKRR0Bq59vRKeBAlc9pgDFBTECrF+PZHUTBhoahkR
+        LRCEAKjQ+mVFm0QFsEJjLMiZTLd+PSYCCAEccFoAFSwGwUACFKCFhOj+lUVsNQ2FxWP4AaDAFaXVNIMH
+        +fplR3gwNjAGYAmQgFABviS8V5EErSEEQRFksRfAvLw40AINFNRLwo89IIWUACRBKkHF8FUujC/MAUAT
+        4REDRL7MFtRGXjywS5AwQ+DFw4MEFbFIXlUcmyy0iZwpkBCM8LWFQSRIXJALfHUxCEFjEgtJQXVw4Vdk
+        C9HgFxWHFKRCq7QSJAgDgGkAIwIIFBCmuIBx/1BDrB8WujJBTQxWSAQFB2BIEIOdEejOCDpASLgBRDLY
+        YwmQQVAYNij2yUBhlvF0eSUQoC0njV3QCQqgNDZKQTkYl12qMc30gtkTevAFjAGc2ty8BJFBt2UAY8aB
+        FgXFa9tjpHiBaPETPqYAoASJgS9rQxhRUBXQ0hBeGUiw1gPiAyHQBbqiTBtABgiDNjNRX1CSsAcnlLrD
+        Z5WEV8PwCXNQMkGSuEwHwFCQSVhML0BQQkHEsBjMSaAgajvgXtBGFBA8LDFTwABBDsAECfZlB+HJAA4G
+        s4OkhMkEVPCgX6ZQPxN2EDAV0B8UVPgXG/xvIJrwixOuBqN/0TBdAiMYQZ24thcoFCF5PxwM8IiSB/7h
+        QIP0GlcSB2M3gmTACgDwwrtmIsIpKuYSUBTIBxRIkAaEz4uD6ZUDHqgtARzgAD5Ao2UwUYCaTCZvRuic
+        Aszglj768Y+ALMsDOpAAChTgUrUTSAtaoJVGOvKRkJyK1JZyFJYMpY5AyaQmN8nJnQiFkpUMpShHScpS
+        mvKUqEylKlfJyla68pWwjKUsCRIQADs=
+</value>
   </data>
   <data name="apiimplver.Size" type="System.Drawing.Size, System.Drawing">
     <value>344, 32</value>

@@ -194,12 +194,6 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="songinfo.Text" xml:space="preserve">
-    <value>No sona res</value>
-  </data>
-  <data name="songname.Text" xml:space="preserve">
-    <value>No sona res</value>
-  </data>
   <data name="songalbum.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -278,95 +272,23 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
-    <value>Restaura</value>
-  </data>
-  <data name="minimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="minimizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Minimitza</value>
-  </data>
-  <data name="maximizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="maximizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Maximitza</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 6</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tanca</value>
-  </data>
-  <data name="windowContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 98</value>
-  </data>
-  <data name="playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
-  </data>
-  <data name="playToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reprodueix</value>
-  </data>
-  <data name="stackToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
-  </data>
-  <data name="stackToolStripMenuItem.Text" xml:space="preserve">
-    <value>Afegeix a cua</value>
-  </data>
-  <data name="newPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="newPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>Nova</value>
-  </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
-  </data>
-  <data name="addToPlaylistToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
-  </data>
-  <data name="addToPlaylistToolStripMenuItem.Text" xml:space="preserve">
-    <value>Afegeix a llista</value>
-  </data>
-  <data name="songMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 70</value>
-  </data>
-  <data name="playToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="playToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Reprodueix</value>
-  </data>
-  <data name="removeFromQueueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="removeFromQueueToolStripMenuItem.Text" xml:space="preserve">
-    <value>Elimina de la cua</value>
-  </data>
   <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 6</value>
+    <value>131, 6</value>
   </data>
   <data name="pujaAmuntToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="pujaAmuntToolStripMenuItem.Text" xml:space="preserve">
-    <value>Puja amunt</value>
+    <value>Mover arriba</value>
   </data>
   <data name="baixaAvallToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="baixaAvallToolStripMenuItem.Text" xml:space="preserve">
-    <value>Baixa avall</value>
+    <value>Mover abajo</value>
   </data>
   <data name="quicklistmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 98</value>
+    <value>135, 98</value>
   </data>
   <data name="volBack.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -411,10 +333,6 @@
         dYq0DvDo/P/XFjJcJYZoLAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="volBack.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
   <data name="volFront.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAABkCAMAAADQbcK8AAAABGdBTUEAALGPC/xhBQAAAwBQTFRFAv8f
@@ -454,9 +372,6 @@
         rtLBX5KIHH5SOKhKSb09AiYemvuDMXbB2bkhvZMTsFNBloazOGJlt6ew8+Ol06dsV8B+ef7LxRH2cdwd
         yX7vjsc9Y2e74weL87En+30U331APnR2x38BEjy1N7F8oDEAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="volFront.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
   </data>
   <data name="forceEnglishToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2273,9 +2188,6 @@
         8gGmBW0QBE8jpQM922FYZ9QjhQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="libraryLabel2.Text" xml:space="preserve">
-    <value>Biblioteques</value>
-  </data>
   <data name="aboutIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -2287,9 +2199,6 @@
         LHs9S1juZRSQQYwRcv2713FARuU+SAIyLPdJ1oXMGTNdxw0YnHfOd+z4D1TVA3qi2b1VKWgMAAAAAElF
         TkSuQmCC
 </value>
-  </data>
-  <data name="aboutLabel2.Text" xml:space="preserve">
-    <value>Quant a</value>
   </data>
   <data name="nowplayingIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2304,9 +2213,6 @@
         osl1+1IwgLjuH5MnHoOu+wZlGRHVv70bpAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="nowplayingLabel2.Text" xml:space="preserve">
-    <value>Ara sona</value>
-  </data>
   <data name="playlistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -2316,9 +2222,6 @@
         IscjY+9+0yJXFF+ktRPZup1s3eNDIwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="playlistsLabel2.Text" xml:space="preserve">
-    <value>Llistes</value>
-  </data>
   <data name="albumsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -2326,9 +2229,6 @@
         sAsVTlL8wVd6iUdGYCGE/BpVLVNto2o2+GqoeRWz5bEB10bDbPCNUPNqZsuD5jDMiwEY4JUAOC8MX6mb
         Db4eal7PuZI0WF9Yp9f5J5jNvAIGYIBvPySEkPOI3NAdFti/yu+lAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="albumsLabel2.Text" xml:space="preserve">
-    <value>Àlbums</value>
   </data>
   <data name="artistsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2340,9 +2240,6 @@
         CThf7gBVwkWQmHHgm7F5nrU+l1BGVIppvOXfICZvZ2RAdSnJZ4hN3wkFh7c+lbSuUCDVLxmm8PsuKIiz
         j5/ZVI7tkqKiP1ZVvQF3nxD4xqb19wAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="artistsLabel2.Text" xml:space="preserve">
-    <value>Artistes</value>
   </data>
   <data name="songsIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2356,20 +2253,8 @@
         /X8MD5B6oFtFSDt+h1j+jrChDbruB7FASg43RFoyAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="songsLabel2.Text" xml:space="preserve">
-    <value>Cançons</value>
-  </data>
-  <data name="searchBox.Text" xml:space="preserve">
-    <value>cerca</value>
-  </data>
-  <data name="mainPane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="contentPane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="translations.Text" xml:space="preserve">
-    <value>Artista desconegut!Àlbum desconegut!Segur que voleu esborrar la llista?!No implementat!De debò voleu suprimir l'extensió %s?!L'idioma s'ha canviat. Voleu reiniciar el programa per a que els canvis tinguin efecte?!Anterior!Reprodueix/Pausa!Següent</value>
+    <value>Artista desconocido!Álbum desconocido!¿Desea eliminar la lista seleccionada?!No implementado.!¿Confirma que desea eliminar la extensión %s?!El idioma se ha cambiado. Desea reiniciar la aplicación para que los cambios tengan efecto?!Anterior!Reproducir/Pausa!Siguiente</value>
   </data>
   <data name="langLabel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2380,28 +2265,6 @@
         XRVcdIF4Ttnh7G3+eqogdOkpP76dr4IBgxk416C2fcEgLpvd9Opy7gIGli9k+6a3opv4zfAgCII/IaUJ
         bjpqAsKP+pgAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="langLabel.Text" xml:space="preserve">
-    <value>Idioma</value>
-  </data>
-  <data name="closeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 32</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="closeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="maximizeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 32</value>
-  </data>
-  <data name="maximizeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="minimizeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 32</value>
-  </data>
-  <data name="minimizeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
   </data>
   <data name="contentPaneTitle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3401,12 +3264,6 @@
         0DoSsgStBlmCVoOsFloNsgStBlmCVoMsQatBVgutBlmCVoMsQUvASg2yBK0GWYJWgyxBa4osQatBlqC1
         h6y3yfDf//4HcSMvsyoG7HoAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="contentPaneTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="contentPaneTitle.Text" xml:space="preserve">
-    <value>Cançons</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

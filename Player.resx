@@ -407,7 +407,7 @@
     <value>tracklength</value>
   </data>
   <data name="&gt;&gt;tracklength.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tracklength.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -446,7 +446,7 @@
     <value>trackpos</value>
   </data>
   <data name="&gt;&gt;trackpos.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;trackpos.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -527,7 +527,7 @@
     <value>songinfo</value>
   </data>
   <data name="&gt;&gt;songinfo.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songinfo.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -563,7 +563,7 @@
     <value>songname</value>
   </data>
   <data name="&gt;&gt;songname.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songname.Parent" xml:space="preserve">
     <value>bottomPanel</value>
@@ -895,8 +895,23 @@
   <data name="removeFromQueueToolStripMenuItem.Text" xml:space="preserve">
     <value>Remove from queue</value>
   </data>
+  <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 6</value>
+  </data>
+  <data name="pujaAmuntToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="pujaAmuntToolStripMenuItem.Text" xml:space="preserve">
+    <value>Move up</value>
+  </data>
+  <data name="baixaAvallToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="baixaAvallToolStripMenuItem.Text" xml:space="preserve">
+    <value>Move down</value>
+  </data>
   <data name="quicklistmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 48</value>
+    <value>156, 98</value>
   </data>
   <data name="&gt;&gt;quicklistmenu.Name" xml:space="preserve">
     <value>quicklistmenu</value>
@@ -2951,7 +2966,7 @@
     <value>pluginLabel</value>
   </data>
   <data name="&gt;&gt;pluginLabel.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pluginLabel.Parent" xml:space="preserve">
     <value>pluginPanel</value>
@@ -3085,7 +3100,7 @@
     <value>libraryLabel2</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;libraryLabel2.Parent" xml:space="preserve">
     <value>libraryPanel</value>
@@ -3184,7 +3199,7 @@
     <value>aboutLabel2</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;aboutLabel2.Parent" xml:space="preserve">
     <value>aboutPanel</value>
@@ -3317,7 +3332,7 @@
     <value>nowplayingLabel2</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nowplayingLabel2.Parent" xml:space="preserve">
     <value>nowplayingPanel</value>
@@ -3413,7 +3428,7 @@
     <value>playlistsLabel2</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;playlistsLabel2.Parent" xml:space="preserve">
     <value>playlistsPanel</value>
@@ -3508,7 +3523,7 @@
     <value>albumsLabel2</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;albumsLabel2.Parent" xml:space="preserve">
     <value>albumsPanel</value>
@@ -3606,7 +3621,7 @@
     <value>artistsLabel2</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;artistsLabel2.Parent" xml:space="preserve">
     <value>artistsPanel</value>
@@ -3705,7 +3720,7 @@
     <value>songsLabel2</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songsLabel2.Parent" xml:space="preserve">
     <value>songsPanel</value>
@@ -3837,7 +3852,7 @@
     <value>2</value>
   </data>
   <data name="translations.Text" xml:space="preserve">
-    <value>Unknown artist!Unknown album!Are you sure you want to delete this playlist?!Not yet implemented.!Are you sure you want to delete extension %s?!Language changed successfully. Would you like to restart application for changes to take effect?</value>
+    <value>Unknown artist!Unknown album!Are you sure you want to delete this playlist?!Not yet implemented.!Are you sure you want to delete extension %s?!Language changed successfully. Would you like to restart application for changes to take effect?!Previous!Play/Pause!Next</value>
   </data>
   <data name="translations.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -3849,7 +3864,7 @@
     <value>translations</value>
   </data>
   <data name="&gt;&gt;translations.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;translations.Parent" xml:space="preserve">
     <value>mainPane</value>
@@ -3919,7 +3934,7 @@
     <value>langLabel</value>
   </data>
   <data name="&gt;&gt;langLabel.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;langLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3955,7 +3970,7 @@
     <value>closeBox</value>
   </data>
   <data name="&gt;&gt;closeBox.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;closeBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3991,7 +4006,7 @@
     <value>maximizeBox</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;maximizeBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -4027,7 +4042,7 @@
     <value>minimizeBox</value>
   </data>
   <data name="&gt;&gt;minimizeBox.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;minimizeBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -5065,7 +5080,7 @@
     <value>contentPaneTitle</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5332.33313, Culture=neutral, PublicKeyToken=null</value>
+    <value>Label2, urMusik, Version=2.1.5388.34780, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;contentPaneTitle.Parent" xml:space="preserve">
     <value>$this</value>
@@ -5073,9 +5088,6 @@
   <data name="&gt;&gt;contentPaneTitle.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ca</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -7235,6 +7247,24 @@
     <value>removeFromQueueToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;removeFromQueueToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
+    <value>toolStripMenuItem4</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pujaAmuntToolStripMenuItem.Name" xml:space="preserve">
+    <value>pujaAmuntToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pujaAmuntToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;baixaAvallToolStripMenuItem.Name" xml:space="preserve">
+    <value>baixaAvallToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;baixaAvallToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;systemDefaultToolStripMenuItem.Name" xml:space="preserve">

@@ -23,33 +23,34 @@ using libap;
 using System.Threading;
 using System.Globalization;
 using System.Reflection;
+using Microsoft.WindowsAPICodePack.Taskbar;
 namespace fPlayer_2
 {
-	/// <summary>
-	/// Description of Player.
-	/// </summary>
-	public partial class Player : Form
-	{
+    /// <summary>
+    /// Description of Player.
+    /// </summary>
+    public partial class Player : Form
+    {
         public static string AppFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\MSS Software & Services\\urMusik\\2.1\\";
-		private bool isMaximized=false;
-		public int tabFocused=0;
+        private bool isMaximized = false;
+        public int tabFocused = 0;
         public List<AudioFile> songs;
         public List<string> playlists;
         public List<Control> items;
-        public List<AudioFile> stack=new List<AudioFile>();
+        public List<AudioFile> stack = new List<AudioFile>();
         public bool isactive = false;
-        public int sta_pos=0;
+        public int sta_pos = 0;
         int count = 0;
         public bool playglyph = false;
         public nowPlayingOverlay npo = new nowPlayingOverlay();
         public bool shuffle = false;
         public bool repeat = false;
-		public Player()
-		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
-			InitializeComponent();
+        public Player()
+        {
+            //
+            // The InitializeComponent() call is required for Windows Forms designer support.
+            //
+            InitializeComponent();
             if (!localDataFolderExists())
             {
                 Directory.CreateDirectory(AppFolder);
@@ -57,7 +58,7 @@ namespace fPlayer_2
             }
             this.mainPane.MouseWheel += new MouseEventHandler(WheelHandler);
             loadPlugins();
-		}
+        }
 
         public void TryMigrate()
         {
@@ -76,11 +77,11 @@ namespace fPlayer_2
         public void loadPlugins()
         {
             string[] dllFileNames = null;
-            if (Directory.Exists(AppFolder+"\\plugins\\"))
+            if (Directory.Exists(AppFolder + "\\plugins\\"))
             {
                 dllFileNames = Directory.GetFiles(AppFolder + "\\plugins\\", "*.dll");
             }
-            if (dllFileNames == null) return;  ICollection<Assembly> assemblies = new List<Assembly>(dllFileNames.Length);
+            if (dllFileNames == null) return; ICollection<Assembly> assemblies = new List<Assembly>(dllFileNames.Length);
             foreach (string dllFile in dllFileNames)
             {
                 AssemblyName an = AssemblyName.GetAssemblyName(dllFile);
@@ -115,203 +116,214 @@ namespace fPlayer_2
                 IPlugin plugin = (IPlugin)Activator.CreateInstance(type);
                 _Plugins.Add(plugin.Name, plugin);
             }
-            
+
         }
-        
+
         public splash s;
 
         public void WheelHandler(object sender, MouseEventArgs e)
         {
             mainPane.AutoScrollOffset = new Point(mainPane.AutoScrollOffset.X, mainPane.AutoScrollOffset.Y + 5 * e.Delta);
         }
-      
-		void CloseBoxClick(object sender, EventArgs e)
-		{
-            this.contentPane.Tag = "-1";
-			this.Close();
-		}
-		void MaximizeBoxClick(object sender, EventArgs e)
-		{
-            this.contentPane.Tag = "-1";
-			if (isMaximized) {
-				restorestate();
-			} else {
-				maximize();
-			}
-			focusMisser.Focus();
-		}
-		void MinimizeBoxClick(object sender, EventArgs e)
-		{
-			this.WindowState=FormWindowState.Minimized;
-            this.contentPane.Tag = "-1";
-			focusMisser.Focus();
-		}
-		void MaximizeBoxMouseEnter(object sender, EventArgs e)
-		{
-            maximizeBox.BackColor = Color.LightGray;
-		}
-		void MaximizeBoxMouseLeave(object sender, EventArgs e)
-		{
-            maximizeBox.BackColor = Color.Teal;
-		}
-		void MinimizeBoxMouseEnter(object sender, EventArgs e)
-		{
-            minimizeBox.BackColor = Color.LightGray;
-		}
-		void MinimizeBoxMouseLeave(object sender, EventArgs e)
-		{
-            minimizeBox.BackColor = Color.Teal;
-		}
-		void CloseBoxMouseEnter(object sender, EventArgs e)
-		{
-            closeBox.BackColor = Color.FromArgb(255, 128, 128);
-		}
-		void CloseBoxMouseLeave(object sender, EventArgs e)
-		{
-            closeBox.BackColor = Color.Teal;
-		}
-		private bool isMouseMovingForm=false;
-		private Point lastMousePos;
-		void TitlePanelMouseDown(object sender, MouseEventArgs e)
-		{
-			isMouseMovingForm=true;
-			lastMousePos=e.Location;
-		}
-		void AppTitleMouseDown(object sender, MouseEventArgs e)
-		{
-			TitlePanelMouseDown(sender,e);
-			
-		}
-		void AppIconMouseDown(object sender, MouseEventArgs e)
-		{
-			TitlePanelMouseDown(sender,e);
-		}
-		void AppTitleMouseMove(object sender, MouseEventArgs e)
-		{
-			if (isMouseMovingForm && this.WindowState==FormWindowState.Normal && !isMaximized) {
-				    Point p1 = new Point(e.X, e.Y);
-                	Point p2 = this.PointToScreen(p1);
-                	Point p3 = new Point(p2.X - this.lastMousePos.X,p2.Y - this.lastMousePos.Y);
-                	this.Location = p3;
-			}
-		}
-		void AppIconMouseMove(object sender, MouseEventArgs e)
-		{
-			AppTitleMouseMove(sender,e);
-		}
-		void TitlePanelMouseMove(object sender, MouseEventArgs e)
-		{
-			AppTitleMouseMove(sender,e);
-		}
-		void AppTitleMouseUp(object sender, MouseEventArgs e)
-		{
-			isMouseMovingForm=false;
-			focusMisser.Focus();
-		}
-		void TitlePanelMouseUp(object sender, MouseEventArgs e)
-		{
-			AppTitleMouseUp(sender,e);
-		}
-		void AppIconMouseUp(object sender, MouseEventArgs e)
-		{
-			AppTitleMouseUp(sender,e);
-		}
-		void WindowContextMenuOpening(object sender, System.ComponentModel.CancelEventArgs e)
-		{
-			if (isMaximized) {
-				restoreToolStripMenuItem.Enabled=true;
-					maximizeToolStripMenuItem.Enabled=false;
-			} else {
-				restoreToolStripMenuItem.Enabled=false;
-				maximizeToolStripMenuItem.Enabled=true;
-			}
-			switch (this.WindowState) {
-				case FormWindowState.Minimized:
-					restoreToolStripMenuItem.Enabled=true;
-					maximizeToolStripMenuItem.Enabled=true;
-					minimizeToolStripMenuItem.Enabled=false;
-					break;
-				default:
-					minimizeToolStripMenuItem.Enabled=true;
-					break;
-			}
-		}
-		void RestoreToolStripMenuItemClick(object sender, EventArgs e)
-		{
-			restorestate();
-			focusMisser.Focus();
-		}
-		void MinimizeToolStripMenuItemClick(object sender, EventArgs e)
-		{
-			this.WindowState=FormWindowState.Minimized;
-		}
-		void MaximizeToolStripMenuItemClick(object sender, EventArgs e)
-		{
-			maximize();
-			focusMisser.Focus();
-		}
-		void CloseToolStripMenuItemClick(object sender, EventArgs e)
-		{
-			focusMisser.Focus();
-			this.Close();
-			
-		}
-		protected override void WndProc(ref Message m)
-		{
-            
-	    if (m.Msg == 0x319)   // WM_APPCOMMAND message
-	    {
-		// extract cmd from LPARAM (as GET_APPCOMMAND_LPARAM macro does)
-		int cmd = (int)((uint)m.LParam >> 16 & ~0xf000);
-		switch (cmd)
-		{
-			    case 13:  // APPCOMMAND_MEDIA_STOP constant
-                stopanddispose();
-				break;
-			    case 14:  // APPCOMMAND_MEDIA_PLAY_PAUSE
-                playpause();
-				break;
-			    case 11:  // APPCOMMAND_MEDIA_NEXTTRACK
-                next();
-				    break;
-			    case 12:  // APPCOMMAND_MEDIA_PREVIOUSTRACK
-                    prev();
-				    break;
-			    default:
-			    	break;
-	        	}
-        	}
 
-			if (m.Msg == 0x0313 && (Environment.OSVersion.Version.Major<6 || Environment.OSVersion.Version.Minor==0))
-			{
-				int contMenuX = Cursor.Position.X - this.Location.X;
-				int contMenuY = Cursor.Position.Y - this.Location.Y;
-				Point contMenuPos = new Point(contMenuX, contMenuY);
-				this.windowContextMenu.Show(this, contMenuPos);
-			}		
-			base.WndProc(ref m);
-		}
-		private const int WS_DLGFRAME = 0x400000;
-		protected override System.Windows.Forms.CreateParams CreateParams {
-		get {
-			CreateParams cp = base.CreateParams;
-			cp.Style = cp.Style - WS_DLGFRAME;
-			return cp;
-			}
-		}
-		
-		private Point oldpos;
-		private Size oldsize;
-		void maximize() {
-			oldpos=Location;
-			oldsize=Size;
+        void CloseBoxClick(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+            this.Close();
+        }
+        void MaximizeBoxClick(object sender, EventArgs e)
+        {
+            this.contentPane.Tag = "-1";
+            if (isMaximized)
+            {
+                restorestate();
+            }
+            else
+            {
+                maximize();
+            }
+            focusMisser.Focus();
+        }
+        void MinimizeBoxClick(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            this.contentPane.Tag = "-1";
+            focusMisser.Focus();
+        }
+        void MaximizeBoxMouseEnter(object sender, EventArgs e)
+        {
+            maximizeBox.BackColor = Color.LightGray;
+        }
+        void MaximizeBoxMouseLeave(object sender, EventArgs e)
+        {
+            maximizeBox.BackColor = Color.Teal;
+        }
+        void MinimizeBoxMouseEnter(object sender, EventArgs e)
+        {
+            minimizeBox.BackColor = Color.LightGray;
+        }
+        void MinimizeBoxMouseLeave(object sender, EventArgs e)
+        {
+            minimizeBox.BackColor = Color.Teal;
+        }
+        void CloseBoxMouseEnter(object sender, EventArgs e)
+        {
+            closeBox.BackColor = Color.FromArgb(255, 128, 128);
+        }
+        void CloseBoxMouseLeave(object sender, EventArgs e)
+        {
+            closeBox.BackColor = Color.Teal;
+        }
+        private bool isMouseMovingForm = false;
+        private Point lastMousePos;
+        void TitlePanelMouseDown(object sender, MouseEventArgs e)
+        {
+            isMouseMovingForm = true;
+            lastMousePos = e.Location;
+        }
+        void AppTitleMouseDown(object sender, MouseEventArgs e)
+        {
+            TitlePanelMouseDown(sender, e);
+
+        }
+        void AppIconMouseDown(object sender, MouseEventArgs e)
+        {
+            TitlePanelMouseDown(sender, e);
+        }
+        void AppTitleMouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseMovingForm && this.WindowState == FormWindowState.Normal && !isMaximized)
+            {
+                Point p1 = new Point(e.X, e.Y);
+                Point p2 = this.PointToScreen(p1);
+                Point p3 = new Point(p2.X - this.lastMousePos.X, p2.Y - this.lastMousePos.Y);
+                this.Location = p3;
+            }
+        }
+        void AppIconMouseMove(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseMove(sender, e);
+        }
+        void TitlePanelMouseMove(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseMove(sender, e);
+        }
+        void AppTitleMouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseMovingForm = false;
+            focusMisser.Focus();
+        }
+        void TitlePanelMouseUp(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseUp(sender, e);
+        }
+        void AppIconMouseUp(object sender, MouseEventArgs e)
+        {
+            AppTitleMouseUp(sender, e);
+        }
+        void WindowContextMenuOpening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (isMaximized)
+            {
+                restoreToolStripMenuItem.Enabled = true;
+                maximizeToolStripMenuItem.Enabled = false;
+            }
+            else
+            {
+                restoreToolStripMenuItem.Enabled = false;
+                maximizeToolStripMenuItem.Enabled = true;
+            }
+            switch (this.WindowState)
+            {
+                case FormWindowState.Minimized:
+                    restoreToolStripMenuItem.Enabled = true;
+                    maximizeToolStripMenuItem.Enabled = true;
+                    minimizeToolStripMenuItem.Enabled = false;
+                    break;
+                default:
+                    minimizeToolStripMenuItem.Enabled = true;
+                    break;
+            }
+        }
+        void RestoreToolStripMenuItemClick(object sender, EventArgs e)
+        {
+            restorestate();
+            focusMisser.Focus();
+        }
+        void MinimizeToolStripMenuItemClick(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        void MaximizeToolStripMenuItemClick(object sender, EventArgs e)
+        {
+            maximize();
+            focusMisser.Focus();
+        }
+        void CloseToolStripMenuItemClick(object sender, EventArgs e)
+        {
+            focusMisser.Focus();
+            this.Close();
+
+        }
+        protected override void WndProc(ref Message m)
+        {
+
+            if (m.Msg == 0x319)   // WM_APPCOMMAND message
+            {
+                // extract cmd from LPARAM (as GET_APPCOMMAND_LPARAM macro does)
+                int cmd = (int)((uint)m.LParam >> 16 & ~0xf000);
+                switch (cmd)
+                {
+                    case 13:  // APPCOMMAND_MEDIA_STOP constant
+                        stopanddispose();
+                        break;
+                    case 14:  // APPCOMMAND_MEDIA_PLAY_PAUSE
+                        playpause();
+                        break;
+                    case 11:  // APPCOMMAND_MEDIA_NEXTTRACK
+                        next();
+                        break;
+                    case 12:  // APPCOMMAND_MEDIA_PREVIOUSTRACK
+                        prev();
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            if (m.Msg == 0x0313 && (Environment.OSVersion.Version.Major < 6 || Environment.OSVersion.Version.Minor == 0))
+            {
+                int contMenuX = Cursor.Position.X - this.Location.X;
+                int contMenuY = Cursor.Position.Y - this.Location.Y;
+                Point contMenuPos = new Point(contMenuX, contMenuY);
+                this.windowContextMenu.Show(this, contMenuPos);
+            }
+            base.WndProc(ref m);
+        }
+        private const int WS_DLGFRAME = 0x400000;
+        protected override System.Windows.Forms.CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style = cp.Style - WS_DLGFRAME;
+                return cp;
+            }
+        }
+
+        private Point oldpos;
+        private Size oldsize;
+        void maximize()
+        {
+            oldpos = Location;
+            oldsize = Size;
             this.Top = 0;
             this.Left = 0;
             this.Height = SystemInformation.WorkingArea.Height;
             this.Width = SystemInformation.WorkingArea.Width;
             contentPane.Controls.Clear();
-			isMaximized=true;
-			maximizeBox.Text="2";
+            isMaximized = true;
+            maximizeBox.Text = "2";
             Update();
             switch (tabFocused)
             {
@@ -336,44 +348,47 @@ namespace fPlayer_2
                 case 6:
                     aboutIcon_Click(this, new EventArgs());
                     break;
-                    
+
             }
-		}
-		
-		void restorestate() {
-			this.WindowState=FormWindowState.Normal;
-			Location=oldpos;
-			Size=oldsize;
-			isMaximized=false;
-			maximizeBox.Text="1";
-		}
-		void SearchBoxEnter(object sender, EventArgs e)
-		{
-			if (searchBox.ForeColor==Color.Gray) {
-				searchBox.ForeColor=Color.Black;
-				searchBox.Font=new Font(searchBox.Font,FontStyle.Regular);
+        }
+
+        void restorestate()
+        {
+            this.WindowState = FormWindowState.Normal;
+            Location = oldpos;
+            Size = oldsize;
+            isMaximized = false;
+            maximizeBox.Text = "1";
+        }
+        void SearchBoxEnter(object sender, EventArgs e)
+        {
+            if (searchBox.ForeColor == Color.Gray)
+            {
+                searchBox.ForeColor = Color.Black;
+                searchBox.Font = new Font(searchBox.Font, FontStyle.Regular);
                 searchBox.Tag = searchBox.Text;
-				searchBox.Text="";
-			}
-		}
-		void SearchBoxLeave(object sender, EventArgs e)
-		{
-			if (searchBox.Text=="") {
-				searchBox.ForeColor=Color.Gray;
-				searchBox.Font=new Font(searchBox.Font,FontStyle.Italic);
+                searchBox.Text = "";
+            }
+        }
+        void SearchBoxLeave(object sender, EventArgs e)
+        {
+            if (searchBox.Text == "")
+            {
+                searchBox.ForeColor = Color.Gray;
+                searchBox.Font = new Font(searchBox.Font, FontStyle.Italic);
                 searchBox.Text = searchBox.Tag.ToString();
-			}
-		}
-		void SearchBoxClick(object sender, EventArgs e)
-		{
-			SearchBoxEnter(sender,e);
-		}
-		void SearchBoxValidating(object sender, System.ComponentModel.CancelEventArgs e)
-		{
+            }
+        }
+        void SearchBoxClick(object sender, EventArgs e)
+        {
+            SearchBoxEnter(sender, e);
+        }
+        void SearchBoxValidating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
             this.contentPane.Tag = "-1";
-			SearchBoxLeave(sender,e);
-		}
-		
+            SearchBoxLeave(sender, e);
+        }
+
 
         public bool isMouseOver(Control c)
         {
@@ -383,7 +398,7 @@ namespace fPlayer_2
 
         private void focusController_Tick(object sender, EventArgs e)
         {
-          
+
             if (this.isactive)
             {
                 Control[] focusableControls = { songsPanel, artistsPanel, albumsPanel, playlistsPanel, nowplayingPanel, libraryPanel, aboutPanel, pluginPanel, previousButton, playPauseButton, nextButton, volumeButton, shuffleButton, repeatButton };
@@ -409,14 +424,14 @@ namespace fPlayer_2
                 }
                 if (isMouseOver(mainPane) && !mainPane.Focused && tabFocused < 5) mainPane.Focus();
             }
-            if (shuffle && shuffleButton.BackColor!=Color.White) shuffleButton.BackColor = Color.Green;
+            if (shuffle && shuffleButton.BackColor != Color.White) shuffleButton.BackColor = Color.Green;
             if (repeat && repeatButton.BackColor != Color.White) repeatButton.BackColor = Color.Green;
             if (MouseButtons == MouseButtons.Left && !isMouseOver(volumeButton) && !drags2 && !isMouseOver(volFront) && !isMouseOver(volBack) && !isMouseOver(volVal)) voldefocus();
         }
 
         private bool isHighlighted(Control c)
         {
-            if (c.Tag==null || c.Tag.ToString() != "B")
+            if (c.Tag == null || c.Tag.ToString() != "B")
             {
                 return c.BackColor.Equals(Color.FromArgb(0, 192, 192));
             }
@@ -425,7 +440,7 @@ namespace fPlayer_2
                 return c.BackColor.Equals(Color.Gray);
             }
         }
-        private void doFocusHighlight(Control c,int i)
+        private void doFocusHighlight(Control c, int i)
         {
             if (c.Tag == null || c.Tag.ToString() != "B")
             {
@@ -444,7 +459,7 @@ namespace fPlayer_2
             }
         }
 
-        private void unHighlight(Control c,int i)
+        private void unHighlight(Control c, int i)
         {
             if (c.Tag == null || c.Tag.ToString() != "B")
             {
@@ -593,22 +608,24 @@ namespace fPlayer_2
                 contentPane.Controls.Add(npo);
             }
         }
-        public void newListHandler(object sender,EventArgs e) {
+        public void newListHandler(object sender, EventArgs e)
+        {
             InputDialog ind = new InputDialog();
             ind.parent = this;
             if (ind.ShowDialog() == DialogResult.OK)
             {
                 string data = "";
-                foreach(AudioFile a in stack) {
+                foreach (AudioFile a in stack)
+                {
                     data = data + a.FileName + "\r\n";
                 }
-                
+
                 File.WriteAllText(AppFolder + inp + ".m3u", data);
             }
         }
         public void OnStackRequest(object sender, EventArgs e)
         {
-            
+
             SongsListItem sli = getSongsListItem((Control)sender);
             if (sli != null) { quicklistmenu.Tag = stack[safeconvertint32(sli.Tag)].FileName; quicklistmenu.Show(MousePosition); }
         }
@@ -674,54 +691,54 @@ namespace fPlayer_2
             else
             {
                 NoSongsMsg nsm = new NoSongsMsg();
-                
+
                 contentPane.Controls.Add(nsm);
             }
         }
 
         public void loadSongsList(splash s)
         {
-            
-            
-                items = new List<Control>();
-                contentPane.Tag = "-1";
-                int i = 0;
-                reversed = false;
-                count = 0;
-                foreach (AudioFile f in songs)
-                {
 
-                    SongsListItem sli = new SongsListItem();
-                    string artist = f.ID3Information.Artist;
-                    string album = f.ID3Information.Album;
-                    if (artist.Length <= 1) artist = getStr(this.translations.Text, 0);
-                    if (album.Length <= 1) album = getStr(this.translations.Text, 1);
-                    sli.setData(f.ID3Information.Title, artist + " / " + album, getSongLength(f.FileName));
-                    sli.Dock = DockStyle.Top;
-                    sli.parentList = contentPane;
-                    sli.parent = this;
-                    sli.Tag = f.FileName;
-                    sli.OnMenuRequest += new EventHandler(OnMenuRequest);
-                    sli.OnPlaySelected += new EventHandler(OnPlaySelected);
-                    sli.index = i;
-                    sli.ContextMenuStrip = songMenu;
-                    i++;
-                    items.Add(sli);
-                    count++;
-                    s.curTask.Text = getStr(s.taskLabels.Text, 1) + " (" + count + ")";
-                    s.Update();
-                }
-            
+
+            items = new List<Control>();
+            contentPane.Tag = "-1";
+            int i = 0;
+            reversed = false;
+            count = 0;
+            foreach (AudioFile f in songs)
+            {
+
+                SongsListItem sli = new SongsListItem();
+                string artist = f.ID3Information.Artist;
+                string album = f.ID3Information.Album;
+                if (artist.Length <= 1) artist = getStr(this.translations.Text, 0);
+                if (album.Length <= 1) album = getStr(this.translations.Text, 1);
+                sli.setData(f.ID3Information.Title, artist + " / " + album, getSongLength(f.FileName));
+                sli.Dock = DockStyle.Top;
+                sli.parentList = contentPane;
+                sli.parent = this;
+                sli.Tag = f.FileName;
+                sli.OnMenuRequest += new EventHandler(OnMenuRequest);
+                sli.OnPlaySelected += new EventHandler(OnPlaySelected);
+                sli.index = i;
+                sli.ContextMenuStrip = songMenu;
+                i++;
+                items.Add(sli);
+                count++;
+                s.curTask.Text = getStr(s.taskLabels.Text, 1) + " (" + count + ")";
+                s.Update();
+            }
+
         }
         public void reloadAll()
         {
             tabFocused = 0;
             loadSystemData();
         }
-        
+
         public void loadSystemData()
         {
-           
+
             s = new splash();
             s.Show();
             s.Update();
@@ -744,13 +761,13 @@ namespace fPlayer_2
                 loadSongsList();
                 bottomPanel.Controls.Remove(shuffleButton);
                 bottomPanel.Controls.Remove(repeatButton);
-                shuffleButton.Location = new Point(4,13);
-                repeatButton.Location = new Point(42,13);
+                shuffleButton.Location = new Point(4, 13);
+                repeatButton.Location = new Point(42, 13);
                 decorBottom.Controls.Add(shuffleButton);
                 decorBottom.Controls.Add(repeatButton);
                 shuffleButton.BackColor = Color.Transparent;
                 repeatButton.BackColor = Color.Transparent;
-                
+
             }
             catch
             {
@@ -758,7 +775,7 @@ namespace fPlayer_2
             }
             s.Update();
             s.Close();
-            
+
         }
 
         public string getStr(string str, int pos)
@@ -783,19 +800,19 @@ namespace fPlayer_2
                     }
                 }
             }
-            
+
         }
 
         public void add(string k, splash s, int i)
         {
-            string hash=BitConverter.ToString(System.Security.Cryptography.MD5.Create().ComputeHash(File.OpenRead(k))).Replace("-","").ToLower();;
-            
-            
-                songs.Add(new AudioFile(k));
-                count++;
-                s.curTask.Text = getStr(s.taskLabels.Text, i) + " (" + count + ")";
-                s.Update();
-           
+            string hash = BitConverter.ToString(System.Security.Cryptography.MD5.Create().ComputeHash(File.OpenRead(k))).Replace("-", "").ToLower(); ;
+
+
+            songs.Add(new AudioFile(k));
+            count++;
+            s.curTask.Text = getStr(s.taskLabels.Text, i) + " (" + count + ")";
+            s.Update();
+
         }
 
         public void retrieveDir(string dir, splash s)
@@ -817,14 +834,19 @@ namespace fPlayer_2
 
         public void OnPlaySelected(object sender, EventArgs e)
         {
-            SongsListItem sli=(getSongsListItem((Control)sender));
-            if (sli!=null) {
-                if (!sli.isStack && stack.Count!=0) { 
+            SongsListItem sli = (getSongsListItem((Control)sender));
+            if (sli != null)
+            {
+                if (!sli.isStack && stack.Count != 0)
+                {
                     Stack(sli.Tag.ToString());
-                } else { Play(sli.Tag.ToString());  }
+                }
+                else { Play(sli.Tag.ToString()); }
             }
-            else {
-                try {
+            else
+            {
+                try
+                {
                     int pos = -1;
                     if ((sli.Tag is string && sli.Tag.ToString().Length > 0) || sli.Tag is int) { pos = Convert.ToInt32(sli.Tag); } else { pos = 0; }
                     if (pos >= 0 && pos < stack.Count)
@@ -832,12 +854,14 @@ namespace fPlayer_2
                         sta_pos = pos;
                         playnow();
                     }
-                } catch {
+                }
+                catch
+                {
 
                 }
-            
+
             }
-            
+
         }
 
         public SongsListItem getSongsListItem(Control c)
@@ -859,8 +883,8 @@ namespace fPlayer_2
         public void OnMenuRequest(object sender, EventArgs e)
         {
             SongsListItem sli = getSongsListItem((Control)sender);
-            if (sli!=null && !sli.isStack) songMenu.Show(MousePosition);
-            
+            if (sli != null && !sli.isStack) songMenu.Show(MousePosition);
+
         }
 
 
@@ -869,11 +893,12 @@ namespace fPlayer_2
             return "";
         }
 
-        public void loadArtistsList() {
+        public void loadArtistsList()
+        {
             if (items.Count == 0)
             {
                 NoSongsMsg nsm = new NoSongsMsg();
-                
+
                 contentPane.Controls.Add(nsm); return;
             }
             contentPane.Tag = "-1";
@@ -935,7 +960,7 @@ namespace fPlayer_2
             if (items.Count == 0)
             {
                 NoSongsMsg nsm = new NoSongsMsg();
-                
+
                 contentPane.Controls.Add(nsm); return;
             }
             contentPane.Tag = "-1";
@@ -953,7 +978,7 @@ namespace fPlayer_2
                         found = true;
                     }
                 }
-                
+
                 if (!found)
                 {
                     AlbumItem a = new AlbumItem();
@@ -978,10 +1003,11 @@ namespace fPlayer_2
             contentPane.Controls.AddRange(queriedalbums.ToArray());
 
         }
-        public void AlbumPlayHandler(object sender,EventArgs e) {
+        public void AlbumPlayHandler(object sender, EventArgs e)
+        {
             stack.Clear();
             sta_pos = 0;
-            AlbumHandler(sender,e);
+            AlbumHandler(sender, e);
             playnow();
         }
 
@@ -1007,10 +1033,10 @@ namespace fPlayer_2
         public Bitmap findAlbumPicture(string f)
         {
             Bitmap b = null;
-            int i=0;
+            int i = 0;
             while (b == null && i < songs.Count)
             {
-                if (songs[i].ID3Information.Album==f) b = new SongID3(songs[i].FileName).forceLoadImage();
+                if (songs[i].ID3Information.Album == f) b = new SongID3(songs[i].FileName).forceLoadImage();
                 i++;
             }
             return b;
@@ -1030,32 +1056,36 @@ namespace fPlayer_2
             if (Directory.GetFiles(AppFolder, "*.m3u").Length == 0)
             {
                 NoListMsg nsm = new NoListMsg();
-                
+
                 contentPane.Controls.Add(nsm); return;
             }
             List<PlaylistItem> queriedLists = new List<PlaylistItem>();
             int r = 0;
-            foreach (string k in Directory.GetFiles(AppFolder,"*.m3u")) {
+            foreach (string k in Directory.GetFiles(AppFolder, "*.m3u"))
+            {
                 PlaylistItem a = new PlaylistItem();
-                   
-                    a.Dock = DockStyle.Top;
-                    a.parentList = contentPane;
-                    a.parent = this;
-                    a.Tag = k;
-                    a.index = r;
-                    a.OnDeleteRequest += new EventHandler(playlistdeletehandler);
-                    a.OnMenuRequest += new EventHandler(playlistslistplayrequest);
-                    a.OnPlayRequest += new EventHandler(playlistplayhandler);
-                    a.setData(libAP.basename(k));
-                    r++;
-                    queriedLists.Add(a);
+
+                a.Dock = DockStyle.Top;
+                a.parentList = contentPane;
+                a.parent = this;
+                a.Tag = k;
+                a.index = r;
+                a.OnDeleteRequest += new EventHandler(playlistdeletehandler);
+                a.OnMenuRequest += new EventHandler(playlistslistplayrequest);
+                a.OnPlayRequest += new EventHandler(playlistplayhandler);
+                a.setData(libAP.basename(k));
+                r++;
+                queriedLists.Add(a);
             }
             queriedLists.Sort();
             contentPane.Controls.AddRange(queriedLists.ToArray());
+            
         }
+
+
         public void playlistdeletehandler(object sender, EventArgs e)
         {
-            if (MessageBox.Show(getStr(translations.Text, 2), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) { File.Delete(getPlaylistItem((Control)sender).Tag.ToString()); contentPane.Controls.Clear();  loadPlaylistsList(); }
+            if (MessageBox.Show(getStr(translations.Text, 2), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) { File.Delete(getPlaylistItem((Control)sender).Tag.ToString()); contentPane.Controls.Clear(); loadPlaylistsList(); }
         }
         public ArtistItem getArtistItem(Control c)
         {
@@ -1096,9 +1126,29 @@ namespace fPlayer_2
         private void Player_Load(object sender, EventArgs e)
         {
             loadSystemData();
+            if (TaskbarManager.IsPlatformSupported) addButtons();
         }
 
-       
+        public void addButtons()
+        {
+            Bitmap bmp=(Bitmap)previousButton.Image;
+            Icon ico=Icon.FromHandle(bmp.GetHicon());
+            ThumbnailToolBarButton prev=new ThumbnailToolBarButton(ico,getStr(translations.Text,6));
+            prev.Click += previousButton_Click;
+             bmp=(Bitmap)playPauseButton.Image;
+            ico=Icon.FromHandle(bmp.GetHicon());
+            
+            ThumbnailToolBarButton play=new ThumbnailToolBarButton(ico,getStr(translations.Text,7));
+            play.Click += playPauseButton_Click;
+             bmp=(Bitmap)nextButton.Image;
+            ico=Icon.FromHandle(bmp.GetHicon());
+            
+            ThumbnailToolBarButton next=new ThumbnailToolBarButton(ico,getStr(translations.Text,8));
+            next.Click += nextButton_Click;
+            ThumbnailToolBarButton[] tmar={prev,play,next};
+            TaskbarManager.Instance.ThumbnailToolBars.AddButtons(Handle, tmar);
+            
+        }
 
         public void OnPlaybackFinishedHandler(object sender, EventArgs e)
         {
@@ -1118,7 +1168,8 @@ namespace fPlayer_2
                 songalbum.Image = img;
             }
             else songalbum.Image = songalbum.ErrorImage;
-            npo.updateInfo(img, stack[sta_pos].ID3Information.Title,artist,album);
+            
+            npo.updateInfo(img, stack[sta_pos].ID3Information.Title, artist, album);
         }
         public void UpdateInfo()
         {
@@ -1129,13 +1180,14 @@ namespace fPlayer_2
             UpdateBar();
         }
 
-        public void UpdateVol(int vol) {
+        public void UpdateVol(int vol)
+        {
             if (volVal.Text != vol.ToString())
             {
                 volVal.Text = vol.ToString();
                 volFront.Height = vol;
                 volFront.Top = 100 - vol;
-                
+
                 volFront.BringToFront();
 
             }
@@ -1149,7 +1201,7 @@ namespace fPlayer_2
         private void playToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int si = getSelectedItem();
-            if (si!=-1) Play(songs[si].FileName);
+            if (si != -1) Play(songs[si].FileName);
         }
 
         public int getSelectedItem()
@@ -1179,7 +1231,7 @@ namespace fPlayer_2
                 int val = -1;
                 try
                 {
-                    if (k.Length>0) val = Convert.ToInt32(k);
+                    if (k.Length > 0) val = Convert.ToInt32(k);
                 }
                 catch
                 {
@@ -1197,8 +1249,8 @@ namespace fPlayer_2
         public string formatMs(long pos)
         {
 
-            long s=0;
-            long m = Math.DivRem(pos/1000, 60, out s);
+            long s = 0;
+            long m = Math.DivRem(pos / 1000, 60, out s);
             return fixedDigit(m) + ":" + fixedDigit(s);
         }
 
@@ -1206,7 +1258,8 @@ namespace fPlayer_2
          * Format a number to have fixed digits.
          * \return a string containing the fixed digits.
          */
-        public string fixedDigit(long a) {
+        public string fixedDigit(long a)
+        {
             if (a < 10) return "0" + a.ToString(); else return a.ToString();
         }
         /**
@@ -1216,7 +1269,10 @@ namespace fPlayer_2
          */
         public void UpdateBar()
         {
-            if (getLength()>0) trackbarProgress.Width = (int)((getPos() * (long)trackbarBack.Width) / getLength());
+            if (getLength() > 0) trackbarProgress.Width = (int)((getPos() * (long)trackbarBack.Width) / getLength());
+            if (gI() != null && TaskbarManager.IsPlatformSupported) { if (gI().playing()) { TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Normal); } else { TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Paused); } TaskbarManager.Instance.SetProgressValue((int)(getPos() / 1000), (int)(getLength() / 1000)); }
+            else if (TaskbarManager.IsPlatformSupported) { TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress); }
+
         }
 
         /*-------------------
@@ -1257,7 +1313,7 @@ namespace fPlayer_2
         public void playnow()
         {
             if (stack.Count == 0) return;
-            
+
             if (gI() != null)
             {
                 // fix for BTC106: push volume before destroying instance
@@ -1287,21 +1343,22 @@ namespace fPlayer_2
         public void prev()
         {
             stopanddispose();
-                if (shuffle)
+            if (shuffle)
+            {
+                Random r = new Random(DateTime.Now.Millisecond + DateTime.Now.Second);
+                sta_pos = r.Next(stack.Count);
+            }
+            else if (!repeat)
+            {
+                sta_pos--;
+            }
+            if (sta_pos == -1)
+                if (stack.Count != 0)
                 {
-                    Random r = new Random(DateTime.Now.Millisecond + DateTime.Now.Second);
-                    sta_pos = r.Next(stack.Count);
+                    sta_pos = stack.Count - 1;
+                    playnow();
                 }
-                else if (!repeat)
-                {
-                    sta_pos--;
-                }
-            if (sta_pos == -1) 
-                if (stack.Count != 0) 
-                { 
-                    sta_pos = stack.Count - 1; 
-                    playnow(); 
-                } else sta_pos = 0;
+                else sta_pos = 0;
             else playnow();
         }
 
@@ -1320,8 +1377,8 @@ namespace fPlayer_2
             {
                 sta_pos++;
             }
-            
-            
+
+
             if (sta_pos == stack.Count)
             {
                 sta_pos = 0;
@@ -1345,7 +1402,7 @@ namespace fPlayer_2
                     if (gI() != null) gI().Dispose();
                 }
             }
-            
+
         }
 
         /**
@@ -1401,7 +1458,7 @@ namespace fPlayer_2
          */
         public void seek(long pos)
         {
-            if (gI()!=null) gI().seek(pos);
+            if (gI() != null) gI().seek(pos);
         }
 
         /**
@@ -1436,8 +1493,8 @@ namespace fPlayer_2
         {
             foreach (int i in getSelectedItems())
             {
-                if (songs[i]!=null) Stack(songs[i].FileName);
-                if (gI()==null || !gI().playing()) playnow();
+                if (songs[i] != null) Stack(songs[i].FileName);
+                if (gI() == null || !gI().playing()) playnow();
             }
         }
 
@@ -1464,7 +1521,7 @@ namespace fPlayer_2
         private void trackbarProgress_MouseDown(object sender, MouseEventArgs e)
         {
             drags = true;
-            
+
         }
 
         private void trackbarBack_MouseDown(object sender, MouseEventArgs e)
@@ -1560,7 +1617,7 @@ namespace fPlayer_2
 
         private void trackbarBack_Paint(object sender, PaintEventArgs e)
         {
-            
+
 
         }
 
@@ -1586,7 +1643,7 @@ namespace fPlayer_2
         {
             if (gI() != null)
             {
-                
+
                 volFront.Visible = !volFront.Visible;
                 volBack.Visible = !volBack.Visible;
                 volVal.Visible = !volVal.Visible;
@@ -1599,24 +1656,26 @@ namespace fPlayer_2
 
         private void shuffleButton_Click(object sender, EventArgs e)
         {
-            
+
             if (shuffle)
             {
                 shuffleButton.BackColor = Color.Black;
                 shuffle = false;
                 this.contentPane.Tag = "-1";
 
-            } else {
+            }
+            else
+            {
                 if (repeat)
                 {
                     repeat = false;
                     repeatButton.BackColor = Color.Black;
                 }
                 shuffleButton.BackColor = Color.Green;
-            shuffle = true;
-            this.contentPane.Tag = "-1";
+                shuffle = true;
+                this.contentPane.Tag = "-1";
             }
-            
+
         }
 
         private void repeatButton_Click(object sender, EventArgs e)
@@ -1686,7 +1745,8 @@ namespace fPlayer_2
         }
         public void tsmiclicked(object sender, EventArgs e)
         {
-            foreach (int k in getSelectedItems()) {
+            foreach (int k in getSelectedItems())
+            {
                 M3UReader.append(((ToolStripMenuItem)sender).Tag.ToString(), songs[k].FileName);
             }
         }
@@ -1695,7 +1755,7 @@ namespace fPlayer_2
         {
             InputDialog ip = new InputDialog();
             ip.parent = this;
-            if (ip.ShowDialog() == DialogResult.OK && inp!="")
+            if (ip.ShowDialog() == DialogResult.OK && inp != "")
             {
                 foreach (int k in getSelectedItems())
                 {
@@ -1713,10 +1773,10 @@ namespace fPlayer_2
 
         public List<AudioFile> getSearchResults(string text)
         {
-            List<AudioFile> l=new List<AudioFile>();
+            List<AudioFile> l = new List<AudioFile>();
             foreach (AudioFile k in songs)
             {
-                if (searchItem(k,text))
+                if (searchItem(k, text))
                 {
                     l.Add(k);
                 }
@@ -1726,7 +1786,7 @@ namespace fPlayer_2
 
         public bool searchItem(AudioFile k, string text)
         {
-            string ttl=text.ToLower();
+            string ttl = text.ToLower();
             string tittl = k.ID3Information.Title.ToLower();
             string arttl = k.ID3Information.Artist.ToLower();
             string albtl = k.ID3Information.Album.ToLower();
@@ -1769,7 +1829,7 @@ namespace fPlayer_2
         }
         private void searchBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar==13) search(searchBox.Text);
+            if (e.KeyChar == 13) search(searchBox.Text);
         }
 
         private void playToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -1822,7 +1882,7 @@ namespace fPlayer_2
 
         public void scrollTo(int pos)
         {
-            mainPane.AutoScrollPosition = new Point(0,pos*48) ;
+            mainPane.AutoScrollPosition = new Point(0, pos * 48);
             Update();
         }
 
@@ -1835,11 +1895,11 @@ namespace fPlayer_2
             }
             scrollTo(pos);
         }
-        
+
 
         public void scroll(int offset)
         {
-            int curPos=safeconvertint32(contentPane.Tag.ToString());
+            int curPos = safeconvertint32(contentPane.Tag.ToString());
             int listlen = contentPane.Controls.Count;
             if (tabFocused == 4) { listlen--; } // as Now Playing has the overlay too.
             int newpos = curPos + offset;
@@ -1857,7 +1917,7 @@ namespace fPlayer_2
 
         public void pgUp()
         {
-            int itemsInView = (mainPane.Height / new SongsListItem().Height)-1;
+            int itemsInView = (mainPane.Height / new SongsListItem().Height) - 1;
             scroll(-itemsInView);
         }
 
@@ -1869,10 +1929,11 @@ namespace fPlayer_2
 
         public int getFirstIndex(string tag)
         {
-            int ind=-1;
+            int ind = -1;
             int i = 0;
-            string[] arr=tag.Split(',');
-            while (ind==-1 && i<arr.Length) {
+            string[] arr = tag.Split(',');
+            while (ind == -1 && i < arr.Length)
+            {
                 ind = safeconvertint32(arr[i]);
                 i++;
             }
@@ -1947,7 +2008,7 @@ namespace fPlayer_2
             {
                 int mouseYOnElement = this.volBack.PointToScreen(new Point(0, 0)).Y;
                 mouseYOnElement = MousePosition.Y - mouseYOnElement;
-                int newVol = 100-mouseYOnElement;
+                int newVol = 100 - mouseYOnElement;
                 gI().setVolume(newVol);
             }
         }
@@ -1975,7 +2036,7 @@ namespace fPlayer_2
 
         public void voldefocus()
         {
-            if (volFront.Visible) volumeButton_Click(this,new EventArgs());
+            if (volFront.Visible) volumeButton_Click(this, new EventArgs());
         }
 
         private void label21_Click(object sender, EventArgs e)
@@ -1990,7 +2051,7 @@ namespace fPlayer_2
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         public void loadExtensionList()
@@ -2024,7 +2085,7 @@ namespace fPlayer_2
             contentPaneTitle.Text = _Plugins[((PluginItem)sender).Tag.ToString()].Name;
             contentPane.Controls.Add(_Plugins[((PluginItem)sender).Tag.ToString()].getGUI(this));
         }
-        
+
         private void pluginPanel_Click(object sender, EventArgs e)
         {
             tabFocused = 7;
@@ -2065,17 +2126,17 @@ namespace fPlayer_2
             if (!File.Exists(AppFolder + "\\langoverride"))
             {
                 systemDefaultToolStripMenuItem.Checked = true;
-               
+
             }
             else switch (File.ReadAllText(AppFolder + "\\langoverride"))
                 {
-                case "en":
+                    case "en":
                         forceEnglishToolStripMenuItem.Checked = true;
                         break;
-                case "es":
+                    case "es":
                         forzarEspañolToolStripMenuItem.Checked = true;
                         break;
-                case "ca":
+                    case "ca":
                         forçaCatalaToolStripMenuItem.Checked = true;
                         break;
                 }
@@ -2098,7 +2159,7 @@ namespace fPlayer_2
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("ca-ES");
                     break;
             }
-            if (MessageBox.Show(getStr(translations.Text, 5), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
+            if (MessageBox.Show(getStr(translations.Text, 5), "urMusik", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Restart();
             }
@@ -2132,5 +2193,77 @@ namespace fPlayer_2
             reloadlangs();
         }
 
-	}
+        private void pujaAmuntToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            bool found = false;
+            while (!found && i < stack.Count)
+            {
+                if (stack[i].FileName == ((ToolStripMenuItem)sender).GetCurrentParent().Tag.ToString())
+                {
+                    found = true;
+                    if (i == 0) return;
+                    AudioFile af = stack[i];
+                    stack.RemoveAt(i);
+                    stack.Insert(i - 1, af);
+                    sta_pos--;
+                    contentPane.Controls.Clear(); loadNowPlaying();
+                }
+                i++;
+            }
+        }
+
+        private void baixaAvallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            bool found = false;
+            while (!found && i < stack.Count)
+            {
+                if (stack[i].FileName == ((ToolStripMenuItem)sender).GetCurrentParent().Tag.ToString())
+                {
+                    found = true;
+                    if (i == stack.Count - 1) return;
+                    AudioFile af = stack[i];
+                    stack.RemoveAt(i);
+                    stack.Insert(i + 1, af);
+                    sta_pos++;
+                    contentPane.Controls.Clear(); loadNowPlaying();
+                }
+                i++;
+            }
+
+        }
+
+        private void Player_DragEnter(object sender, DragEventArgs e)
+        {
+
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, true) == true)
+            {
+                string[] filenames = (string[])e.Data.GetData(DataFormats.FileDrop, true);
+                foreach (string filename in filenames)
+                {
+                    if (File.Exists(filename))
+                    {
+                        FileInfo fi = new FileInfo(filename);
+                        string exts = ".mp3;.flac;.wav;.ogg";
+                        foreach (string k in exts.Split(';'))
+                        {
+                            if (fi.Extension == k) { Stack(filename); if (stack.Count == 1) playnow(); break; }
+                        }
+                    }
+                }
+                
+            }
+
+        }
+
+
+        private void Player_DragOver(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, true) == true)
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+        }
+    }
 }

@@ -72,6 +72,9 @@ namespace fPlayer_2
             this.quicklistmenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.playToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.removeFromQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.pujaAmuntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.baixaAvallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.volBack = new System.Windows.Forms.Panel();
             this.volFront = new System.Windows.Forms.Panel();
             this.volVal = new System.Windows.Forms.Label();
@@ -398,7 +401,10 @@ namespace fPlayer_2
             resources.ApplyResources(this.quicklistmenu, "quicklistmenu");
             this.quicklistmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.playToolStripMenuItem1,
-            this.removeFromQueueToolStripMenuItem});
+            this.removeFromQueueToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.pujaAmuntToolStripMenuItem,
+            this.baixaAvallToolStripMenuItem});
             this.quicklistmenu.Name = "songMenu";
             this.quicklistmenu.ShowImageMargin = false;
             // 
@@ -413,6 +419,23 @@ namespace fPlayer_2
             this.removeFromQueueToolStripMenuItem.Name = "removeFromQueueToolStripMenuItem";
             resources.ApplyResources(this.removeFromQueueToolStripMenuItem, "removeFromQueueToolStripMenuItem");
             this.removeFromQueueToolStripMenuItem.Click += new System.EventHandler(this.removeFromQueueToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
+            // 
+            // pujaAmuntToolStripMenuItem
+            // 
+            this.pujaAmuntToolStripMenuItem.Name = "pujaAmuntToolStripMenuItem";
+            resources.ApplyResources(this.pujaAmuntToolStripMenuItem, "pujaAmuntToolStripMenuItem");
+            this.pujaAmuntToolStripMenuItem.Click += new System.EventHandler(this.pujaAmuntToolStripMenuItem_Click);
+            // 
+            // baixaAvallToolStripMenuItem
+            // 
+            this.baixaAvallToolStripMenuItem.Name = "baixaAvallToolStripMenuItem";
+            resources.ApplyResources(this.baixaAvallToolStripMenuItem, "baixaAvallToolStripMenuItem");
+            this.baixaAvallToolStripMenuItem.Click += new System.EventHandler(this.baixaAvallToolStripMenuItem_Click);
             // 
             // volBack
             // 
@@ -777,6 +800,7 @@ namespace fPlayer_2
             // 
             // Player
             // 
+            this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
@@ -798,6 +822,8 @@ namespace fPlayer_2
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Player_FormClosing);
             this.Load += new System.EventHandler(this.Player_Load);
             this.ResizeEnd += new System.EventHandler(this.Player_ResizeEnd);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Player_DragEnter);
+            this.DragOver += new System.Windows.Forms.DragEventHandler(this.Player_DragOver);
             this.bottomPanel.ResumeLayout(false);
             this.bottomPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shuffleButton)).EndInit();
@@ -914,5 +940,8 @@ namespace fPlayer_2
         private System.Windows.Forms.Panel mainPane;
         private System.Windows.Forms.Panel contentPane;
         private Label2 translations;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem pujaAmuntToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem baixaAvallToolStripMenuItem;
 	}
 }
