@@ -590,7 +590,7 @@ namespace fPlayer_2
             this.Refresh();
             contentPane.Refresh();
         }
-
+        private bool assigned = false;
         public void loadNowPlaying()
         {
             contentPane.Tag = "-1";
@@ -604,7 +604,7 @@ namespace fPlayer_2
             {
                 loadStackList();
                 npo.Dock = DockStyle.Top;
-                npo.onSaveAsNewListOptionClicked += new EventHandler(newListHandler);
+                if (!assigned) { npo.onSaveAsNewListOptionClicked += new EventHandler(newListHandler); assigned = true; }
                 contentPane.Controls.Add(npo);
             }
         }
