@@ -1477,6 +1477,7 @@ namespace fPlayer_2
             {
                 UpdateInfo();
             }
+            if (this.Text!=(songname.Text + " - urMusik 2.1")) this.Text = songname.Text + " - urMusik 2.1";
         }
 
         private void Player_Activated(object sender, EventArgs e)
@@ -2264,6 +2265,16 @@ namespace fPlayer_2
             {
                 e.Effect = DragDropEffects.Copy;
             }
+        }
+
+        private void shuffleButton_Click_1(object sender, EventArgs e)
+        {
+            shuffleButton_Click(sender, e);
+        }
+
+        private void repeatButton_Click_1(object sender, EventArgs e)
+        {
+            repeatButton_Click(sender, e);
         }
     }
 }

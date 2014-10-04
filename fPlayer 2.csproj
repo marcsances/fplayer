@@ -192,6 +192,9 @@
     <EmbeddedResource Include="AboutDialog.ca-ES.resx">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AboutDialog.ca.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutDialog.es.resx">
       <DependentUpon>AboutDialog.cs</DependentUpon>
     </EmbeddedResource>

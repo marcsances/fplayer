@@ -4488,6 +4488,9 @@
         8fyPNBpffVHQxIzeECQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 617</value>
+  </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAsdJREFUeF7t
@@ -4505,6 +4508,9 @@
         d7IAWIMNURYAd7IAWIMNURYAd7IAWIMNUa8C9CirDafBHWQymUwm80dGo19pNByNAgKpdgAAAABJRU5E
         rkJggg==
 </value>
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 617</value>
   </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4572,6 +4578,9 @@
         xOVPLDwz9ypXJGxMkbEE+4LxLuJHpZXOGxrckbytp2VsNBRtAawDszk7SdazABcoOGtAFwXKIgIiICIi
         AiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD//Z
 </value>
+  </data>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 617</value>
   </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4795,6 +4804,9 @@
         oUOHcJqFGR8P5BNOrTx48MASwavtxVfXy92EZQmWjwB3tED8Vr/88ostbhsDN77WrBymfiuTCvFVcACo
         gIrQ6J9//jkIfdBPrl27VrrzgoeHo1D6rQyIuP597/8AF97oVq0PRNoAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 617</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5369,6 +5381,9 @@
         g/v/AUV35hfeKGNtAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 521</value>
+  </data>
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhXgBeAIcAAAAAAP////39/QcHB/Ly8v7+/gEBAfz8/Pv7+xsbGwUFBfPz8xEREc3NzR4eHggI
@@ -5407,16 +5422,19 @@
         mvKUqEylKlfJyla68pWwjKUsCRIQADs=
 </value>
   </data>
+  <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 617</value>
+  </data>
+  <data name="copyInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 288</value>
+  </data>
   <data name="copyInfo.Text" xml:space="preserve">
     <value>Copyright © 2014, MSS Software &amp; Services.
-urMusik es troba sota els termes de la GNU General Public License, versió 3.
-urMusik usa Windows API Code Pack, sota MS Public License i fet per Microsoft Corporation.
-Tots els drets sobre Windows API Code Pack queden subjectes a aquesta llicència i a Microsoft Corporation.</value>
+urMusik is licensed under the terms of the GNU General Public License, version 3.
+urMusik uses Windows API Code Pack, under MS Public License and made by Microsoft Corporation.
+All rights over Windows API Code Pack are subject to such license and to Microsoft Corporation.</value>
   </data>
-  <data name="apiimplver.Text" xml:space="preserve">
-    <value>libAP API %a / Implementació %imp</value>
-  </data>
-  <data name="appVer.Text" xml:space="preserve">
-    <value>Versió %v</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 686</value>
   </data>
 </root>
