@@ -5444,11 +5444,15 @@
   <data name="copyInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 288</value>
   </data>
+  <data name="copyInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 230</value>
+  </data>
   <data name="copyInfo.Text" xml:space="preserve">
     <value>Copyright © 2014, MSS Software &amp; Services.
 urMusik está bajo los términos de la GNU General Public License, versión 3.
 urMusik usa Windows API Code Pack, una biblioteca bajo la licencia MS Public License y que ha sido creada por Microsoft Corporation.
-Todos los derechos sobre Windows API Code Pack están sujetos a dicha licencia y a Microsoft Corporation.</value>
+Todos los derechos sobre Windows API Code Pack están sujetos a dicha licencia y a Microsoft Corporation.
+Tipografia "Open Sans" diseñada por Steve Matteson bajo licencia Apache (http://www.apache.org/licenses/)</value>
   </data>
   <data name="apiimplver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>

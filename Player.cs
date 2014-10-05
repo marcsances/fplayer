@@ -817,10 +817,9 @@ namespace fPlayer_2
 
         public void retrieveDir(string dir, splash s)
         {
-            string exts = "*.mp3;*.flac;*.wav;*.ogg";
-            foreach (string st in exts.Split(';'))
+            foreach (string k in Directory.GetFiles(dir, "*.*", SearchOption.AllDirectories))
             {
-                foreach (string k in Directory.GetFiles(dir, st, SearchOption.AllDirectories))
+                if (isSupported(k))
                 {
                     add(k, s, 0);
                 }
@@ -1123,10 +1122,38 @@ namespace fPlayer_2
             }
         }
 
+        private bool isSupported(string f)
+        {
+            string[] exts = { ".mp3", ".wav", ".flac", ".pcm", ".ogg", ".m4a", ".aac" };
+            FileInfo inf = new FileInfo(f);
+            int i = 0; bool found=false;
+            while (i < exts.Length && !found)
+            {
+                if (inf.Extension == exts[i])
+                {
+                    found = true;
+                }
+                i++;
+            }
+            return found;
+        }
+
         private void Player_Load(object sender, EventArgs e)
         {
             loadSystemData();
             if (TaskbarManager.IsPlatformSupported) addButtons();
+            if (Environment.GetCommandLineArgs().Length > 1)
+            {
+                for (int i = 1; i < Environment.GetCommandLineArgs().Length; i++)
+                {
+                    String f = Environment.GetCommandLineArgs()[i];
+                    if (File.Exists(f) && isSupported(f))
+                    {
+                        Stack(f);
+                    }
+                }
+                if (stack.Count > 0) playnow();
+            }
         }
 
         public void addButtons()
@@ -1342,6 +1369,11 @@ namespace fPlayer_2
          */
         public void prev()
         {
+            if (gI()!=null && getPos() > 10000)
+            {
+                seek(0);
+                return;
+            }
             stopanddispose();
             if (shuffle)
             {
@@ -2084,7 +2116,8 @@ namespace fPlayer_2
         {
             contentPane.Controls.Clear();
             contentPaneTitle.Text = _Plugins[((PluginItem)sender).Tag.ToString()].Name;
-            contentPane.Controls.Add(_Plugins[((PluginItem)sender).Tag.ToString()].getGUI(this));
+            try { contentPane.Controls.Add(_Plugins[((PluginItem)sender).Tag.ToString()].getGUI(this)); }
+            catch { }
         }
 
         private void pluginPanel_Click(object sender, EventArgs e)
@@ -2243,14 +2276,10 @@ namespace fPlayer_2
                 string[] filenames = (string[])e.Data.GetData(DataFormats.FileDrop, true);
                 foreach (string filename in filenames)
                 {
-                    if (File.Exists(filename))
+                    if (File.Exists(filename) && isSupported(filename))
                     {
-                        FileInfo fi = new FileInfo(filename);
-                        string exts = ".mp3;.flac;.wav;.ogg";
-                        foreach (string k in exts.Split(';'))
-                        {
-                            if (fi.Extension == k) { Stack(filename); if (stack.Count == 1) playnow(); break; }
-                        }
+                       Stack(filename);
+                       if (stack.Count == 1) playnow();
                     }
                 }
                 
