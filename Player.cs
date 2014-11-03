@@ -1799,6 +1799,7 @@ namespace fPlayer_2
         public void search(string text)
         {
             tabFocused = -1;
+            items.Clear(); // fixes BTC109!
             contentPaneTitle.Text = "\"" + text + "\"";
             contentPane.Controls.Clear();
             loadArray(getSearchResults(text));
