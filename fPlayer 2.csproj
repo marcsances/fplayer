@@ -50,6 +50,23 @@
   <PropertyGroup>
     <ApplicationIcon>Logo_square.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>None</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
@@ -209,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NoListMsg.resx">
       <DependentUpon>NoListMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nowPlayingOverlay.ca-ES.resx">
+      <DependentUpon>nowPlayingOverlay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nowPlayingOverlay.ca.resx">
       <DependentUpon>nowPlayingOverlay.cs</DependentUpon>

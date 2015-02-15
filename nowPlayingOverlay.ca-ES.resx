@@ -117,130 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="songAlbum.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="songArtist.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt</value>
-  </data>
-  <data name="songtitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 12pt, style=Bold</value>
-  </data>
-  <data name="songPos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 67</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="savel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 9.75pt</value>
-  </data>
-  <data name="pictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 150</value>
-  </data>
-  <data name="&gt;&gt;songArtist.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="songPos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 27.75pt</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="savel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>nowPlayingOverlay</value>
-  </data>
-  <data name="songtitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="pictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;songPos.Name" xml:space="preserve">
-    <value>songPos</value>
-  </data>
-  <data name="&gt;&gt;savel.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5391.35123, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;songtitle.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="savel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 150</value>
-  </data>
-  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="savel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="songPos.Text" xml:space="preserve">
-    <value>--:--</value>
-  </data>
-  <data name="songArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 32</value>
-  </data>
-  <data name="songAlbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 19</value>
-  </data>
-  <data name="songArtist.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;songPos.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5391.35123, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;savel.Name" xml:space="preserve">
-    <value>savel</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.Name" xml:space="preserve">
-    <value>pictureBox</value>
-  </data>
-  <data name="songtitle.Text" xml:space="preserve">
-    <value>song</value>
-  </data>
-  <data name="songAlbum.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;songAlbum.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5391.35123, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;songAlbum.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="pictureBox.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFgOX/
@@ -299,84 +176,6 @@
         d5dCe7D4dEzkiwvCHz68f7skn14Wrf5D8LfzzEcXR2tAPaB8ifi9+Xp/yQbEtAZz/nM4HA6Hw+FwOBwO
         h8PhcDgcDofD4XA4HA6Hw+FQwvP+B0C48aqL3Zk3AAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="songAlbum.Text" xml:space="preserve">
-    <value>Album</value>
-  </data>
-  <data name="songAlbum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="savel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;savel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="songtitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 0</value>
-  </data>
-  <data name="songArtist.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="songtitle.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;songAlbum.Name" xml:space="preserve">
-    <value>songAlbum</value>
-  </data>
-  <data name="songPos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 32</value>
-  </data>
-  <data name="&gt;&gt;songtitle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="savel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="songAlbum.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;songPos.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 0</value>
-  </data>
-  <data name="savel.Text" xml:space="preserve">
-    <value>Save current playlist as new list...</value>
-  </data>
-  <data name="&gt;&gt;songAlbum.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;songtitle.Name" xml:space="preserve">
-    <value>songtitle</value>
-  </data>
-  <data name="songArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 99</value>
-  </data>
-  <data name="&gt;&gt;songtitle.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5391.35123, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;songArtist.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;songArtist.Type" xml:space="preserve">
-    <value>Label2, urMusik, Version=2.1.5391.35123, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 170</value>
-  </data>
-  <data name="songAlbum.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Open Sans, 9.75pt</value>
-  </data>
-  <data name="songArtist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="pictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3732,55 +3531,32 @@
         vAnmbYP0//0b/wdtBWYg3iF78AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
-  <data name="songPos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="songtitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="savel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 17</value>
-  </data>
-  <data name="&gt;&gt;savel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="songPos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="songAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 131</value>
-  </data>
-  <data name="songtitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="songArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;songPos.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="songPos.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;songArtist.Name" xml:space="preserve">
-    <value>songArtist</value>
-  </data>
-  <data name="songtitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 32</value>
-  </data>
-  <data name="songPos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="songArtist.Text" xml:space="preserve">
-    <value>Artist</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

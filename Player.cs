@@ -690,9 +690,11 @@ namespace fPlayer_2
             if (items.Count != 0) { contentPane.Controls.AddRange(items.ToArray()); }
             else
             {
-                NoSongsMsg nsm = new NoSongsMsg();
+                
+                    NoSongsMsg nsm = new NoSongsMsg();
 
-                contentPane.Controls.Add(nsm);
+                    contentPane.Controls.Add(nsm);
+             
             }
         }
 
@@ -836,11 +838,9 @@ namespace fPlayer_2
             SongsListItem sli = (getSongsListItem((Control)sender));
             if (sli != null)
             {
-                if (!sli.isStack && stack.Count != 0)
-                {
-                    Stack(sli.Tag.ToString());
-                }
-                else { Play(sli.Tag.ToString()); }
+                if (!sli.isStack) Stack(sli.Tag.ToString());
+                sta_pos = sli.isStack ? Convert.ToInt32(sli.Tag) : (stack.Count != 0 ? sta_pos : 0);
+                if (sli.isStack || stack.Count==1) playnow();
             }
             else
             {
@@ -882,7 +882,11 @@ namespace fPlayer_2
         public void OnMenuRequest(object sender, EventArgs e)
         {
             SongsListItem sli = getSongsListItem((Control)sender);
-            if (sli != null && !sli.isStack) songMenu.Show(MousePosition);
+            if (sli != null && !sli.isStack)
+            {
+                songMenu.Show(MousePosition);
+                songMenu.Tag = sli;
+            }
 
         }
 
@@ -1192,9 +1196,9 @@ namespace fPlayer_2
             Bitmap img = new SongID3(stack[sta_pos].FileName).forceLoadImage();
             if (img != null)
             {
-                songalbum.Image = img;
+                songalbum.Image = (Image)img.Clone(); // may fix BTC105
             }
-            else songalbum.Image = songalbum.ErrorImage;
+            else songalbum.Image = (Image)songalbum.ErrorImage.Clone(); // may fix BTC105
             
             npo.updateInfo(img, stack[sta_pos].ID3Information.Title, artist, album);
         }
@@ -1227,8 +1231,7 @@ namespace fPlayer_2
 
         private void playToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int si = getSelectedItem();
-            if (si != -1) Play(songs[si].FileName);
+            OnPlaySelected(songMenu.Tag, e);
         }
 
         public int getSelectedItem()
@@ -1524,11 +1527,7 @@ namespace fPlayer_2
 
         private void stackToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach (int i in getSelectedItems())
-            {
-                if (songs[i] != null) Stack(songs[i].FileName);
-                if (gI() == null || !gI().playing()) playnow();
-            }
+            Stack(((SongsListItem)songMenu.Tag).Tag.ToString());
         }
 
         private void previousButton_Click(object sender, EventArgs e)
@@ -1799,7 +1798,7 @@ namespace fPlayer_2
         public void search(string text)
         {
             tabFocused = -1;
-            items.Clear(); // fixes BTC109!
+            // items.Clear(); // fixes BTC109!
             contentPaneTitle.Text = "\"" + text + "\"";
             contentPane.Controls.Clear();
             loadArray(getSearchResults(text));
@@ -2305,6 +2304,11 @@ namespace fPlayer_2
         private void repeatButton_Click_1(object sender, EventArgs e)
         {
             repeatButton_Click(sender, e);
+        }
+
+        private void addToPlaylistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
